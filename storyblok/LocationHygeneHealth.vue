@@ -1,0 +1,9 @@
+<script setup>
+	const props = defineProps({ blok: Object });
+	onMounted(() => {
+		console.log(props.blok);
+	});
+</script>
+<template>
+	<main>{{ blok.koordinaten }}</main>
+</template>

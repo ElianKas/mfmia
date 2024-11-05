@@ -1,1 +1,1 @@
-<template><main>news</main></template>
+<template><div>news</div></template>
