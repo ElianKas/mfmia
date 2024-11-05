@@ -9,7 +9,9 @@
 	}); */
 </script>
 <template>
-	<StoryblokComponent
-		v-if="story"
-		:blok="story.content" />
+	<main>
+		<StoryblokComponent
+			v-if="story"
+			:blok="story.content" />
+	</main>
 </template>
