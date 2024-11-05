@@ -2,11 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
+  pages: true,
   modules: [
     [
       '@storyblok/nuxt',
       {
-        accessToken: '<your-access-token>',
+        accessToken: process.env.STORYBLOK_ACCESSTOKEN,
       },
     ],
   ],
