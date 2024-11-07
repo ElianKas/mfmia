@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     {
       accessToken: process.env.STORYBLOK_ACCESSTOKEN,
     },
-  ], '@nuxt/image'],
+  ], '@nuxt/image', '@nuxtjs/leaflet'],
   css: ['~/assets/css/main.css'],
   image: {
     format: ["avif",'webp']

@@ -17,7 +17,9 @@
 					vero ipsa numquam corporis harum facilis sit.
 				</div>
 			</div>
-			<div>map</div>
+			<div>
+				<MapsBrunnenbauMap />
+			</div>
 		</section>
 	</div>
 </template>
