@@ -1,8 +1,9 @@
 <template>
 	<div>
 		<section
-			class="h-[calc(100vh-80px)] border flex flex-col gap-[5rem]">
-			<div class="mt-[100px] flex flex-col gap-[2rem] px-[3rem]">
+			class="min-h-[calc(100vh-80px)] border flex flex-col md:flex-row md:items-center gap-[5rem] md:px-[1rem]">
+			<div
+				class="mt-[100px] flex flex-col gap-[2rem] px-[3rem] md:w-[50%]">
 				<div class="flex flex-col gap-[2rem]">
 					<div>logo</div>
 					<div>
@@ -17,7 +18,7 @@
 					vero ipsa numquam corporis harum facilis sit.
 				</div>
 			</div>
-			<div>
+			<div class="md:w-[50%]">
 				<MapsBrunnenbauMap />
 			</div>
 		</section>

@@ -44,25 +44,22 @@
 	});
 </script>
 <template>
-	<ClientOnly>
-		<LMap
-			style="height: 350px"
-			:zoom="9"
-			:center="[3.848, 11.5021]"
-			:use-global-leaflet="false">
-			<LTileLayer
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-				attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-				layer-type="base"
-				name="OpenStreetMap" />
-			<LMarker
-				v-for="(coord, index) in coordinates"
-				:key="index"
-				:lat-lng="[coord.lat, coord.lon]"
-				><LPopup>
-					{{ data.stories[index].content.location }}
-				</LPopup></LMarker
-			>
-		</LMap>
-	</ClientOnly>
+	<LMap
+		:zoom="9"
+		:center="[3.848, 11.5021]"
+		:use-global-leaflet="false">
+		<LTileLayer
+			url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+			attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+			layer-type="base"
+			name="OpenStreetMap" />
+		<LMarker
+			v-for="(coord, index) in coordinates"
+			:key="index"
+			:lat-lng="[coord.lat, coord.lon]"
+			><LPopup>
+				{{ data.stories[index].content.location }}
+			</LPopup></LMarker
+		>
+	</LMap>
 </template>
