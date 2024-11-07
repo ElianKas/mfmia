@@ -2,7 +2,7 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'news',
+		starts_with: 'news/aktuelles',
 		is_startpage: false,
 	});
 	onMounted(() => {
@@ -10,5 +10,5 @@
 	});
 </script>
 <template>
-	<main>hello</main>
+	<div>homepage</div>
 </template>
