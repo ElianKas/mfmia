@@ -2,7 +2,7 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'news/aktuelles',
+		starts_with: 'meilensteine',
 		is_startpage: false,
 	});
 	onMounted(() => {
