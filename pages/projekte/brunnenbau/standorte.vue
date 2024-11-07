@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section
-			class="min-h-[calc(100vh-80px)] border flex flex-col md:flex-row md:items-center gap-[5rem] md:px-[1rem]">
+			class="min-h-[calc(100vh-80px)] border flex flex-col md:flex-row md:items-center gap-[5rem] md:px-[1rem] max-w-[var(--max-width)] m-auto">
 			<div
 				class="mt-[100px] flex flex-col gap-[2rem] px-[3rem] md:w-[50%]">
 				<div class="flex flex-col gap-[2rem]">
@@ -22,5 +22,6 @@
 				<MapsBrunnenbauMap />
 			</div>
 		</section>
+		<section></section>
 	</div>
 </template>
