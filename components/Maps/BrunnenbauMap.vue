@@ -20,11 +20,8 @@
 
 	onMounted(() => {
 		data.stories.forEach((story) => {
+			console.log(story.content);
 			if (story.content.coordinates.includes(',')) {
-				console.log(
-					'input coordinates dd: ',
-					story.content.coordinates
-				);
 				const [lat, lon] = story.content.coordinates.split(',');
 				coordinates.value.push({
 					lat: parseFloat(lat),
@@ -38,27 +35,20 @@
 				const [lonDir, lonDeg, lonMin, lonSec] = lon
 					.match(/([NSEW])(\d+)[^\d]+(\d+)[^\d]+(\d+(\.\d+)?)/)
 					.slice(1);
-				console.log(
-					convertDMSToDD(latDeg, latMin, latSec, latDir),
-					' ',
-					convertDMSToDD(lonDeg, lonMin, lonSec, lonDir)
-				);
 				coordinates.value.push({
 					lat: convertDMSToDD(latDeg, latMin, latSec, latDir),
 					lon: convertDMSToDD(lonDeg, lonMin, lonSec, lonDir),
 				});
 			}
 		});
-
-		console.log('coordinates: ', coordinates.value);
 	});
 </script>
 <template>
 	<ClientOnly>
 		<LMap
 			style="height: 350px"
-			:zoom="13"
-			:center="[4.184692, 11.581174]"
+			:zoom="9"
+			:center="[3.848, 11.5021]"
 			:use-global-leaflet="false">
 			<LTileLayer
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -68,7 +58,11 @@
 			<LMarker
 				v-for="(coord, index) in coordinates"
 				:key="index"
-				:lat-lng="[coord.lat, coord.lon]" />
+				:lat-lng="[coord.lat, coord.lon]"
+				><LPopup>
+					{{ data.stories[index].content.location }}
+				</LPopup></LMarker
+			>
 		</LMap>
 	</ClientOnly>
 </template>
