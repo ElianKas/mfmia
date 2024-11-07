@@ -5,6 +5,8 @@
 		starts_with: 'projekte/brunnenbau',
 		is_startpage: false,
 	});
+	const { $gsap } = useNuxtApp();
+	let mm = $gsap.matchMedia();
 	const coordinates = ref([]);
 
 	function convertDMSToDD(degrees, minutes, seconds, direction) {
@@ -41,10 +43,15 @@
 				});
 			}
 		});
+
+		mm.add('(min-width: 768px)', () => {
+			return () => {};
+		});
 	});
 </script>
 <template>
 	<LMap
+		style="height: 500px"
 		:zoom="9"
 		:center="[3.848, 11.5021]"
 		:use-global-leaflet="false">

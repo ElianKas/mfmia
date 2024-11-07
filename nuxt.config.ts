@@ -8,11 +8,16 @@ export default defineNuxtConfig({
     {
       accessToken: process.env.STORYBLOK_ACCESSTOKEN,
     },
-  ], '@nuxt/image', '@nuxtjs/leaflet'],
+  ], '@nuxt/image', '@nuxtjs/leaflet', '@hypernym/nuxt-gsap'],
   css: ['~/assets/css/main.css'],
   image: {
     format: ["avif",'webp']
   },
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },  
   postcss: {
     plugins: {
       tailwindcss: {},
