@@ -9,7 +9,14 @@ export default defineNuxtConfig({
       accessToken: process.env.STORYBLOK_ACCESSTOKEN,
     },
   ], '@nuxt/image'],
+  css: ['~/assets/css/main.css'],
   image: {
     format: ["avif",'webp']
-  }
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })

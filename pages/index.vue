@@ -10,5 +10,5 @@
 	});
 </script>
 <template>
-	<div>homepage</div>
+	<div class="bg-black">homepage</div>
 </template>
