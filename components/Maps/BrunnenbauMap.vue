@@ -22,7 +22,6 @@
 
 	onMounted(() => {
 		data.stories.forEach((story) => {
-			console.log(story.content);
 			if (story.content.coordinates.includes(',')) {
 				const [lat, lon] = story.content.coordinates.split(',');
 				coordinates.value.push({
