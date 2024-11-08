@@ -10,7 +10,7 @@
 	});
 </script>
 <template>
-	<div class="max-w-[var(--max-width)] m-auto">
+	<div class="max-w-[--max-width] m-auto">
 		<section
 			class="min-h-[calc(100vh-80px)] flex flex-col md:flex-row md:items-center gap-[5rem] md:px-[3rem]">
 			<div
@@ -35,7 +35,13 @@
 		</section>
 		<section class="px-[3rem]">
 			<div
-				class="grid grid-cols-6 mb-[1rem] gap-[1rem]"
+				class="flex justify-between gap-[1rem] py-[1rem] border-b border-orange">
+				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
+				<div>{{ data.stories.length }} Standorte</div>
+				<div>Regionen: Yaounde NN; NW 150km</div>
+			</div>
+			<div
+				class="grid grid-cols-6 my-[1rem] gap-[1rem]"
 				v-for="(story, index) in data.stories">
 				<div>{{ data.stories.length - index }}</div>
 				<div>{{ story.content.location }}</div>
