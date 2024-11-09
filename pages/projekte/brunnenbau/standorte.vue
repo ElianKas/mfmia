@@ -72,5 +72,20 @@
 				</div>
 			</div>
 		</section>
+		<TemplatesExploreMoreTemplate
+			:content="[
+				{
+					link: 'link1',
+					title: 'title1',
+					subtitle: 'subtitle1',
+					image: 'image1',
+				},
+				{
+					link: 'link2',
+					title: 'title2',
+					subtitle: 'subtitle2',
+					image: 'image2',
+				},
+			]" />
 	</div>
 </template>
