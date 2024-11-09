@@ -73,11 +73,12 @@
 			</div>
 		</section>
 		<TemplatesExploreMoreTemplate
+			:page="`Brunnenbau`"
 			:content="[
 				{
 					link: 'link1',
-					title: 'title1',
-					subtitle: 'subtitle1',
+					title: 'Vorgehen',
+					subtitle: 'So gehen wir beim Brunnenbau vor',
 					image: 'image1',
 				},
 				{

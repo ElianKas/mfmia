@@ -4,14 +4,18 @@
 			type: Array,
 			required: true,
 		},
+		page: {
+			type: String,
+			required: true,
+		},
 	});
 </script>
 <template>
 	<aside>
 		<div class="text-center">
-			<h3><slot name="title"></slot></h3>
+			<h3>{{ page }}</h3>
 			<p>Du willst mehr wissen?</p>
-			<div>Übersicht <slot name="title"></slot></div>
+			<div>Übersicht {{ page }}</div>
 		</div>
 		<nav>
 			<ul>
