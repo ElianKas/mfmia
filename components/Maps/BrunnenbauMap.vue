@@ -1,9 +1,6 @@
 <script setup>
-	const storyblokApi = useStoryblokApi();
-	const { data } = await storyblokApi.get('cdn/stories', {
-		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'projekte/brunnenbau',
-		is_startpage: false,
+	const props = defineProps({
+		data: Object,
 	});
 	const { $gsap } = useNuxtApp();
 	let mm = $gsap.matchMedia();
@@ -21,7 +18,7 @@
 	}
 
 	onMounted(() => {
-		data.stories.forEach((story) => {
+		props.data.stories.forEach((story) => {
 			if (story.content.coordinates.includes(',')) {
 				const [lat, lon] = story.content.coordinates.split(',');
 				coordinates.value.push({

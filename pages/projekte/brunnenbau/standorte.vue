@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			<div class="md:w-[50%]">
-				<MapsBrunnenbauMap />
+				<MapsBrunnenbauMap :data="data" />
 			</div>
 		</section>
 		<ClientOnly>
