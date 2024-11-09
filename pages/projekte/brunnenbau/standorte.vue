@@ -37,12 +37,12 @@
 			<div
 				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
 				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
-				<div>{{ data.stories.length }} Standorte</div>
+				<div>{{ data?.stories?.length || 0 }} Standorte</div>
 				<div>Regionen: Yaounde NN; NW 150km</div>
 			</div>
 			<div
 				class="grid-cols-6 my-[1rem] gap-[1rem] hidden lg:grid"
-				v-for="(story, index) in data.stories">
+				v-for="(story, index) in data?.stories || []">
 				<div>
 					{{ data.stories.length - index }}
 				</div>
