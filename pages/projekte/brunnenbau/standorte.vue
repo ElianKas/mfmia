@@ -35,20 +35,41 @@
 		</section>
 		<section class="px-[3rem]">
 			<div
-				class="flex justify-between gap-[1rem] py-[1rem] border-b border-orange">
+				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
 				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
 				<div>{{ data.stories.length }} Standorte</div>
 				<div>Regionen: Yaounde NN; NW 150km</div>
 			</div>
 			<div
-				class="grid grid-cols-6 my-[1rem] gap-[1rem]"
+				class="grid-cols-6 my-[1rem] gap-[1rem] hidden lg:grid"
 				v-for="(story, index) in data.stories">
-				<div>{{ data.stories.length - index }}</div>
+				<div>
+					{{ data.stories.length - index }}
+				</div>
 				<div>{{ story.content.location }}</div>
 				<div>{{ story.content.well }}</div>
 				<div>{{ story.content.coordinates }}</div>
 				<div>{{ story.content.group }}</div>
 				<div>{{ story.content.year }}</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border-t rounded-none lg:hidden"
+				v-for="(story, index) in data.stories">
+				<input
+					type="radio"
+					name="my-accordion-1" />
+				<div class="collapse-title pl-[1rem]">
+					{{ data.stories.length - index }}
+					{{ story.content.location }}
+				</div>
+				<div class="collapse-content">
+					<ul class="list-disc pl-[1rem]">
+						<li>{{ story.content.well }}</li>
+						<li>{{ story.content.coordinates }}</li>
+						<li>{{ story.content.group }}</li>
+						<li>{{ story.content.year }}</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</div>
