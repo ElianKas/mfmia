@@ -12,6 +12,7 @@ export default {
 	theme: {
 		colors: {
 			orange: '#EB6A0A',
+			green: '#019875',
 		},
 		extend: {},
 	},
