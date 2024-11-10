@@ -4,7 +4,10 @@
 		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
 		<div
 			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
-			<p>Zum Newsletter Anmelden und nicht mehr verpassen!</p>
+			<p>
+				Zum <span class="text-orange">Newsletter</span> Anmelden und
+				nicht mehr verpassen!
+			</p>
 			<div>
 				<label class="input px-[.5rem] flex items-center gap-2">
 					Vorname<span class="text-orange">*</span>
