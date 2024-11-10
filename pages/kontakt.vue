@@ -1,8 +1,9 @@
 <template>
-	<section class="flex flex-col gap-[4rem] px-[1rem]">
+	<section
+		class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-[4rem] sm:gap-[8rem] px-[1rem] my-[6rem] lg:px-[3rem] max-w-[--max-width] m-auto min-h-[calc(100vh-80px)]">
 		<form
 			action="#"
-			class="max-w-[500px] flex flex-col gap-[1rem]">
+			class="max-w-[500px] flex flex-col gap-[1rem] lg:w-[50%]">
 			<h1 class="text-orange">Kontakt</h1>
 			<div>
 				<label class="input px-[.5rem] flex items-center gap-2">
@@ -91,6 +92,17 @@
 				Nachricht senden
 			</button>
 		</form>
-		<aside>logo</aside>
+		<aside class="flex flex-col gap-[1rem] lg:w-[50%]">
+			<div>logo</div>
+			<div>
+				<p>Miteinander - für Menschen in Afrika e. V.</p>
+				<p>Kölnische Straße 55</p>
+				<p>D-34117 Kassel</p>
+				<br />
+				<p>Telefon: +49 561-15470</p>
+				<p>Telefax: +49 561-779477</p>
+				<p>E-Mail: info@miteinander-fuer-afrika.de</p>
+			</div>
+		</aside>
 	</section>
 </template>
