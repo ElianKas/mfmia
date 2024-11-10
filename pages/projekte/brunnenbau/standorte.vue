@@ -33,7 +33,7 @@
 				<MapsBrunnenbauMap :data="data" />
 			</div>
 		</section>
-		<section class="px-[3rem]">
+		<section class="px-[3rem] mt-[3rem]">
 			<div
 				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
 				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>

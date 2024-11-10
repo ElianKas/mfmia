@@ -12,7 +12,7 @@
 </script>
 <template>
 	<aside
-		class="px-[1rem] md:px-[3rem] md:flex md:gap-[4rem] my-[6rem]">
+		class="px-[1rem] md:px-[3rem] md:flex md:gap-[4rem] my-[6rem] lg:mt-[10rem]">
 		<div class="text-center mb-[4rem]">
 			<h3>{{ page }}</h3>
 			<p>Du willst mehr wissen?</p>
