@@ -33,16 +33,26 @@
 				<MapsBrunnenbauMap :data="data" />
 			</div>
 		</section>
-		<ClientOnly>
-			<section class="px-[3rem]">
-				<div
-					class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
-					<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
-					<div v-if="data && data.stories">
-						{{ data.stories.length }} Standorte
-					</div>
-					<div>Regionen: Yaounde NN; NW 150km</div>
+		<section class="px-[3rem]">
+			<div
+				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
+				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
+				<div v-if="data && data.stories">
+					{{ data.stories.length }} Standorte
 				</div>
+				<div>Regionen: Yaounde NN; NW 150km</div>
+			</div>
+			<ClientOnly>
+				<template #fallback>
+					<div class="grid grid-rows-6 gap-[1rem] my-[1rem]">
+						<div class="skeleton h-[24px]"></div>
+						<div class="skeleton h-[24px]"></div>
+						<div class="skeleton h-[24px]"></div>
+						<div class="skeleton h-[24px]"></div>
+						<div class="skeleton h-[24px]"></div>
+						<div class="skeleton h-[24px]"></div>
+					</div>
+				</template>
 				<div
 					class="grid-cols-6 my-[1rem] gap-[1rem] hidden lg:grid"
 					v-if="data && data.stories"
@@ -76,8 +86,8 @@
 						</ul>
 					</div>
 				</div>
-			</section>
-		</ClientOnly>
+			</ClientOnly>
+		</section>
 		<TemplatesExploreMoreTemplate
 			:page="`Brunnenbau`"
 			:content="[
