@@ -39,8 +39,8 @@
 						>
 						gelesen und bin damit einverstanden, dass mit dem Absenden
 						des Formulars meine Daten zur Bearbeitung meines Anliegens
-						verwendet werden. Die mit * gekennzeichneten Felder sind
-						Pflichtfelder.</span
+						verwendet werden. <br /><br />Die mit * gekennzeichneten
+						Felder sind Pflichtfelder.</span
 					>
 				</label>
 			</div>
