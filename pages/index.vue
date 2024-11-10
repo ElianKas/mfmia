@@ -1,14 +1,7 @@
-<script setup>
-	const storyblokApi = useStoryblokApi();
-	const { data } = await storyblokApi.get('cdn/stories', {
-		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'meilensteine',
-		is_startpage: false,
-	});
-	onMounted(() => {
-		console.log(data.stories);
-	});
-</script>
+<script setup></script>
 <template>
-	<div>homepage</div>
+	<div>
+		<div>homepage</div>
+		<Newsletter />
+	</div>
 </template>

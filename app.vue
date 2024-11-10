@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<HeaderComponent />
+		<NavigationHeaderComponent />
 		<main><NuxtPage /></main>
-		<FooterComponent />
+		<NavigationFooterComponent />
 	</div>
 </template>

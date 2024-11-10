@@ -5,9 +5,7 @@
 		starts_with: 'projekte/brunnenbau',
 		is_startpage: false,
 	});
-	onMounted(() => {
-		console.log(data.stories);
-	});
+	onMounted(() => {});
 </script>
 <template>
 	<div class="max-w-[--max-width] m-auto">
