@@ -95,13 +95,11 @@
 					link: 'link1',
 					title: 'Vorgehen',
 					subtitle: 'So gehen wir beim Brunnenbau vor',
-					image: 'image1',
 				},
 				{
 					link: 'link2',
-					title: 'title2',
-					subtitle: 'subtitle2',
-					image: 'image2',
+					title: 'Motivation',
+					subtitle: 'Deshalb bauen wir Brunnen',
 				},
 			]" />
 	</div>
