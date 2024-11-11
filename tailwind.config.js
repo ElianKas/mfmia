@@ -14,6 +14,11 @@ export default {
 			orange: '#EB6A0A',
 			green: '#019875',
 		},
+		fontSize: {
+			sm: '12px',
+			base: '24px',
+			big: '42px',
+		},
 		extend: {},
 	},
 	plugins: [require('daisyui')],

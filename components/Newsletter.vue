@@ -4,12 +4,13 @@
 		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
 		<div
 			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
-			<p>
+			<p class="font-semibold">
 				Zum <span class="text-orange">Newsletter</span> Anmelden und
 				nicht mehr verpassen!
 			</p>
 			<div>
-				<label class="input px-[.5rem] flex items-center gap-2">
+				<label
+					class="input px-[.5rem] flex items-center gap-2 text-base">
 					Vorname<span class="text-orange">*</span>
 					<input
 						type="text"
@@ -17,7 +18,7 @@
 				</label>
 				<div class="h-[1px] border border-green"></div>
 				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+					class="input px-[.5rem] flex items-center gap-2 border-b text-base">
 					Email<span class="text-orange">*</span>
 					<input
 						type="text"
@@ -32,7 +33,7 @@
 						type="checkbox"
 						:checked="false"
 						class="checkbox" />
-					<span class="label-text"
+					<span class="label-text text-sm"
 						>Ja, ich habe die Hinweise zum
 						<NuxtLink
 							class="text-orange"
@@ -47,7 +48,9 @@
 					>
 				</label>
 			</div>
-			<button class="btn bg-green text-[#fff]">Jetzt anmelden</button>
+			<button class="btn bg-green text-[#fff] font-bold text-base">
+				Jetzt anmelden
+			</button>
 		</div>
 		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
 	</aside>
