@@ -19,7 +19,7 @@
 			:alt="story.content.title" />
 		<div
 			class="backdrop-blur h-[150px] p-[1rem] absolute text-white bottom-0 w-full rounded-b-[--border-radius] flex flex-col justify-between">
-			<p>
+			<p class="font-bold">
 				{{ story.content.title }}
 			</p>
 			<div class="self-end"><SvgsNavigationShortArrow /></div>

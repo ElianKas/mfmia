@@ -23,13 +23,13 @@
 		if (window.innerWidth < 1024) {
 			increment = 4;
 		} else {
-			increment = 8;
+			increment = 6;
 		}
 		window.addEventListener('resize', function () {
 			if (window.innerWidth < 1024) {
 				increment = 4;
 			} else {
-				increment = 8;
+				increment = 6;
 			}
 		});
 		sortedData.value = data.stories.sort((a, b) => {
@@ -41,32 +41,41 @@
 	});
 </script>
 <template>
-	<article class="min-h-[100vh] max-w-[--max-width] px-[2rem]">
+	<article
+		class="min-h-[100vh] max-w-[--max-width] m-auto px-[2rem] mb-[10rem]">
 		<div class="text-center my-[5rem]">
 			<p>Geschichten, wie wir Kamerun erleben.</p>
 			<h1 class="text-big text-orange">Storys</h1>
 		</div>
 		<ClientOnly>
 			<template #fallback>
-				<div class="grid grid-cols-1 gap-[2rem]">
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] gap-[2rem]">
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
+					<div
+						class="skeleton h-[500px] w-full hidden lg:block"></div>
+					<div
+						class="skeleton h-[500px] w-full hidden lg:block"></div>
 				</div>
 			</template>
-			<div class="grid grid-cols-1 gap-[2rem]">
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] justify-items-center gap-[2rem]">
 				<TemplatesStoryCard
 					v-for="story in clientData"
 					:key="story.id"
 					:story="story" />
 			</div>
-			<button
-				class="btn"
-				v-if="clientData.length !== sortedData.length"
-				@click="loadMore()">
-				Ältere Story laden
-			</button>
+			<div class="text-center">
+				<button
+					class="btn mt-[5rem] bg-orange text-white"
+					v-if="clientData.length !== sortedData.length"
+					@click="loadMore()">
+					Ältere Story laden
+				</button>
+			</div>
 		</ClientOnly>
 	</article>
 </template>
