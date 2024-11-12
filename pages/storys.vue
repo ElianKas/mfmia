@@ -5,31 +5,68 @@
 		starts_with: 'storys',
 		is_startpage: false,
 	});
+	const sortedData = ref(null);
+	const clientData = ref([]);
+	const currentLength = computed(() => clientData.value.length);
+	let increment;
+
+	function loadMore() {
+		const nextData = sortedData.value.slice(
+			currentLength.value,
+			currentLength.value + increment
+		);
+		clientData.value = [...clientData.value, ...nextData];
+	}
 
 	onMounted(() => {
-		console.log(data.stories);
+		//set relation for loaded articles and viewport size
+		if (window.innerWidth < 1024) {
+			increment = 4;
+		} else {
+			increment = 8;
+		}
+		window.addEventListener('resize', function () {
+			if (window.innerWidth < 1024) {
+				increment = 4;
+			} else {
+				increment = 8;
+			}
+		});
+		sortedData.value = data.stories.sort((a, b) => {
+			const dateA = new Date(a.content.date);
+			const dateB = new Date(b.content.date);
+			return dateB - dateA;
+		});
+		loadMore();
 	});
 </script>
 <template>
-	<article class="min-h-[100vh] max-w-[--max-width] px-[1rem]">
+	<article class="min-h-[100vh] max-w-[--max-width] px-[2rem]">
 		<div class="text-center my-[5rem]">
 			<p>Geschichten, wie wir Kamerun erleben.</p>
 			<h1 class="text-big text-orange">Storys</h1>
 		</div>
 		<ClientOnly>
 			<template #fallback>
-				<div class="grid grid-cols-1">
-					<div
-						v-for="story in data.stories"
-						class="skeleton h-[500px] w-full"></div>
+				<div class="grid grid-cols-1 gap-[2rem]">
+					<div class="skeleton h-[500px] w-full"></div>
+					<div class="skeleton h-[500px] w-full"></div>
+					<div class="skeleton h-[500px] w-full"></div>
+					<div class="skeleton h-[500px] w-full"></div>
 				</div>
 			</template>
-			<div class="grid grid-cols-1">
+			<div class="grid grid-cols-1 gap-[2rem]">
 				<TemplatesStoryCard
-					v-for="story in data.stories"
+					v-for="story in clientData"
 					:key="story.id"
 					:story="story" />
 			</div>
+			<button
+				class="btn"
+				v-if="clientData.length !== sortedData.length"
+				@click="loadMore()">
+				Ältere Story laden
+			</button>
 		</ClientOnly>
 	</article>
 </template>
