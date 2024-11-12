@@ -4,7 +4,7 @@
 		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
 		<div
 			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
-			<p class="font-semibold">
+			<p class="font-bold">
 				Zum <span class="text-orange">Newsletter</span> Anmelden und
 				nicht mehr verpassen!
 			</p>
