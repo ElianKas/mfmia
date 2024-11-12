@@ -16,15 +16,23 @@
 				<div class="flex flex-col gap-[2rem]">
 					<div>logo</div>
 					<div>
-						<h1>titel</h1>
-						<p class="subtitle">untertitel</p>
+						<h1>Standorte</h1>
+						<p class="subtitle">Wo wir Brunnen bauen</p>
 					</div>
 				</div>
 				<div>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Velit accusamus, optio ab sapiente molestiae repellat ex
-					maxime nostrum consectetur exercitationem cum sint obcaecati
-					vero ipsa numquam corporis harum facilis sit.
+					<p>
+						Wir bauen Brunnen in ländlichen Regionen Kameruns,
+						insbesondere in der Region um Obala herum. Der Ort Obala
+						liegt etwa 50 km nördlich von Yaoundé, der Hauptstadt
+						Kameruns.
+					</p>
+					<br />
+					<p>
+						Weitere Brunnen werden wir in der Region Leng-Tombo, ca.
+						150 km östlich von Yaoundé, bauen, wo wir auch
+						Toilettenhäuser errichten und eine Schule unterstützen.
+					</p>
 				</div>
 			</div>
 			<div class="md:w-[50%]">

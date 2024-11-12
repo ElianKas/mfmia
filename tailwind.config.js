@@ -16,7 +16,7 @@ export default {
 		},
 		fontSize: {
 			sm: '12px',
-			base: '24px',
+			base: '18px',
 			big: '42px',
 		},
 		extend: {},

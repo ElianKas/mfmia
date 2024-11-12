@@ -12,10 +12,11 @@
 </script>
 <template>
 	<aside
-		class="px-[1rem] md:px-[3rem] md:flex md:gap-[4rem] my-[6rem] lg:mt-[10rem]">
+		class="px-[1rem] md:px-[3rem] md:flex md:gap-[4rem] my-[6rem] lg:mt-[10rem] font-bold">
 		<div class="text-center mb-[4rem]">
-			<h3>{{ page }}</h3>
-			<p>Du willst mehr wissen?</p>
+			<h2 class="text-big text-green">{{ page }}</h2>
+			<p class="text-green">Du willst mehr wissen?</p>
+			<br />
 			<div class="border-b inline">
 				<SvgsNavigationLongArrowBack
 					class="w-[20px] h-auto inline mb-[5px]" />
@@ -27,11 +28,11 @@
 				<li v-for="element in content">
 					<NuxtLink
 						:to="element.link"
-						class="flex gap-[1rem]">
+						class="flex gap-[1.5rem]">
 						<div class="w-[50%] border">{{ element.title }} logo</div>
-						<div class="w-[50%] border">
-							<h3>{{ element.title }}</h3>
-							<p>{{ element.subtitle }}</p>
+						<div class="w-[50%]">
+							<h3 class="text-green">{{ element.title }}</h3>
+							<p class="font-normal">{{ element.subtitle }}</p>
 							<SvgsNavigationLongArrow class="w-[20px]" />
 						</div>
 					</NuxtLink>
