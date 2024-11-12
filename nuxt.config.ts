@@ -20,4 +20,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  image: {
+    storyblok: {
+      baseURL: 'https://a.storyblok.com'
+    }
+  }
 })

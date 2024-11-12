@@ -11,7 +11,7 @@
 		:to="story.full_slug"
 		class="h-[500px] w-full rounded-[--border-radius] relative">
 		<NuxtImg
-			fit="cover"
+			provider="storyblok"
 			format="avif"
 			placeholder
 			class="rounded-[--border-radius] absolute inset-0 w-full h-full object-cover"
