@@ -13,6 +13,7 @@ export default {
 		colors: {
 			orange: '#EB6A0A',
 			green: '#019875',
+			white: '#fff',
 		},
 		fontSize: {
 			sm: '12px',

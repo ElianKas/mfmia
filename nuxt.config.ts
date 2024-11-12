@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
-  pages: true,
   modules: [[
     '@storyblok/nuxt',
     {
@@ -10,9 +9,6 @@ export default defineNuxtConfig({
     },
   ], '@nuxt/image', '@nuxtjs/leaflet', '@hypernym/nuxt-gsap'],
   css: ['~/assets/css/main.css'],
-  image: {
-    format: ["avif",'webp']
-  },
   gsap: {
     extraPlugins: {
       scrollTrigger: true,
