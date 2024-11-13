@@ -73,6 +73,7 @@
 					v-if="blok.cover" />
 			</div>
 		</section>
+		<!-- storyblok moreSections render -->
 		<section
 			class="my-[3rem] md:my-[6rem] flex flex-col md:flex-row-reverse gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
 			v-if="moreSectionContent.length > 0"
