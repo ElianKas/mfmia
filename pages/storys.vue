@@ -44,7 +44,9 @@
 	<article
 		class="min-h-[100vh] max-w-[--max-width] m-auto px-[2rem] mb-[10rem]">
 		<div class="text-center my-[5rem]">
-			<p>Geschichten, wie wir Kamerun erleben.</p>
+			<p class="font-bold text-green">
+				Geschichten, wie wir Kamerun erleben.
+			</p>
 			<h1 class="text-big text-orange">Storys</h1>
 		</div>
 		<ClientOnly>
