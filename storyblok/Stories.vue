@@ -75,9 +75,13 @@
 		</section>
 		<!-- storyblok moreSections render -->
 		<section
-			class="my-[3rem] md:my-[6rem] flex flex-col md:flex-row-reverse gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
+			class="my-[3rem] md:my-[6rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
+			:class="{
+				'md:flex-row': i % 2 === 0,
+				'md:flex-row-reverse': i % 2 !== 0,
+			}"
 			v-if="moreSectionContent.length > 0"
-			v-for="section in moreSectionContent"
+			v-for="(section, i) in moreSectionContent"
 			:key="section">
 			<div
 				class="md:w-[50%] m-auto"
