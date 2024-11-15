@@ -138,5 +138,15 @@
 				</div>
 			</div>
 		</section>
+		<div class="text-center my-[5rem]">
+			<p class="font-bold text-green">
+				Geschichten, wie wir Kamerun erleben.
+			</p>
+			<h1 class="text-big text-orange">Storys</h1>
+			<br />
+			<button class="btn bg-orange text-white">
+				Zurück zur Übersicht
+			</button>
+		</div>
 	</article>
 </template>
