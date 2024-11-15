@@ -1,7 +1,7 @@
 <template>
 	<aside
 		class="px-[1rem] lg:px-[3rem] flex flex-col items-center lg:flex-row gap-[1rem] lg:gap-[3rem] m-auto max-w-[1600px]">
-		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
+		<SvgsHumansGroup class="max-w-[450px] w-[90%] h-auto" />
 		<div
 			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
 			<p class="font-bold">
@@ -52,6 +52,7 @@
 				Jetzt anmelden
 			</button>
 		</div>
-		<SvgsHumansGroup class="max-w-[500px] w-full h-auto" />
+		<SvgsHumansGroup
+			class="max-w-[450px] w-full h-auto max-lg:hidden" />
 	</aside>
 </template>

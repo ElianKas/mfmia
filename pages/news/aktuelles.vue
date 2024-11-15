@@ -53,7 +53,12 @@
 					:to="article.full_slug"
 					class="p-[1rem] border-b flex justify-between items-center gap-[1rem]">
 					<div>
-						{{ article.content.date }}
+						{{
+							new Date(article.content.date).toLocaleDateString(
+								'de-DE',
+								{ day: '2-digit', month: '2-digit', year: 'numeric' }
+							)
+						}}
 						<b>{{ article.content.title }}</b>
 					</div>
 					<SvgsNavigationDoubleArrow class="shrink-0"
