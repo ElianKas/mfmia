@@ -22,7 +22,7 @@
 								</NuxtLink>
 							</div>
 							<br />
-							<div class="pr-[1rem]">
+							<div class="pr-[1.5rem]">
 								<NuxtLink
 									to="/projekte/brunnenbau"
 									class="flex items-center justify-between cursor-pointer">
