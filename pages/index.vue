@@ -2,7 +2,8 @@
 <template>
 	<div>
 		<div>homepage</div>
-		<Donate />
+		<FewArticles />
+		<Donate class="mb-[5rem]" />
 		<Newsletter />
 	</div>
 </template>
