@@ -33,7 +33,6 @@
 				moreSectionContent.value.push(newSection);
 			}
 		});
-		console.log(moreSectionContent.value);
 	}
 
 	function slideTo(index) {
@@ -41,6 +40,7 @@
 	}
 
 	onMounted(() => {
+		console.log(props.blok);
 		checkSectionContent();
 	});
 </script>
@@ -55,7 +55,9 @@
 		</div>
 		<section
 			class="flex flex-col md:flex-row-reverse gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]">
-			<div class="md:w-[50%]">
+			<div
+				class="md:w-[50%] m-auto"
+				:class="{ 'md:w-[500px]': blok.cover.filename === '' }">
 				<h2
 					class="font-bold text-big text-green"
 					v-if="blok.title">
@@ -63,7 +65,9 @@
 				</h2>
 				<p v-if="blok.description">{{ blok.description }}</p>
 			</div>
-			<div class="md:w-[50%] m-auto">
+			<div
+				class="md:w-[50%] m-auto"
+				v-if="blok.cover.filename !== ''">
 				<NuxtImg
 					provider="storyblok"
 					format="avif"
@@ -101,6 +105,9 @@
 					'md:w-[500px]': !section.title && !section.description,
 				}">
 				<NuxtImg
+					provider="storyblok"
+					format="avif"
+					placeholder
 					v-if="section.gallery.length === 1"
 					:src="section.gallery[0].image"
 					:alt="section.gallery[0].alt"
@@ -114,6 +121,9 @@
 							:key="image"
 							class="md:px-[2rem]">
 							<NuxtImg
+								provider="storyblok"
+								format="avif"
+								placeholder
 								class="rounded-[--border-radius] w-full md:m-auto h-auto"
 								:src="image.image"
 								:alt="image.alt" />
@@ -130,6 +140,10 @@
 							:key="image"
 							class="md:px-[2rem] cursor-pointer">
 							<NuxtImg
+								provider="storyblok"
+								format="avif"
+								placeholder
+								quality="10"
 								class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 								:src="image.image"
 								:alt="image.alt" />

@@ -33,7 +33,6 @@
 				moreSectionContent.value.push(newSection);
 			}
 		});
-		console.log(moreSectionContent.value);
 	}
 
 	function slideTo(index) {
@@ -101,6 +100,9 @@
 					'md:w-[500px]': !section.title && !section.description,
 				}">
 				<NuxtImg
+					provider="storyblok"
+					format="avif"
+					placeholder
 					v-if="section.gallery.length === 1"
 					:src="section.gallery[0].image"
 					:alt="section.gallery[0].alt"
@@ -114,6 +116,9 @@
 							:key="image"
 							class="md:px-[2rem]">
 							<NuxtImg
+								provider="storyblok"
+								format="avif"
+								placeholder
 								class="rounded-[--border-radius] w-full md:m-auto h-auto"
 								:src="image.image"
 								:alt="image.alt" />
@@ -130,6 +135,10 @@
 							:key="image"
 							class="md:px-[2rem] cursor-pointer">
 							<NuxtImg
+								provider="storyblok"
+								format="avif"
+								placeholder
+								quality="10"
 								class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 								:src="image.image"
 								:alt="image.alt" />

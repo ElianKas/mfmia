@@ -42,7 +42,7 @@
 				</template>
 				<li v-for="article in clientData">
 					<NuxtLink
-						:to="article.full_slug"
+						:to="`aktuelles/${article.slug}`"
 						class="p-[1rem] border-b flex justify-between items-center gap-[1rem]">
 						<div>
 							{{
