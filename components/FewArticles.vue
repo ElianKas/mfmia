@@ -17,8 +17,10 @@
 	});
 </script>
 <template>
-	<article class="px-[1rem]">
-		<ul class="my-[5rem] max-w-[900px] m-auto">
+	<article class="px-[1rem] my-[5rem] max-w-[900px] m-auto">
+		<h2 class="font-bold text-big text-orange">Aktuelles</h2>
+		<br />
+		<ul>
 			<ClientOnly>
 				<template #fallback>
 					<div class="skeleton h-[47px] mb-[1rem] w-full"></div>
