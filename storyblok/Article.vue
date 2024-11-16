@@ -123,7 +123,6 @@
 							<NuxtImg
 								provider="storyblok"
 								format="avif"
-								placeholder
 								class="rounded-[--border-radius] w-full md:m-auto h-auto"
 								:src="image.image"
 								:alt="image.alt" />
@@ -142,7 +141,6 @@
 							<NuxtImg
 								provider="storyblok"
 								format="avif"
-								placeholder
 								quality="10"
 								class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 								:src="image.image"
