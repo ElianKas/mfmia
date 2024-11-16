@@ -153,9 +153,11 @@
 			</p>
 			<h1 class="text-big text-orange">Storys</h1>
 			<br />
-			<button class="btn bg-orange text-white">
-				Zurück zur Übersicht
-			</button>
+			<NuxtLink to="/storys">
+				<button class="btn bg-orange text-white">
+					Zurück zur Übersicht
+				</button>
+			</NuxtLink>
 		</div>
 	</article>
 </template>
