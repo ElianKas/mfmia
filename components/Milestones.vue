@@ -1,26 +1,39 @@
 <script setup>
 	const { $gsap } = useNuxtApp();
+	const storyblokApi = useStoryblokApi();
+	const { data } = await storyblokApi.get('cdn/stories', {
+		version: useRoute().query._storyblok ? 'draft' : 'published',
+		starts_with: 'meilensteine',
+		is_startpage: false,
+	});
+	const sortedData = ref(null);
 	let ctx;
 
 	onMounted(() => {
-		ctx = $gsap.context(() => {
-			//implement gsap loop function
-			const boxes1 = $gsap.utils.toArray('.milestoneBox1');
-			const boxes2 = $gsap.utils.toArray('.milestoneBox2');
-			horizontalLoop(boxes1, {
-				paused: false,
-				repeat: -1,
-				reversed: false,
-			});
-			horizontalLoop(boxes2, {
-				paused: false,
-				repeat: -1,
-				reversed: true,
+		sortedData.value = data.stories.sort((a, b) => {
+			const dateA = new Date(a.content.date);
+			const dateB = new Date(b.content.date);
+			return dateB - dateA;
+		});
+		nextTick(() => {
+			ctx = $gsap.context(() => {
+				const boxes1 = $gsap.utils.toArray('.milestoneBox1');
+				const boxes2 = $gsap.utils.toArray('.milestoneBox2');
+				horizontalLoop(boxes1, {
+					paused: false,
+					repeat: -1,
+					reversed: false,
+				});
+				horizontalLoop(boxes2, {
+					paused: false,
+					repeat: -1,
+					reversed: true,
+				});
 			});
 		});
 	});
 	onUnmounted(() => {
-		ctx.revert();
+		if (ctx) ctx.revert();
 	});
 
 	/*
@@ -147,26 +160,48 @@
 	}
 </script>
 <template>
-	<article>
-		<div class="flex w-full overflow-hidden">
-			<div
-				class="milestoneBox1 px-[1rem]"
-				v-for="box in 4">
-				<div
-					class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-auto shrink-0 p-[2rem]">
-					Herbst 2010: Start als Initiative der Gemeinde St. Familia
+	<ClientOnly>
+		<template #fallback>
+			<div>
+				<div class="flex w-full overflow-hidden">
+					<div
+						class="px-[1rem]"
+						v-for="milestone in 5">
+						<div
+							class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+					</div>
+				</div>
+				<div class="flex w-full overflow-hidden mt-[2rem]">
+					<div
+						class="px-[1rem]"
+						v-for="milestone in 5">
+						<div
+							class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="flex w-full overflow-hidden mt-[2rem]">
-			<div
-				class="milestoneBox2 px-[1rem]"
-				v-for="box in 4">
+		</template>
+		<article v-if="sortedData">
+			<div class="flex w-full overflow-hidden">
 				<div
-					class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-auto shrink-0 p-[2rem]">
-					Herbst 2010: Start als Initiative der Gemeinde St. Familia
+					class="milestoneBox1 px-[1rem]"
+					v-for="milestone in sortedData">
+					<div
+						class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+						{{ milestone.content.title }}
+					</div>
 				</div>
 			</div>
-		</div>
-	</article>
+			<div class="flex w-full overflow-hidden mt-[2rem]">
+				<div
+					class="milestoneBox2 px-[1rem]"
+					v-for="milestone in sortedData">
+					<div
+						class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+						{{ milestone.content.title }}
+					</div>
+				</div>
+			</div>
+		</article>
+	</ClientOnly>
 </template>
