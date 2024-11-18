@@ -162,7 +162,7 @@
 <template>
 	<ClientOnly>
 		<template #fallback>
-			<div>
+			<div class="max-w-[--max-width] m-auto">
 				<div class="flex w-full overflow-hidden">
 					<div
 						class="px-[1rem]"
@@ -181,7 +181,9 @@
 				</div>
 			</div>
 		</template>
-		<article v-if="sortedData">
+		<article
+			v-if="sortedData"
+			class="max-w-[--max-width] m-auto">
 			<div class="flex w-full overflow-hidden">
 				<div
 					class="milestoneBox1 px-[1rem]"
