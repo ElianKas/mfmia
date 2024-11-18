@@ -68,7 +68,6 @@
 					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] justify-items-center gap-[2rem]">
 					<TemplatesStoryCard
 						v-for="story in clientData"
-						v-if="clientData.length > 0"
 						:key="story.id"
 						:story="story" />
 				</div>
