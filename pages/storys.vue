@@ -63,23 +63,22 @@
 						class="skeleton h-[500px] w-full hidden lg:block"></div>
 				</div>
 			</template>
-			<template #default>
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] justify-items-center gap-[2rem]">
-					<TemplatesStoryCard
-						v-for="story in clientData"
-						:key="story.id"
-						:story="story" />
-				</div>
-				<div class="text-center">
-					<button
-						class="btn mt-[5rem] bg-orange text-white"
-						v-if="clientData.length !== sortedData.length"
-						@click="loadMore()">
-						Ältere Story laden
-					</button>
-				</div>
-			</template>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] justify-items-center gap-[2rem]"
+				v-if="clientData.length > 0">
+				<TemplatesStoryCard
+					v-for="story in clientData"
+					:key="story.id"
+					:story="story" />
+			</div>
+			<div class="text-center">
+				<button
+					class="btn mt-[5rem] bg-orange text-white"
+					v-if="clientData.length !== sortedData.length"
+					@click="loadMore()">
+					Ältere Story laden
+				</button>
+			</div>
 		</ClientOnly>
 	</article>
 </template>
