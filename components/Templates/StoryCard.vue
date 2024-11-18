@@ -2,9 +2,7 @@
 	const props = defineProps({
 		story: Object,
 	});
-	onMounted(() => {
-		console.log(props.story);
-	});
+	onMounted(() => {});
 </script>
 <template>
 	<NuxtLink
