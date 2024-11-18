@@ -63,7 +63,7 @@
 						class="skeleton h-[500px] w-full hidden lg:block"></div>
 				</div>
 			</template>
-			<div>
+			<template #default>
 				<div
 					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] justify-items-center gap-[2rem]">
 					<TemplatesStoryCard
@@ -79,7 +79,7 @@
 						Ältere Story laden
 					</button>
 				</div>
-			</div>
+			</template>
 		</ClientOnly>
 	</article>
 </template>
