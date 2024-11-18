@@ -4,6 +4,7 @@
 		<div>homepage</div>
 		<FewArticles />
 		<Donate class="mb-[5rem]" />
-		<Newsletter />
+		<Milestones />
+		<Newsletter class="my-[5rem]" />
 	</div>
 </template>
