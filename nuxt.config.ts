@@ -23,6 +23,9 @@ export default defineNuxtConfig({
   image: {
     storyblok: {
       baseURL: 'https://a.storyblok.com'
+    },
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dxizsaymj/image/upload/'
     }
   }
 })
