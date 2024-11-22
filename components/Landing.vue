@@ -1,9 +1,8 @@
 <script setup>
-	const { $gsap } = useNuxtApp();
 	const gallery = ref(0);
 	let galleryInterval;
 
-	function handleHover() {
+	/* function handleHover() {
 		clearInterval(galleryInterval);
 	}
 
@@ -15,7 +14,7 @@
 				gallery.value = 0;
 			}
 		}, 3000);
-	}
+	} */
 
 	onMounted(() => {
 		galleryInterval = setInterval(() => {
@@ -38,24 +37,18 @@
 				provider="cloudinary"
 				format="avif"
 				preload
-				@mouseover="handleHover"
-				@mouseleave="handleLeave"
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083483/IMG_3554_kvdd4f.jpg"
 				class="landing0 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 0 }" />
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
-				@mouseover="handleHover"
-				@mouseleave="handleLeave"
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083487/IMG_3529_y4dlkz.jpg"
 				class="landing1 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 1 }" />
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
-				@mouseover="handleHover"
-				@mouseleave="handleLeave"
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083454/IMG_3611_d9sqye.jpg"
 				class="landing2 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 2 }" />

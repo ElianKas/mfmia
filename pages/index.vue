@@ -52,6 +52,7 @@
 		<FewArticles />
 		<Donate class="mb-[5rem]" />
 		<Milestones />
+		<ProjectCarousel />
 		<Newsletter class="my-[5rem]" />
 	</div>
 </template>
