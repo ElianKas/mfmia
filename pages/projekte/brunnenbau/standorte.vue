@@ -114,6 +114,11 @@
 					title: 'Motivation',
 					subtitle: 'Deshalb bauen wir Brunnen',
 				},
+				{
+					link: 'link2',
+					title: 'Motivation',
+					subtitle: 'Deshalb bauen wir Brunnen',
+				},
 			]" />
 	</div>
 </template>
