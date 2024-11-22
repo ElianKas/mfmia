@@ -20,7 +20,7 @@
 					<NuxtLink
 						to="/projekte/brunnenbau"
 						class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
-						<div class="text-white font-bold">Andere</div>
+						<div class="text-white text-big font-bold">Andere</div>
 						<div>
 							<SvgsNavigationDoubleArrowWhite
 								class="w-[20px] h-auto" />
