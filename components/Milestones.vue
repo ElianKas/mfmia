@@ -183,7 +183,11 @@
 		</template>
 		<article
 			v-if="sortedData"
-			class="max-w-[--max-width] m-auto">
+			class="max-w-[--max-width] m-auto relative">
+			<!--  -->
+			<div
+				class="absolute left-0 h-full w-[300px] bg-gradient-to-r from-white to-[#000]"></div>
+			<!--  -->
 			<div class="flex w-full overflow-hidden">
 				<div
 					class="milestoneBox1 px-[1rem]"
