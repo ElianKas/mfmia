@@ -186,7 +186,9 @@
 			class="max-w-[--max-width] m-auto relative">
 			<!--  -->
 			<div
-				class="absolute left-0 h-full w-[300px] bg-gradient-to-r from-white to-[#000]"></div>
+				class="absolute left-0 h-full w-[120px] bg-gradient-to-r from-white to-transparent z-[99]"></div>
+			<div
+				class="absolute right-0 h-full w-[120px] bg-gradient-to-l from-white to-transparent z-[99]"></div>
 			<!--  -->
 			<div class="flex w-full overflow-hidden">
 				<div
