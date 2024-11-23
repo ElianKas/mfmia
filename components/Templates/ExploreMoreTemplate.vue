@@ -8,8 +8,8 @@
 </script>
 <template>
 	<aside
-		class="px-[1rem] md:px-[3rem] md:flex md:gap-[4rem] my-[6rem] lg:mt-[10rem] font-bold m-auto max-w-[1800px]">
-		<div class="text-center mb-[4rem]">
+		class="px-[1rem] md:px-[3rem] md:flex md:gap-[8rem] my-[6rem] lg:mt-[10rem] font-bold m-auto max-w-[1800px]">
+		<div class="text-center mb-[4rem] self-center">
 			<h2 class="text-big text-green">{{ page.title }}</h2>
 			<p class="text-green">Du willst mehr wissen?</p>
 			<br />
