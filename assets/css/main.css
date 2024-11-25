@@ -12,11 +12,3 @@
     color: #363636;
     font-size: 18px;
 }
-
-@media screen and (max-width: 1535px) {
-
-    .subtitle {
-        font-size: 32px;
-    }
-    
-}

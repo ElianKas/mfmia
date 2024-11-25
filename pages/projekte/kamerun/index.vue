@@ -114,5 +114,56 @@
 		<TemplatesExploreMoreTemplate :page="{ title: 'Kamerun' }">
 			<LinkCardsKamerunInfrastruktur />
 		</TemplatesExploreMoreTemplate>
+		<aside class="max-w-[--max-width] m-auto px-[1rem] mb-[5rem]">
+			<h2 class="font-bold">Weiterführende Links</h2>
+			<div class="h-[1px] border-b"></div>
+			<br />
+			<p class="font-bold">
+				Bundesministerium für wirtschaftliche Zusammenarbeit und
+				Entwicklung
+				<br />
+				<NuxtLink
+					class="text-orange font-normal"
+					to="https://www.bmz.de/de/laender/kamerun"
+					target="_blank"
+					><u>https://www.bmz.de/de/laender/kamerun</u></NuxtLink
+				>
+			</p>
+			<br />
+			<br />
+			<p class="font-bold">
+				Zusammenarbeit mit der Deutschen Gesellschaft für
+				Internationale Zusammenarbeit (GIZ)
+				<br />
+				<span class="font-normal">Kamerun</span>
+				<br />
+				<NuxtLink
+					class="text-orange font-normal"
+					to="https://www.giz.de/de/weltweit/345.html"
+					target="_blank"
+					><u>https://www.giz.de/de/weltweit/345.html</u></NuxtLink
+				>
+			</p>
+			<br />
+			<br />
+			<p class="font-bold">
+				afrika-junior.de
+				<br />
+				<span class="font-normal"
+					>Einblicke für Jugendliche - sicheres Surfen für Kinder von
+					6 - 12 Jahren</span
+				>
+				<br />
+				<NuxtLink
+					class="text-orange font-normal"
+					to="https://www.afrika-junior.de/inhalt/kontinent/kamerun/schulen-und-bildung.html"
+					target="_blank"
+					><u
+						>https://www.afrika-junior.de/inhalt/kontinent/kamerun/schulen-und-bildung.html</u
+					></NuxtLink
+				>
+			</p>
+			<br />
+		</aside>
 	</div>
 </template>
