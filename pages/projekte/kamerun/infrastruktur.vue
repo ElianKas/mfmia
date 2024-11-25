@@ -136,5 +136,9 @@
 					class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[60%] m-auto"></div>
 			</div>
 		</article>
+		<TemplatesExploreMoreTemplate
+			:page="{ title: 'Kamerun', link: '/projekte/kamerun' }">
+			<LinkCardsKamerun />
+		</TemplatesExploreMoreTemplate>
 	</div>
 </template>
