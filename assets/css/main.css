@@ -13,17 +13,6 @@
     font-size: 18px;
 }
 
-h1 {
-    color: #019875;
-    font-weight: bold;
-}
-
-.subtitle {
-    color: #EB6A0A;
-    font-weight: bold;
-    font-size: 42px;
-}
-
 @media screen and (max-width: 1535px) {
 
     .subtitle {
