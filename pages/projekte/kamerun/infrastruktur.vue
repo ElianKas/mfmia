@@ -1,1 +1,9 @@
-<template><div>infrastruktur</div></template>
+<template>
+	<div>
+		<article>
+			<TemplatesFirstParagraphProjects>
+				<SvgsIconsKamerunInfrastruktur />
+			</TemplatesFirstParagraphProjects>
+		</article>
+	</div>
+</template>
