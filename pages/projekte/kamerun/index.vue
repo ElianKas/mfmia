@@ -11,15 +11,14 @@
 				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem]">
-				<p
-					class="max-w-[--max-width] m-auto text-highlight mt-[5rem] md:mt-[10rem]">
+				<TemplatesParagraphsHighlighted>
 					Kamerun ist wunderschön. Das Land gilt als Afrika im
 					Kleinformat. Tatsächlich findet man dort alle für den
 					afrikanischen Kontinent typischen Landschaftsformen: der
 					Norden ist wüstenartig und sehr trocken. Durch den Süden
 					fließen große Flüsse, das Land ist grün. Im Westen und im
 					Südosten gibt es sogar tropischen Regenwald.
-				</p>
+				</TemplatesParagraphsHighlighted>
 				<div
 					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
 					<div

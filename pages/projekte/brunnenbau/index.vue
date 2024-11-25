@@ -11,6 +11,66 @@
 					<SvgsIconsBrunnenbau />
 				</template>
 			</TemplatesHeroSectionTemplate>
+			<div class="px-[1rem]">
+				<TemplatesParagraphsHighlighted>
+					In ländlichen Regionen Kameruns ist sauberes Wasser eine
+					seltene Ressource. Dabei ist es die Basis für Gesundheit,
+					Bildung und nachhaltige Entwicklung. Verändern Sie mit Ihrer
+					Unterstützung für einen neuen Brunnen das Leben einer ganzen
+					Gemeinde!
+				</TemplatesParagraphsHighlighted>
+				<div
+					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
+					<div
+						class="aspect-[3/4] w-[300px] mb-[-6rem] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[3/4] w-[420px] mb-[-6rem] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[3/4] w-[350px] mt-[-6rem] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[3/4] w-[400px] mb-[-6rem] border rounded-[--border-radius]"></div>
+				</div>
+				<TemplatesParagraphsHighlighted>
+					Ein Brunnen bietet einer Gemeinde die Möglichkeit,
+					Krankheiten wie Typhus und Cholera effektiv vorzubeugen. Er
+					sorgt dafür, dass Kinder Wasser in ihrer Nähe finden. So
+					sparen sie Zeit und können sich besser auf die Schule
+					konzentrieren. Für Frauen eröffnet sich die Chance, mehr
+					Zeit mit ihren Familien zu verbringen und ihre
+					landwirtschaftlichen Tätigkeiten zu erweitern.
+				</TemplatesParagraphsHighlighted>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<div
+							class="flex flex-col justify-center items-start h-full">
+							<SvgsHumansGroup class="h-[100px] w-auto" />
+							<br />
+							<br />
+							<br />
+							<p>
+								Wir stehen nicht allein in diesem Vorhaben. Gemeinsam
+								mit unserer Partnerorganisation ANDES stellen wir
+								sicher, dass jeder neu gebaute Brunnen eine
+								nachhaltige Ressource für die Dorfgemeinschaft ist.
+								Gemeinsam mit den Einwohnern schaffen wir Strukturen,
+								die den Betrieb und die Wartung der Brunnen sichern –
+								für eine Zukunft, in der sauberes Wasser keine
+								Seltenheit mehr ist.
+							</p>
+						</div>
+					</template>
+					<template #right
+						><div
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
+					></template>
+				</TemplatesParagraphsLeftRight>
+				<Donate />
+				<TemplatesExploreMoreTemplate :page="{ title: 'Brunnenbau' }">
+					<LinkCardsBrunnenbauMotivation />
+					<LinkCardsBrunnenbauVorgehen />
+					<LinkCardsBrunnenbauStandorte />
+				</TemplatesExploreMoreTemplate>
+			</div>
 		</article>
 	</div>
 </template>
