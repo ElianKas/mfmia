@@ -1,7 +1,7 @@
 <template>
 	<li>
 		<NuxtLink
-			to="/projekte/brunnenbau/motivation"
+			to="/projekte/brunnenbau/standorte"
 			class="flex gap-[1.5rem]">
 			<div>
 				<SvgsIconsBrunnenbauStandorte />
