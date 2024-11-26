@@ -126,10 +126,10 @@
 				</TemplatesParagraphsLeftRight>
 			</div>
 		</article>
-		<Donate />
-		<TemplatesExploreMoreTemplate :page="{ title: 'Kamerun' }">
+		<LazyDonate />
+		<LazyTemplatesExploreMoreTemplate :page="{ title: 'Kamerun' }">
 			<LinkCardsKamerunInfrastruktur />
-		</TemplatesExploreMoreTemplate>
+		</LazyTemplatesExploreMoreTemplate>
 		<aside class="max-w-[--max-width] m-auto px-[1rem] mb-[5rem]">
 			<h2 class="font-bold">Weiterführende Links</h2>
 			<div class="h-[1px] border-b"></div>

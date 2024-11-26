@@ -64,12 +64,13 @@
 							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
 					></template>
 				</TemplatesParagraphsLeftRight>
-				<Donate />
-				<TemplatesExploreMoreTemplate :page="{ title: 'Brunnenbau' }">
+				<LazyDonate />
+				<LazyTemplatesExploreMoreTemplate
+					:page="{ title: 'Brunnenbau' }">
 					<LinkCardsBrunnenbauMotivation />
 					<LinkCardsBrunnenbauVorgehen />
 					<LinkCardsBrunnenbauStandorte />
-				</TemplatesExploreMoreTemplate>
+				</LazyTemplatesExploreMoreTemplate>
 			</div>
 		</article>
 	</div>
