@@ -10,7 +10,7 @@
 					<SvgsIconsKamerun />
 				</template>
 			</TemplatesHeroSectionTemplate>
-			<div class="px-[1rem]">
+			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
 					Kamerun ist wunderschön. Das Land gilt als Afrika im
 					Kleinformat. Tatsächlich findet man dort alle für den

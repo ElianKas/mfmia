@@ -11,7 +11,7 @@
 					<SvgsIconsBrunnenbau />
 				</template>
 			</TemplatesHeroSectionTemplate>
-			<div class="px-[1rem]">
+			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
 					In ländlichen Regionen Kameruns ist sauberes Wasser eine
 					seltene Ressource. Dabei ist es die Basis für Gesundheit,
