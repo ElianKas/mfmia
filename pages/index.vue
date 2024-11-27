@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
 	<div>
 		<Landing />
@@ -49,10 +48,10 @@
 				</div>
 			</NuxtLink>
 		</nav>
-		<FewArticles />
-		<Donate class="mb-[5rem]" />
-		<Milestones />
-		<ProjectCarousel />
-		<Newsletter class="my-[5rem]" />
+		<LazyFewArticles />
+		<LazyDonate class="mb-[5rem]" />
+		<LazyMilestones />
+		<LazyProjectCarousel />
+		<LazyNewsletter class="my-[5rem]" />
 	</div>
 </template>

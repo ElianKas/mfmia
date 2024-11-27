@@ -20,7 +20,10 @@
 			<br />
 			<Carousel
 				:items-to-show="1"
-				:breakpoints="{ 768: { itemsToShow: 3 } }"
+				:breakpoints="{
+					768: { itemsToShow: 2 },
+					1280: { itemsToShow: 3 },
+				}"
 				v-model="currentValue"
 				:wrap-around="true">
 				<Slide

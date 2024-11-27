@@ -119,7 +119,7 @@
 				</div>
 			</nav>
 		</section>
-		<Milestones />
-		<Newsletter class="my-[5rem] md:my-[8rem]" />
+		<LazyMilestones />
+		<LazyNewsletter class="my-[5rem] md:my-[8rem]" />
 	</article>
 </template>

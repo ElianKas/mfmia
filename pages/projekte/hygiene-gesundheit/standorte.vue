@@ -9,19 +9,22 @@
 <template>
 	<div>
 		<TemplatesFirstParagraphProjects>
-			<template #logo><SvgsIconsBrunnenbauStandorte /></template>
+			<template #logo><SvgsIconsHygieneStandorte /></template>
 			<template #title>Standorte</template>
-			<template #subtitle>Wo wir Brunnen bauen</template>
+			<template #subtitle
+				>Wo der Verein Toilettenhäuser baut
+			</template>
 			<template #description
-				>Wir bauen Brunnen in ländlichen Regionen Kameruns,
-				insbesondere in der Region um Obala herum. Der Ort Obala liegt
-				etwa 50 km nördlich von Yaoundé, der Hauptstadt Kameruns.
+				>Wir bauen Toilettenhäuser in ländlichen Regionen Kameruns,
+				insbesondere in der Region Leng-Tombo. Der Ort Leng-Tombo
+				liegt etwa 150 km östlich von Yaoundé, der Hauptstadt
+				Kameruns.
 				<br />
 				<br />
-				Weitere Brunnen werden wir in der Region Leng-Tombo, ca. 150
-				km östlich von Yaoundé, bauen, wo wir auch Toilettenhäuser
-				errichten und eine Schule unterstützen.</template
-			>
+				Weitere Toilettenhäuser werden wir im Gebiet Obala, ca. 50 km
+				nördlich von Yaoundé, bauen, wo wir auch Brunnen errichten und
+				eine Schule unterstützen.
+			</template>
 			<template #image><MapsMap :data="data" /></template>
 		</TemplatesFirstParagraphProjects>
 		<section
