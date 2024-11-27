@@ -20,7 +20,7 @@
 					<SvgsIconsBrunnenbauMotivation />
 				</template>
 			</TemplatesFirstParagraphProjects>
-			<div class="px-[1rem]">
+			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
 					<template #left>
 						<div class="h-full flex flex-col justify-center">
