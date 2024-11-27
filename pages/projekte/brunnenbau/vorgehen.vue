@@ -15,7 +15,7 @@
 					Familien, die sich von der eigenen Landwirtschaft ernähren.
 				</template>
 				<template #logo>
-					<SvgsIconsBrunnenbauVorgehen />
+					<SvgsIconsBrunnenbauVorgehen class="shrink-0" />
 				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">

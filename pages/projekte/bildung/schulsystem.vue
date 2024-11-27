@@ -2,7 +2,6 @@
 	<div>
 		<article>
 			<TemplatesFirstParagraphProjects>
-				<template #logo> <SvgsIconsBildungSchulsystem /></template>
 				<template #title>Schulsystem</template>
 				<template #subtitle>Bildungssystem in Kamerun </template>
 				<template #description
@@ -14,6 +13,9 @@
 					Kamerun aber nicht. Der Anteil der Analphabeten liegt noch
 					über 25 Prozent.
 				</template>
+				<template #logo>
+					<SvgsIconsBildungSchulsystem class="shrink-0"
+				/></template>
 				<template #image> </template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">

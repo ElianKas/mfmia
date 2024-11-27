@@ -19,7 +19,7 @@ export default {
 			sm: '12px',
 			base: '18px',
 			highlight: '32px',
-			big: '42px',
+			big: '32px',
 		},
 		extend: {},
 	},

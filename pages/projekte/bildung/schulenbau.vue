@@ -2,7 +2,9 @@
 	<div>
 		<article>
 			<TemplatesFirstParagraphProjects>
-				<template #logo> <SvgsIconsBildungSchulenbau /></template>
+				<template #logo>
+					<SvgsIconsBildungSchulenbau class="shrink-0"
+				/></template>
 				<template #title>Schulenbau</template>
 				<template #subtitle>Unsere Schulprojekte </template>
 				<template #description

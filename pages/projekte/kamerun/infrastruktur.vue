@@ -16,7 +16,7 @@
 					oder Märkten.
 				</template>
 				<template #logo>
-					<SvgsIconsKamerunInfrastruktur />
+					<SvgsIconsKamerunInfrastruktur class="shrink-0" />
 				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">

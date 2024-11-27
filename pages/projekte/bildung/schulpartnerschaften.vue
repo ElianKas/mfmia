@@ -3,7 +3,7 @@
 		<article>
 			<TemplatesFirstParagraphProjects>
 				<template #logo>
-					<SvgsIconsBildungSchulpartnerschaften
+					<SvgsIconsBildungSchulpartnerschaften class="shrink-0"
 				/></template>
 				<template #title>Schulpartnerschaften</template>
 				<template #subtitle

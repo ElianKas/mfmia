@@ -3,7 +3,7 @@
 		<article>
 			<TemplatesFirstParagraphProjects>
 				<template #logo>
-					<SvgsIconsBildungHerausforderungen
+					<SvgsIconsBildungHerausforderungen class="shrink-0"
 				/></template>
 				<template #title>Herausforderungen</template>
 				<template #subtitle>Was den Schulbesuch erschwert </template>

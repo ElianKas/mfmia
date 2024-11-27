@@ -2,7 +2,9 @@
 	<div>
 		<article>
 			<TemplatesFirstParagraphProjects>
-				<template #logo> <SvgsIconsBildungPatenschaften /></template>
+				<template #logo>
+					<SvgsIconsBildungPatenschaften class="shrink-0"
+				/></template>
 				<template #title>Patenschaften</template>
 				<template #subtitle>Durch Bildung Zukunft schenken </template>
 				<template #description

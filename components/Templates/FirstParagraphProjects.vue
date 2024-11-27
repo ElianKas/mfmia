@@ -9,7 +9,7 @@
 					<h1 class="font-bold text-green">
 						<slot name="title"></slot>
 					</h1>
-					<p class="text-big text-orange font-bold">
+					<p class="text-big text-orange font-bold break-words">
 						<slot name="subtitle"></slot>
 					</p>
 				</div>

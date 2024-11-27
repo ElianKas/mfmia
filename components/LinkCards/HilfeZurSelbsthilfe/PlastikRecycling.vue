@@ -7,7 +7,7 @@
 				<SvgsIconsHilfeZurSelbsthilfePlastikRecycling />
 			</div>
 			<div class="w-[220px]">
-				<h3 class="text-green font-bold">Solar Light</h3>
+				<h3 class="text-green font-bold">Plastik Recycling</h3>
 				<p class="font-normal">
 					Nachhaltigkeit und Wirtschaftswachstum
 				</p>
