@@ -1,5 +1,17 @@
 <script setup>
 	const currentValue = ref(0);
+	const projects = [
+		{ title: 'Bildung', link: '/projekte/bildung' },
+		{ title: 'Brunnenbau', link: '/projekte/brunnenbau' },
+		{
+			title: 'Hygiene & Gesundheit',
+			link: '/projekte/hygiene-gesundheit',
+		},
+		{
+			title: 'Hilfe zur Selbsthilfe',
+			link: '/projekte/hilfe-zur-selbsthilfe',
+		},
+	];
 </script>
 <template>
 	<ClientOnly>
@@ -28,7 +40,7 @@
 				:wrap-around="true">
 				<Slide
 					class="px-[1rem] md:px-[2rem]"
-					v-for="(slide, index) in 5">
+					v-for="(slide, index) in projects">
 					<div
 						class="bg-[#000] w-full md:w-[500px] aspect-square flex items-end rounded-[--border-radius] cursor-pointer"
 						@click="
@@ -37,9 +49,11 @@
 							}
 						">
 						<NuxtLink
-							to="/projekte/brunnenbau"
+							:to="slide.link"
 							class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
-							<div class="text-white text-big font-bold">Andere</div>
+							<div class="text-white text-big font-bold">
+								{{ slide.title }}
+							</div>
 							<div>
 								<SvgsNavigationDoubleArrowWhite
 									class="w-[20px] h-auto" />
