@@ -1,1 +1,80 @@
-<template><div>schulpartnerschaften</div></template>
+<template>
+	<div>
+		<article>
+			<TemplatesFirstParagraphProjects>
+				<template #logo>
+					<SvgsIconsBildungSchulpartnerschaften
+				/></template>
+				<template #title>Schulpartnerschaften</template>
+				<template #subtitle
+					>Austausch zwischen Schulen fördern
+				</template>
+				<template #description
+					>Um langanhaltende Unterstützung für Schulen zu
+					gewährleisten, haben wir die Initiative ergriffen,
+					Partnerschaften zwischen Schulen in der Region Kassel und in
+					Kamerun zu fördern. Bislang konnten bereits zwei
+					Partnerschaften realisiert werden: Zwischen der Reformschule
+					Kassel und der öffentlichen Schule Nkometou III nördlich von
+					Yaoundé sowie zwischen der Grundschule Ahnatal/Heckershausen
+					und der katholischen Grundschule Saint-Jean-Baptiste in
+					Leng-Tombo.
+				</template>
+				<template #image> </template>
+			</TemplatesFirstParagraphProjects>
+			<div class="px-[1rem] md:px-[3rem]">
+				<TemplatesParagraphsHighlighted>
+					Das Ziel dieser Partnerschaften ist es, einen direkten
+					Austausch zwischen den Schulgemeinschaften zu ermöglichen,
+					der es ihnen erlaubt, in die unterschiedlichen Lebenswelten
+					und Kulturen einzutauchen. Es soll ein Raum für die
+					Entwicklung von gegenseitigem Verständnis und Empathie unter
+					allen Beteiligten – Schülerkindern, Lehrerkräften und Eltern
+					– geschaffen werden. Gemeinsam möchten wir das Bewusstsein
+					für Weltoffenheit und Toleranz stärken und die Ziele der
+					Vereinten Nationen für eine nachhaltige Entwicklung
+					unterstützen, um so globales Denken und Lernen zu fördern.
+				</TemplatesParagraphsHighlighted>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<p>
+							Die Schulen haben auch die Möglichkeit, Spenden für die
+							Bedürfnisse ihrer Partner-Schulen in Kamerun zu sammeln,
+							wodurch sie unmittelbar die Auswirkungen ihres
+							Engagements sehen können. Wir übernehmen die Abwicklung
+							der Überweisungen und die Überprüfung der Belege.
+							<br /><br />
+							Inzwischen gab es schon viele schöne Bilder und kurze
+							Videos, die per WhatsApp zwischen Deutschland und
+							Kamerun ausgetauscht wurden und spannende Einblicke in
+							den Schulalltag ermöglichten. Und es werden an den
+							Kameruner Schulen konkrete Verbesserungen möglich, die
+							ohne die Schulgemeinschaften in Kassel nicht zustande
+							gekommen wären!
+						</p>
+					</template>
+					<template #right>
+						<div
+							class="flex flex-col md:flex-row gap-[2rem] items-center h-full">
+							<div class="h-full w-full">
+								<div
+									class="border rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]"></div>
+								<div
+									class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+							</div>
+							<div
+								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+						</div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+			</div>
+		</article>
+		<LazyTemplatesExploreMoreTemplate
+			:page="{ title: 'Bildung', link: '/projekte/bildung' }">
+			<LinkCardsBildungHerausforderungen />
+			<LinkCardsBildungSchulsystem />
+			<LinkCardsBildungSchulpartnerschaften />
+			<LinkCardsBildungSchulenbau />
+		</LazyTemplatesExploreMoreTemplate>
+	</div>
+</template>
