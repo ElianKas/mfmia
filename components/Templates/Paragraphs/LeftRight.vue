@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="flex flex-col md:flex-row gap-[2rem] xl:gap-[10rem] max-w-[--max-width] m-auto py-[5rem]">
+		class="flex flex-col md:flex-row gap-[2rem] xl:gap-[10rem] max-w-[--max-width] m-auto py-[2rem]">
 		<div class="md:w-[50%]">
 			<slot name="left"></slot>
 		</div>
