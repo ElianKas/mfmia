@@ -4,6 +4,7 @@
 
 :root {
     --max-width: 1200px;
+    --max-width-big: 1800px;
     --border-radius: 10px;
 }
 
