@@ -73,7 +73,7 @@
 			:page="{ title: 'Bildung', link: '/projekte/bildung' }">
 			<LinkCardsBildungHerausforderungen />
 			<LinkCardsBildungSchulsystem />
-			<LinkCardsBildungSchulpartnerschaften />
+			<LinkCardsBildungPatenschaften />
 			<LinkCardsBildungSchulenbau />
 		</LazyTemplatesExploreMoreTemplate>
 	</div>
