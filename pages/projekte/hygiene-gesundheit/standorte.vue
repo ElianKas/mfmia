@@ -5,33 +5,27 @@
 		starts_with: 'projekte/hygiene-gesundheit',
 		is_startpage: false,
 	});
-	onMounted(() => {});
 </script>
 <template>
-	<div class="max-w-[--max-width] m-auto">
+	<div>
+		<TemplatesFirstParagraphProjects>
+			<template #logo><SvgsIconsBrunnenbauStandorte /></template>
+			<template #title>Standorte</template>
+			<template #subtitle>Wo wir Brunnen bauen</template>
+			<template #description
+				>Wir bauen Brunnen in ländlichen Regionen Kameruns,
+				insbesondere in der Region um Obala herum. Der Ort Obala liegt
+				etwa 50 km nördlich von Yaoundé, der Hauptstadt Kameruns.
+				<br />
+				<br />
+				Weitere Brunnen werden wir in der Region Leng-Tombo, ca. 150
+				km östlich von Yaoundé, bauen, wo wir auch Toilettenhäuser
+				errichten und eine Schule unterstützen.</template
+			>
+			<template #image><MapsMap :data="data" /></template>
+		</TemplatesFirstParagraphProjects>
 		<section
-			class="min-h-[calc(100vh-80px)] flex flex-col md:flex-row md:items-center gap-[5rem] md:px-[3rem]">
-			<div
-				class="mt-[100px] flex flex-col gap-[2rem] max-md:px-[3rem] md:w-[50%]">
-				<div class="flex flex-col gap-[2rem]">
-					<div>logo</div>
-					<div>
-						<h1>titel</h1>
-						<p class="subtitle">untertitel</p>
-					</div>
-				</div>
-				<div>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Velit accusamus, optio ab sapiente molestiae repellat ex
-					maxime nostrum consectetur exercitationem cum sint obcaecati
-					vero ipsa numquam corporis harum facilis sit.
-				</div>
-			</div>
-			<div class="md:w-[50%]">
-				<MapsBrunnenbauMap :data="data" />
-			</div>
-		</section>
-		<section class="px-[3rem] mt-[3rem]">
+			class="px-[1rem] md:px-[3rem] mt-[3rem] max-w-[--max-width-big] m-auto">
 			<div
 				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange">
 				<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
@@ -86,28 +80,12 @@
 				</div>
 			</ClientOnly>
 		</section>
-		<TemplatesExploreMoreTemplate
-			:page="`Toilettenbau`"
-			:content="[
-				{
-					link: 'link1',
-					title: 'Toilettenhäuser',
-					subtitle: 'Deshalb bauen wir Toilettenhäuser',
-				},
-				{
-					link: 'link2',
-					title: 'Vorgehen',
-					subtitle: 'So gehen wir beim Bau vor',
-				},
-			]" />
-		<TemplatesExploreMoreTemplate
-			:page="`Perioden Power`"
-			:content="[
-				{
-					link: 'link1',
-					title: 'Perioden Power',
-					subtitle: 'Ein wichtiger Schritt für Frauen',
-				},
-			]" />
+		<LazyTemplatesExploreMoreTemplate
+			:page="{
+				title: 'Toilettenhäuser',
+			}">
+			<LinkCardsHygieneToilettenhäuser />
+			<LinkCardsHygieneVorgehen />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>

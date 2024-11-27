@@ -9,7 +9,7 @@
 <template>
 	<aside
 		class="px-[1rem] md:px-[3rem] md:flex md:gap-[8rem] my-[6rem] lg:mt-[10rem] font-bold m-auto max-w-[1800px]">
-		<div class="mb-[4rem] self-center max-w-[290px]">
+		<div class="mb-[2rem] self-center max-w-[290px]">
 			<h2 class="text-big text-green">{{ page.title }}</h2>
 			<br />
 			<p class="text-green">Du willst mehr wissen?</p>
