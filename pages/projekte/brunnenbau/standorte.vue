@@ -5,7 +5,6 @@
 		starts_with: 'projekte/brunnenbau',
 		is_startpage: false,
 	});
-	onMounted(() => {});
 </script>
 <template>
 	<div>

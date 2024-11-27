@@ -68,14 +68,14 @@
 					</template>
 				</TemplatesParagraphsLeftRight>
 			</div>
-			<Donate />
-			<TemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
+			<LazyDonate />
+			<LazyTemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
 				<LinkCardsBildungHerausforderungen />
 				<LinkCardsBildungSchulsystem />
 				<LinkCardsBildungPatenschaften />
 				<LinkCardsBildungSchulpartnerschaften />
 				<LinkCardsBildungSchulenbau />
-			</TemplatesExploreMoreTemplate>
+			</LazyTemplatesExploreMoreTemplate>
 		</article>
 	</div>
 </template>
