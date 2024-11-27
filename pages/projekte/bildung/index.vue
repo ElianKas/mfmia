@@ -1,1 +1,81 @@
-<template><div>bildung</div></template>
+<template>
+	<div>
+		<article>
+			<TemplatesHeroSectionTemplate>
+				<template #title> Bildung </template>
+				<template #description
+					>Die Grundlage schaffen für ein selbstbestimmtes Leben
+				</template>
+				<template #logo>
+					<SvgsIconsBildung />
+				</template>
+			</TemplatesHeroSectionTemplate>
+			<div class="px-[1rem] md:px-[3rem]">
+				<TemplatesParagraphsHighlighted>
+					Bildung vermittelt Grundfertigkeiten wie Lesen, Schreiben
+					und Rechnen. Sie befähigt zum Weiterlernen und fördert
+					problemlösendes Denken. Bildung ist eine zentrale
+					Voraussetzung zur Überwindung von Armut. Und sie ist das
+					Fundament einer Demokratie.
+				</TemplatesParagraphsHighlighted>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<div class="flex items-center justify-end h-full">
+							<div
+								class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+						</div>
+					</template>
+					<template #right>
+						<div
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						Die Agenda 2030 der Vereinten Nationen unterstreicht all
+						dies mit Ziel 4: die Sicherstellung inklusiver,
+						gleichberechtigter und hochwertiger Bildung sowie die
+						Förderung lebenslangen Lernens für alle. <br />
+						<br />
+						<span class="text-highlight">
+							Doch die Realität für viele Kinder in Kamerun sieht
+							anders aus. Sie stehen vor einer Vielzahl von Barrieren,
+							die von fehlendem Geld zur Zahlung von Schulgeld bis zu
+							völlig desolaten Schulgebäuden ohne brauchbare
+							Lehrmaterialien reichen.
+						</span>
+					</template>
+					<template #right>
+						<div
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<div class="flex h-full items-center">
+							Wir engagieren uns gezielt für einzelne Schulen, indem
+							wir Schulgebäude und -toiletten renovieren und für
+							fehlende Lehrmaterialien Spenden sammeln. Wir vermitteln
+							Partnerschaften zwischen deutschen und kamerunischen
+							Schulen. Und wir unterstützen mittellose Kinder und
+							Jugendliche, indem wir mithilfe von Paten in Deutschland
+							einen kontinuierlichen Schulbesuch ermöglichen.
+						</div>
+					</template>
+					<template #right>
+						<div
+							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+			</div>
+			<Donate />
+			<TemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
+				<LinkCardsBildungHerausforderungen />
+				<LinkCardsBildungSchulsystem />
+				<LinkCardsBildungPatenschaften />
+				<LinkCardsBildungSchulpartnerschaften />
+				<LinkCardsBildungSchulenbau />
+			</TemplatesExploreMoreTemplate>
+		</article>
+	</div>
+</template>
