@@ -36,19 +36,20 @@
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
-				preload
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083483/IMG_3554_kvdd4f.jpg"
 				class="landing0 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 0 }" />
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
+				loading="lazy"
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083487/IMG_3529_y4dlkz.jpg"
 				class="landing1 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 1 }" />
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
+				loading="lazy"
 				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083454/IMG_3611_d9sqye.jpg"
 				class="landing2 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 2 }" />
