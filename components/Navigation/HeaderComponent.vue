@@ -12,12 +12,14 @@
 </script>
 <template>
 	<div>
-		<header>
+		<header class="z-[9]">
 			<nav class="relative">
 				<div class="h-[80px]">
 					<div
 						class="h-[70px] max-w-[--max-width-big] flex justify-between items-center px-[1rem] md:px-[3rem]">
-						<SvgsLogo />
+						<NuxtLink to="/">
+							<SvgsLogo />
+						</NuxtLink>
 						<ul
 							class="max-xl:hidden flex gap-[4rem] font-bold h-full">
 							<li
