@@ -18,7 +18,7 @@
 					<div
 						class="h-[70px] max-w-[--max-width-big] flex justify-between items-center px-[1rem] md:px-[3rem]">
 						<NuxtLink to="/">
-							<SvgsLogo />
+							<SvgsLogoSmall />
 						</NuxtLink>
 						<ul
 							class="max-xl:hidden flex gap-[4rem] font-bold h-full">
