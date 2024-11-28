@@ -115,7 +115,7 @@
 								class="w-[200px]">
 								<SvgsLogoSmall />
 							</NuxtLink>
-							<div class="flex items-center h-[70px]">
+							<div class="flex items-center h-[70px] max-xl:hidden">
 								<div
 									class="w-[150px] h-full grid items-center"
 									@mouseover="toggleDesktop('Projekte')">
