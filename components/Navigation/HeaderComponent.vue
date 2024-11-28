@@ -88,7 +88,7 @@
 								class="h-[2px] rounded-full w-full bg-[#000] -rotate-45 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]"></div>
 						</div>
 					</div>
-					<ul class="mobileNavList overflow-scroll">
+					<ul class="mobileNavList overflow-scroll pb-[5rem]">
 						<div class="py-[1rem]">PROJEKTE</div>
 						<div class="pl-[1rem]">
 							<li class="py-[1rem]">Übersicht</li>
@@ -184,8 +184,6 @@
 						</div>
 						<div class="py-[1rem]">KONTAKT</div>
 						<div class="py-[1rem]">JETZT SPENDEN</div>
-						<br />
-						<br />
 					</ul>
 				</div>
 			</nav>
