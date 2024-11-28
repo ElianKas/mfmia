@@ -1,19 +1,39 @@
 <script setup>
 	const gallery = ref(0);
 	let galleryInterval;
+	const img2Src = ref('');
+	const img3Src = ref('');
+	const counter = ref(0);
+
+	function checkState() {
+		if (counter.value === 2) {
+			galleryInterval = setInterval(() => {
+				if (gallery.value < 2) {
+					gallery.value++;
+				} else {
+					gallery.value = 0;
+				}
+			}, 3000);
+		}
+	}
 
 	onMounted(() => {
-		const image2 = document.querySelector(img)[1];
-		const image3 = document.querySelector(img)[2];
-		console.log(image2, image3);
-
-		galleryInterval = setInterval(() => {
-			if (gallery.value < 2) {
-				gallery.value++;
-			} else {
-				gallery.value = 0;
-			}
-		}, 3000);
+		nextTick(() => {
+			const image2 = document.images[1];
+			const image3 = document.images[2];
+			img2Src.value =
+				'https://res.cloudinary.com/dxizsaymj/image/upload/v1731083487/IMG_3529_y4dlkz.jpg';
+			img3Src.value =
+				'https://res.cloudinary.com/dxizsaymj/image/upload/v1731083454/IMG_3611_d9sqye.jpg';
+			image2.onload = () => {
+				counter.value++;
+				checkState();
+			};
+			image3.onload = () => {
+				counter.value++;
+				checkState();
+			};
+		});
 	});
 	onBeforeUnmount(() => {
 		clearInterval(galleryInterval);
@@ -32,15 +52,13 @@
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
-				loading="lazy"
-				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083487/IMG_3529_y4dlkz.jpg"
+				:src="img2Src"
 				class="landing1 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 1 }" />
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
-				loading="lazy"
-				src="https://res.cloudinary.com/dxizsaymj/image/upload/v1731083454/IMG_3611_d9sqye.jpg"
+				:src="img3Src"
 				class="landing2 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]"
 				:class="{ hidden: gallery !== 2 }" />
 		</div>
