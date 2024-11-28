@@ -64,6 +64,20 @@
 							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
 					></template>
 				</TemplatesParagraphsLeftRight>
+				<TemplatesLineUp>
+					<template #1
+						>Mit 12.000 Euro ermöglichen Sie den Bau eines kompletten
+						Brunnens inklusive der Vorbereitungen und Schulungen.
+					</template>
+					<template #2
+						>Mit einer Spende von 380 Euro können wir eine robuste
+						Handpumpe anschaffen.
+					</template>
+					<template #3
+						>Kleinere Beträge summieren sich Tropfen für Tropfen, bis
+						das Wasser fließt.
+					</template>
+				</TemplatesLineUp>
 				<LazyDonate />
 				<LazyTemplatesExploreMoreTemplate
 					:page="{ title: 'Brunnenbau' }">
