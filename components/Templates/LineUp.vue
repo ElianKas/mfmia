@@ -13,14 +13,14 @@
 					<br /><br />
 				</p>
 			</li>
-			<li class="grid grid-cols-[50px_1fr]">
+			<li class="grid grid-cols-[40px_1fr]">
 				<div class="border-l border-green relative">
 					<div
 						class="absolute top-0 left-[-5px] w-[10px] aspect-square bg-green rounded-full"></div>
 				</div>
 				<p><slot name="2"></slot><br /><br /></p>
 			</li>
-			<li class="grid grid-cols-[50px_1fr]">
+			<li class="grid grid-cols-[40px_1fr]">
 				<div class="relative">
 					<div
 						class="absolute top-0 left-[-5px] w-[10px] aspect-square bg-green rounded-full"></div>

@@ -67,6 +67,19 @@
 							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
 					</template>
 				</TemplatesParagraphsLeftRight>
+				<TemplatesLineUp>
+					<template #1
+						>Mit ca. 6.000 € kann ein Toilettenhaus an einer Schule
+						gebaut werden.
+					</template>
+					<template #2
+						>Der Schulbesuch eines Kindes wird schon mit 35 € pro
+						Monat ermöglicht.
+					</template>
+					<template #3
+						>Kleinere Beträge helfen für Schul- & Lehrmaterialien.
+					</template>
+				</TemplatesLineUp>
 			</div>
 			<LazyDonate />
 			<LazyTemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">

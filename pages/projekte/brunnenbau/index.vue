@@ -78,14 +78,14 @@
 						das Wasser fließt.
 					</template>
 				</TemplatesLineUp>
-				<LazyDonate />
-				<LazyTemplatesExploreMoreTemplate
-					:page="{ title: 'Brunnenbau' }">
-					<LinkCardsBrunnenbauMotivation />
-					<LinkCardsBrunnenbauVorgehen />
-					<LinkCardsBrunnenbauStandorte />
-				</LazyTemplatesExploreMoreTemplate>
 			</div>
+			<LazyDonate />
+			<LazyTemplatesExploreMoreTemplate
+				:page="{ title: 'Brunnenbau' }">
+				<LinkCardsBrunnenbauMotivation />
+				<LinkCardsBrunnenbauVorgehen />
+				<LinkCardsBrunnenbauStandorte />
+			</LazyTemplatesExploreMoreTemplate>
 		</article>
 	</div>
 </template>
