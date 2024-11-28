@@ -1,9 +1,71 @@
 <script setup>
 	const activeDesktop = ref(false);
 	const activeMobile = ref(false);
+	const currentFolder = ref(null);
 
-	function active(isActive, page) {
-		activeDesktop.value = isActive;
+	const routes = [
+		{
+			name: 'Projekte',
+			pages: [
+				{
+					name: 'Bildung',
+					pages: [
+						'Übersicht',
+						'Herausforderungen',
+						'Schulsystem',
+						'Patenschaften',
+						'Schulpartnerschaften',
+						'Schulenbau',
+					],
+				},
+				{
+					name: 'Brunnenbau',
+					pages: ['Übersicht', 'Motivation', 'Vorgehen', 'Standorte'],
+				},
+				{
+					name: 'Hilfe zur Selbsthilfe',
+					pages: [
+						'Übersicht',
+						'Solar Light',
+						'Plastik Recycling',
+						'Plantagen',
+					],
+				},
+				{
+					name: 'Hygiene & Gesundheit',
+					pages: [
+						'Übersicht',
+						'Toilettenhäuser',
+						'Vorgehen',
+						'Standorte',
+					],
+				},
+				{
+					name: 'Kamerun',
+					pages: ['Übersicht', 'Infrastruktur'],
+				},
+			],
+		},
+		{
+			name: 'Storys',
+			pages: [
+				{
+					name: 'Übersicht',
+					pages: [],
+				},
+			],
+		},
+	];
+
+	function toggleDesktop(page) {
+		activeDesktop.value = !activeDesktop.value;
+
+		if (page) {
+			currentFolder.value = routes.find(
+				(route) => route.name === page
+			);
+			console.log(currentFolder.value);
+		}
 	}
 
 	function toggleMobile() {
@@ -16,35 +78,67 @@
 			<nav class="relative">
 				<div class="h-[80px]">
 					<div
-						class="h-[70px] max-w-[--max-width-big] flex justify-between items-center px-[1rem] md:px-[3rem]">
+						class="h-[70px] max-w-[--max-width-big] m-auto flex justify-between items-center px-[1rem] md:px-[3rem] transition-all duration-300">
 						<NuxtLink to="/">
 							<SvgsLogoSmall />
 						</NuxtLink>
-						<ul
-							class="max-xl:hidden flex gap-[4rem] font-bold h-full">
-							<li
-								@mouseover="active(true)"
-								@mouseleave="active(false)"
-								class="group h-full grid place-items-center cursor-pointer">
-								Projekte
-							</li>
-							<li
-								class="h-full grid place-items-center cursor-pointer">
-								Storys
-							</li>
-							<li
-								class="h-full grid place-items-center cursor-pointer">
-								Unser Verein
-							</li>
-							<li
-								class="h-full grid place-items-center cursor-pointer">
-								News
-							</li>
-							<li
-								class="h-full grid place-items-center cursor-pointer">
-								Kontakt
-							</li>
-						</ul>
+						<div
+							class="max-xl:hidden w-[700px] font-bold bg-white absolute top-0 left-[50%] translate-x-[-50%] overflow-hidden"
+							:style="{ height: activeDesktop ? '500px' : '70px' }">
+							<div class="grid grid-cols-5 items-center h-[70px]">
+								<div class="flex flex-col gap-[5rem]">
+									<div
+										@mouseover="toggleDesktop('Projekte')"
+										@mouseleave="toggleDesktop()">
+										Projekte
+									</div>
+								</div>
+								<div class="flex flex-col gap-[5rem]">
+									<div
+										@mouseover="toggleDesktop('Storys')"
+										@mouseleave="toggleDesktop()">
+										Storys
+									</div>
+								</div>
+								<div class="flex flex-col gap-[5rem]">
+									<div
+										@mouseover="toggleDesktop('Unser Verein')"
+										@mouseleave="toggleDesktop()">
+										Unser Verein
+									</div>
+								</div>
+								<div class="flex flex-col gap-[5rem]">
+									<div
+										@mouseover="toggleDesktop('News')"
+										@mouseleave="toggleDesktop()">
+										News
+									</div>
+								</div>
+								<div class="flex flex-col gap-[5rem]">
+									<div
+										@mouseover="toggleDesktop('Kontakt')"
+										@mouseleave="toggleDesktop()">
+										Kontakt
+									</div>
+								</div>
+							</div>
+							<div class="grid grid-cols-5 h-full">
+								<div
+									v-if="currentFolder"
+									class="col-span-2">
+									{{ currentFolder.name }}
+								</div>
+								<div v-if="currentFolder">
+									{{ currentFolder.name }}
+								</div>
+								<div v-if="currentFolder">
+									{{ currentFolder.name }}
+								</div>
+								<div v-if="currentFolder">
+									{{ currentFolder.name }}
+								</div>
+							</div>
+						</div>
 						<div
 							class="max-xl:hidden font-bold text-orange cursor-pointer">
 							Jetzt spenden
@@ -59,20 +153,6 @@
 						</div>
 					</div>
 					<div class="h-[10px] bg-[#000]"></div>
-				</div>
-				<!-- full menu desktop -->
-				<div
-					class="h-[350px] absolute top-[70px] w-full bg-white"
-					:class="{ hidden: !activeDesktop }"
-					@mouseover="active(true)"
-					@mouseleave="active(false)">
-					<div class="m-auto max-w-[700px] grid grid-cols-5">
-						<div>1</div>
-						<div>1</div>
-						<div>1</div>
-						<div>1</div>
-						<div>1</div>
-					</div>
 				</div>
 				<!-- full menu mobile -->
 				<div
