@@ -2,70 +2,97 @@
 	const activeDesktop = ref(false);
 	const activeMobile = ref(false);
 	const currentFolder = ref(null);
-
-	const routes = [
-		{
-			name: 'Projekte',
-			pages: [
-				{
-					name: 'Bildung',
-					pages: [
-						'Übersicht',
-						'Herausforderungen',
-						'Schulsystem',
-						'Patenschaften',
-						'Schulpartnerschaften',
-						'Schulenbau',
-					],
-				},
-				{
-					name: 'Brunnenbau',
-					pages: ['Übersicht', 'Motivation', 'Vorgehen', 'Standorte'],
-				},
-				{
-					name: 'Hilfe zur Selbsthilfe',
-					pages: [
-						'Übersicht',
-						'Solar Light',
-						'Plastik Recycling',
-						'Plantagen',
-					],
-				},
-				{
-					name: 'Hygiene & Gesundheit',
-					pages: [
-						'Übersicht',
-						'Toilettenhäuser',
-						'Vorgehen',
-						'Standorte',
-					],
-				},
-				{
-					name: 'Kamerun',
-					pages: ['Übersicht', 'Infrastruktur'],
-				},
-			],
-		},
-		{
-			name: 'Storys',
-			pages: [
-				{
-					name: 'Übersicht',
-					pages: [],
-				},
-			],
-		},
-	];
+	const subpageIndex = ref(null);
 
 	function toggleDesktop(page) {
-		activeDesktop.value = !activeDesktop.value;
+		activeDesktop.value = true;
 
-		if (page) {
-			currentFolder.value = routes.find(
-				(route) => route.name === page
-			);
-			console.log(currentFolder.value);
+		if (page === 'Projekte') {
+			currentFolder.value = {
+				name: 'Projekte',
+				items: [
+					{
+						name: 'Bildung',
+						items: [
+							{ name: 'Übersicht' },
+							{ name: 'Herausforderungen' },
+							{ name: 'Schulsystem' },
+							{ name: 'Patenschaften' },
+							{ name: 'Schulpartnerschaften' },
+							{ name: 'Schulenbau' },
+						],
+					},
+					{
+						name: 'Brunnenbau',
+						items: [
+							{ name: 'Übersicht' },
+							{ name: 'Motivation' },
+							{ name: 'Vorgehen' },
+							{ name: 'Standorte' },
+						],
+					},
+					{
+						name: 'Hilfe zur Selbsthilfe',
+						items: [
+							{ name: 'Übersicht' },
+							{ name: 'Solar Light' },
+							{ name: 'Plastik Recycling' },
+							{ name: 'Plantagen' },
+						],
+					},
+					{
+						name: 'Hygiene & Gesundheit',
+						items: [
+							{ name: 'Übersicht' },
+							{ name: 'Toilettenhäuser' },
+							{ name: 'Vorgehen' },
+							{ name: 'Standorte' },
+						],
+					},
+					{
+						name: 'Kamerun',
+						items: [{ name: 'Übersicht' }, { name: 'Infrastruktur' }],
+					},
+				],
+			};
 		}
+		if (page === 'Storys') {
+			currentFolder.value = {
+				name: 'Storys',
+			};
+		}
+		if (page === 'Unser Verein') {
+			currentFolder.value = {
+				name: 'Unser Verein',
+				items: [
+					{ name: 'Der Verein' },
+					{ name: 'Die Geschichte' },
+					{ name: 'Aktiv werden' },
+					{ name: 'Das Team' },
+				],
+			};
+		}
+		if (page === 'News') {
+			currentFolder.value = {
+				name: 'News',
+				items: [
+					{ name: 'Übersicht' },
+					{ name: 'Aktuelles' },
+					{ name: 'Presse' },
+				],
+			};
+		}
+		if (page === 'Kontakt') {
+			currentFolder.value = {
+				name: 'Kontakt',
+			};
+		}
+	}
+
+	function getIndex(index) {
+		subpageIndex.value = index;
+		console.log(subpageIndex.value);
+		console.log(currentFolder.value.items[subpageIndex.value].items);
 	}
 
 	function toggleMobile() {
@@ -78,78 +105,94 @@
 			<nav class="relative">
 				<div class="h-[80px]">
 					<div
-						class="h-[70px] max-w-[--max-width-big] m-auto flex justify-between items-center px-[1rem] md:px-[3rem] transition-all duration-300">
-						<NuxtLink to="/">
-							<SvgsLogoSmall />
-						</NuxtLink>
+						:style="{ height: activeDesktop ? '500px' : '70px' }"
+						:class="{ 'items-center': !activeDesktop }"
+						class="transition-all duration-300 bg-white">
 						<div
-							class="max-xl:hidden w-[700px] font-bold bg-white absolute top-0 left-[50%] translate-x-[-50%] overflow-hidden"
-							:style="{ height: activeDesktop ? '500px' : '70px' }">
-							<div class="grid grid-cols-5 items-center h-[70px]">
-								<div class="flex flex-col gap-[5rem]">
-									<div
-										@mouseover="toggleDesktop('Projekte')"
-										@mouseleave="toggleDesktop()">
-										Projekte
-									</div>
-								</div>
-								<div class="flex flex-col gap-[5rem]">
-									<div
-										@mouseover="toggleDesktop('Storys')"
-										@mouseleave="toggleDesktop()">
-										Storys
-									</div>
-								</div>
-								<div class="flex flex-col gap-[5rem]">
-									<div
-										@mouseover="toggleDesktop('Unser Verein')"
-										@mouseleave="toggleDesktop()">
-										Unser Verein
-									</div>
-								</div>
-								<div class="flex flex-col gap-[5rem]">
-									<div
-										@mouseover="toggleDesktop('News')"
-										@mouseleave="toggleDesktop()">
-										News
-									</div>
-								</div>
-								<div class="flex flex-col gap-[5rem]">
-									<div
-										@mouseover="toggleDesktop('Kontakt')"
-										@mouseleave="toggleDesktop()">
-										Kontakt
-									</div>
-								</div>
-							</div>
-							<div class="grid grid-cols-5 h-full">
+							class="h-[70px] max-w-[--max-width-big] items-center m-auto flex justify-between px-[1rem] md:px-[3rem]">
+							<NuxtLink
+								to="/"
+								class="w-[200px]">
+								<SvgsLogoSmall />
+							</NuxtLink>
+							<div class="flex items-center h-[70px]">
 								<div
-									v-if="currentFolder"
-									class="col-span-2">
-									{{ currentFolder.name }}
+									class="w-[150px] h-full grid items-center"
+									@mouseover="toggleDesktop('Projekte')">
+									Projekte
 								</div>
-								<div v-if="currentFolder">
-									{{ currentFolder.name }}
+								<div
+									class="w-[150px] grid items-center"
+									@mouseover="toggleDesktop('Storys')">
+									Storys
 								</div>
-								<div v-if="currentFolder">
-									{{ currentFolder.name }}
+								<div
+									class="w-[150px] grid items-center"
+									@mouseover="toggleDesktop('Unser Verein')">
+									Unser Verein
 								</div>
-								<div v-if="currentFolder">
-									{{ currentFolder.name }}
+								<div
+									class="w-[150px] grid items-center"
+									@mouseover="toggleDesktop('News')">
+									News
+								</div>
+								<div
+									class="w-[150px] grid items-center"
+									@mouseover="toggleDesktop('Kontakt')">
+									Kontakt
 								</div>
 							</div>
+							<div
+								class="max-xl:hidden font-bold text-orange cursor-pointer w-[200px] text-right">
+								Jetzt spenden
+							</div>
+							<!-- burger icon -->
+							<div
+								class="xl:hidden w-[30px] h-[18px] flex flex-col justify-between cursor-pointer"
+								@click="toggleMobile()">
+								<div class="h-[2px] bg-orange rounded-full"></div>
+								<div class="h-[2px] bg-orange rounded-full"></div>
+								<div class="h-[2px] bg-orange rounded-full"></div>
+							</div>
 						</div>
+						<!-- collapse content -->
 						<div
-							class="max-xl:hidden font-bold text-orange cursor-pointer">
-							Jetzt spenden
-						</div>
-						<!-- burger icon -->
-						<div
-							class="xl:hidden w-[30px] h-[18px] flex flex-col justify-between cursor-pointer"
-							@click="toggleMobile()">
-							<div class="h-[2px] bg-orange rounded-full"></div>
-							<div class="h-[2px] bg-orange rounded-full"></div>
-							<div class="h-[2px] bg-orange rounded-full"></div>
+							v-if="activeDesktop"
+							class="h-full"
+							@mouseleave="
+								() => {
+									activeDesktop = false;
+									subpageIndex = null;
+								}
+							">
+							<div class="flex m-auto border items-center w-[750px]">
+								<div class="w-[250px]">
+									<div v-if="currentFolder && currentFolder.name">
+										{{ currentFolder.name }}
+									</div>
+								</div>
+								<div class="w-[250px]">
+									<div
+										v-if="currentFolder && currentFolder.items"
+										v-for="(page, index) in currentFolder.items"
+										@mouseover="getIndex(index)">
+										{{ page.name }}
+									</div>
+								</div>
+								<div class="w-[250px]">
+									<div
+										v-if="
+											subpageIndex !== null &&
+											currentFolder &&
+											currentFolder.items
+										"
+										v-for="subpage in currentFolder.items[
+											subpageIndex
+										].items">
+										{{ subpage.name }}
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="h-[10px] bg-[#000]"></div>
