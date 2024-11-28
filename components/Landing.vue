@@ -2,21 +2,11 @@
 	const gallery = ref(0);
 	let galleryInterval;
 
-	/* function handleHover() {
-		clearInterval(galleryInterval);
-	}
-
-	function handleLeave() {
-		galleryInterval = setInterval(() => {
-			if (gallery.value < 2) {
-				gallery.value++;
-			} else {
-				gallery.value = 0;
-			}
-		}, 3000);
-	} */
-
 	onMounted(() => {
+		const image2 = document.querySelector(img)[1];
+		const image3 = document.querySelector(img)[2];
+		console.log(image2, image3);
+
 		galleryInterval = setInterval(() => {
 			if (gallery.value < 2) {
 				gallery.value++;
