@@ -111,5 +111,6 @@
 				</div>
 			</section>
 		</article>
+		<LazyNewsletter />
 	</div>
 </template>
