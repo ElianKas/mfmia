@@ -1,12 +1,32 @@
 <script setup>
 	const projects = [
 		{
-			title: 'Brunnenbau',
-			link: '/projekte/brunnenbau',
+			title: 'Bildung',
+			link: '/projekte/bildung',
 			subpages: [
 				{
-					title: 'übersicht',
-					link: '/projekte/brunnenbau',
+					title: 'Übersicht',
+					link: '/projekte/bildung',
+				},
+				{
+					title: 'Herausforderungen',
+					link: '/projekte/bildung/herausforderungen',
+				},
+				{
+					title: 'Schulsystem',
+					link: '/projekte/bildung/schulsystem',
+				},
+				{
+					title: 'Patenschaften',
+					link: '/projekte/bildung/patenschaften',
+				},
+				{
+					title: 'Schulpartnerschaften',
+					link: '/projekte/bildung/schulpartnerschaften',
+				},
+				{
+					title: 'Schulenbau',
+					link: '/projekte/bildung/schulenbau',
 				},
 			],
 		},
@@ -15,28 +35,64 @@
 			link: '/projekte/brunnenbau',
 			subpages: [
 				{
-					title: 'übersicht',
+					title: 'Übersicht',
 					link: '/projekte/brunnenbau',
+				},
+				{
+					title: 'Motivation',
+					link: '/projekte/brunnenbau/motivation',
+				},
+				{
+					title: 'Vorgehen',
+					link: '/projekte/brunnenbau/vorgehen',
+				},
+				{
+					title: 'Standorte',
+					link: '/projekte/brunnenbau/standorte',
 				},
 			],
 		},
 		{
-			title: 'Brunnenbau',
-			link: '/projekte/brunnenbau',
+			title: 'Hilfe zur Selbsthilfe',
+			link: '/projekte/hilfe-zur-selbsthilfe',
 			subpages: [
 				{
-					title: 'übersicht',
-					link: '/projekte/brunnenbau',
+					title: 'Übersicht',
+					link: '/projekte/hilfe-zur-selbsthilfe',
+				},
+				{
+					title: 'Solar Light',
+					link: '/projekte/hilfe-zur-selbsthilfe/solar-light',
+				},
+				{
+					title: 'Plastik Recycling',
+					link: '/projekte/hilfe-zur-selbsthilfe/plastik-recycling',
+				},
+				{
+					title: 'Plantagen',
+					link: '/projekte/hilfe-zur-selbsthilfe/plantagen',
 				},
 			],
 		},
 		{
-			title: 'Brunnenbau',
-			link: '/projekte/brunnenbau',
+			title: 'Hygiene & Gesundheit',
+			link: '/projekte/hygiene-gesundheit',
 			subpages: [
 				{
-					title: 'übersicht',
-					link: '/projekte/brunnenbau',
+					title: 'Übersicht',
+					link: '/projekte/hygiene-gesundheit',
+				},
+				{
+					title: 'Toilettenhäuser',
+					link: '/projekte/hygiene-gesundheit/toilettenhaeuser',
+				},
+				{
+					title: 'Vorgehen',
+					link: '/projekte/hygiene-gesundheit/vorgehen',
+				},
+				{
+					title: 'Standorte',
+					link: '/projekte/hygiene-gesundheit/standorte',
 				},
 			],
 		},
@@ -73,7 +129,7 @@
 								<NuxtLink
 									v-for="subpage in project.subpages"
 									:to="subpage.link"
-									class="flex items-center justify-between cursor-pointer">
+									class="flex items-center justify-between cursor-pointer mt-[.5rem]">
 									<div>{{ subpage.title }}</div>
 									<div>
 										<SvgsNavigationDoubleArrow
@@ -94,9 +150,9 @@
 						<div
 							class="bg-[#000] aspect-square flex items-end rounded-[--border-radius]">
 							<NuxtLink
-								to="project.link"
+								to="/projekte/kamerun"
 								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
-								<div class="text-white font-bold">kamerun</div>
+								<div class="text-white font-bold">Kamerun</div>
 								<div>
 									<SvgsNavigationDoubleArrowWhite
 										class="w-[20px] h-auto" />
@@ -106,9 +162,18 @@
 						<br />
 						<div class="pr-[1.5rem]">
 							<NuxtLink
-								to="subpage.link"
+								to="/projekte/kamerun"
 								class="flex items-center justify-between cursor-pointer">
-								<div>kamerun</div>
+								<div>Übersicht</div>
+								<div>
+									<SvgsNavigationDoubleArrow
+										class="w-[20px] h-auto" />
+								</div>
+							</NuxtLink>
+							<NuxtLink
+								to="/projekte/kamerun/infrastruktur"
+								class="flex items-center justify-between cursor-pointer mt-[1rem]">
+								<div>Infrastruktur</div>
 								<div>
 									<SvgsNavigationDoubleArrow
 										class="w-[20px] h-auto" />
@@ -120,6 +185,6 @@
 			</nav>
 		</section>
 		<LazyMilestones />
-		<LazyNewsletter class="my-[5rem] md:my-[8rem]" />
+		<LazyNewsletter />
 	</article>
 </template>
