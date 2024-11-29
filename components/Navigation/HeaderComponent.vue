@@ -14,30 +14,66 @@
 					{
 						name: 'Bildung',
 						items: [
-							{ name: 'Übersicht' },
-							{ name: 'Herausforderungen' },
-							{ name: 'Schulsystem' },
-							{ name: 'Patenschaften' },
-							{ name: 'Schulpartnerschaften' },
-							{ name: 'Schulenbau' },
+							{ name: 'Übersicht', link: '/projekte/bildung' },
+							{
+								name: 'Herausforderungen',
+								link: '/projekte/bildung/herausforderungen',
+							},
+							{
+								name: 'Schulsystem',
+								link: '/projekte/bildung/schulsystem',
+							},
+							{
+								name: 'Patenschaften',
+								link: '/projekte/bildung/patenschaften',
+							},
+							{
+								name: 'Schulpartnerschaften',
+								link: '/projekte/bildung/schulpartnerschaften',
+							},
+							{
+								name: 'Schulenbau',
+								link: '/projekte/bildung/schulenbau',
+							},
 						],
 					},
 					{
 						name: 'Brunnenbau',
 						items: [
-							{ name: 'Übersicht' },
-							{ name: 'Motivation' },
-							{ name: 'Vorgehen' },
-							{ name: 'Standorte' },
+							{ name: 'Übersicht', link: '/projekte/brunnenbau' },
+							{
+								name: 'Motivation',
+								link: '/projekte/brunnenbau/motivation',
+							},
+							{
+								name: 'Vorgehen',
+								link: '/projekte/brunnenbau/vorgehen',
+							},
+							{
+								name: 'Standorte',
+								link: '/projekte/brunnenbau/standorte',
+							},
 						],
 					},
 					{
 						name: 'Hilfe zur Selbsthilfe',
 						items: [
-							{ name: 'Übersicht' },
-							{ name: 'Solar Light' },
-							{ name: 'Plastik Recycling' },
-							{ name: 'Plantagen' },
+							{
+								name: 'Übersicht',
+								link: '/projekte/hilfe-zur-selbsthilfe',
+							},
+							{
+								name: 'Solar Light',
+								link: '/projekte/hilfe-zur-selbsthilfe/solar-light',
+							},
+							{
+								name: 'Plastik Recycling',
+								link: '/projekte/hilfe-zur-selbsthilfe/plastik-recycling',
+							},
+							{
+								name: 'Plantagen',
+								link: '/projekte/hilfe-zur-selbsthilfe/plantagen',
+							},
 						],
 					},
 					{
@@ -91,8 +127,6 @@
 
 	function getIndex(index) {
 		subpageIndex.value = index;
-		console.log(subpageIndex.value);
-		console.log(currentFolder.value.items[subpageIndex.value].items);
 	}
 
 	function toggleMobile() {
@@ -101,7 +135,7 @@
 </script>
 <template>
 	<div>
-		<header class="z-[9]">
+		<header class="z-[9999] relative">
 			<nav class="relative">
 				<div class="h-[80px]">
 					<div
@@ -128,17 +162,17 @@
 									Storys
 								</div>
 								<div
-									class="w-[150px] grid items-center"
+									class="w-[200px] grid items-center"
 									@mouseover="toggleDesktop('Unser Verein')">
 									Unser Verein
 								</div>
 								<div
-									class="w-[150px] grid items-center"
+									class="w-[125px] grid items-center"
 									@mouseover="toggleDesktop('News')">
 									News
 								</div>
 								<div
-									class="w-[150px] grid items-center"
+									class="w-[125px] grid items-center"
 									@mouseover="toggleDesktop('Kontakt')">
 									Kontakt
 								</div>
@@ -184,7 +218,9 @@
 											'border-l': subpageIndex === index,
 											'text-[#000]': subpageIndex === index,
 										}">
-										{{ page.name }}
+										<NuxtLink :to="page.link">{{
+											page.name
+										}}</NuxtLink>
 									</li>
 								</ul>
 								<ul class="w-[250px] flex flex-col gap-[.5rem]">
@@ -198,7 +234,9 @@
 										v-for="subpage in currentFolder.items[
 											subpageIndex
 										].items">
-										{{ subpage.name }}
+										<NuxtLink :to="subpage.link">
+											{{ subpage.name }}
+										</NuxtLink>
 									</li>
 								</ul>
 							</div>
