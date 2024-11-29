@@ -43,6 +43,7 @@
 					<br />
 					BIC: GENODEF1EK1
 				</div>
+				<div>Inhalt</div>
 			</section>
 		</article>
 	</div>
