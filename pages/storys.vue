@@ -47,7 +47,7 @@
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
 			</p>
-			<h1 class="text-big text-orange">Storys</h1>
+			<h1 class="text-big text-orange font-bold">Storys</h1>
 		</div>
 		<ClientOnly>
 			<template #fallback>

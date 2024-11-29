@@ -173,7 +173,7 @@
 							<div
 								class="flex items-center h-[70px] max-xl:hidden text-[#000]">
 								<div
-									class="w-[150px] h-full grid items-center"
+									class="w-[150px] grid items-center"
 									@mouseover="toggleDesktop('Projekte')">
 									Projekte
 								</div>

@@ -51,7 +51,7 @@
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
 			</p>
-			<h1 class="text-big text-orange">Storys</h1>
+			<h1 class="text-big text-orange font-bold">Storys</h1>
 		</div>
 		<section
 			class="flex flex-col md:flex-row-reverse gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]">
@@ -154,7 +154,7 @@
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
 			</p>
-			<h1 class="text-big text-orange">Storys</h1>
+			<h1 class="text-big text-orange font-bold">Storys</h1>
 			<br />
 			<NuxtLink to="/news/aktuelles">
 				<button class="btn bg-orange text-white">
