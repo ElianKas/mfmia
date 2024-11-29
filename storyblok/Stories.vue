@@ -2,6 +2,7 @@
 	const props = defineProps({ blok: Object });
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
+	const seeAlsoStories = useState('seeAlsoStories');
 
 	function checkSectionContent() {
 		props.blok.moreSections.forEach((section) => {
@@ -41,11 +42,12 @@
 
 	onMounted(() => {
 		checkSectionContent();
+		console.log(seeAlsoStories.value);
 	});
 </script>
 <template>
 	<article
-		class="min-h-[100vh] max-w-[--max-width] m-auto px-[2rem] mb-[10rem]">
+		class="min-h-[100vh] max-w-[--max-width] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
 		<div class="text-center my-[5rem]">
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
@@ -145,6 +147,18 @@
 				</div>
 			</div>
 		</section>
+		<div
+			class="flex flex-col gap-[2rem]"
+			v-if="seeAlsoStories">
+			<div
+				v-if="seeAlsoStories.next"
+				class="p-[2rem] bg-[#F7F7F7] rounded-[--border-radius]">
+				{{ seeAlsoStories.next.title }}
+			</div>
+			<div v-if="seeAlsoStories.prev">
+				{{ seeAlsoStories.prev.title }}
+			</div>
+		</div>
 		<div class="text-center my-[5rem]">
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
