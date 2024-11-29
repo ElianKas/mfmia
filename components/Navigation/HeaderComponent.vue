@@ -174,7 +174,7 @@
 										{{ currentFolder.name }}
 									</div>
 								</div>
-								<ul class="w-[250px]">
+								<ul class="w-[250px] flex flex-col gap-[.5rem]">
 									<li
 										class="text-[#666666] hover:text-[#000] hover:border-l border-orange pl-[1rem]"
 										v-if="currentFolder && currentFolder.items"
@@ -187,7 +187,7 @@
 										{{ page.name }}
 									</li>
 								</ul>
-								<ul class="w-[250px]">
+								<ul class="w-[250px] flex flex-col gap-[.5rem]">
 									<li
 										class="text-[#666666] hover:text-[#000] hover:border-l border-orange pl-[1rem]"
 										v-if="
