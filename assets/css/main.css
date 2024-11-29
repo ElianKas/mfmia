@@ -5,6 +5,7 @@
 :root {
     --max-width: 1200px;
     --max-width-big: 1800px;
+    --max-width-small: 1000px;
     --border-radius: 10px;
 }
 
