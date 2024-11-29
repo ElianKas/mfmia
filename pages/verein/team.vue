@@ -4,9 +4,7 @@
 			<section>
 				<div
 					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius]">
-					<h1 class="text-white text-big font-bold">
-						Die Geschichte
-					</h1>
+					<h1 class="text-white text-big font-bold">Das Team</h1>
 				</div>
 			</section>
 			<TemplatesParagraphsHighlighted>
