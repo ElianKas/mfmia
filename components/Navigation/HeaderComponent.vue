@@ -119,10 +119,10 @@
 			currentFolder.value = {
 				name: 'Unser Verein',
 				items: [
-					{ name: 'Der Verein' },
-					{ name: 'Die Geschichte' },
-					{ name: 'Aktiv werden' },
-					{ name: 'Das Team' },
+					{ name: 'Der Verein', link: '/verein' },
+					{ name: 'Die Geschichte', link: '/verein/geschichte' },
+					{ name: 'Aktiv werden', link: '/verein/aktiv-werden' },
+					{ name: 'Das Team', link: '/verein/team' },
 				],
 			};
 		}
@@ -130,9 +130,9 @@
 			currentFolder.value = {
 				name: 'News',
 				items: [
-					{ name: 'Übersicht' },
-					{ name: 'Aktuelles' },
-					{ name: 'Presse' },
+					{ name: 'Übersicht', link: '/news' },
+					{ name: 'Aktuelles', link: '/news/aktuelles' },
+					{ name: 'Presse', link: '/news/presse' },
 				],
 			};
 		}
