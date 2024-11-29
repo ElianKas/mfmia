@@ -79,15 +79,33 @@
 					{
 						name: 'Hygiene & Gesundheit',
 						items: [
-							{ name: 'Übersicht' },
-							{ name: 'Toilettenhäuser' },
-							{ name: 'Vorgehen' },
-							{ name: 'Standorte' },
+							{
+								name: 'Übersicht',
+								link: '/projekte/hygiene-gesundheit',
+							},
+							{
+								name: 'Toilettenhäuser',
+								link: '/projekte/hygiene-gesundheit/toilettenhaeuser',
+							},
+							{
+								name: 'Vorgehen',
+								link: '/projekte/hygiene-gesundheit/vorgehen',
+							},
+							{
+								name: 'Standorte',
+								link: '/projekte/hygiene-gesundheit/standorte',
+							},
 						],
 					},
 					{
 						name: 'Kamerun',
-						items: [{ name: 'Übersicht' }, { name: 'Infrastruktur' }],
+						items: [
+							{ name: 'Übersicht', link: '/projekte/kamerun' },
+							{
+								name: 'Infrastruktur',
+								link: '/projekte/kamerun/infrastruktur',
+							},
+						],
 					},
 				],
 			};
