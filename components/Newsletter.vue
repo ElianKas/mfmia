@@ -31,8 +31,8 @@
 			@submit.prevent="subscribe"
 			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
 			<p class="font-bold">
-				Zum <span class="text-orange">Newsletter</span> Anmelden und
-				nicht mehr verpassen!
+				Zum <span class="text-orange">Newsletter</span> anmelden unds
+				nichts mehr verpassen!
 			</p>
 			<div>
 				<label
