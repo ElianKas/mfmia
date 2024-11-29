@@ -17,7 +17,7 @@
 	});
 </script>
 <template>
-	<article class="px-[1rem] my-[5rem] max-w-[900px] m-auto">
+	<article class="px-[1rem] py-[2rem] max-w-[900px] m-auto">
 		<h2 class="font-bold text-big text-orange">Aktuelles</h2>
 		<br />
 		<ul>

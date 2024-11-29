@@ -63,5 +63,5 @@
 			</ClientOnly>
 		</ul>
 	</article>
-	<aside><Newsletter class="my-[5rem]" /></aside>
+	<aside><Newsletter /></aside>
 </template>

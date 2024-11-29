@@ -17,7 +17,8 @@
 	});
 </script>
 <template>
-	<article class="max-w-[--max-width] m-auto px-[1rem] text-center">
+	<article
+		class="max-w-[--max-width] m-auto px-[1rem] text-center py-[2rem]">
 		<h2 class="font-bold text-big text-orange">Presseberichte</h2>
 		<NuxtLink
 			class="text-orange"

@@ -2,7 +2,7 @@
 	<div>
 		<Landing />
 		<nav
-			class="grid grid-cols-1 md:grid-cols-2 gap-[1rem] max-w-[--max-width] m-auto px-[1rem]">
+			class="grid grid-cols-1 md:grid-cols-2 gap-[1rem] max-w-[--max-width] m-auto px-[1rem] md:px-[3rem] py-[2rem]">
 			<NuxtLink
 				to="/projekte/bildung"
 				class="border aspect-[2/1] rounded-[--border-radius] flex items-end">
@@ -49,9 +49,9 @@
 			</NuxtLink>
 		</nav>
 		<LazyFewArticles />
-		<LazyDonate class="mb-[5rem]" />
-		<LazyMilestones class="my-[5rem]" />
+		<LazyDonate />
+		<LazyMilestones />
 		<LazyProjectCarousel />
-		<LazyNewsletter class="my-[5rem]" />
+		<LazyNewsletter />
 	</div>
 </template>

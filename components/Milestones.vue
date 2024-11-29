@@ -160,56 +160,58 @@
 	}
 </script>
 <template>
-	<ClientOnly>
-		<template #fallback>
-			<div class="max-w-[--max-width] m-auto">
+	<div class="py-[2rem]">
+		<ClientOnly>
+			<template #fallback>
+				<div class="max-w-[--max-width] m-auto">
+					<div class="flex w-full overflow-hidden">
+						<div
+							class="px-[1rem]"
+							v-for="milestone in 5">
+							<div
+								class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+						</div>
+					</div>
+					<div class="flex w-full overflow-hidden mt-[2rem]">
+						<div
+							class="px-[1rem]"
+							v-for="milestone in 5">
+							<div
+								class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+						</div>
+					</div>
+				</div>
+			</template>
+			<article
+				v-if="sortedData"
+				class="max-w-[--max-width] m-auto relative">
+				<!--  -->
+				<div
+					class="absolute left-0 h-full w-[120px] bg-gradient-to-r from-white to-transparent z-[99]"></div>
+				<div
+					class="absolute right-0 h-full w-[120px] bg-gradient-to-l from-white to-transparent z-[99]"></div>
+				<!--  -->
 				<div class="flex w-full overflow-hidden">
 					<div
-						class="px-[1rem]"
-						v-for="milestone in 5">
+						class="milestoneBox1 px-[1rem]"
+						v-for="milestone in sortedData">
 						<div
-							class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+							class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+							{{ milestone.content.title }}
+						</div>
 					</div>
 				</div>
 				<div class="flex w-full overflow-hidden mt-[2rem]">
 					<div
-						class="px-[1rem]"
-						v-for="milestone in 5">
+						class="milestoneBox2 px-[1rem]"
+						v-for="milestone in sortedData">
 						<div
-							class="skeleton rounded-[--border-radius] w-[300px] h-[150px] shrink-0"></div>
+							class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+							{{ milestone.content.title }}
+						</div>
 					</div>
 				</div>
-			</div>
-		</template>
-		<article
-			v-if="sortedData"
-			class="max-w-[--max-width] m-auto relative">
-			<!--  -->
-			<div
-				class="absolute left-0 h-full w-[120px] bg-gradient-to-r from-white to-transparent z-[99]"></div>
-			<div
-				class="absolute right-0 h-full w-[120px] bg-gradient-to-l from-white to-transparent z-[99]"></div>
-			<!--  -->
-			<div class="flex w-full overflow-hidden">
-				<div
-					class="milestoneBox1 px-[1rem]"
-					v-for="milestone in sortedData">
-					<div
-						class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
-						{{ milestone.content.title }}
-					</div>
-				</div>
-			</div>
-			<div class="flex w-full overflow-hidden mt-[2rem]">
-				<div
-					class="milestoneBox2 px-[1rem]"
-					v-for="milestone in sortedData">
-					<div
-						class="border border-orange rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
-						{{ milestone.content.title }}
-					</div>
-				</div>
-			</div>
-		</article>
-	</ClientOnly>
+			</article>
+		</ClientOnly>
+	</div>
 </template>

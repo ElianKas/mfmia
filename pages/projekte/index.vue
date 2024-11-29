@@ -44,7 +44,7 @@
 </script>
 <template>
 	<article>
-		<section class="px-[1rem] mb-[5rem] md:mb-[8rem]">
+		<section class="px-[1rem] md:px-[3rem]">
 			<h1
 				class="font-bold text-orange text-big text-center mt-[5rem]">
 				Lerne unsere Projekte kennen

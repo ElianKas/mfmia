@@ -6,6 +6,6 @@
 		</div>
 	</article>
 	<Milestones />
-	<Newsletter class="my-[5rem]" />
+	<Newsletter />
 	<FewPressreports />
 </template>

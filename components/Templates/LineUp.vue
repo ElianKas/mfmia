@@ -1,5 +1,5 @@
 <template>
-	<section class="max-w-[500px] m-auto text-green">
+	<section class="max-w-[500px] m-auto text-green py-[2rem]">
 		<h2 class="font-bold">Wie Sie helfen können:</h2>
 		<br />
 		<ul class="pl-[5px]">

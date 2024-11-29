@@ -1,6 +1,6 @@
 <template>
 	<aside
-		class="flex flex-col items-center w-[320px] m-auto text-center">
+		class="flex flex-col items-center w-[320px] m-auto text-center py-[2rem]">
 		<SvgsHumansTwo class="w-[80px] h-auto" />
 		<NuxtLink
 			to="/spenden"

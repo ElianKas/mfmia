@@ -285,7 +285,11 @@
 						<div class="py-[1rem]">PROJEKTE</div>
 						<div class="pl-[1rem]">
 							<li class="py-[1rem]">
-								<NuxtLink to="/projekte">Übersicht</NuxtLink>
+								<NuxtLink
+									to="/projekte"
+									@click="toggleMobile"
+									>Übersicht</NuxtLink
+								>
 							</li>
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
@@ -296,34 +300,44 @@
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
 									<li>
-										<NuxtLink to="/projekte/bildung">
+										<NuxtLink
+											to="/projekte/bildung"
+											@click="toggleMobile">
 											Übersicht
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/bildung/herausforderungen">
+											to="/projekte/bildung/herausforderungen"
+											@click="toggleMobile">
 											Herausforderungen
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/bildung/schulsystem">
+										<NuxtLink
+											to="/projekte/bildung/schulsystem"
+											@click="toggleMobile">
 											Schulsystem
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/bildung/patenschaften">
+										<NuxtLink
+											to="/projekte/bildung/patenschaften"
+											@click="toggleMobile">
 											Patenschaften
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/bildung/schulpartnerschaften">
+											to="/projekte/bildung/schulpartnerschaften"
+											@click="toggleMobile">
 											Schulpartnerschaften
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/bildung/schulenbau">
+										<NuxtLink
+											to="/projekte/bildung/schulenbau"
+											@click="toggleMobile">
 											Schulenbau
 										</NuxtLink>
 									</li>
@@ -338,22 +352,30 @@
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
 									<li>
-										<NuxtLink to="/projekte/brunnenbau"
+										<NuxtLink
+											to="/projekte/brunnenbau"
+											@click="toggleMobile"
 											>Übersicht</NuxtLink
 										>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/brunnenbau/motivation">
+										<NuxtLink
+											to="/projekte/brunnenbau/motivation"
+											@click="toggleMobile">
 											Motivation
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/brunnenbau/vorgehen">
+										<NuxtLink
+											to="/projekte/brunnenbau/vorgehen"
+											@click="toggleMobile">
 											Vorgehen
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/brunnenbau/standorte">
+										<NuxtLink
+											to="/projekte/brunnenbau/standorte"
+											@click="toggleMobile">
 											Standorte
 										</NuxtLink>
 									</li>
@@ -370,25 +392,30 @@
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
 									<li>
-										<NuxtLink to="/projekte/hilfe-zur-selbsthilfe">
+										<NuxtLink
+											to="/projekte/hilfe-zur-selbsthilfe"
+											@click="toggleMobile">
 											Übersicht
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/solar-light">
+											to="/projekte/hilfe-zur-selbsthilfe/solar-light"
+											@click="toggleMobile">
 											Solar Light
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/plastik-recycling">
+											to="/projekte/hilfe-zur-selbsthilfe/plastik-recycling"
+											@click="toggleMobile">
 											Plastik Recycling
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/plantagen">
+											to="/projekte/hilfe-zur-selbsthilfe/plantagen"
+											@click="toggleMobile">
 											Plantagen
 										</NuxtLink>
 									</li>
@@ -405,25 +432,30 @@
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
 									<li>
-										<NuxtLink to="/projekte/hygiene-gesundheit">
+										<NuxtLink
+											to="/projekte/hygiene-gesundheit"
+											@click="toggleMobile">
 											Übersicht
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hygiene-gesundheit/toilettenhaeuser">
+											to="/projekte/hygiene-gesundheit/toilettenhaeuser"
+											@click="toggleMobile">
 											Toilettenhäuser
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hygiene-gesundheit/vorgehen">
+											to="/projekte/hygiene-gesundheit/vorgehen"
+											@click="toggleMobile">
 											Vorgehen
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
 										<NuxtLink
-											to="/projekte/hygiene-gesundheit/standorte">
+											to="/projekte/hygiene-gesundheit/standorte"
+											@click="toggleMobile">
 											Standorte
 										</NuxtLink>
 									</li>
@@ -438,12 +470,16 @@
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
 									<li>
-										<NuxtLink to="/projekte/kamerun">
+										<NuxtLink
+											to="/projekte/kamerun"
+											@click="toggleMobile">
 											Übersicht
 										</NuxtLink>
 									</li>
 									<li class="mt-[1rem]">
-										<NuxtLink to="/projekte/kamerun/infrastruktur">
+										<NuxtLink
+											to="/projekte/kamerun/infrastruktur"
+											@click="toggleMobile">
 											Infrastruktur
 										</NuxtLink>
 									</li>
@@ -451,7 +487,11 @@
 							</div>
 						</div>
 						<div class="py-[1rem]">
-							<NuxtLink to="/storys">STORYS</NuxtLink>
+							<NuxtLink
+								to="/storys"
+								@click="toggleMobile"
+								>STORYS</NuxtLink
+							>
 						</div>
 						<!-- akkordeon item -->
 						<div class="collapse collapse-arrow">
@@ -461,19 +501,33 @@
 							<li class="collapse-title px-0">Unser Verein</li>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
-								<li><NuxtLink to="/verein">Übersicht</NuxtLink></li>
+								<li>
+									<NuxtLink
+										to="/verein"
+										@click="toggleMobile"
+										>Übersicht</NuxtLink
+									>
+								</li>
 								<li class="mt-[1rem]">
-									<NuxtLink to="/verein/geschichte"
+									<NuxtLink
+										to="/verein/geschichte"
+										@click="toggleMobile"
 										>Die Geschichte</NuxtLink
 									>
 								</li>
 								<li class="mt-[1rem]">
-									<NuxtLink to="/verein/aktiv-werden"
+									<NuxtLink
+										to="/verein/aktiv-werden"
+										@click="toggleMobile"
 										>Aktiv werden</NuxtLink
 									>
 								</li>
 								<li class="mt-[1rem]">
-									<NuxtLink to="/verein/team">Das Team</NuxtLink>
+									<NuxtLink
+										to="/verein/team"
+										@click="toggleMobile"
+										>Das Team</NuxtLink
+									>
 								</li>
 							</div>
 						</div>
@@ -485,20 +539,42 @@
 							<li class="collapse-title px-0">NEWS</li>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
-								<li><NuxtLink to="/news">Übersicht</NuxtLink></li>
-								<li class="mt-[1rem]">
-									<NuxtLink to="/news/aktuelles">Aktuelles</NuxtLink>
+								<li>
+									<NuxtLink
+										to="/news"
+										@click="toggleMobile"
+										>Übersicht</NuxtLink
+									>
 								</li>
 								<li class="mt-[1rem]">
-									<NuxtLink to="/news/presse">Presse</NuxtLink>
+									<NuxtLink
+										to="/news/aktuelles"
+										@click="toggleMobile"
+										>Aktuelles</NuxtLink
+									>
+								</li>
+								<li class="mt-[1rem]">
+									<NuxtLink
+										to="/news/presse"
+										@click="toggleMobile"
+										>Presse</NuxtLink
+									>
 								</li>
 							</div>
 						</div>
 						<div class="py-[1rem]">
-							<NuxtLink to="/kontakt">KONTAKT</NuxtLink>
+							<NuxtLink
+								to="/kontakt"
+								@click="toggleMobile"
+								>KONTAKT</NuxtLink
+							>
 						</div>
 						<div class="py-[1rem]">
-							<NuxtLink to="/spenden">JETZT SPENDEN</NuxtLink>
+							<NuxtLink
+								to="/spenden"
+								@click="toggleMobile"
+								>JETZT SPENDEN</NuxtLink
+							>
 						</div>
 					</ul>
 				</div>
