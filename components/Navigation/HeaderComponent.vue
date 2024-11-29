@@ -113,6 +113,7 @@
 		if (page === 'Storys') {
 			currentFolder.value = {
 				name: 'Storys',
+				link: '/storys',
 			};
 		}
 		if (page === 'Unser Verein') {
@@ -139,6 +140,7 @@
 		if (page === 'Kontakt') {
 			currentFolder.value = {
 				name: 'Kontakt',
+				link: '/kontakt',
 			};
 		}
 	}
@@ -223,7 +225,9 @@
 									<div
 										v-if="currentFolder && currentFolder.name"
 										class="text-highlight text-[#000]">
-										{{ currentFolder.name }}
+										<NuxtLink :to="currentFolder.link">
+											{{ currentFolder.name }}
+										</NuxtLink>
 									</div>
 								</div>
 								<ul class="w-[250px] flex flex-col gap-[.5rem]">
