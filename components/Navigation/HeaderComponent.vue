@@ -158,6 +158,7 @@
 		<header class="z-[9999] relative">
 			<nav class="relative">
 				<div class="h-[80px]">
+					<!-- full menu desktop -->
 					<div
 						:style="{ height: activeDesktop ? '350px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
@@ -283,7 +284,9 @@
 					<ul class="mobileNavList overflow-scroll pb-[5rem]">
 						<div class="py-[1rem]">PROJEKTE</div>
 						<div class="pl-[1rem]">
-							<li class="py-[1rem]">Übersicht</li>
+							<li class="py-[1rem]">
+								<NuxtLink to="/projekte">Übersicht</NuxtLink>
+							</li>
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
@@ -292,12 +295,38 @@
 								<li class="collapse-title px-0">Bildung</li>
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
-									<li>Übersicht</li>
-									<li class="mt-[1rem]">Herausforderungen</li>
-									<li class="mt-[1rem]">Schulsystem</li>
-									<li class="mt-[1rem]">Patenschaften</li>
-									<li class="mt-[1rem]">Schulpartnerschaften</li>
-									<li class="mt-[1rem]">Schulenbau</li>
+									<li>
+										<NuxtLink to="/projekte/bildung">
+											Übersicht
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/bildung/herausforderungen">
+											Herausforderungen
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/bildung/schulsystem">
+											Schulsystem
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/bildung/patenschaften">
+											Patenschaften
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/bildung/schulpartnerschaften">
+											Schulpartnerschaften
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/bildung/schulenbau">
+											Schulenbau
+										</NuxtLink>
+									</li>
 								</div>
 							</div>
 							<!-- akkordeon item -->
@@ -308,10 +337,26 @@
 								<li class="collapse-title px-0">Brunnenbau</li>
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
-									<li>Übersicht</li>
-									<li class="mt-[1rem]">Motivation</li>
-									<li class="mt-[1rem]">Vorgehen</li>
-									<li class="mt-[1rem]">Standorte</li>
+									<li>
+										<NuxtLink to="/projekte/brunnenbau"
+											>Übersicht</NuxtLink
+										>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/brunnenbau/motivation">
+											Motivation
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/brunnenbau/vorgehen">
+											Vorgehen
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/brunnenbau/standorte">
+											Standorte
+										</NuxtLink>
+									</li>
 								</div>
 							</div>
 							<!-- akkordeon item -->
@@ -324,10 +369,29 @@
 								</li>
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
-									<li>Übersicht</li>
-									<li class="mt-[1rem]">Solar Light</li>
-									<li class="mt-[1rem]">Plastik Recycling</li>
-									<li class="mt-[1rem]">Plantagen</li>
+									<li>
+										<NuxtLink to="/projekte/hilfe-zur-selbsthilfe">
+											Übersicht
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hilfe-zur-selbsthilfe/solar-light">
+											Solar Light
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hilfe-zur-selbsthilfe/plastik-recycling">
+											Plastik Recycling
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hilfe-zur-selbsthilfe/plantagen">
+											Plantagen
+										</NuxtLink>
+									</li>
 								</div>
 							</div>
 							<!-- akkordeon item -->
@@ -340,10 +404,29 @@
 								</li>
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
-									<li>Übersicht</li>
-									<li class="mt-[1rem]">Toilettenhäuser</li>
-									<li class="mt-[1rem]">Vorgehen</li>
-									<li class="mt-[1rem]">Standorte</li>
+									<li>
+										<NuxtLink to="/projekte/hygiene-gesundheit">
+											Übersicht
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hygiene-gesundheit/toilettenhaeuser">
+											Toilettenhäuser
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hygiene-gesundheit/vorgehen">
+											Vorgehen
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink
+											to="/projekte/hygiene-gesundheit/standorte">
+											Standorte
+										</NuxtLink>
+									</li>
 								</div>
 							</div>
 							<!-- akkordeon item -->
@@ -354,13 +437,46 @@
 								<li class="collapse-title px-0">Kamerun</li>
 								<!--  content -->
 								<div class="collapse-content pl-[1rem]">
-									<li>Übersicht</li>
-									<li class="mt-[1rem]">Infrastruktur</li>
+									<li>
+										<NuxtLink to="/projekte/kamerun">
+											Übersicht
+										</NuxtLink>
+									</li>
+									<li class="mt-[1rem]">
+										<NuxtLink to="/projekte/kamerun/infrastruktur">
+											Infrastruktur
+										</NuxtLink>
+									</li>
 								</div>
 							</div>
 						</div>
-						<div class="py-[1rem]">STORYS</div>
-						<div class="py-[1rem]">UNSER VEREIN</div>
+						<div class="py-[1rem]">
+							<NuxtLink to="/storys">STORYS</NuxtLink>
+						</div>
+						<!-- akkordeon item -->
+						<div class="collapse collapse-arrow">
+							<input
+								type="radio"
+								name="my-accordion-2" />
+							<li class="collapse-title px-0">Unser Verein</li>
+							<!--  content -->
+							<div class="collapse-content pl-[1rem]">
+								<li><NuxtLink to="/verein">Übersicht</NuxtLink></li>
+								<li class="mt-[1rem]">
+									<NuxtLink to="/verein/geschichte"
+										>Die Geschichte</NuxtLink
+									>
+								</li>
+								<li class="mt-[1rem]">
+									<NuxtLink to="/verein/aktiv-werden"
+										>Aktiv werden</NuxtLink
+									>
+								</li>
+								<li class="mt-[1rem]">
+									<NuxtLink to="/verein/team">Das Team</NuxtLink>
+								</li>
+							</div>
+						</div>
 						<!-- akkordeon item -->
 						<div class="collapse collapse-arrow">
 							<input
@@ -369,13 +485,21 @@
 							<li class="collapse-title px-0">NEWS</li>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
-								<li>Übersicht</li>
-								<li class="mt-[1rem]">Aktuelles</li>
-								<li class="mt-[1rem]">Presse</li>
+								<li><NuxtLink to="/news">Übersicht</NuxtLink></li>
+								<li class="mt-[1rem]">
+									<NuxtLink to="/news/aktuelles">Aktuelles</NuxtLink>
+								</li>
+								<li class="mt-[1rem]">
+									<NuxtLink to="/news/presse">Presse</NuxtLink>
+								</li>
 							</div>
 						</div>
-						<div class="py-[1rem]">KONTAKT</div>
-						<div class="py-[1rem]">JETZT SPENDEN</div>
+						<div class="py-[1rem]">
+							<NuxtLink to="/kontakt">KONTAKT</NuxtLink>
+						</div>
+						<div class="py-[1rem]">
+							<NuxtLink to="/spenden">JETZT SPENDEN</NuxtLink>
+						</div>
 					</ul>
 				</div>
 			</nav>
