@@ -41,8 +41,8 @@
 </script>
 <template>
 	<section
-		class="p-[1rem] max-w-[500px] min-h-[calc(100vh-80px)] m-auto flex flex-col">
-		<div class="w-full grow relative z-[-99]">
+		class="p-[1rem] max-w-[500px] min-h-[calc(100vh-80px)] m-auto flex flex-col justify-center">
+		<div class="w-full grow max-h-[500px] relative z-[-99]">
 			<NuxtImg
 				provider="cloudinary"
 				format="avif"
