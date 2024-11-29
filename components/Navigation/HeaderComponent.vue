@@ -233,13 +233,15 @@
 								</div>
 								<ul class="w-[250px] flex flex-col gap-[.5rem]">
 									<li
-										class="text-[#666666] hover:text-[#000] hover:border-l border-orange pl-[1rem]"
+										class="text-[#666666] border-orange pl-[1rem]"
 										v-if="currentFolder && currentFolder.items"
 										v-for="(page, index) in currentFolder.items"
 										@mouseover="getIndex(index)"
+										:style="{
+											color: subpageIndex === index ? '#000' : '',
+										}"
 										:class="{
 											'border-l': subpageIndex === index,
-											'text-[#000]': subpageIndex === index,
 										}">
 										<NuxtLink :to="page.link">{{
 											page.name
