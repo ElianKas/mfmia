@@ -105,7 +105,7 @@
 			<nav class="relative">
 				<div class="h-[80px]">
 					<div
-						:style="{ height: activeDesktop ? '500px' : '70px' }"
+						:style="{ height: activeDesktop ? '350px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
 						class="transition-all duration-300 bg-white">
 						<div
@@ -115,7 +115,8 @@
 								class="w-[200px]">
 								<SvgsLogoSmall />
 							</NuxtLink>
-							<div class="flex items-center h-[70px] max-xl:hidden">
+							<div
+								class="flex items-center h-[70px] max-xl:hidden text-[#000]">
 								<div
 									class="w-[150px] h-full grid items-center"
 									@mouseover="toggleDesktop('Projekte')">
@@ -165,22 +166,30 @@
 									subpageIndex = null;
 								}
 							">
-							<div class="flex m-auto border items-center w-[750px]">
+							<div class="flex m-auto w-[750px] mt-[2rem]">
 								<div class="w-[250px]">
-									<div v-if="currentFolder && currentFolder.name">
+									<div
+										v-if="currentFolder && currentFolder.name"
+										class="text-highlight text-[#000]">
 										{{ currentFolder.name }}
 									</div>
 								</div>
-								<div class="w-[250px]">
-									<div
+								<ul class="w-[250px]">
+									<li
+										class="text-[#666666] hover:text-[#000] hover:border-l border-orange pl-[1rem]"
 										v-if="currentFolder && currentFolder.items"
 										v-for="(page, index) in currentFolder.items"
-										@mouseover="getIndex(index)">
+										@mouseover="getIndex(index)"
+										:class="{
+											'border-l': subpageIndex === index,
+											'text-[#000]': subpageIndex === index,
+										}">
 										{{ page.name }}
-									</div>
-								</div>
-								<div class="w-[250px]">
-									<div
+									</li>
+								</ul>
+								<ul class="w-[250px]">
+									<li
+										class="text-[#666666] hover:text-[#000] hover:border-l border-orange pl-[1rem]"
 										v-if="
 											subpageIndex !== null &&
 											currentFolder &&
@@ -190,8 +199,8 @@
 											subpageIndex
 										].items">
 										{{ subpage.name }}
-									</div>
-								</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
