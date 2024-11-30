@@ -43,13 +43,7 @@
 		});
 	}
 
-	onMounted(() => {
-		checkSectionContent();
-		sortedData.value = data.stories.sort((a, b) => {
-			const dateA = new Date(a.content.date);
-			const dateB = new Date(b.content.date);
-			return dateB - dateA;
-		});
+	function findIndexLastNext() {
 		indexLast.value =
 			sortedData.value.findIndex(
 				(story) => story.content._uid === props.blok._uid
@@ -64,6 +58,20 @@
 		if (indexNext.value >= sortedData.value.length) {
 			indexNext.value = -1;
 		}
+	}
+
+	function sortData() {
+		sortedData.value = data.stories.sort((a, b) => {
+			const dateA = new Date(a.content.date);
+			const dateB = new Date(b.content.date);
+			return dateB - dateA;
+		});
+	}
+
+	onMounted(() => {
+		sortData();
+		checkSectionContent();
+		findIndexLastNext();
 	});
 </script>
 <template>
