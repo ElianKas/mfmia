@@ -500,7 +500,7 @@
 							<input
 								type="radio"
 								name="my-accordion-2" />
-							<li class="collapse-title px-0">Unser Verein</li>
+							<li class="collapse-title px-0">UNSER VEREIN</li>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
 								<li>
