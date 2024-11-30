@@ -37,17 +37,18 @@
 				v-if="section.gallery.length === 1"
 				:src="section.gallery[0].image"
 				:alt="section.gallery[0].alt"
-				class="rounded-[--border-radius] md:w-[80%] md:m-auto h-auto" />
-			<div v-if="section.gallery.length > 1">
+				class="rounded-[--border-radius] max-w-[400px]" />
+			<div
+				v-if="section.gallery.length > 1"
+				class="max-w-[400px]">
 				<Carousel
 					v-model="currentSlide"
 					:wrap-around="true">
 					<Slide
 						v-for="image in section.gallery"
-						:key="image"
-						class="md:px-[2rem]">
+						:key="image">
 						<ImagesStoryblokImage
-							class="rounded-[--border-radius] w-full md:m-auto h-auto"
+							class="rounded-[--border-radius]"
 							:src="image.image"
 							:alt="image.alt" />
 					</Slide>
@@ -61,9 +62,9 @@
 						@click="slideTo(index)"
 						v-for="(image, index) in section.gallery"
 						:key="image"
-						class="md:px-[2rem] cursor-pointer">
+						class="cursor-pointer">
 						<ImagesStoryblokImage
-							class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
+							class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px]"
 							:src="image.image"
 							:alt="image.alt" />
 					</Slide>

@@ -31,7 +31,7 @@
 	<div>
 		<!-- quality="80" === original -->
 		<NuxtImg
-			class="rounded-[--border-radius] h-full"
+			class="rounded-[--border-radius]"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
@@ -39,7 +39,7 @@
 			:alt="props.alt"
 			v-if="size && size < 1000000" />
 		<NuxtImg
-			class="rounded-[--border-radius] h-full"
+			class="rounded-[--border-radius]"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
@@ -48,7 +48,7 @@
 			:alt="props.alt"
 			v-if="size && size > 5000000 && size < 10000000" />
 		<NuxtImg
-			class="rounded-[--border-radius] h-full"
+			class="rounded-[--border-radius]"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
@@ -57,7 +57,7 @@
 			v-if="size && size > 10000001 && size < 15000000"
 			quality="10" />
 		<NuxtImg
-			class="rounded-[--border-radius] h-full"
+			class="rounded-[--border-radius]"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
@@ -66,7 +66,7 @@
 			v-if="size && size > 15000001 && size < 20000000"
 			quality="6" />
 		<NuxtImg
-			class="rounded-[--border-radius] h-full"
+			class="rounded-[--border-radius]"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
