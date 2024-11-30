@@ -179,7 +179,7 @@
 			</div>
 		</section>
 		<!-- story navigation last/next -->
-		<nav class="flex flex-col md:flex-row gap-[2rem] py-[2rem]">
+		<nav class="flex flex-col md:flex-row gap-[1rem] py-[2rem]">
 			<NuxtLink
 				v-if="indexLast !== -1"
 				:to="sortedData[indexLast].slug"
@@ -192,6 +192,9 @@
 					</p>
 				</div>
 			</NuxtLink>
+			<div
+				class="w-full"
+				v-if="indexLast === -1 || indexNext === -1"></div>
 			<NuxtLink
 				v-if="indexNext !== -1"
 				:to="sortedData[indexNext].slug"
