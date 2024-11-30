@@ -126,7 +126,7 @@
 				:class="{
 					'md:w-[500px]': !section.title && !section.description,
 				}">
-				<LazyImagesStoryblokImage
+				<ImagesStoryblokImage
 					v-if="section.gallery.length === 1"
 					:src="section.gallery[0].image"
 					:alt="section.gallery[0].alt"
@@ -139,7 +139,7 @@
 							v-for="image in section.gallery"
 							:key="image"
 							class="md:px-[2rem]">
-							<LazyImagesStoryblokImage
+							<ImagesStoryblokImage
 								class="rounded-[--border-radius] w-full md:m-auto h-auto"
 								:src="image.image"
 								:alt="image.alt" />
@@ -155,7 +155,7 @@
 							v-for="(image, index) in section.gallery"
 							:key="image"
 							class="md:px-[2rem] cursor-pointer">
-							<LazyImagesStoryblokImage
+							<ImagesStoryblokImage
 								class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 								:src="image.image"
 								:alt="image.alt" />

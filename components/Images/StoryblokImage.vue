@@ -67,7 +67,6 @@
 			quality="6" />
 		<NuxtImg
 			class="rounded-[--border-radius] h-full"
-			:style="{ objectFit: cover }"
 			provider="storyblok"
 			:src="props.src"
 			format="webp"
