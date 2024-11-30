@@ -2,7 +2,7 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'news/aktuelles',
+		starts_with: 'news/presse',
 		is_startpage: false,
 	});
 	const sortedData = ref(null);
@@ -14,6 +14,7 @@
 			return dateB - dateA;
 		});
 		sortedData.value = sortedData.value.slice(0, 2);
+		console.log(sortedData.value);
 	});
 </script>
 <template>
@@ -25,5 +26,64 @@
 			to="/news/presse"
 			><u>Alle Presseberichte ansehen</u></NuxtLink
 		>
+		<ul
+			class="flex gap-[2rem] md:gap-[5rem] py-[2rem] max-md:flex-col">
+			<ClientOnly>
+				<template #fallback>
+					<li class="h-[150px] w-full flex gap-[1rem]">
+						<div class="skeleton h-full aspect-square"></div>
+						<div class="w-full">
+							<div
+								class="skeleton h-[2rem] max-w-[200px] grow mb-[1rem]"></div>
+							<div
+								class="skeleton h-[2rem] max-w-[200px] mb-[1rem]"></div>
+							<div class="skeleton h-[2rem] max-w-[200px]"></div>
+						</div>
+					</li>
+					<li class="h-[150px] w-full flex gap-[1rem]">
+						<div class="skeleton h-full aspect-square"></div>
+						<div class="w-full">
+							<div
+								class="skeleton h-[2rem] max-w-[200px] grow mb-[1rem]"></div>
+							<div
+								class="skeleton h-[2rem] max-w-[200px] mb-[1rem]"></div>
+							<div class="skeleton h-[2rem] max-w-[200px]"></div>
+						</div>
+					</li>
+				</template>
+				<div
+					class="flex gap-[2rem] md:gap-[5rem] max-md:flex-col w-full">
+					<li
+						class="h-[150px] w-full flex gap-[1rem]"
+						v-for="report in sortedData">
+						<NuxtLink
+							:to="report.content.report.filename"
+							class="h-full aspect-square rounded-[--border-radius] bg-[#BFBFBF] grid place-items-center">
+							.PDF
+						</NuxtLink>
+						<div class="w-full text-left">
+							<div class="h-[2rem] max-w-[200px] grow mb-[.5rem]">
+								{{
+									new Date(report.content.date).toLocaleDateString(
+										'de-DE',
+										{
+											day: '2-digit',
+											month: '2-digit',
+											year: 'numeric',
+										}
+									)
+								}}
+							</div>
+							<div class="h-[2rem] max-w-[200px] mb-[.5rem]">
+								{{ report.content.title }}
+							</div>
+							<div class="h-[2rem] max-w-[200px]">
+								{{ report.content.description }}
+							</div>
+						</div>
+					</li>
+				</div>
+			</ClientOnly>
+		</ul>
 	</article>
 </template>
