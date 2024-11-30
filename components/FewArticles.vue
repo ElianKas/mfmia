@@ -48,6 +48,12 @@
 					/></NuxtLink>
 				</li>
 			</ClientOnly>
+			<br />
+			<div class="text-center">
+				<NuxtLink to="/news/aktuelles">
+					<u>Alle Artikel ansehen</u></NuxtLink
+				>
+			</div>
 		</ul>
 	</article>
 </template>
