@@ -1,7 +1,16 @@
 <script setup>
+	const storyblokApi = useStoryblokApi();
+	const { data } = await storyblokApi.get('cdn/stories', {
+		version: useRoute().query._storyblok ? 'draft' : 'published',
+		starts_with: 'storys',
+		is_startpage: false,
+	});
+	const sortedData = ref(null);
 	const props = defineProps({ blok: Object });
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
+	const indexLast = ref(null);
+	const indexNext = ref(null);
 
 	function checkSectionContent() {
 		props.blok.moreSections.forEach((section) => {
@@ -41,6 +50,20 @@
 
 	onMounted(() => {
 		checkSectionContent();
+		sortedData.value = data.stories.sort((a, b) => {
+			const dateA = new Date(a.content.date);
+			const dateB = new Date(b.content.date);
+			return dateB - dateA;
+		});
+		indexLast.value =
+			sortedData.value.findIndex(
+				(story) => story.content._uid === props.blok._uid
+			) - 1;
+		indexNext.value =
+			sortedData.value.findIndex(
+				(story) => story.content._uid === props.blok._uid
+			) + 1;
+		console.log(indexLast.value, indexNext.value);
 	});
 </script>
 <template>
@@ -145,18 +168,33 @@
 				</div>
 			</div>
 		</section>
-		<div
-			class="flex flex-col gap-[2rem]"
-			v-if="seeAlsoStories">
-			<div
-				v-if="seeAlsoStories.next"
-				class="p-[2rem] bg-[#F7F7F7] rounded-[--border-radius]">
-				{{ seeAlsoStories.next.title }}
-			</div>
-			<div v-if="seeAlsoStories.prev">
-				{{ seeAlsoStories.prev.title }}
-			</div>
-		</div>
+		<!-- story navigation last/next -->
+		<nav class="flex flex-col md:flex-row gap-[2rem] py-[2rem]">
+			<NuxtLink
+				v-if="indexLast && indexLast !== -1"
+				:to="sortedData[indexLast].slug"
+				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex gap-[2rem] items-center">
+				<SvgsNavigationDoubleArrow class="rotate-180" />
+				<div>
+					<p class="text-green font-bold">Story</p>
+					<p class="font-bold">
+						{{ sortedData[indexLast].content.title }}
+					</p>
+				</div>
+			</NuxtLink>
+			<NuxtLink
+				v-if="indexNext && indexNext !== -1"
+				:to="sortedData[indexNext].slug"
+				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex justify-between gap-[2rem] items-center">
+				<div>
+					<p class="text-green font-bold">Story</p>
+					<p class="font-bold">
+						{{ sortedData[indexNext].content.title }}
+					</p>
+				</div>
+				<SvgsNavigationDoubleArrow />
+			</NuxtLink>
+		</nav>
 		<div class="text-center my-[5rem]">
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
