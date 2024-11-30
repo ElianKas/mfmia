@@ -8,7 +8,7 @@
 </script>
 <template>
 	<section
-		class="my-[3rem] md:my-[6rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
+		class="md:py-[2rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
 		:class="{
 			'md:flex-row': i % 2 === 0,
 			'md:flex-row-reverse': i % 2 !== 0,
