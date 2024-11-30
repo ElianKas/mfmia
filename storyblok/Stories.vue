@@ -9,8 +9,8 @@
 	const props = defineProps({ blok: Object });
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
-	const indexLast = ref(null);
-	const indexNext = ref(null);
+	const indexLast = ref(-1);
+	const indexNext = ref(-1);
 
 	function checkSectionContent() {
 		props.blok.moreSections.forEach((section) => {
@@ -63,7 +63,17 @@
 			sortedData.value.findIndex(
 				(story) => story.content._uid === props.blok._uid
 			) + 1;
-		console.log(indexLast.value, indexNext.value);
+		if (indexLast.value < 0) {
+			indexLast.value = -1;
+		}
+		if (indexNext.value >= sortedData.value.length) {
+			indexNext.value = -1;
+		}
+		console.log(
+			indexLast.value,
+			indexNext.value,
+			sortedData.value.length
+		);
 	});
 </script>
 <template>
@@ -171,7 +181,7 @@
 		<!-- story navigation last/next -->
 		<nav class="flex flex-col md:flex-row gap-[2rem] py-[2rem]">
 			<NuxtLink
-				v-if="indexLast && indexLast !== -1"
+				v-if="indexLast !== -1"
 				:to="sortedData[indexLast].slug"
 				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex gap-[2rem] items-center">
 				<SvgsNavigationDoubleArrow class="rotate-180" />
@@ -183,7 +193,7 @@
 				</div>
 			</NuxtLink>
 			<NuxtLink
-				v-if="indexNext && indexNext !== -1"
+				v-if="indexNext !== -1"
 				:to="sortedData[indexNext].slug"
 				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex justify-between gap-[2rem] items-center">
 				<div>
