@@ -14,12 +14,11 @@
 			return dateB - dateA;
 		});
 		sortedData.value = sortedData.value.slice(0, 2);
-		console.log(sortedData.value);
 	});
 </script>
 <template>
 	<article
-		class="max-w-[--max-width] m-auto px-[1rem] text-center py-[2rem]">
+		class="max-w-[--max-width] m-auto px-[1rem] md:px-[3rem] text-center py-[2rem]">
 		<h2 class="font-bold text-big text-orange">Presseberichte</h2>
 		<NuxtLink
 			class="text-orange"
@@ -57,6 +56,7 @@
 						class="h-[150px] w-full flex gap-[1rem]"
 						v-for="report in sortedData">
 						<NuxtLink
+							target="_blank"
 							:to="report.content.report.filename"
 							class="h-full aspect-square rounded-[--border-radius] bg-[#BFBFBF] grid place-items-center">
 							.PDF
