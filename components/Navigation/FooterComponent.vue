@@ -20,10 +20,10 @@
 			</div>
 		</section>
 		<section
-			class="min-h-[350px] bg-[#2C1200] text-white px-[1rem] md:px-[3rem] py-[2rem]">
+			class="min-h-[350px] bg-[#2C1200] text-white px-[1rem] md:px-[3rem] py-[2rem] flex items-center">
 			<div
 				class="max-w-[--max-width] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] md:gap-[5rem]">
-				<div class="min-h-[200px]">
+				<div class="md:min-h-[200px]">
 					<h3 class="text-orange font-bold pb[.5rem]">
 						Miteinander - für Menschen in Afrika e.V.
 					</h3>
@@ -34,7 +34,7 @@
 						lokalen Gemeinschaften nachhaltig zu stärken.
 					</p>
 				</div>
-				<div class="min-h-[200px]">
+				<div class="md:min-h-[200px]">
 					<h3 class="text-orange font-bold pb[.5rem]">
 						Spendenkonto
 					</h3>
@@ -45,7 +45,7 @@
 						IBAN: DE02 5206 0410 0000 8044 87 <br />
 					</p>
 				</div>
-				<div class="min-h-[200px]">
+				<div class="md:min-h-[200px]">
 					<h3 class="text-orange font-bold pb[.5rem]">Kontakt</h3>
 					<p>
 						Kölnische Straße 55 <br />
@@ -55,6 +55,16 @@
 					</p>
 				</div>
 			</div>
+		</section>
+		<section
+			class="h-[350px] p-[2rem] bg-[#000] flex items-center justify-center relative">
+			<SvgsLogoEmblem />
+			<nav
+				class="max-w-[300px] flex max-md:flex-col gap-[5rem] absolute bottom-[2rem] left-[50%] translate-x-[-50%]">
+				<div>Impressum</div>
+				<div>Datenschutz</div>
+				<div>Sitemap</div>
+			</nav>
 		</section>
 	</footer>
 </template>
