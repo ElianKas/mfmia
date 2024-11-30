@@ -93,10 +93,7 @@
 			<div
 				class="md:w-[50%] m-auto"
 				v-if="blok.cover.filename !== ''">
-				<NuxtImg
-					provider="storyblok"
-					format="avif"
-					placeholder
+				<ImagesStoryblokImage
 					class="rounded-[--border-radius] md:w-[80%] md:m-auto h-auto"
 					:src="blok.cover.filename"
 					v-if="blok.cover" />
@@ -129,10 +126,7 @@
 				:class="{
 					'md:w-[500px]': !section.title && !section.description,
 				}">
-				<NuxtImg
-					provider="storyblok"
-					format="avif"
-					placeholder
+				<LazyImagesStoryblokImage
 					v-if="section.gallery.length === 1"
 					:src="section.gallery[0].image"
 					:alt="section.gallery[0].alt"
@@ -145,9 +139,7 @@
 							v-for="image in section.gallery"
 							:key="image"
 							class="md:px-[2rem]">
-							<NuxtImg
-								provider="storyblok"
-								format="avif"
+							<LazyImagesStoryblokImage
 								class="rounded-[--border-radius] w-full md:m-auto h-auto"
 								:src="image.image"
 								:alt="image.alt" />
@@ -163,10 +155,7 @@
 							v-for="(image, index) in section.gallery"
 							:key="image"
 							class="md:px-[2rem] cursor-pointer">
-							<NuxtImg
-								provider="storyblok"
-								format="avif"
-								quality="10"
+							<LazyImagesStoryblokImage
 								class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 								:src="image.image"
 								:alt="image.alt" />

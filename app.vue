@@ -2,6 +2,6 @@
 	<div>
 		<NavigationHeaderComponent />
 		<main><NuxtPage /></main>
-		<NavigationFooterComponent />
+		<LazyNavigationFooterComponent />
 	</div>
 </template>
