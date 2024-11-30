@@ -1,23 +1,7 @@
 <script setup>
 	const props = defineProps({
 		story: Object,
-		prev: Object,
-		next: Object,
 	});
-	/* const seeAlsoStories = useState('seeAlsoStories', () => {
-		const prev = props.prev ? props.prev.content : null;
-		const next = props.next ? props.next.content : null;
-		return {
-			prev,
-			next,
-		};
-	}); */
-
-	/* onMounted(() => {
-		if (props.prev) console.log('prev', props.prev.content.date);
-		console.log('current', props.story.content.date);
-		if (props.next) console.log('next', props.next.content.date);
-	}); */
 </script>
 <template>
 	<NuxtLink

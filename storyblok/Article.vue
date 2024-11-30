@@ -40,7 +40,6 @@
 	}
 
 	onMounted(() => {
-		console.log(props.blok);
 		checkSectionContent();
 	});
 </script>

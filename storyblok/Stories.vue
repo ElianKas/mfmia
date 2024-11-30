@@ -2,7 +2,6 @@
 	const props = defineProps({ blok: Object });
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
-	const seeAlsoStories = useState('seeAlsoStories');
 
 	function checkSectionContent() {
 		props.blok.moreSections.forEach((section) => {
@@ -42,7 +41,6 @@
 
 	onMounted(() => {
 		checkSectionContent();
-		console.log(seeAlsoStories.value);
 	});
 </script>
 <template>

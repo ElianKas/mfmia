@@ -69,9 +69,7 @@
 					<TemplatesStoryCard
 						v-for="(story, index) in clientData"
 						:key="story.id"
-						:story="story"
-						:prev="sortedData[index + 1]"
-						:next="sortedData[index - 1]" />
+						:story="story" />
 				</div>
 				<div class="text-center">
 					<button
