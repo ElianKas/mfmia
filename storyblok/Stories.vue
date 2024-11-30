@@ -5,8 +5,8 @@
 		starts_with: 'storys',
 		is_startpage: false,
 	});
-	const sortedData = ref(null);
 	const props = defineProps({ blok: Object });
+	const sortedData = ref(null);
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
 	const indexLast = ref(-1);
@@ -69,11 +69,6 @@
 		if (indexNext.value >= sortedData.value.length) {
 			indexNext.value = -1;
 		}
-		console.log(
-			indexLast.value,
-			indexNext.value,
-			sortedData.value.length
-		);
 	});
 </script>
 <template>

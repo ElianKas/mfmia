@@ -1,7 +1,16 @@
 <script setup>
+	const storyblokApi = useStoryblokApi();
+	const { data } = await storyblokApi.get('cdn/stories', {
+		version: useRoute().query._storyblok ? 'draft' : 'published',
+		starts_with: 'news/aktuelles',
+		is_startpage: false,
+	});
 	const props = defineProps({ blok: Object });
+	const sortedData = ref(null);
 	const moreSectionContent = ref([]);
 	const currentSlide = ref(0);
+	const indexLast = ref(-1);
+	const indexNext = ref(-1);
 
 	function checkSectionContent() {
 		props.blok.moreSections.forEach((section) => {
@@ -41,6 +50,25 @@
 
 	onMounted(() => {
 		checkSectionContent();
+		sortedData.value = data.stories.sort((a, b) => {
+			const dateA = new Date(a.content.date);
+			const dateB = new Date(b.content.date);
+			return dateB - dateA;
+		});
+		indexLast.value =
+			sortedData.value.findIndex(
+				(story) => story.content._uid === props.blok._uid
+			) - 1;
+		indexNext.value =
+			sortedData.value.findIndex(
+				(story) => story.content._uid === props.blok._uid
+			) + 1;
+		if (indexLast.value < 0) {
+			indexLast.value = -1;
+		}
+		if (indexNext.value >= sortedData.value.length) {
+			indexNext.value = -1;
+		}
 	});
 </script>
 <template>
@@ -149,6 +177,58 @@
 				</div>
 			</div>
 		</section>
+		<!-- story navigation last/next -->
+		<nav class="flex flex-col md:flex-row gap-[1rem] py-[2rem]">
+			<NuxtLink
+				v-if="indexLast !== -1"
+				:to="sortedData[indexLast].slug"
+				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex gap-[2rem] items-center">
+				<SvgsNavigationDoubleArrow class="rotate-180" />
+				<div>
+					<p class="font-bold">
+						<span class="text-orange">Aktuelles </span>
+						{{
+							new Date(
+								sortedData[indexLast].content.date
+							).toLocaleDateString('de-DE', {
+								day: '2-digit',
+								month: '2-digit',
+								year: 'numeric',
+							})
+						}}
+					</p>
+					<p class="font-bold">
+						{{ sortedData[indexLast].content.title }}
+					</p>
+				</div>
+			</NuxtLink>
+			<div
+				class="w-full"
+				v-if="indexLast === -1 || indexNext === -1"></div>
+			<NuxtLink
+				v-if="indexNext !== -1"
+				:to="sortedData[indexNext].slug"
+				class="px-[2rem] py-[1rem] bg-[#F7F7F7] w-full rounded-[--border-radius] flex justify-between gap-[2rem] items-center">
+				<div>
+					<p class="font-bold">
+						<span class="text-orange">Aktuelles </span>
+						{{
+							new Date(
+								sortedData[indexNext].content.date
+							).toLocaleDateString('de-DE', {
+								day: '2-digit',
+								month: '2-digit',
+								year: 'numeric',
+							})
+						}}
+					</p>
+					<p class="font-bold">
+						{{ sortedData[indexNext].content.title }}
+					</p>
+				</div>
+				<SvgsNavigationDoubleArrow />
+			</NuxtLink>
+		</nav>
 		<div class="text-center my-[5rem]">
 			<p class="font-bold text-green">
 				Geschichten, wie wir Kamerun erleben.
