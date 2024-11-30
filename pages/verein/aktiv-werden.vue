@@ -78,10 +78,27 @@
 						type="radio"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
-						<b>Geld - Spenden helfen! </b>
+						<b>Geld sammeln </b>
 					</div>
 					<div class="collapse-content">
-						<p>Inhalt</p>
+						<p>
+							Du möchtest unseren Verein durch eine eigene Spende
+							unterstützen? <br />
+							Dann bist du hier richtig.
+							<br />
+							<br />
+							<button class="btn bg-orange text-white">
+								Jetzt spenden
+							</button>
+							<br /><br />
+							Wir freuen uns genauso über jeden, der Anderen von
+							unserer Arbeit erzählt oder bei einer Familienfeier um
+							Spenden bittet.
+							<br />
+							Auf Wunsch stellen wir auch Spendendosen zur Verfügung.
+							Wende dich dazu bitte an unseren Kassenwart Thomas
+							Langhein.
+						</p>
 					</div>
 				</div>
 				<!-- item -->
