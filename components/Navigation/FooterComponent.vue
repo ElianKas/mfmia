@@ -22,7 +22,7 @@
 		<section
 			class="min-h-[350px] bg-[#2C1200] text-white px-[1rem] md:px-[3rem] py-[2rem] flex items-center">
 			<div
-				class="max-w-[--max-width] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] md:gap-[5rem]">
+				class="max-w-[--max-width] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] md:gap-[5rem] md:gap-y-[2rem]">
 				<div class="md:min-h-[200px]">
 					<h3 class="text-orange font-bold pb[.5rem]">
 						Miteinander - für Menschen in Afrika e.V.
@@ -57,13 +57,13 @@
 			</div>
 		</section>
 		<section
-			class="h-[350px] p-[2rem] bg-[#000] flex items-center justify-center relative">
+			class="h-[350px] p-[2rem] bg-[#000] flex flex-col items-center justify-between">
 			<SvgsLogoEmblem />
 			<nav
-				class="max-w-[300px] flex max-md:flex-col gap-[5rem] absolute bottom-[2rem] left-[50%] translate-x-[-50%]">
-				<div>Impressum</div>
-				<div>Datenschutz</div>
-				<div>Sitemap</div>
+				class="flex gap-[1rem] md:gap-[5rem] text-white max-md:w-full justify-between">
+				<NuxtLink to="/impressum">Impressum</NuxtLink>
+				<NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
+				<NuxtLink to="/sitemap">Sitemap</NuxtLink>
 			</nav>
 		</section>
 	</footer>
