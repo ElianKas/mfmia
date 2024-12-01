@@ -21,8 +21,7 @@
 			</div>
 		</div>
 		<div class="md:w-[50%]">
-			<div
-				class="border aspect-square w-full rounded-[--border-radius]">
+			<div class="aspect-square w-full rounded-[--border-radius]">
 				<slot name="image"></slot>
 			</div>
 		</div>

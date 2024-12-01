@@ -26,7 +26,11 @@
 					attraktiver. Die Schülerzahlen steigen und damit stehen
 					wieder mehr Mittel für guten Unterricht zur Verfügung.
 				</template>
-				<template #image> </template>
+				<template #image
+					><StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/6000x4000/642d1b7db4/img_4766_mhu8sa.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -49,15 +53,10 @@
 					</template>
 					<template #right>
 						<div
-							class="flex flex-col md:flex-row gap-[2rem] items-center h-full">
-							<div class="h-full w-full">
-								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]"></div>
-								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
-							</div>
-							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								src="https://a.storyblok.com/f/311834/4032x3024/a8945005af/img_8690_im32li.jpg"
+								class="object-cover w-full h-full" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
