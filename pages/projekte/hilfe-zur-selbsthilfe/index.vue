@@ -68,7 +68,7 @@
 						</div>
 						<div class="w-full max-w-[500px]">
 							<div class="flex flex-col xl:flex-row gap-[2rem]">
-								<SvgsIconsHilfeZurSelbsthilfeSolarlight
+								<SvgsIconsHilfeZurSelbsthilfePlastikRecycling
 									class="shrink-0" />
 								<div>
 									<h2 class="font-bold text-green">
@@ -99,7 +99,7 @@
 						class="flex flex-col lg:flex-row gap-[5rem] xl:gap-[10rem] mt-[5rem]">
 						<div class="w-full max-w-[500px]">
 							<div class="flex flex-col xl:flex-row gap-[2rem]">
-								<SvgsIconsHilfeZurSelbsthilfeSolarlight
+								<SvgsIconsHilfeZurSelbsthilfePlantagen
 									class="shrink-0" />
 								<div>
 									<h2 class="font-bold text-green">
