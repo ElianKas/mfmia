@@ -10,6 +10,11 @@
 				<template #logo>
 					<SvgsIconsBrunnenbau />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/6000x4000/013c3d6298/img_8154_wasser_usks9x.jpg" />
+				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
@@ -22,13 +27,29 @@
 				<div
 					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
 					<div
-						class="aspect-[3/4] w-[300px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[300px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="w-full h-full object-cover"
+							src="https://a.storyblok.com/f/311834/6000x4000/e1341cf849/img_8102_wasser_auf_hochkant_zuschneiden_lhijqj.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[420px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[420px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="w-full h-full object-cover"
+							src="https://a.storyblok.com/f/311834/6000x4000/8214453ef6/img_3877_zuschneiden_wqv9to.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[350px] mt-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[350px] mt-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="w-full h-full object-cover"
+							src="https://a.storyblok.com/f/311834/6000x4000/918dc47c10/img_8124_kinder_am_brunnen_dirshz.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[400px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[400px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="w-full h-full object-cover"
+							src="https://a.storyblok.com/f/311834/6000x4000/82dce2aec3/img_2511_zuschneiden_wasser_trageaktion_nhdwcq.jpg" />
+					</div>
 				</div>
 				<TemplatesParagraphsHighlighted>
 					Ein Brunnen bietet einer Gemeinde die Möglichkeit,
@@ -61,7 +82,10 @@
 					</template>
 					<template #right
 						><div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/6000x4000/f28430c729/schulung_img_3803_yruhzp.jpg" /></div
 					></template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesLineUp>

@@ -11,7 +11,7 @@
 				</template>
 				<template #image>
 					<StoryblokImage
-						class="w-full h-full object-cover opacity-50"
+						class="w-full h-full object-cover"
 						src="https://a.storyblok.com/f/311834/6000x4000/7976ff7f8d/img_3554_kvdd4f.jpg" />
 				</template>
 			</TemplatesHeroSectionTemplate>

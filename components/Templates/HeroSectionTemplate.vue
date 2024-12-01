@@ -2,7 +2,7 @@
 	<div class="p-[1rem] md:p-[3rem]">
 		<section
 			class="w-full bg-[#000] p-[1rem] md:p-[2rem] flex flex-col md:flex-row md:items-end justify-end min-h-[calc(100vh-80px-6rem)] relative rounded-[--border-radius]">
-			<div class="absolute inset-0 w-full h-full">
+			<div class="absolute inset-0 w-full h-full opacity-50">
 				<slot name="image"></slot>
 			</div>
 			<h1
