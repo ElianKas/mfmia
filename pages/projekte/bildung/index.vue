@@ -23,14 +23,17 @@
 						<div class="flex items-center justify-end h-full">
 							<div
 								class="border rounded-[--border-radius] aspect-[4/3] w-full">
-								<ImagesStoryblokImage
+								<StoryblokImage
 									src="https://a.storyblok.com/f/311834/6000x4000/0f05dd16eb/img_3529_y4dlkz.jpg" />
 							</div>
 						</div>
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								src="https://a.storyblok.com/f/311834/6000x4000/b3bf1df3f5/img_3595_aoudaa.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
