@@ -19,6 +19,11 @@
 				<template #logo>
 					<SvgsIconsBrunnenbauMotivation class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/5360x5360/baf3e1289b/2013-09-05-andreas-229_im_brunnen.png" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -43,7 +48,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/3325x4327/11314290cf/frau_mit_wassereimer_8583.png" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -82,7 +91,10 @@
 				<TemplatesParagraphsLeftRight>
 					<template #left
 						><div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%] justify-self-end"></div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%] justify-self-end">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/3325x4326/13507f7527/wasserloch_00001.png" /></div
 					></template>
 					<template #right
 						><div
