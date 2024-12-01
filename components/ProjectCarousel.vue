@@ -53,7 +53,7 @@
 							<NuxtLink
 								:to="slide.link"
 								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
-								<div class="text-white text-big font-bold">
+								<div class="text-white text-big font-bold text-left">
 									{{ slide.title }}
 								</div>
 								<div>
