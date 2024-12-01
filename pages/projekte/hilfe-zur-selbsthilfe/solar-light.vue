@@ -19,6 +19,11 @@
 				<template #logo>
 					<SvgsIconsHilfeZurSelbsthilfeSolarlight class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover h-full w-full"
+						src="https://a.storyblok.com/f/311834/4032x3024/1ea5329f74/img_3358_solarlight_p5cpqf.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -33,7 +38,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="object-cover h-full w-full"
+								src="https://a.storyblok.com/f/311834/4032x3024/6993694e9f/img_3380_zuschneiden_eiyjoi.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -57,7 +66,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="object-cover h-full w-full"
+								src="https://a.storyblok.com/f/311834/4032x3024/f6a627f82b/img_8696_ihgz3c.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
