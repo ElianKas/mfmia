@@ -20,7 +20,11 @@
 					und der katholischen Grundschule Saint-Jean-Baptiste in
 					Leng-Tombo.
 				</template>
-				<template #image> </template>
+				<template #image
+					><StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/6000x4000/a72a3107a5/img_3401_wmahxd.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
@@ -58,15 +62,28 @@
 							class="flex flex-col md:flex-row gap-[2rem] items-center h-full">
 							<div class="h-full w-full">
 								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]"></div>
+									class="border rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]">
+									<StoryblokImage
+										class="object-cover w-full h-full"
+										src="https://a.storyblok.com/f/311834/6000x4000/5f8f383232/img_3431_zwlopi.jpg" />
+								</div>
 								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+									class="border rounded-[--border-radius] aspect-[3/4] w-full">
+									<StoryblokImage
+										class="object-cover w-full h-full"
+										src="https://a.storyblok.com/f/311834/6000x4000/5489b7e95d/img_3653_ame10q.jpg" />
+								</div>
 							</div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+								class="border rounded-[--border-radius] aspect-[3/4] w-full">
+								<StoryblokImage
+									class="object-cover w-full h-full object-[80%_50%]"
+									src="https://a.storyblok.com/f/311834/6000x4000/4f657dc150/img_3407_xdgwtk.jpg" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsImageBanner></TemplatesParagraphsImageBanner>
 			</div>
 		</article>
 		<LazyTemplatesExploreMoreTemplate
