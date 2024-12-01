@@ -9,6 +9,11 @@
 				<template #logo>
 					<SvgsIconsBildung />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="w-full h-full object-cover opacity-50"
+						src="https://a.storyblok.com/f/311834/6000x4000/7976ff7f8d/img_3554_kvdd4f.jpg" />
+				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
@@ -22,7 +27,7 @@
 					<template #left>
 						<div class="flex items-center justify-end h-full">
 							<div
-								class="border rounded-[--border-radius] aspect-[4/3] w-full">
+								class="rounded-[--border-radius] aspect-[4/3] w-full">
 								<StoryblokImage
 									class="w-full h-full object-cover"
 									src="https://a.storyblok.com/f/311834/6000x4000/0f05dd16eb/img_3529_y4dlkz.jpg" />
@@ -31,7 +36,7 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
 							<StoryblokImage
 								class="w-full h-full object-cover"
 								src="https://a.storyblok.com/f/311834/6000x4000/b3bf1df3f5/img_3595_aoudaa.jpg" />
@@ -55,7 +60,7 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
 							<StoryblokImage
 								class="w-full h-full object-cover"
 								src="https://a.storyblok.com/f/311834/6000x4000/47386e634a/img_3611_d9sqye.jpg" />
@@ -76,7 +81,7 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="w-full h-full object-cover"
 								src="https://a.storyblok.com/f/311834/6000x4000/8bf486e0ae/img_3512_cjgtf4.jpg" />

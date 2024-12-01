@@ -44,9 +44,13 @@
 						<div
 							class="flex flex-col md:flex-row gap-[2rem] items-center">
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+								class="rounded-[--border-radius] aspect-[3/4] w-full">
+								<StoryblokImage
+									class="w-full h-full object-cover"
+									src="https://a.storyblok.com/f/311834/1606x2089/220abf5f09/kamerunischer-junge-mit-kopfhaut-krankheit.png" />
+							</div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
+								class="rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
 								<StoryblokImage
 									src="https://a.storyblok.com/f/311834/6000x4000/9804152e52/img_4551_ximolt.jpg"
 									class="w-full h-full object-cover" />
