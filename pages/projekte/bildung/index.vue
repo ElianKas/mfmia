@@ -24,6 +24,7 @@
 							<div
 								class="border rounded-[--border-radius] aspect-[4/3] w-full">
 								<StoryblokImage
+									class="w-full h-full object-cover"
 									src="https://a.storyblok.com/f/311834/6000x4000/0f05dd16eb/img_3529_y4dlkz.jpg" />
 							</div>
 						</div>
@@ -32,6 +33,7 @@
 						<div
 							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
 							<StoryblokImage
+								class="w-full h-full object-cover"
 								src="https://a.storyblok.com/f/311834/6000x4000/b3bf1df3f5/img_3595_aoudaa.jpg" />
 						</div>
 					</template>
@@ -53,7 +55,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/6000x4000/47386e634a/img_3611_d9sqye.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -70,7 +76,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/6000x4000/8bf486e0ae/img_3512_cjgtf4.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesLineUp>

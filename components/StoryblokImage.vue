@@ -33,6 +33,7 @@
 </script>
 <template>
 	<NuxtImg
+		class="rounded-[--border-radius]"
 		v-if="optimizedSrc !== ''"
 		:src="optimizedSrc" />
 </template>
