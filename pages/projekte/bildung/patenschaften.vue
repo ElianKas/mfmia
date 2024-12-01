@@ -19,7 +19,11 @@
 					und gegebenenfalls auch ein anschließendes Studium oder eine
 					Berufsausbildung zu ermöglichen.
 				</template>
-				<template #image> </template>
+				<template #image
+					><StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/6000x4000/9d32e4f83d/img_4489_o1bccg.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -41,7 +45,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/190fab1b6c/img_3640_zzvx9j.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 			</div>
