@@ -43,7 +43,7 @@
 <template>
 	<div class="relative w-full h-full">
 		<LMap
-			class="rounded-[--border-radius]"
+			class="rounded-[--border-radius] relative z-[0]"
 			:zoom="9"
 			@ready="
 				() => {
