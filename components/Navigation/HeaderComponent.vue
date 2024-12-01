@@ -217,6 +217,7 @@
 							class="h-full"
 							@mouseleave="
 								() => {
+									//reset all states when mouse leaves
 									activeDesktop = false;
 									subpageIndex = null;
 								}
@@ -233,10 +234,10 @@
 								</div>
 								<ul class="w-[250px] flex flex-col gap-[.5rem]">
 									<li
-										class="text-[#666666] border-orange pl-[1rem]"
+										class="text-[#666666] border-orange pl-[1rem] cursor-pointer"
 										v-if="currentFolder && currentFolder.items"
 										v-for="(page, index) in currentFolder.items"
-										@mouseover="getIndex(index)"
+										@click="getIndex(index)"
 										:style="{
 											color: subpageIndex === index ? '#000' : '',
 										}"
