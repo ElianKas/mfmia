@@ -113,7 +113,7 @@
 		if (page === 'Storys') {
 			currentFolder.value = {
 				name: 'Storys',
-				link: '/storys',
+				items: [{ name: 'Übersicht', link: '/storys' }],
 			};
 		}
 		if (page === 'Unser Verein') {
@@ -140,7 +140,7 @@
 		if (page === 'Kontakt') {
 			currentFolder.value = {
 				name: 'Kontakt',
-				link: '/kontakt',
+				items: [{ name: 'Kontakt anfragen', link: '/kontakt' }],
 			};
 		}
 	}
