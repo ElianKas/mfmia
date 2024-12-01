@@ -167,8 +167,8 @@
 							class="h-[70px] max-w-[--max-width-big] items-center m-auto flex justify-between px-[1rem] md:px-[3rem]">
 							<NuxtLink
 								to="/"
-								class="w-[200px]">
-								<SvgsLogoSmall />
+								class="w-[200px] h-full">
+								<SvgsLogoSmall class="w-full h-full" />
 							</NuxtLink>
 							<div
 								class="flex items-center h-[70px] max-xl:hidden text-[#000]">
