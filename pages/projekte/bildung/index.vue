@@ -22,7 +22,10 @@
 					<template #left>
 						<div class="flex items-center justify-end h-full">
 							<div
-								class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+								class="border rounded-[--border-radius] aspect-[4/3] w-full">
+								<ImagesStoryblokImage
+									src="https://a.storyblok.com/f/311834/6000x4000/0f05dd16eb/img_3529_y4dlkz.jpg" />
+							</div>
 						</div>
 					</template>
 					<template #right>
