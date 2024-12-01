@@ -234,7 +234,7 @@
 								</div>
 								<ul class="w-[250px] flex flex-col gap-[.5rem]">
 									<li
-										class="text-[#666666] border-orange pl-[1rem] cursor-pointer"
+										class="text-[#666666] border-orange pl-[1rem] hover:border-l hover:text-[#000] cursor-pointer"
 										v-if="currentFolder && currentFolder.items"
 										v-for="(page, index) in currentFolder.items"
 										@click="getIndex(index)"
