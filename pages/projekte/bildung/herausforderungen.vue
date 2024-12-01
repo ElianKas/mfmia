@@ -16,10 +16,14 @@
 					Jugendliche, indem wir mithilfe von Paten in Deutschland
 					einen kontinuierlichen Schulbesuch ermöglichen.
 				</template>
-				<template #image> </template>
+				<template #image
+					><StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/6000x4000/d6552a757c/img_3588_pitjdp.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
-				<TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight class="pt-[6rem]">
 					<template #left>
 						<div class="flex items-center h-full">
 							<p>
@@ -42,7 +46,11 @@
 							<div
 								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]"></div>
+								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
+								<StoryblokImage
+									src="https://a.storyblok.com/f/311834/6000x4000/9804152e52/img_4551_ximolt.jpg"
+									class="w-full h-full object-cover" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -53,7 +61,11 @@
 					schon überfüllten Klassen mit bis zu 60 Schülerinnen und
 					Schülern sich gegenseitig stören.
 				</TemplatesParagraphsHighlighted>
-				<TemplatesParagraphsImageBanner></TemplatesParagraphsImageBanner>
+				<TemplatesParagraphsImageBanner>
+					<StoryblokImage
+						src="https://a.storyblok.com/f/311834/6000x4000/6ebec57681/img_3645_ydxwde.jpg"
+						class="w-full h-full object-cover object-[50%_80%]" />
+				</TemplatesParagraphsImageBanner>
 				<TemplatesParagraphsHighlighted>
 					Besonders für Mädchen sind die oft unzureichenden oder
 					fehlenden Sanitäranlagen schlimm. Während der Menstruation

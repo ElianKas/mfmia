@@ -16,7 +16,11 @@
 				<template #logo>
 					<SvgsIconsBildungSchulsystem class="shrink-0"
 				/></template>
-				<template #image> </template>
+				<template #image
+					><StoryblokImage
+						src="https://a.storyblok.com/f/311834/6000x4000/e783a1974d/img_4469_chqnxv.jpg"
+						class="object-cover w-full h-full" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -56,7 +60,11 @@
 					<template #right>
 						<div class="flex items-center h-full">
 							<div
-								class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+								class="border rounded-[--border-radius] aspect-[4/3] w-full">
+								<StoryblokImage
+									src="https://a.storyblok.com/f/311834/6000x4000/b13edca0af/img_4591_ci6de0.jpg"
+									class="object-cover w-full h-full" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -90,9 +98,17 @@
 						<div
 							class="flex flex-col md:flex-row gap-[2rem] items-center">
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+								class="border rounded-[--border-radius] aspect-[3/4] w-full">
+								<StoryblokImage
+									src="https://a.storyblok.com/f/311834/6000x4000/692f785fff/img_3620_kk3g1t.jpg"
+									class="object-cover w-full h-full" />
+							</div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]"></div>
+								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
+								<StoryblokImage
+									src="https://a.storyblok.com/f/311834/6000x4000/9da897f2f7/img_3611_1_n9iqtc.jpg"
+									class="object-cover w-full h-full" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
