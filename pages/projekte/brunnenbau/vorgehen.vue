@@ -17,35 +17,48 @@
 				<template #logo>
 					<SvgsIconsBrunnenbauVorgehen class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/3840x3840/e756d012d3/brunnenbau-in-zoatoubsi-19.png" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
 					<template #left>
-						<SvgsContentCircles />
-						<br />
-						<br />
-						<p>
-							Weitere Brunnen wollen wir im Gebiet um das Dorf
-							LengTombo bauen. Das liegt rund 150 km östlich von
-							Yaoundé. Die Menschen dort sind in der Regel
-							wirtschaftlich noch schlechter gestellt als im Raum
-							Obala, da Leng-Tombo durch schlechte Straßen nur schwer
-							erreichbar ist.
-						</p>
+						<div>
+							<SvgsContentCircles />
+							<br />
+							<br />
+							<p>
+								Weitere Brunnen wollen wir im Gebiet um das Dorf
+								LengTombo bauen. Das liegt rund 150 km östlich von
+								Yaoundé. Die Menschen dort sind in der Regel
+								wirtschaftlich noch schlechter gestellt als im Raum
+								Obala, da Leng-Tombo durch schlechte Straßen nur
+								schwer erreichbar ist.
+							</p>
+						</div>
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/3000x4000/c4cbc66994/brunnebau_3202.png" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsHighlighted>
-					<span class="text-orange font-bold">So gehen wir vor</span>
+					<h2 class="text-orange font-bold">So gehen wir vor</h2>
 					<br />
-					<br />
-					Wir wählen die Dörfer und Standorte, an denen wir Brunnen
-					bauen, sorgfältig aus. Dazu besuchen wir die Dörfer
-					gemeinsam mit unserer Partnerorganisation ANDES, sprechen
-					mit den Bewohnern und sehen uns die alten Wasserstellen an.
+					<p>
+						Wir wählen die Dörfer und Standorte, an denen wir Brunnen
+						bauen, sorgfältig aus. Dazu besuchen wir die Dörfer
+						gemeinsam mit unserer Partnerorganisation ANDES, sprechen
+						mit den Bewohnern und sehen uns die alten Wasserstellen
+						an.
+					</p>
 				</TemplatesParagraphsHighlighted>
 				<TemplatesParagraphsHighlighted>
 					<div class="py-[5rem] grid place-items-center">
@@ -79,6 +92,9 @@
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsImageBanner>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/7680x2627/12f2cdd27c/20130905-1426-083-brunneneinweihung.png" />
 				</TemplatesParagraphsImageBanner>
 				<TemplatesParagraphsLeftRight>
 					<template #left>
@@ -104,15 +120,15 @@
 						</p>
 					</template>
 				</TemplatesParagraphsLeftRight>
-				<LazyTemplatesExploreMoreTemplate
-					:page="{
-						title: 'Brunnenbau',
-						link: '/projekte/brunnenbau',
-					}">
-					<LinkCardsBrunnenbauMotivation />
-					<LinkCardsBrunnenbauStandorte />
-				</LazyTemplatesExploreMoreTemplate>
 			</div>
 		</article>
+		<LazyTemplatesExploreMoreTemplate
+			:page="{
+				title: 'Brunnenbau',
+				link: '/projekte/brunnenbau',
+			}">
+			<LinkCardsBrunnenbauMotivation />
+			<LinkCardsBrunnenbauStandorte />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>
