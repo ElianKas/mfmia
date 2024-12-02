@@ -1,8 +1,11 @@
 <template>
 	<footer>
 		<section
-			class="px-[1rem] h-[350px] bg-[#000] grid place-items-center text-white px-[1rem] md:px-[3rem]">
-			<div class="text-center">
+			class="px-[1rem] h-[350px] bg-[#000] grid place-items-center text-white px-[1rem] md:px-[3rem] relative">
+			<StoryblokImage
+				class="absolute inset-0 w-full h-full object-cover opacity-50"
+				src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
+			<div class="text-center z-[9]">
 				<p class="md:max-w-[400px] m-auto">
 					Helfen Sie mit Ihrer Spende, Projekte zu realisieren, die
 					den Menschen in Kamerun ein unabhängiges und
@@ -57,10 +60,13 @@
 			</div>
 		</section>
 		<section
-			class="h-[350px] p-[2rem] bg-[#000] flex flex-col items-center justify-between">
-			<SvgsLogoEmblem />
+			class="h-[350px] p-[2rem] bg-[#000] flex flex-col items-center justify-between relative">
+			<StoryblokImage
+				class="absolute inset-0 w-full h-full object-cover opacity-50"
+				src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
+			<SvgsLogoEmblem class="z-[9]" />
 			<nav
-				class="flex gap-[1rem] md:gap-[5rem] text-white max-md:w-full justify-between">
+				class="flex gap-[1rem] md:gap-[5rem] text-white max-md:w-full justify-between z-[9]">
 				<NuxtLink to="/impressum">Impressum</NuxtLink>
 				<NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
 				<NuxtLink to="/sitemap">Sitemap</NuxtLink>
