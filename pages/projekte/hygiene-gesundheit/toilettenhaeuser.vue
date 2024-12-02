@@ -13,6 +13,11 @@
 				<template #logo>
 					<SvgsIconsHygieneToilettenhäuser class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/4032x3024/df1de6334a/img_3636_versammlung_wzz1mv.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -33,7 +38,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/f4dd245cb9/klo_alt_hochkant_img_3559_eqydc9.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -48,7 +57,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/4032x3024/020b5b384e/img_3677_versammlung_bclxvq.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -67,7 +80,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full"></div>
+							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/3a90ec8342/img_3675_neqdrr.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 			</div>
