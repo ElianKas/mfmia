@@ -154,7 +154,7 @@
 	}
 </script>
 <template>
-	<div>
+	<div class="shadow-md">
 		<header class="z-[9999] relative">
 			<nav class="relative">
 				<div class="h-[80px]">
@@ -162,7 +162,7 @@
 					<div
 						:style="{ height: activeDesktop ? '350px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
-						class="transition-all duration-300 bg-white">
+						class="transition-all duration-300 bg-white z-[9999]">
 						<div
 							class="h-[70px] max-w-[--max-width-big] items-center m-auto flex justify-between px-[1rem] md:px-[3rem]">
 							<NuxtLink
@@ -268,7 +268,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="h-[10px] bg-[#000]"></div>
+					<div class="h-[10px] bg-[#000]">
+						<StoryblokImage
+							class="w-full h-full object-cover rounded-none"
+							src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
+					</div>
 				</div>
 				<!-- full menu mobile -->
 				<div
