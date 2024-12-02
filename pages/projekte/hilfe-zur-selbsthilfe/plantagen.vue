@@ -78,13 +78,13 @@
 							class="flex flex-col md:flex-row gap-[2rem] items-center h-full">
 							<div class="h-full w-full">
 								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]">
+									class="rounded-[--border-radius] aspect-[3/4] w-full mb-[2rem]">
 									<StoryblokImage
 										class="object-cover w-full h-full"
 										src="https://a.storyblok.com/f/311834/4032x3024/bac8dc3c38/img_8755_ksfgsp.jpg" />
 								</div>
 								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full">
+									class="rounded-[--border-radius] aspect-[3/4] w-full">
 									<StoryblokImage
 										class="object-cover w-full h-full"
 										src="https://a.storyblok.com/f/311834/1224x1632/2ba04dbd67/img_8875_bananen_auto_p8pu3l.jpg" />
@@ -92,7 +92,7 @@
 							</div>
 							<div class="h-full w-full">
 								<div
-									class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[75%]">
+									class="rounded-[--border-radius] aspect-[3/4] w-full md:mt-[75%]">
 									<StoryblokImage
 										class="object-cover w-full h-full"
 										src="https://a.storyblok.com/f/311834/6000x4000/9821ed8d35/img_2153_kakaopflanze_rxtror.jpg" />

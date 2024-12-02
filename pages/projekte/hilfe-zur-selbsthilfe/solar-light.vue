@@ -38,7 +38,7 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="object-cover h-full w-full"
 								src="https://a.storyblok.com/f/311834/4032x3024/6993694e9f/img_3380_zuschneiden_eiyjoi.jpg" />
@@ -66,7 +66,7 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[4/3] w-full">
+							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="object-cover h-full w-full"
 								src="https://a.storyblok.com/f/311834/4032x3024/f6a627f82b/img_8696_ihgz3c.jpg" />
