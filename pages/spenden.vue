@@ -10,8 +10,11 @@
 			</section>
 			<section
 				class="max-w-[--max-width-big] m-auto flex flex-col lg:flex-row lg:items-center gap-[2rem] lg:gap-[5rem] py-[2rem]">
-				<div
-					class="border h-[500px] rounded-[--border-radius] lg:w-[60%]"></div>
+				<div class="h-[500px] rounded-[--border-radius] lg:w-[60%]">
+					<StoryblokImage
+						class="w-full h-full object-cover"
+						src="https://a.storyblok.com/f/311834/6000x4000/71125ddf8f/spendenseite_img_8188.jpg" />
+				</div>
 				<div>
 					<div class="max-w-[400px] m-auto text-center">
 						<p>
