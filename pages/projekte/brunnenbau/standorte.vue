@@ -2,7 +2,8 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'projekte/brunnenbau',
+		starts_with: 'standorte',
+		filter_query: { type: { in: 'well' } },
 		is_startpage: false,
 	});
 </script>

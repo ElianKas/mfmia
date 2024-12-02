@@ -2,7 +2,8 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'projekte/hygiene-gesundheit',
+		starts_with: 'standorte',
+		filter_query: { type: { in: 'toilet' } },
 		is_startpage: false,
 	});
 </script>
