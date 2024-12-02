@@ -17,6 +17,11 @@
 				<template #logo>
 					<SvgsIconsHygieneVorgehen class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/3024x4032/643cb640ad/img_8708_nwanmt.jpg" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -54,9 +59,17 @@
 						<div
 							class="flex flex-col md:flex-row gap-[2rem] items-center md:mt-[8rem]">
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+								class="rounded-[--border-radius] aspect-[3/4] w-full">
+								<StoryblokImage
+									class="object-cover w-full h-full"
+									src="https://a.storyblok.com/f/311834/4032x3024/7fc3ec3cfb/img_8823_tzlrth.jpg" />
+							</div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]"></div>
+								class="rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
+								<StoryblokImage
+									class="object-cover w-full h-full object-[20%_50%]"
+									src="https://a.storyblok.com/f/311834/6000x4000/2e0e14591e/img_5514_ylubim.jpg" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
