@@ -93,7 +93,12 @@
 			</button>
 		</form>
 		<aside class="flex flex-col gap-[1rem] lg:w-[50%]">
-			<div>logo</div>
+			<SvgsLogoNormal class="max-w-[400px] w-full" />
+			<div class="h-[35px] w-full max-w-[400px]">
+				<StoryblokImage
+					class="w-full h-full object-cover rounded-none"
+					src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
+			</div>
 			<div>
 				<p>Miteinander - für Menschen in Afrika e. V.</p>
 				<p>Kölnische Straße 55</p>
@@ -101,7 +106,7 @@
 				<br />
 				<p>Telefon: +49 561-15470</p>
 				<p>Telefax: +49 561-779477</p>
-				<p>E-Mail: info@miteinander-fuer-afrika.de</p>
+				<p>E-Mail: info[at]miteinander-fuer-afrika.de</p>
 			</div>
 		</aside>
 	</section>
