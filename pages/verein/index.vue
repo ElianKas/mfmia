@@ -3,8 +3,13 @@
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">
 			<section>
 				<div
-					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius]">
-					<h1 class="text-white text-big font-bold">Der Verein</h1>
+					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius] relative">
+					<h1 class="text-white text-big font-bold z-[9]">
+						Der Verein
+					</h1>
+					<StoryblokImage
+						class="object-cover h-full w-full absolute inset-0 opacity-50"
+						src="https://a.storyblok.com/f/311834/1832x550/17ec30b2f5/themenbild_wir_unserverein.png" />
 				</div>
 			</section>
 			<TemplatesParagraphsHighlighted>

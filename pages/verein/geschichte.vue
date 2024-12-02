@@ -3,10 +3,13 @@
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">
 			<section>
 				<div
-					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius]">
-					<h1 class="text-white text-big font-bold">
+					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius] relative">
+					<h1 class="text-white text-big font-bold z-[9]">
 						Die Geschichte
 					</h1>
+					<StoryblokImage
+						class="object-cover h-full w-full absolute inset-0 opacity-50"
+						src="https://a.storyblok.com/f/311834/6000x4000/99b0bf6464/sebastian-mani_img_6097.JPG" />
 				</div>
 			</section>
 			<TemplatesParagraphsHighlighted>
