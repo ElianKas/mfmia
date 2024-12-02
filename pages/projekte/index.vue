@@ -3,6 +3,8 @@
 		{
 			title: 'Bildung',
 			link: '/projekte/bildung',
+			image:
+				'https://a.storyblok.com/f/311834/1219x1200/cc4f38bb40/bildung-ubersicht.png',
 			subpages: [
 				{
 					title: 'Übersicht',
@@ -33,6 +35,8 @@
 		{
 			title: 'Brunnenbau',
 			link: '/projekte/brunnenbau',
+			image:
+				'https://a.storyblok.com/f/311834/6000x4000/013c3d6298/img_8154_wasser_usks9x.jpg',
 			subpages: [
 				{
 					title: 'Übersicht',
@@ -77,6 +81,8 @@
 		{
 			title: 'Hygiene & Gesundheit',
 			link: '/projekte/hygiene-gesundheit',
+			image:
+				'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
 			subpages: [
 				{
 					title: 'Übersicht',
@@ -111,10 +117,14 @@
 						class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-[1rem] gap-y-[4rem]">
 						<li v-for="project in projects">
 							<div
-								class="bg-[#000] aspect-square flex items-end rounded-[--border-radius]">
+								class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
+								<StoryblokImage
+									class="absolute inset-0 w-full h-full object-cover opacity-50"
+									v-if="project.image"
+									:src="project.image" />
 								<NuxtLink
 									:to="project.link"
-									class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
+									class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
 									<div class="text-white font-bold">
 										{{ project.title }}
 									</div>
@@ -148,10 +158,13 @@
 					<div class="hidden md:block"></div>
 					<div>
 						<div
-							class="bg-[#000] aspect-square flex items-end rounded-[--border-radius]">
+							class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
+							<StoryblokImage
+								class="absolute inset-0 w-full h-full object-cover opacity-50"
+								src="https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg" />
 							<NuxtLink
 								to="/projekte/kamerun"
-								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
+								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
 								<div class="text-white font-bold">Kamerun</div>
 								<div>
 									<SvgsNavigationDoubleArrowWhite
