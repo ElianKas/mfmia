@@ -9,6 +9,11 @@
 				<template #logo>
 					<SvgsIconsKamerun />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg" />
+				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsHighlighted>
@@ -22,13 +27,25 @@
 				<div
 					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
 					<div
-						class="aspect-[3/4] w-[300px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[300px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/6000x4000/c4a4e971b4/frohliche_menschen_2_swbzem.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[420px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[420px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/6000x4000/5340dd4b85/schuler_4_vrj1xg.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[350px] mt-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[350px] mt-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/6000x4000/59df1c2a52/frohliche_menschen_3_lechfb.jpg" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[400px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[400px] mb-[-6rem] rounded-[--border-radius]"></div>
 				</div>
 				<TemplatesParagraphsLeftRight>
 					<template #left>
@@ -73,7 +90,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/d08ace82e4/frohliche_menschen_1_f46rdw.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -103,7 +124,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] w-full aspect-[3/4] md:w-[80%]"></div>
+							class="rounded-[--border-radius] w-full aspect-[3/4] md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/1bde3e08cb/schuler_2_wcm9uz.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
