@@ -18,7 +18,8 @@
 <template>
 	<section
 		class="p-[1rem] max-w-[500px] min-h-[calc(100vh-80px)] m-auto flex flex-col justify-center">
-		<div class="w-full grow max-h-[500px] relative z-[-99]">
+		<div
+			class="w-full grow max-h-[500px] relative bg-orange rounded-[--border-radius]">
 			<StoryblokImage
 				:class="{ hidden: gallery !== 0 }"
 				src="https://a.storyblok.com/f/311834/1219x1200/cc4f38bb40/bildung-ubersicht.png"

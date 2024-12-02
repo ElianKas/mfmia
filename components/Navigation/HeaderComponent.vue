@@ -268,7 +268,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="h-[10px] bg-[#000]">
+					<div class="h-[10px] bg-orange">
 						<StoryblokImage
 							class="w-full h-full object-cover rounded-none"
 							src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
