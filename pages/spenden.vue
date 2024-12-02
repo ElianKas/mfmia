@@ -29,12 +29,16 @@
 				</div>
 			</section>
 			<section
-				class="max-w-[--max-width] m-auto py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem] md:gap-[5rem]">
+				class="max-w-[--max-width] border-b border-green m-auto py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem] md:gap-[5rem]">
 				<div>
+					<StoryblokImage
+						src="https://a.storyblok.com/f/311834/183x188/49818c11a6/bildschirmfoto-2024-09-02-um-17-07-54.png" />
 					<p>Barcode für Online-Banking per App</p>
 				</div>
 				<div>
-					<p class="text-green">Vereins- und Spendenkonto</p>
+					<p class="text-green font-bold">
+						Vereins- und Spendenkonto
+					</p>
 					<br />
 					<p>
 						Miteinander – für Menschen in Afrika e.V.
@@ -46,7 +50,59 @@
 					<br />
 					BIC: GENODEF1EK1
 				</div>
-				<div>Inhalt</div>
+				<div>
+					<StoryblokImage
+						src="https://a.storyblok.com/f/311834/196x196/24a4aab583/gruppe-322.png" />
+					<p class="text-center">Über PayPal spenden</p>
+				</div>
+				<div>
+					<p class="text-green font-bold">Paypal</p>
+					<p>miteinander-fuer-afrika[at]t-online.de</p>
+				</div>
+			</section>
+			<br />
+			<br />
+			<section
+				class="max-w-[--max-width] m-auto flex max-md:flex-col gap-[2rem] md:gap-[5rem] py-[2rem]">
+				<div class="w-full">
+					<p>Aktuell sammeln wir Spenden für folgende Projekte:</p>
+					<ul>
+						<li>• Brunnenbau</li>
+						<li>• Schulbildung</li>
+						<li>• Toilettenbau</li>
+					</ul>
+					<br />
+					<p>
+						Liegt Ihnen eines dieser Projekte besonders am Herzen,
+						geben Sie bitte das Projekt in dem Verwendungszweck der
+						Überweisung an.
+						<br /><br />
+						Gerne stellen wir eine Spendenbescheinigung aus. Geben Sie
+						dazu bitte Ihre Anschrift im Verwendungszweck der
+						Überweisung an.
+						<br /><br />
+						Teilen Sie uns bitte auch ihre E-Mail-Adresse mit, damit
+						wir Ihnen die Spendenbescheinigung als PDF zusenden
+						können. Nutzen Sie dazu gerne unser Kontaktformular.
+						<br />
+						Sie wollen wissen, was aus ihrer Spende geworden ist? Dann
+						nutzen Sie doch einfach unseren Newsletter.
+					</p>
+				</div>
+				<nav class="w-full text-orange">
+					<p>Kontakt aufnehmen</p>
+					<NuxtLink to="/kontakt">
+						<SvgsNavigationLongArrowOrange /> </NuxtLink
+					><br />
+					<p>Zum Newsletter eintragen</p>
+					<NuxtLink to="/kontakt">
+						<SvgsNavigationLongArrowOrange /> </NuxtLink
+					><br />
+					<p>Zuwendungsbestätigung Kleinspenden</p>
+					<NuxtLink to="/kontakt">
+						<SvgsNavigationLongArrowOrange />
+					</NuxtLink>
+				</nav>
 			</section>
 		</article>
 	</div>
