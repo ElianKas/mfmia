@@ -76,7 +76,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/3456x4608/46f8f0aa65/verkehr_6_sjpf6t.jpg" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -139,7 +143,11 @@
 				</TemplatesParagraphsLeftRight>
 				<div class="md:w-[50%] m-auto">
 					<div
-						class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[60%] m-auto"></div>
+						class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[60%] m-auto">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/6000x4000/a1a2879081/mull_1_wdl0xj.jpg" />
+					</div>
 				</div>
 			</div>
 		</article>
