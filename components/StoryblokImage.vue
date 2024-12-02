@@ -16,7 +16,11 @@
 	const baseLink = 'https://a.storyblok.com/f/311834/';
 	const optimizedSrc = ref('');
 
-	function optimize(resolution) {
+	function optimize() {
+		let resolution = 900;
+		if (window.innerWidth >= 768) {
+			resolution = 1200;
+		}
 		const image = props.src.replace(baseLink, '');
 		const part = image.slice(0, image.indexOf('/'));
 		const [x, y] = part.split('x');
@@ -28,7 +32,7 @@
 	}
 
 	onMounted(() => {
-		optimize(800);
+		optimize();
 	});
 </script>
 <template>
