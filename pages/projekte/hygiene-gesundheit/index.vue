@@ -7,6 +7,11 @@
 					>Die Grundvoraussetzung für ein gesundes Leben schaffen
 				</template>
 				<template #logo> </template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg" />
+				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -28,7 +33,10 @@
 					</template>
 					<template #right
 						><div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/6000x4000/d3644ac0ef/img_5512_frih56.jpg" /></div
 					></template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesParagraphsLeftRight>
@@ -62,7 +70,10 @@
 					</template>
 					<template #right
 						><div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full object-[80%_50%]"
+								src="https://a.storyblok.com/f/311834/4032x3024/0655f37db1/img_8819_ip51zu.jpg" /></div
 					></template>
 				</TemplatesParagraphsLeftRight>
 			</div>
