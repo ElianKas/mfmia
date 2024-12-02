@@ -17,7 +17,7 @@
 	const optimizedSrc = ref('');
 
 	function optimize() {
-		let resolution = 900;
+		let resolution = 800;
 		if (window.innerWidth >= 768) {
 			resolution = 1200;
 		}
