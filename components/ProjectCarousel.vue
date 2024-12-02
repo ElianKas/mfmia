@@ -1,15 +1,29 @@
 <script setup>
 	const currentValue = ref(0);
 	const projects = [
-		{ title: 'Bildung', link: '/projekte/bildung' },
-		{ title: 'Brunnenbau', link: '/projekte/brunnenbau' },
 		{
-			title: 'Hygiene & Gesundheit',
-			link: '/projekte/hygiene-gesundheit',
+			title: 'Kamerun',
+			link: '/projekte/kamerun',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg',
+		},
+		{
+			title: 'Bildung',
+			link: '/projekte/bildung',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/7976ff7f8d/img_3554_kvdd4f.jpg',
+		},
+		{
+			title: 'Brunnenbau',
+			link: '/projekte/brunnenbau',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/013c3d6298/img_8154_wasser_usks9x.jpg',
 		},
 		{
 			title: 'Hilfe zur Selbsthilfe',
 			link: '/projekte/hilfe-zur-selbsthilfe',
+		},
+		{
+			title: 'Hygiene & Gesundheit',
+			link: '/projekte/hygiene-gesundheit',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
 		},
 	];
 </script>
@@ -44,15 +58,19 @@
 						class="px-[1rem] md:px-[2rem]"
 						v-for="(slide, index) in projects">
 						<div
-							class="bg-[#000] w-full md:w-[500px] aspect-square flex items-end rounded-[--border-radius] cursor-pointer"
+							class="bg-[#000] relative w-full md:w-[500px] aspect-square flex items-end rounded-[--border-radius] cursor-pointer"
 							@click="
 								() => {
 									currentValue = index;
 								}
 							">
+							<StoryblokImage
+								class="absolute inset-0 w-full h-full object-cover opacity-50"
+								:src="slide.src"
+								v-if="slide.src" />
 							<NuxtLink
 								:to="slide.link"
-								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem]">
+								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
 								<div class="text-white text-big font-bold text-left">
 									{{ slide.title }}
 								</div>
