@@ -69,7 +69,7 @@
 							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="object-cover h-full w-full"
-								src="https://a.storyblok.com/f/311834/4032x3024/f6a627f82b/img_8696_ihgz3c.jpg" />
+								src="https://a.storyblok.com/f/311834/600x440/b20d03f419/solarlight_lampenset.jpg" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
