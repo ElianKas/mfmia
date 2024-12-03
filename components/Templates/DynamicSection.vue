@@ -12,10 +12,6 @@
 	function slideTo(index) {
 		currentSlide.value = index;
 	}
-
-	onMounted(() => {
-		console.log('content', props.section);
-	});
 </script>
 <template>
 	<div
