@@ -11,6 +11,7 @@
 	<section class="px-[1rem] md:px-[3rem] mt-[3rem]">
 		<ClientOnly>
 			<template #fallback>
+				<div class="skeleton h-[42px] md:h-[27px] mb-[1rem]"></div>
 				<div class="mt-[1rem]">
 					<div
 						class="skeleton h-[42px] md:h-[27px] mb-[1rem]"
@@ -27,7 +28,9 @@
 				</div>
 				<div>Regionen: Yaounde NN; NW 150km</div>
 			</div>
+			<!-- desktop -->
 			<div
+				class="max-lg:hidden"
 				:class="{
 					collapse:
 						story.content.images && story.content.images.length > 0,
@@ -82,7 +85,7 @@
 				v-if="data && data.stories"
 				v-for="(story, index) in data.stories">
 				<input
-					type="radio"
+					type="checkbox"
 					name="my-accordion-1" />
 				<div class="collapse-title px-0">
 					{{ data.stories.length - index }}
@@ -95,6 +98,12 @@
 						<li>{{ story.content.group }}</li>
 						<li>{{ story.content.year }}</li>
 					</ul>
+					<div class="flex gap-[1rem] flex-wrap pt-[1rem]">
+						<StoryblokImage
+							class="h-[300px] w-auto object-cover"
+							:src="image.filename"
+							v-for="image in story.content.images" />
+					</div>
 				</div>
 			</div>
 		</ClientOnly>
