@@ -276,7 +276,7 @@
 				</div>
 				<!-- full menu mobile -->
 				<div
-					class="h-[100vh] fixed top-0 right-0 w-[85%] bg-white pl-[3rem] pr-[1rem] md:pr-[3rem] flex flex-col gap-[1rem]"
+					class="h-[100vh] fixed top-0 right-0 w-full bg-white pl-[3rem] pr-[1rem] md:pr-[3rem] flex flex-col gap-[1rem]"
 					:class="{ hidden: !activeMobile }">
 					<div class="self-end h-[70px] shrink-0 flex items-center">
 						<div
