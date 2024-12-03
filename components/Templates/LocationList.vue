@@ -22,28 +22,36 @@
 				</div>
 			</template>
 			<div
-				class="grid-cols-[50px_1fr_1fr_1fr_1fr_50px] my-[1rem] gap-[1rem] hidden lg:grid"
+				class="collapse bg-base-200"
 				v-if="data && data.stories"
 				v-for="(story, index) in data?.stories || []">
-				<div class="font-bold">
-					{{ data.stories.length - index }}
+				<input type="checkbox" />
+				<div
+					class="collapse-title grid-cols-[50px_1fr_1fr_1fr_1fr_50px] my-[1rem] gap-[1rem] hidden lg:grid">
+					<div class="font-bold">
+						{{ data.stories.length - index }}
+					</div>
+					<div class="font-bold">
+						{{ story.content.location }}
+					</div>
+					<div>
+						{{ story.content.well }}
+					</div>
+					<div>
+						{{ story.content.coordinates }}
+					</div>
+					<div>
+						{{ story.content.group }}
+					</div>
+					<div class="justify-self-end">
+						{{ story.content.year }}
+					</div>
 				</div>
-				<div class="font-bold">
-					{{ story.content.location }}
-				</div>
-				<div>
-					{{ story.content.well }}
-				</div>
-				<div>
-					{{ story.content.coordinates }}
-				</div>
-				<div>
-					{{ story.content.group }}
-				</div>
-				<div class="justify-self-end">
-					{{ story.content.year }}
+				<div class="collapse-content">
+					<p>hello</p>
 				</div>
 			</div>
+			<!-- mobile -->
 			<div
 				class="collapse collapse-arrow border-t rounded-none lg:hidden"
 				v-if="data && data.stories"
