@@ -78,6 +78,15 @@
 	.leaflet-tile-pane {
 		z-index: 1;
 	}
+	.leaflet-map-pane canvas {
+		z-index: 1;
+	}
+	.leaflet-map-pane svg {
+		z-index: 2;
+	}
+	.leaflet-pane {
+		z-index: 2;
+	}
 	.leaflet-overlay-pane {
 		z-index: 2;
 	}
@@ -92,5 +101,11 @@
 	}
 	.leaflet-popup-pane {
 		z-index: 6;
+	}
+	.leaflet-zoom-box {
+		z-index: 7;
+	}
+	.leaflet-bottom {
+		z-index: 8;
 	}
 </style>
