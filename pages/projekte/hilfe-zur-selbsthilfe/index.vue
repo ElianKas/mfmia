@@ -16,7 +16,7 @@
 				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
-				<TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight class="pb-[5rem]">
 					<template #left>
 						<p>
 							Miteinander - für Menschen in Afrika e.V. engagiert sich
