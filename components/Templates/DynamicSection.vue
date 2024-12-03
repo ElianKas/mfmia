@@ -62,7 +62,7 @@
 					:key="image"
 					class="cursor-pointer">
 					<StoryblokImage
-						class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px]"
+						class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
 						:src="image.image"
 						:alt="image.alt" />
 				</Slide>
