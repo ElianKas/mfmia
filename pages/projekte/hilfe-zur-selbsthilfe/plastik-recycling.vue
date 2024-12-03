@@ -134,7 +134,7 @@
 					</template>
 					<template #right>
 						<div
-							class="flex flex-col md:flex-row gap-[2rem] items-center">
+							class="flex flex-col md:flex-row gap-[2rem] items-center pt-[5rem]">
 							<div
 								class="rounded-[--border-radius] aspect-[3/4] w-full">
 								<StoryblokImage
