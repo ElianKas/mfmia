@@ -74,3 +74,23 @@
 		</div>
 	</div>
 </template>
+<style scoped>
+	.leaflet-tile-pane {
+		z-index: 1;
+	}
+	.leaflet-overlay-pane {
+		z-index: 2;
+	}
+	.leaflet-shadow-pane {
+		z-index: 3;
+	}
+	.leaflet-marker-pane {
+		z-index: 4;
+	}
+	.leaflet-tooltip-pane {
+		z-index: 5;
+	}
+	.leaflet-popup-pane {
+		z-index: 6;
+	}
+</style>
