@@ -59,6 +59,8 @@
 		{
 			title: 'Hilfe zur Selbsthilfe',
 			link: '/projekte/hilfe-zur-selbsthilfe',
+			image:
+				'https://a.storyblok.com/f/311834/5200x2490/1169d78ee3/auto-sebastien.png',
 			subpages: [
 				{
 					title: 'Übersicht',

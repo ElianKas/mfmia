@@ -19,6 +19,7 @@
 		{
 			title: 'Hilfe zur Selbsthilfe',
 			link: '/projekte/hilfe-zur-selbsthilfe',
+			src: 'https://a.storyblok.com/f/311834/5200x2490/1169d78ee3/auto-sebastien.png',
 		},
 		{
 			title: 'Hygiene & Gesundheit',
@@ -41,7 +42,7 @@
 						class="skeleton w-[500px] aspect-square hidden md:block"></div>
 				</div>
 			</template>
-			<nav>
+			<nav class="max-w-[--max-width-big] m-auto">
 				<h2 class="font-bold text-big text-orange text-center">
 					Lerne unsere Projekte kennen
 				</h2>
