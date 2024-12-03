@@ -35,7 +35,7 @@
 			v-if="section.gallery.length === 1"
 			:src="section.gallery[0].image"
 			:alt="section.gallery[0].alt"
-			class="rounded-[--border-radius] max-w-[400px]" />
+			class="rounded-[--border-radius] max-w-[400px] w-full" />
 		<div
 			v-if="section.gallery.length > 1"
 			class="max-w-[400px]">

@@ -114,7 +114,7 @@
 		</section>
 		<!-- storyblok moreSections render -->
 		<section
-			class="md:py-[2rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
+			class="py-[2rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
 			:class="{
 				'md:flex-row': i % 2 === 0,
 				'md:flex-row-reverse': i % 2 !== 0,
@@ -127,7 +127,7 @@
 				:section="section" />
 		</section>
 		<!-- story navigation last/next -->
-		<nav class="flex flex-col md:flex-row gap-[1rem] py-[2rem]">
+		<nav class="flex flex-col md:flex-row gap-[1rem] py-[5rem]">
 			<NuxtLink
 				v-if="indexLast !== -1"
 				:to="sortedData[indexLast].slug"
