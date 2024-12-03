@@ -25,7 +25,7 @@
 					Südosten gibt es sogar tropischen Regenwald.
 				</TemplatesParagraphsHighlighted>
 				<div
-					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
+					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex max-w-[--max-width-big] m-auto">
 					<div
 						class="aspect-[3/4] w-[300px] mb-[-6rem] rounded-[--border-radius]">
 						<StoryblokImage
