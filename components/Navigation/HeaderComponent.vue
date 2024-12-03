@@ -200,7 +200,7 @@
 							</div>
 							<div
 								class="max-xl:hidden font-bold text-orange cursor-pointer w-[200px] text-right">
-								Jetzt spenden
+								Jetzt Spenden
 							</div>
 							<!-- burger icon -->
 							<div

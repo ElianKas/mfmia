@@ -13,7 +13,7 @@
 				</p>
 				<br />
 				<button class="btn bg-orange text-white border-none">
-					Jetzt spenden
+					Jetzt Spenden
 				</button>
 				<br />
 				<br />

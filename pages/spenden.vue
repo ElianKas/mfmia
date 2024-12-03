@@ -23,7 +23,7 @@
 							selbstbestimmtes Leben ermöglichen.
 						</p>
 						<button class="btn bg-orange text-white mt-[.5rem]">
-							Jetzt spenden
+							Jetzt Spenden
 						</button>
 					</div>
 				</div>
