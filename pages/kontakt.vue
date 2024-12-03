@@ -31,31 +31,31 @@
 				<div class="h-[1px] border border-green"></div>
 				<label
 					class="input px-[.5rem] flex items-center gap-2 border-b">
+					Straße / Nr.
+					<input
+						type="text"
+						class="grow" />
+				</label>
+				<div class="h-[1px] border border-green"></div>
+				<label
+					class="input px-[.5rem] flex items-center gap-2 border-b">
+					PLZ / Ort
+					<input
+						type="text"
+						class="grow" />
+				</label>
+				<div class="h-[1px] border border-green"></div>
+				<label
+					class="input px-[.5rem] flex items-center gap-2 border-b">
+					Telefon / Mobil
+					<input
+						type="text"
+						class="grow" />
+				</label>
+				<div class="h-[1px] border border-green"></div>
+				<label
+					class="input px-[.5rem] flex items-center gap-2 border-b">
 					E-Mail<span class="text-orange">*</span>
-					<input
-						type="text"
-						class="grow" />
-				</label>
-				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
-					Straße / Nr.<span class="text-orange">*</span>
-					<input
-						type="text"
-						class="grow" />
-				</label>
-				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
-					PLZ / Ort<span class="text-orange">*</span>
-					<input
-						type="text"
-						class="grow" />
-				</label>
-				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
-					Telefon / Mobil<span class="text-orange">*</span>
 					<input
 						type="text"
 						class="grow" />
@@ -64,7 +64,7 @@
 				<br />
 				<textarea
 					class="textarea textarea-bordered border-green w-full"
-					placeholder="Nachricht"></textarea>
+					placeholder="Ihre Mitteilung"></textarea>
 			</div>
 			<div class="form-control">
 				<label
