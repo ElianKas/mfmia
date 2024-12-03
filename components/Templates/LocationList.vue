@@ -9,24 +9,24 @@
 </script>
 <template>
 	<section class="px-[1rem] md:px-[3rem] mt-[3rem]">
-		<div
-			class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange font-bold">
-			<h2 class="text-orange">
-				Projekte - <slot name="name"></slot> Karte
-			</h2>
-			<div v-if="data && data.stories">
-				{{ data.stories.length }} Standorte
-			</div>
-			<div>Regionen: Yaounde NN; NW 150km</div>
-		</div>
 		<ClientOnly>
 			<template #fallback>
 				<div class="mt-[1rem]">
 					<div
 						class="skeleton h-[42px] md:h-[27px] mb-[1rem]"
-						v-for="entry in data.stories.length"></div>
+						v-for="entry in 5"></div>
 				</div>
 			</template>
+			<div
+				class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange font-bold">
+				<h2 class="text-orange">
+					Projekte - <slot name="name"></slot> Karte
+				</h2>
+				<div v-if="data && data.stories">
+					{{ data.stories.length }} Standorte
+				</div>
+				<div>Regionen: Yaounde NN; NW 150km</div>
+			</div>
 			<div
 				:class="{
 					collapse:
