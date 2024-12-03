@@ -6,6 +6,13 @@
 		is_startpage: false,
 	});
 	const props = defineProps({ blok: Object });
+	const descriptionContent = computed(() => {
+		if (props.blok.description.type === 'doc') {
+			return renderRichText(props.blok.description);
+		} else {
+			return props.blok.description;
+		}
+	});
 	const sortedData = ref(null);
 	const moreSectionContent = ref([]);
 	const indexLast = ref(-1);
@@ -91,20 +98,34 @@
 					v-if="blok.title">
 					{{ blok.title }}
 				</h2>
-				<p v-if="blok.description">{{ blok.description }}</p>
+				<br />
+				<div
+					v-if="blok.description"
+					v-html="descriptionContent"></div>
 			</div>
 			<div
 				class="md:w-[50%] m-auto"
 				v-if="blok.cover.filename !== ''">
-				<ImagesStoryblokImage
+				<StoryblokImage
 					class="rounded-[--border-radius] md:w-[80%] md:m-auto h-auto"
 					:src="blok.cover.filename"
 					v-if="blok.cover" />
 			</div>
 		</section>
 		<!-- storyblok moreSections render -->
-		<TemplatesDynamicSection
-			:moreSectionContent="moreSectionContent" />
+		<section
+			class="md:py-[2rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
+			:class="{
+				'md:flex-row': i % 2 === 0,
+				'md:flex-row-reverse': i % 2 !== 0,
+			}"
+			v-for="(section, i) in moreSectionContent"
+			:key="section"
+			v-if="moreSectionContent.length > 0">
+			<TemplatesDynamicSection
+				v-if="section"
+				:section="section" />
+		</section>
 		<!-- story navigation last/next -->
 		<nav class="flex flex-col md:flex-row gap-[1rem] py-[2rem]">
 			<NuxtLink
