@@ -103,10 +103,7 @@
 					v-html="descriptionContent"></div>
 			</div>
 			<div class="md:w-[50%] m-auto">
-				<NuxtImg
-					provider="storyblok"
-					format="avif"
-					placeholder
+				<StoryblokImage
 					class="rounded-[--border-radius] md:w-[80%] md:m-auto h-auto"
 					:src="blok.cover.filename"
 					v-if="blok.cover" />
