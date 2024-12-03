@@ -17,7 +17,7 @@
 </script>
 <template>
 	<section
-		class="p-[1rem] max-w-[500px] min-h-[calc(100vh-80px)] m-auto flex flex-col justify-center">
+		class="p-[1rem] max-w-[500px] min-h-[calc(100vh-80px)] m-auto flex flex-col justify-center gap-[1rem]">
 		<div
 			class="w-full grow max-h-[500px] relative bg-orange rounded-[--border-radius]">
 			<StoryblokImage
@@ -33,7 +33,6 @@
 				src="https://a.storyblok.com/f/311834/6000x4000/9da897f2f7/img_3611_1_n9iqtc.jpg"
 				class="landing2 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]" />
 		</div>
-		<br />
 		<h1>
 			<SvgsLogoNormal class="w-full h-auto mb-[5rem]" />
 		</h1>
