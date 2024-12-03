@@ -50,10 +50,6 @@
 			src: 'https://a.storyblok.com/f/311834/2352x1682/6fd71a67af/schueler_auf_schulhof.png',
 		},
 	];
-
-	function slideTo(index) {
-		currentSlide.value = index;
-	}
 </script>
 <template>
 	<div>
@@ -150,7 +146,7 @@
 								:items-to-show="3"
 								:wrap-around="true">
 								<Slide
-									@click="slideTo(index)"
+									@click="currentSlide = index"
 									v-for="(slide, index) in slides1"
 									:key="slide"
 									class="cursor-pointer">
@@ -206,7 +202,7 @@
 								:items-to-show="3"
 								:wrap-around="true">
 								<Slide
-									@click="slideTo(index)"
+									@click="currentSlide2 = index"
 									v-for="(slide, index) in slides2"
 									:key="slide"
 									class="cursor-pointer">
@@ -265,7 +261,7 @@
 								:items-to-show="3"
 								:wrap-around="true">
 								<Slide
-									@click="slideTo(index)"
+									@click="currentSlide3 = index"
 									v-for="(slide, index) in slides3"
 									:key="slide"
 									class="cursor-pointer">
