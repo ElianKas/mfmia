@@ -8,10 +8,7 @@
 		v-if="story"
 		:to="story.full_slug"
 		class="h-[500px] w-full rounded-[--border-radius] relative">
-		<NuxtImg
-			provider="storyblok"
-			format="avif"
-			placeholder
+		<StoryblokImage
 			class="rounded-[--border-radius] absolute inset-0 w-full h-full object-cover"
 			:src="story.content.cover.filename"
 			:alt="story.content.title" />
