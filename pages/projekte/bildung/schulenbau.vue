@@ -132,11 +132,31 @@
 						</p>
 					</template>
 					<template #right>
-						<div
-							class="rounded-[--border-radius] aspect-[4/3] w-full">
-							<StoryblokImage
-								src="https://a.storyblok.com/f/311834/4032x3024/a8945005af/img_8690_im32li.jpg"
-								class="object-cover w-full h-full" />
+						<div>
+							<Carousel v-model="currentSlide">
+								<Slide
+									v-for="slide in slides1"
+									:key="slide">
+									<StoryblokImage
+										:src="slide.src"
+										class="object-cover w-full h-full" />
+								</Slide>
+							</Carousel>
+							<br />
+							<Carousel
+								v-model="currentSlide"
+								:items-to-show="3"
+								:wrap-around="true">
+								<Slide
+									@click="slideTo(index)"
+									v-for="(slide, index) in slides1"
+									:key="slide"
+									class="cursor-pointer">
+									<StoryblokImage
+										class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
+										:src="slide.src" />
+								</Slide>
+							</Carousel>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -171,7 +191,7 @@
 						<div>
 							<Carousel v-model="currentSlide">
 								<Slide
-									v-for="slide in slides1"
+									v-for="slide in slides2"
 									:key="slide">
 									<StoryblokImage
 										:src="slide.src"
@@ -185,7 +205,7 @@
 								:wrap-around="true">
 								<Slide
 									@click="slideTo(index)"
-									v-for="(slide, index) in slides1"
+									v-for="(slide, index) in slides2"
 									:key="slide"
 									class="cursor-pointer">
 									<StoryblokImage
@@ -224,53 +244,6 @@
 							diesem Anstieg können nun auch die vollen Lehrergehälter
 							gewährleistet werden. Endlich kann der Schulbetrieb
 							wieder stabil laufen.
-						</p>
-					</template>
-					<template #right>
-						<div>
-							<Carousel v-model="currentSlide">
-								<Slide
-									v-for="slide in slides2"
-									:key="slide">
-									<StoryblokImage
-										:src="slide.src"
-										class="object-cover w-full h-full" />
-								</Slide>
-							</Carousel>
-							<br />
-							<Carousel
-								v-model="currentSlide"
-								:items-to-show="3"
-								:wrap-around="true">
-								<Slide
-									@click="slideTo(index)"
-									v-for="(slide, index) in slides2"
-									:key="slide"
-									class="cursor-pointer">
-									<StoryblokImage
-										class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
-										:src="slide.src" />
-								</Slide>
-							</Carousel>
-						</div>
-					</template>
-				</TemplatesParagraphsLeftRight>
-				<TemplatesParagraphsLeftRight>
-					<template #left>
-						<p>
-							Die Schulen haben auch die Möglichkeit, Spenden für die
-							Bedürfnisse ihrer Partner-Schulen in Kamerun zu sammeln,
-							wodurch sie unmittelbar die Auswirkungen ihres
-							Engagements sehen können. Wir übernehmen die Abwicklung
-							der Überweisungen und die Überprüfung der Belege.
-							<br /><br />
-							Inzwischen gab es schon viele schöne Bilder und kurze
-							Videos, die per WhatsApp zwischen Deutschland und
-							Kamerun ausgetauscht wurden und spannende Einblicke in
-							den Schulalltag ermöglichten. Und es werden an den
-							Kameruner Schulen konkrete Verbesserungen möglich, die
-							ohne die Schulgemeinschaften in Kassel nicht zustande
-							gekommen wären!
 						</p>
 					</template>
 					<template #right>
