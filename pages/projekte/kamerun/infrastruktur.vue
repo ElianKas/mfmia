@@ -18,6 +18,11 @@
 				<template #logo>
 					<SvgsIconsKamerunInfrastruktur class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/2091x2091/e06a7f1a5b/img_8616_altes_toilettenhaus.png" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
