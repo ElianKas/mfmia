@@ -1,5 +1,7 @@
 <script setup>
 	const currentSlide = ref(0);
+	const currentSlide2 = ref(0);
+	const currentSlide3 = ref(0);
 	const slides1 = [
 		{
 			src: 'https://a.storyblok.com/f/311834/1293x1682/883917c466/be84f7d9-c6e8-4daf-8a71-b21bd3348643.png',
@@ -189,7 +191,7 @@
 					</template>
 					<template #right>
 						<div>
-							<Carousel v-model="currentSlide">
+							<Carousel v-model="currentSlide2">
 								<Slide
 									v-for="slide in slides2"
 									:key="slide">
@@ -200,7 +202,7 @@
 							</Carousel>
 							<br />
 							<Carousel
-								v-model="currentSlide"
+								v-model="currentSlide2"
 								:items-to-show="3"
 								:wrap-around="true">
 								<Slide
@@ -248,7 +250,7 @@
 					</template>
 					<template #right>
 						<div>
-							<Carousel v-model="currentSlide">
+							<Carousel v-model="currentSlide3">
 								<Slide
 									v-for="slide in slides3"
 									:key="slide">
@@ -259,7 +261,7 @@
 							</Carousel>
 							<br />
 							<Carousel
-								v-model="currentSlide"
+								v-model="currentSlide3"
 								:items-to-show="3"
 								:wrap-around="true">
 								<Slide
