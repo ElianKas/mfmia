@@ -41,9 +41,9 @@
 	});
 </script>
 <template>
-	<div class="relative w-full h-full">
+	<div class="relative w-full h-full z-[-999]">
 		<LMap
-			class="rounded-[--border-radius] relative z-[0]"
+			class="rounded-[--border-radius] relative z-[-999]"
 			:zoom="9"
 			@ready="
 				() => {
