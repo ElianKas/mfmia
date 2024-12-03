@@ -289,207 +289,214 @@
 						</div>
 					</div>
 					<ul class="mobileNavList overflow-scroll pb-[5rem]">
-						<div class="py-[1rem]">PROJEKTE</div>
-						<div class="pl-[1rem]">
-							<li class="py-[1rem]">
-								<NuxtLink
-									to="/projekte"
-									@click="toggleMobile"
-									>Übersicht</NuxtLink
-								>
-							</li>
-							<!-- akkordeon item -->
-							<div class="collapse collapse-arrow">
-								<input
-									type="checkbox"
-									name="my-accordion-2" />
-								<li class="collapse-title px-0">Bildung</li>
-								<!--  content -->
-								<div class="collapse-content pl-[1rem]">
-									<li>
-										<NuxtLink
-											to="/projekte/bildung"
-											@click="toggleMobile">
-											Übersicht
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/bildung/herausforderungen"
-											@click="toggleMobile">
-											Herausforderungen
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/bildung/schulsystem"
-											@click="toggleMobile">
-											Schulsystem
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/bildung/patenschaften"
-											@click="toggleMobile">
-											Patenschaften
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/bildung/schulpartnerschaften"
-											@click="toggleMobile">
-											Schulpartnerschaften
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/bildung/schulenbau"
-											@click="toggleMobile">
-											Schulenbau
-										</NuxtLink>
-									</li>
-								</div>
-							</div>
-							<!-- akkordeon item -->
-							<div class="collapse collapse-arrow">
-								<input
-									type="checkbox"
-									name="my-accordion-2" />
-								<li class="collapse-title px-0">Brunnenbau</li>
-								<!--  content -->
-								<div class="collapse-content pl-[1rem]">
-									<li>
-										<NuxtLink
-											to="/projekte/brunnenbau"
-											@click="toggleMobile"
-											>Übersicht</NuxtLink
-										>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/brunnenbau/motivation"
-											@click="toggleMobile">
-											Motivation
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/brunnenbau/vorgehen"
-											@click="toggleMobile">
-											Vorgehen
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/brunnenbau/standorte"
-											@click="toggleMobile">
-											Standorte
-										</NuxtLink>
-									</li>
-								</div>
-							</div>
-							<!-- akkordeon item -->
-							<div class="collapse collapse-arrow">
-								<input
-									type="checkbox"
-									name="my-accordion-2" />
-								<li class="collapse-title px-0">
-									Hilfe zur Selbsthilfe
+						<!-- akkordeon item -->
+						<div class="collapse collapse-arrow">
+							<input
+								type="checkbox"
+								name="my-accordion-2" />
+							<li class="collapse-title px-0">Projekte</li>
+							<!-- Projekte content -->
+							<div class="collapse-content pl-[1rem]">
+								<li class="py-[1rem]">
+									<NuxtLink
+										to="/projekte"
+										@click="toggleMobile"
+										>Übersicht</NuxtLink
+									>
 								</li>
-								<!--  content -->
-								<div class="collapse-content pl-[1rem]">
-									<li>
-										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe"
-											@click="toggleMobile">
-											Übersicht
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/solar-light"
-											@click="toggleMobile">
-											Solar Light
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/plastik-recycling"
-											@click="toggleMobile">
-											Plastik Recycling
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hilfe-zur-selbsthilfe/plantagen"
-											@click="toggleMobile">
-											Plantagen
-										</NuxtLink>
-									</li>
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">Bildung</li>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/bildung"
+												@click="toggleMobile">
+												Übersicht
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/bildung/herausforderungen"
+												@click="toggleMobile">
+												Herausforderungen
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/bildung/schulsystem"
+												@click="toggleMobile">
+												Schulsystem
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/bildung/patenschaften"
+												@click="toggleMobile">
+												Patenschaften
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/bildung/schulpartnerschaften"
+												@click="toggleMobile">
+												Schulpartnerschaften
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/bildung/schulenbau"
+												@click="toggleMobile">
+												Schulenbau
+											</NuxtLink>
+										</li>
+									</div>
 								</div>
-							</div>
-							<!-- akkordeon item -->
-							<div class="collapse collapse-arrow">
-								<input
-									type="checkbox"
-									name="my-accordion-2" />
-								<li class="collapse-title px-0">
-									Hygiene & Gesundheit
-								</li>
-								<!--  content -->
-								<div class="collapse-content pl-[1rem]">
-									<li>
-										<NuxtLink
-											to="/projekte/hygiene-gesundheit"
-											@click="toggleMobile">
-											Übersicht
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hygiene-gesundheit/toilettenhaeuser"
-											@click="toggleMobile">
-											Toilettenhäuser
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hygiene-gesundheit/vorgehen"
-											@click="toggleMobile">
-											Vorgehen
-										</NuxtLink>
-									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/hygiene-gesundheit/standorte"
-											@click="toggleMobile">
-											Standorte
-										</NuxtLink>
-									</li>
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">Brunnenbau</li>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/brunnenbau"
+												@click="toggleMobile"
+												>Übersicht</NuxtLink
+											>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/brunnenbau/motivation"
+												@click="toggleMobile">
+												Motivation
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/brunnenbau/vorgehen"
+												@click="toggleMobile">
+												Vorgehen
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/brunnenbau/standorte"
+												@click="toggleMobile">
+												Standorte
+											</NuxtLink>
+										</li>
+									</div>
 								</div>
-							</div>
-							<!-- akkordeon item -->
-							<div class="collapse collapse-arrow">
-								<input
-									type="checkbox"
-									name="my-accordion-2" />
-								<li class="collapse-title px-0">Kamerun</li>
-								<!--  content -->
-								<div class="collapse-content pl-[1rem]">
-									<li>
-										<NuxtLink
-											to="/projekte/kamerun"
-											@click="toggleMobile">
-											Übersicht
-										</NuxtLink>
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">
+										Hilfe zur Selbsthilfe
 									</li>
-									<li class="mt-[1rem]">
-										<NuxtLink
-											to="/projekte/kamerun/infrastruktur"
-											@click="toggleMobile">
-											Infrastruktur
-										</NuxtLink>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/hilfe-zur-selbsthilfe"
+												@click="toggleMobile">
+												Übersicht
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hilfe-zur-selbsthilfe/solar-light"
+												@click="toggleMobile">
+												Solar Light
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hilfe-zur-selbsthilfe/plastik-recycling"
+												@click="toggleMobile">
+												Plastik Recycling
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hilfe-zur-selbsthilfe/plantagen"
+												@click="toggleMobile">
+												Plantagen
+											</NuxtLink>
+										</li>
+									</div>
+								</div>
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">
+										Hygiene & Gesundheit
 									</li>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit"
+												@click="toggleMobile">
+												Übersicht
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/toilettenhaeuser"
+												@click="toggleMobile">
+												Toilettenhäuser
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/vorgehen"
+												@click="toggleMobile">
+												Vorgehen
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/standorte"
+												@click="toggleMobile">
+												Standorte
+											</NuxtLink>
+										</li>
+									</div>
+								</div>
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">Kamerun</li>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/kamerun"
+												@click="toggleMobile">
+												Übersicht
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/kamerun/infrastruktur"
+												@click="toggleMobile">
+												Infrastruktur
+											</NuxtLink>
+										</li>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -497,7 +504,7 @@
 							<NuxtLink
 								to="/storys"
 								@click="toggleMobile"
-								>STORYS</NuxtLink
+								>Storys</NuxtLink
 							>
 						</div>
 						<!-- akkordeon item -->
@@ -505,7 +512,7 @@
 							<input
 								type="checkbox"
 								name="my-accordion-2" />
-							<li class="collapse-title px-0">UNSER VEREIN</li>
+							<li class="collapse-title px-0">Unser Verein</li>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
 								<li>
@@ -543,7 +550,7 @@
 							<input
 								type="checkbox"
 								name="my-accordion-2" />
-							<li class="collapse-title px-0">NEWS</li>
+							<div class="collapse-title px-0">News</div>
 							<!--  content -->
 							<div class="collapse-content pl-[1rem]">
 								<li>
@@ -573,14 +580,15 @@
 							<NuxtLink
 								to="/kontakt"
 								@click="toggleMobile"
-								>KONTAKT</NuxtLink
+								>Kontakt</NuxtLink
 							>
 						</div>
 						<div class="py-[1rem]">
 							<NuxtLink
+								class="text-orange"
 								to="/spenden"
 								@click="toggleMobile"
-								>JETZT SPENDEN</NuxtLink
+								>Jetzt Spenden</NuxtLink
 							>
 						</div>
 					</ul>
