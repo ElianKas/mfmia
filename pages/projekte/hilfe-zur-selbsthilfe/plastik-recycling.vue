@@ -19,6 +19,11 @@
 					<SvgsIconsHilfeZurSelbsthilfePlastikRecycling
 						class="shrink-0" />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover w-full h-full"
+						src="https://a.storyblok.com/f/311834/1504x1504/054dce97e8/plastikrecycling2024_top.png" />
+				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -43,19 +48,53 @@
 						><h2 class="text-highlight font-bold">
 							Verbesserung der Lebensbedingungen durch Recycling
 						</h2>
-						<p>?</p>
+						<br />
+						<p>
+							Das Recycling von Plastik ist in Kamerun unerlässlich,
+							da die großen Mengen an Plastikmüll eine Bedrohung für
+							Umwelt und Gesundheit darstellen. Große Mengen Plastik
+							landen unkontrolliert in der Natur oder werden am
+							Straßenrand verbrannt, was zu erheblichen Umweltschäden
+							führt. Die Felder sind teilweise voller kleiner
+							Plastikschnitzel, Küstenstreifen sind verunreinigt.
+							Durch das Recycling können wir diese Probleme angehen,
+							die Menge an Abfall verringern und wertvolle Ressourcen
+							schonen. Für die Bevölkerung bietet das Recycling
+							wirtschaftliche Vorteile: Es schafft Arbeitsplätze in
+							der Recyclingbranche und eröffnet neue
+							Geschäftsmöglichkeiten durch die Nutzung von recycelten
+							Materialien. Dies fördert nicht nur den Umweltschutz,
+							sondern trägt auch zur wirtschaftlichen Entwicklung und
+							Verbesserung der Lebensbedingungen bei.
+						</p>
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<div
 					class="justify-between items-center my-[8rem] gap-[3rem] hidden md:flex">
 					<div
-						class="aspect-[3/4] w-[300px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[300px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/637x829/bca1163531/sammelaktion2024_kamerun_gruppe_1.png" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[420px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[420px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/568x740/1e40abb4d6/sammelaktion2024_kamerun_face.png" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[350px] mt-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[350px] mt-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/832x1083/9e39e578b7/sammelaktion2024_kamerun_walk.png" />
+					</div>
 					<div
-						class="aspect-[3/4] w-[400px] mb-[-6rem] border rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[400px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/665x867/5fe57e16b9/sammelaktion2024_kamerun.png" />
+					</div>
 				</div>
 				<TemplatesParagraphsHighlighted>
 					<b>Förderung eines Start-ups</b> <br /><br />
@@ -97,9 +136,17 @@
 						<div
 							class="flex flex-col md:flex-row gap-[2rem] items-center">
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full"></div>
+								class="rounded-[--border-radius] aspect-[3/4] w-full">
+								<StoryblokImage
+									class="object-cover w-full h-full"
+									src="https://a.storyblok.com/f/311834/569x740/3a7b049f81/plastikrecycling2024_klammer_1.png" />
+							</div>
 							<div
-								class="border rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]"></div>
+								class="rounded-[--border-radius] aspect-[3/4] w-full md:mt-[-8rem]">
+								<StoryblokImage
+									class="object-cover w-full h-full"
+									src="https://a.storyblok.com/f/311834/567x738/57b8b01fa8/plastikrecycling2024_side.png" />
+							</div>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
