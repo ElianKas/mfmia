@@ -32,6 +32,7 @@
 				class="max-w-[--max-width] border-b border-green m-auto py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem] md:gap-[5rem]">
 				<div>
 					<StoryblokImage
+						class="max-md:w-[200px] h-auto"
 						src="https://a.storyblok.com/f/311834/183x188/49818c11a6/bildschirmfoto-2024-09-02-um-17-07-54.png" />
 					<p>Barcode für Online-Banking per App</p>
 				</div>
@@ -52,8 +53,9 @@
 				</div>
 				<div>
 					<StoryblokImage
+						class="max-md:w-[200px] h-auto"
 						src="https://a.storyblok.com/f/311834/196x196/24a4aab583/gruppe-322.png" />
-					<p class="text-center">Über PayPal spenden</p>
+					<p class="md:text-center">Über PayPal spenden</p>
 				</div>
 				<div>
 					<p class="text-green font-bold">Paypal</p>
