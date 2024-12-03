@@ -9,6 +9,11 @@
 				<template #logo>
 					<SvgsIconsHilfeZurSelbsthilfe />
 				</template>
+				<template #image>
+					<StoryblokImage
+						class="object-cover h-full w-full"
+						src="https://a.storyblok.com/f/311834/5200x2490/1169d78ee3/auto-sebastien.png" />
+				</template>
 			</TemplatesHeroSectionTemplate>
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
@@ -35,7 +40,10 @@
 					</template>
 					<template #right
 						><div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/3279x4267/e279cd5876/p1030749_mama_pauline_korb.png" /></div
 					></template>
 				</TemplatesParagraphsLeftRight>
 				<section
@@ -153,7 +161,11 @@
 					</template>
 					<template #right>
 						<div
-							class="border rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]"></div>
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="object-cover w-full h-full"
+								src="https://a.storyblok.com/f/311834/3279x4267/5cc662ce7b/img_8583_yaounde_tour.png" />
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 			</div>
