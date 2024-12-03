@@ -301,7 +301,7 @@
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
-									type="radio"
+									type="checkbox"
 									name="my-accordion-2" />
 								<li class="collapse-title px-0">Bildung</li>
 								<!--  content -->
@@ -353,7 +353,7 @@
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
-									type="radio"
+									type="checkbox"
 									name="my-accordion-2" />
 								<li class="collapse-title px-0">Brunnenbau</li>
 								<!--  content -->
@@ -391,7 +391,7 @@
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
-									type="radio"
+									type="checkbox"
 									name="my-accordion-2" />
 								<li class="collapse-title px-0">
 									Hilfe zur Selbsthilfe
@@ -431,7 +431,7 @@
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
-									type="radio"
+									type="checkbox"
 									name="my-accordion-2" />
 								<li class="collapse-title px-0">
 									Hygiene & Gesundheit
@@ -471,7 +471,7 @@
 							<!-- akkordeon item -->
 							<div class="collapse collapse-arrow">
 								<input
-									type="radio"
+									type="checkbox"
 									name="my-accordion-2" />
 								<li class="collapse-title px-0">Kamerun</li>
 								<!--  content -->
@@ -503,7 +503,7 @@
 						<!-- akkordeon item -->
 						<div class="collapse collapse-arrow">
 							<input
-								type="radio"
+								type="checkbox"
 								name="my-accordion-2" />
 							<li class="collapse-title px-0">UNSER VEREIN</li>
 							<!--  content -->
@@ -541,7 +541,7 @@
 						<!-- akkordeon item -->
 						<div class="collapse collapse-arrow">
 							<input
-								type="radio"
+								type="checkbox"
 								name="my-accordion-2" />
 							<li class="collapse-title px-0">NEWS</li>
 							<!--  content -->
