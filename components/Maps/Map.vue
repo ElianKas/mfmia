@@ -74,38 +74,3 @@
 		</div>
 	</div>
 </template>
-<style scoped>
-	.leaflet-tile-pane {
-		z-index: 1;
-	}
-	.leaflet-map-pane canvas {
-		z-index: 1;
-	}
-	.leaflet-map-pane svg {
-		z-index: 2;
-	}
-	.leaflet-pane {
-		z-index: 2;
-	}
-	.leaflet-overlay-pane {
-		z-index: 2;
-	}
-	.leaflet-shadow-pane {
-		z-index: 3;
-	}
-	.leaflet-marker-pane {
-		z-index: 4;
-	}
-	.leaflet-tooltip-pane {
-		z-index: 5;
-	}
-	.leaflet-popup-pane {
-		z-index: 6;
-	}
-	.leaflet-zoom-box {
-		z-index: 7;
-	}
-	.leaflet-bottom {
-		z-index: 8;
-	}
-</style>

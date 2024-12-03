@@ -155,14 +155,14 @@
 </script>
 <template>
 	<div class="shadow-md">
-		<header class="z-[9999] relative">
+		<header class="z-[99999999] relative">
 			<nav class="relative">
 				<div class="h-[80px]">
 					<!-- full menu desktop -->
 					<div
 						:style="{ height: activeDesktop ? '350px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
-						class="transition-all duration-300 bg-white z-[9999]">
+						class="transition-all duration-300 bg-white z-[9999999]">
 						<div
 							class="h-[70px] max-w-[--max-width-big] items-center m-auto flex justify-between px-[1rem] md:px-[3rem]">
 							<NuxtLink
