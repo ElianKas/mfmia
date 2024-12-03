@@ -45,7 +45,11 @@
 							src="https://a.storyblok.com/f/311834/6000x4000/59df1c2a52/frohliche_menschen_3_lechfb.jpg" />
 					</div>
 					<div
-						class="aspect-[3/4] w-[400px] mb-[-6rem] rounded-[--border-radius]"></div>
+						class="aspect-[3/4] w-[400px] mb-[-6rem] rounded-[--border-radius]">
+						<StoryblokImage
+							class="object-cover w-full h-full"
+							src="https://a.storyblok.com/f/311834/2017x2627/25787e8664/img_7362_kinder_kamerun.png" />
+					</div>
 				</div>
 				<TemplatesParagraphsLeftRight>
 					<template #left>
