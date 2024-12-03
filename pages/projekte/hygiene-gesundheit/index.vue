@@ -6,7 +6,7 @@
 				<template #description
 					>Die Grundvoraussetzung für ein gesundes Leben schaffen
 				</template>
-				<template #logo> </template>
+				<template #logo><SvgsIconsHygiene /> </template>
 				<template #image>
 					<StoryblokImage
 						class="object-cover w-full h-full"
