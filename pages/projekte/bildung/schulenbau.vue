@@ -90,20 +90,45 @@
 			<div class="px-[1rem] md:px-[3rem]">
 				<TemplatesParagraphsLeftRight>
 					<template #left>
+						<h2 class="text-big font-bold text-orange">
+							2020: Erweiterung der Grundschule in Leng-Tombo
+						</h2>
+						<br />
 						<p>
-							Die Schulen haben auch die Möglichkeit, Spenden für die
-							Bedürfnisse ihrer Partner-Schulen in Kamerun zu sammeln,
-							wodurch sie unmittelbar die Auswirkungen ihres
-							Engagements sehen können. Wir übernehmen die Abwicklung
-							der Überweisungen und die Überprüfung der Belege.
+							Die Schülerzahlen sind nach der Renovierung der Schule
+							so stark angestiegen, dass die Klassenräume schon im
+							Herbst 2019 aus allen Nähten platzten. Fast 130
+							Schülerinnen und Schüler drängten sich in den drei
+							kleinen Klassenräumen. So entschieden wir, die Schule
+							durch ein zweites Gebäude zu erweitern. Das neue Haus
+							sollte direkt neben dem alten entstehen und zwei
+							Klassenräume sowie ein kleines Lehrerzimmer umfassen.
 							<br /><br />
-							Inzwischen gab es schon viele schöne Bilder und kurze
-							Videos, die per WhatsApp zwischen Deutschland und
-							Kamerun ausgetauscht wurden und spannende Einblicke in
-							den Schulalltag ermöglichten. Und es werden an den
-							Kameruner Schulen konkrete Verbesserungen möglich, die
-							ohne die Schulgemeinschaften in Kassel nicht zustande
-							gekommen wären!
+							Schon im März des darauffolgenden Jahres ging es mit dem
+							Bau los. Das Gebäude sollte bis zum Beginn des
+							Schuljahres im September 2020 fertig werden. Leider kam
+							die Corona-Pandemie dazwischen. Die Bauarbeiten wurden
+							mehrfach unterbrochen. Ende März 2021 war dann aber
+							alles fertig.
+							<br /><br />
+							So besteht die Grundschule St. Jean Baptiste in
+							Leng-Tombo jetzt aus 4 Klassen mit entsprechend vielen
+							Lehrern, auch eine Vorschulklasse konnte eingerichtet
+							werden. Wir freuen uns sehr, damit vielen weiteren
+							Schülerinnen und Schülern des Dorfes und der Umgebung
+							die Möglichkeit zu geben, die Schule zu besuchen.
+							<br /><br />
+							<i>
+								2023: Kaum zu glauben, ein drittes Schulgebäude ist
+								bei unserer Reise im Februar 2023 schon fast fertig!
+								Jetzt wird es 8 Klassenräume und 4 Lehrer und
+								Lehrerinnen geben, plus der Vorschulklasse.
+								<br />
+								Wer hat das finanziert? Ein ehemaliger Schüler aus
+								Leng-Tombo, der inzwischen reich geworden ist, ist so
+								stolz auf die „neue“ Schule, dass er das Geld dafür
+								gespendet hat.
+							</i>
 						</p>
 					</template>
 					<template #right>
@@ -112,6 +137,121 @@
 							<StoryblokImage
 								src="https://a.storyblok.com/f/311834/4032x3024/a8945005af/img_8690_im32li.jpg"
 								class="object-cover w-full h-full" />
+						</div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<h2 class="text-big font-bold text-orange">
+							2018: Renovierung der Grundschule St. Jean Baptiste in
+							Leng-Tombo
+						</h2>
+						<br />
+						<p>
+							Diese kleine zu einer katholischen Gemeinde gehörende
+							Grundschule haben wir Anfang 2018 kennen gelernt. Die
+							beiden engagierten Lehrer führten zwei Klassen mit nur
+							wenigen Schülern. Auch hier lag der Grund im schlechten
+							Zustand der Schule. Dringend erforderlich waren neue
+							Türen, eine Reparatur des Daches und verschiedene
+							Sanierungsarbeiten am Fundament und an den Außenwänden.
+							<br /><br />
+							Nach den Vorplanungen wurde die Schule in den
+							Sommerferien 2018 renoviert. Dabei finanzierten wir die
+							Materialien und auch Kosten für Facharbeiter. Darüber
+							hinaus haben Mitglieder der Gemeinde tatkräftig durch
+							Eigenleistungen unterstützt.
+							<br /><br />
+							Die Schule sieht nun wieder tiptop aus. Die
+							Anmeldezahlen für neue Schüler waren im September 2018
+							so hoch, dass ein neuer Lehrer eingestellt wurde.
+						</p>
+					</template>
+					<template #right>
+						<div>
+							<Carousel v-model="currentSlide">
+								<Slide
+									v-for="slide in slides1"
+									:key="slide">
+									<StoryblokImage
+										:src="slide.src"
+										class="object-cover w-full h-full" />
+								</Slide>
+							</Carousel>
+							<br />
+							<Carousel
+								v-model="currentSlide"
+								:items-to-show="3"
+								:wrap-around="true">
+								<Slide
+									@click="slideTo(index)"
+									v-for="(slide, index) in slides1"
+									:key="slide"
+									class="cursor-pointer">
+									<StoryblokImage
+										class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
+										:src="slide.src" />
+								</Slide>
+							</Carousel>
+						</div>
+					</template>
+				</TemplatesParagraphsLeftRight>
+				<TemplatesParagraphsLeftRight>
+					<template #left>
+						<h2 class="text-big font-bold text-orange">
+							2016: Renovierung der Grundschule Sacré Coeur in
+							Mbalmayo
+						</h2>
+						<br />
+						<p>
+							Dort fanden wir bei unserem Besuch im Februar 2016 einen
+							desolaten Zustand des Schulgebäudes vor: Löcher in den
+							Innenwänden, ein undichtes Dach und ein unsicheres
+							Toilettenhaus. All diese Mängel hatten in den letzten
+							Jahren zu immer weniger Schülern geführt. Die Lehrer
+							konnten nicht mehr bezahlt werden. Die hatten die
+							letzten Monate ohne Gehalt gearbeitet. Bereits vor Ort
+							haben wir spontan geholfen. Vorerst konnten wir den
+							Lehrern ein Monatshonorar übergeben. Zurück in
+							Deutschland entschlossen wir uns, die Renovierung mit
+							einer Spende über rund 2.500 Euro zu unterstützen. Mit
+							dem Geld wurde in den Sommerferien 2016 das Dach der
+							Schule und auch das Toilettenhäuschen renoviert.
+							Außerdem wurde das Gebäude neu gestrichen.
+							<br /><br />
+							Bereits im darauffolgenden Schuljahr sind die
+							Anmeldungen von bisher 90 auf 180 Schüler gestiegen. Mit
+							diesem Anstieg können nun auch die vollen Lehrergehälter
+							gewährleistet werden. Endlich kann der Schulbetrieb
+							wieder stabil laufen.
+						</p>
+					</template>
+					<template #right>
+						<div>
+							<Carousel v-model="currentSlide">
+								<Slide
+									v-for="slide in slides2"
+									:key="slide">
+									<StoryblokImage
+										:src="slide.src"
+										class="object-cover w-full h-full" />
+								</Slide>
+							</Carousel>
+							<br />
+							<Carousel
+								v-model="currentSlide"
+								:items-to-show="3"
+								:wrap-around="true">
+								<Slide
+									@click="slideTo(index)"
+									v-for="(slide, index) in slides2"
+									:key="slide"
+									class="cursor-pointer">
+									<StoryblokImage
+										class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
+										:src="slide.src" />
+								</Slide>
+							</Carousel>
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -134,120 +274,32 @@
 						</p>
 					</template>
 					<template #right>
-						<Carousel v-model="currentSlide">
-							<Slide
-								v-for="slide in slides1"
-								:key="slide">
-								<StoryblokImage
-									:src="slide.src"
-									class="object-cover w-full h-full" />
-							</Slide>
-						</Carousel>
-						<br />
-						<Carousel
-							v-model="currentSlide"
-							:items-to-show="3"
-							:wrap-around="true">
-							<Slide
-								@click="slideTo(index)"
-								v-for="(slide, index) in slides1"
-								:key="slide"
-								class="cursor-pointer">
-								<StoryblokImage
-									class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
-									:src="slide.src" />
-							</Slide>
-						</Carousel>
-					</template>
-				</TemplatesParagraphsLeftRight>
-				<TemplatesParagraphsLeftRight>
-					<template #left>
-						<p>
-							Die Schulen haben auch die Möglichkeit, Spenden für die
-							Bedürfnisse ihrer Partner-Schulen in Kamerun zu sammeln,
-							wodurch sie unmittelbar die Auswirkungen ihres
-							Engagements sehen können. Wir übernehmen die Abwicklung
-							der Überweisungen und die Überprüfung der Belege.
-							<br /><br />
-							Inzwischen gab es schon viele schöne Bilder und kurze
-							Videos, die per WhatsApp zwischen Deutschland und
-							Kamerun ausgetauscht wurden und spannende Einblicke in
-							den Schulalltag ermöglichten. Und es werden an den
-							Kameruner Schulen konkrete Verbesserungen möglich, die
-							ohne die Schulgemeinschaften in Kassel nicht zustande
-							gekommen wären!
-						</p>
-					</template>
-					<template #right>
-						<Carousel v-model="currentSlide">
-							<Slide
-								v-for="slide in slides2"
-								:key="slide">
-								<StoryblokImage
-									:src="slide.src"
-									class="object-cover w-full h-full" />
-							</Slide>
-						</Carousel>
-						<br />
-						<Carousel
-							v-model="currentSlide"
-							:items-to-show="3"
-							:wrap-around="true">
-							<Slide
-								@click="slideTo(index)"
-								v-for="(slide, index) in slides2"
-								:key="slide"
-								class="cursor-pointer">
-								<StoryblokImage
-									class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
-									:src="slide.src" />
-							</Slide>
-						</Carousel>
-					</template>
-				</TemplatesParagraphsLeftRight>
-				<TemplatesParagraphsLeftRight>
-					<template #left>
-						<p>
-							Die Schulen haben auch die Möglichkeit, Spenden für die
-							Bedürfnisse ihrer Partner-Schulen in Kamerun zu sammeln,
-							wodurch sie unmittelbar die Auswirkungen ihres
-							Engagements sehen können. Wir übernehmen die Abwicklung
-							der Überweisungen und die Überprüfung der Belege.
-							<br /><br />
-							Inzwischen gab es schon viele schöne Bilder und kurze
-							Videos, die per WhatsApp zwischen Deutschland und
-							Kamerun ausgetauscht wurden und spannende Einblicke in
-							den Schulalltag ermöglichten. Und es werden an den
-							Kameruner Schulen konkrete Verbesserungen möglich, die
-							ohne die Schulgemeinschaften in Kassel nicht zustande
-							gekommen wären!
-						</p>
-					</template>
-					<template #right>
-						<Carousel v-model="currentSlide">
-							<Slide
-								v-for="slide in slides3"
-								:key="slide">
-								<StoryblokImage
-									:src="slide.src"
-									class="object-cover w-full h-full" />
-							</Slide>
-						</Carousel>
-						<br />
-						<Carousel
-							v-model="currentSlide"
-							:items-to-show="3"
-							:wrap-around="true">
-							<Slide
-								@click="slideTo(index)"
-								v-for="(slide, index) in slides3"
-								:key="slide"
-								class="cursor-pointer">
-								<StoryblokImage
-									class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
-									:src="slide.src" />
-							</Slide>
-						</Carousel>
+						<div>
+							<Carousel v-model="currentSlide">
+								<Slide
+									v-for="slide in slides3"
+									:key="slide">
+									<StoryblokImage
+										:src="slide.src"
+										class="object-cover w-full h-full" />
+								</Slide>
+							</Carousel>
+							<br />
+							<Carousel
+								v-model="currentSlide"
+								:items-to-show="3"
+								:wrap-around="true">
+								<Slide
+									@click="slideTo(index)"
+									v-for="(slide, index) in slides3"
+									:key="slide"
+									class="cursor-pointer">
+									<StoryblokImage
+										class="rounded-[--border-radius] w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] object-cover"
+										:src="slide.src" />
+								</Slide>
+							</Carousel>
+						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
 			</div>
