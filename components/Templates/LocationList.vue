@@ -28,10 +28,19 @@
 				</div>
 			</template>
 			<div
-				class="collapse collapse-arrow bg-base-200"
+				:class="{
+					collapse:
+						story.content.images && story.content.images.length > 0,
+					'collapse-arrow':
+						story.content.images && story.content.images.length > 0,
+				}"
 				v-if="data && data.stories"
 				v-for="(story, index) in data?.stories || []">
-				<input type="checkbox" />
+				<input
+					type="checkbox"
+					v-if="
+						story.content.images && story.content.images.length > 0
+					" />
 				<div
 					class="collapse-title grid-cols-[50px_1fr_1fr_1fr_1fr_50px] my-[1rem] gap-[1rem] hidden lg:grid">
 					<div class="font-bold">
@@ -54,7 +63,11 @@
 					</div>
 				</div>
 				<!-- collapse content -->
-				<div class="collapse-content">
+				<div
+					:class="{
+						'collapse-content':
+							story.content.images && story.content.images.length > 0,
+					}">
 					<div class="flex gap-[2rem] flex-wrap">
 						<StoryblokImage
 							class="h-[300px] w-auto"
