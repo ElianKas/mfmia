@@ -2,12 +2,18 @@
 	const props = defineProps({
 		data: Object,
 	});
+
+	onMounted(() => {
+		console.log('data', props.data);
+	});
 </script>
 <template>
 	<section class="px-[1rem] md:px-[3rem] mt-[3rem]">
 		<div
 			class="flex flex-wrap justify-between gap-[1rem] py-[1rem] md:border-b border-orange font-bold">
-			<h2 class="text-orange">Projekte - Brunnenbau Karte</h2>
+			<h2 class="text-orange">
+				Projekte - <slot name="name"></slot> Karte
+			</h2>
 			<div v-if="data && data.stories">
 				{{ data.stories.length }} Standorte
 			</div>
@@ -22,7 +28,7 @@
 				</div>
 			</template>
 			<div
-				class="collapse bg-base-200"
+				class="collapse collapse-arrow bg-base-200"
 				v-if="data && data.stories"
 				v-for="(story, index) in data?.stories || []">
 				<input type="checkbox" />
@@ -47,8 +53,14 @@
 						{{ story.content.year }}
 					</div>
 				</div>
+				<!-- collapse content -->
 				<div class="collapse-content">
-					<p>hello</p>
+					<div class="flex gap-[2rem] flex-wrap">
+						<StoryblokImage
+							class="h-[300px] w-auto"
+							:src="image.filename"
+							v-for="image in story.content.images" />
+					</div>
 				</div>
 			</div>
 			<!-- mobile -->

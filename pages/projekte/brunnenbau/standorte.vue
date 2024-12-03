@@ -27,7 +27,9 @@
 				>
 				<template #image><MapsMap :data="data" /></template>
 			</TemplatesFirstParagraphProjects>
-			<TemplatesLocationList :data="data" />
+			<TemplatesLocationList :data="data">
+				<template #name> Brunnenbau </template>
+			</TemplatesLocationList>
 		</article>
 		<TemplatesExploreMoreTemplate
 			:page="{

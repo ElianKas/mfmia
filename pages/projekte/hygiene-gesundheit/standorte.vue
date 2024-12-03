@@ -28,7 +28,9 @@
 			</template>
 			<template #image><MapsMap :data="data" /></template>
 		</TemplatesFirstParagraphProjects>
-		<TemplatesLocationList :data="data" />
+		<TemplatesLocationList :data="data">
+			<template #name> Toilettenhäuser </template>
+		</TemplatesLocationList>
 		<LazyTemplatesExploreMoreTemplate
 			:page="{
 				title: 'Toilettenhäuser',
