@@ -44,8 +44,7 @@
 					</template>
 					<template #right>
 						<div class="h-full grid place-items-center">
-							<div
-								class="border rounded-full h-[220px] aspect-square"></div>
+							<SvgsLogoNormal class="w-[300px]" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
