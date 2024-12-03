@@ -153,7 +153,7 @@
 						</ul>
 					</template>
 				</TemplatesParagraphsLeftRight>
-				<p class="text-center max-w-[500px] m-auto">
+				<p class="text-center max-w-[500px] m-auto py-[2rem]">
 					Wir sind stolz darauf, solche Initiativen zu unterstützen
 					und zur Verbesserung der Lebensbedingungen der Menschen in
 					der Region beizutragen.
