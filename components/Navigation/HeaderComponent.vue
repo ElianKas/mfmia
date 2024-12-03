@@ -289,7 +289,7 @@
 						</div>
 					</div>
 					<ul class="mobileNavList overflow-scroll pb-[5rem]">
-						<!-- akkordeon item -->
+						<!-- Projekte -->
 						<div class="collapse collapse-arrow">
 							<input
 								type="checkbox"
@@ -507,7 +507,7 @@
 								>Storys</NuxtLink
 							>
 						</div>
-						<!-- akkordeon item -->
+						<!-- Unser Verein -->
 						<div class="collapse collapse-arrow">
 							<input
 								type="checkbox"
@@ -545,7 +545,7 @@
 								</li>
 							</div>
 						</div>
-						<!-- akkordeon item -->
+						<!-- News -->
 						<div class="collapse collapse-arrow">
 							<input
 								type="checkbox"
