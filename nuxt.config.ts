@@ -27,5 +27,15 @@ export default defineNuxtConfig({
     cloudinary: {
       baseURL: 'https://res.cloudinary.com/dxizsaymj/image/upload/'
     }
+  },
+  app: {
+    head: {
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      script: [
+        { src: 'https://www.paypalobjects.com/donate/sdk/donate-sdk.js' }
+      ],
+    }
   }
 })
