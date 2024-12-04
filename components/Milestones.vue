@@ -193,8 +193,9 @@
 				<!--  -->
 				<div class="flex w-full overflow-hidden">
 					<div
-						class="milestoneBox1 px-[1rem]"
-						v-for="milestone in sortedData">
+						class="milestoneBox1 px-[1rem] py-[.1rem]"
+						v-for="milestone in sortedData"
+						:key="milestone">
 						<div
 							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[1rem]">
 							{{ milestone.content.title }}
@@ -203,8 +204,9 @@
 				</div>
 				<div class="flex w-full overflow-hidden mt-[2rem]">
 					<div
-						class="milestoneBox2 px-[1rem]"
-						v-for="milestone in sortedData">
+						class="milestoneBox2 px-[1rem] py-[.1rem]"
+						v-for="milestone in sortedData"
+						:key="milestone">
 						<div
 							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[1rem]">
 							{{ milestone.content.title }}
