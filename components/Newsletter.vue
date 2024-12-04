@@ -1,12 +1,19 @@
 <script setup>
 	const email = ref('');
 	const name = ref('');
+	const isMember = ref(false);
+	const isGodfather = ref(false);
 
 	const subscribe = async () => {
 		try {
 			const response = await $fetch('/api/subscribe', {
 				method: 'POST',
-				body: { email: email.value, name: name.value },
+				body: {
+					email: email.value,
+					name: name.value,
+					isMember: isMember.value,
+					isGodfather: isGodfather.value,
+				},
 			});
 
 			if (response && response.success) {
@@ -65,12 +72,14 @@
 					<label>Ich bin</label>
 					<div class="flex items-center gap-[.5rem]">
 						<input
+							v-model="isMember"
 							type="checkbox"
 							class="checkbox" />
 						<span>Mitglied bzw.</span>
 					</div>
 					<div class="flex items-center gap-[.5rem]">
 						<input
+							v-model="isGodfather"
 							type="checkbox"
 							class="checkbox" />
 						<span>Patin/Pate</span>
@@ -84,7 +93,6 @@
 					<input
 						required
 						type="checkbox"
-						:checked="false"
 						class="checkbox" />
 					<span class="label-text text-sm"
 						>Ich bin damit einverstanden, dass mich der Betreiber und
@@ -93,9 +101,14 @@
 						Insbesondere erfolgt keine Weitergabe an unberechtigte
 						Dritte. Mir ist bekannt, dass ich meine Einwilligung
 						jederzeit mit Wirkung für die Zukunft widerrufen kann. Es
-						gilt die Datenschutzerklärung , die auch weitere
-						Informationen über Möglichkeiten zur Berichtigung,
-						Löschung und Sperrung meiner Daten beinhaltet.</span
+						gilt die
+						<NuxtLink
+							to="/datenschutz"
+							class="text-orange"
+							>Datenschutzerklärung</NuxtLink
+						>, die auch weitere Informationen über Möglichkeiten zur
+						Berichtigung, Löschung und Sperrung meiner Daten
+						beinhaltet.</span
 					>
 				</label>
 			</div>

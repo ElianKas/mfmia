@@ -5,12 +5,27 @@ export default defineEventHandler(async (event) => {
 	const body = await readBody(event);
 
 	// Validate the request body
-	if (!body.email || !body.firstName) {
+	if (!body.email || !body.name) {
 		return {
 			success: false,
-			error: 'Email and first name are required',
+			error: 'Email and name are required',
 		};
 	}
+
+	const checkMemberAndGodfather = () => {
+		let text = '';
+		if (body.isMember) {
+			text += 'Mitglied: Ja\n';
+		} else {
+			text += 'Mitglied: Nein\n';
+		}
+		if (body.isGodfather) {
+			text += 'Patin/Pate: Ja\n';
+		} else {
+			text += 'Patin/Pate: Nein\n';
+		}
+		return text;
+	};
 
 	// Create a transporter object using SMTP transport
 	let transporter = nodemailer.createTransport({
@@ -25,9 +40,10 @@ export default defineEventHandler(async (event) => {
 
 	// Set up email data for the client
 	let clientMailOptions = {
-		from: '"Miteinander für Menschen in Afrika e.V." <info@miteinander-fuer-afrika.de>', // Sender address
+		from: '"Miteinander für Menschen in Afrika e.V." <newsletter@miteinander-fuer-afrika.de>', // Sender address
 		to: body.email, // Client's email
-		subject: 'Newsletter Subscription', // Subject line
+		subject:
+			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
 		text: `Hello ${body.firstName},\n\nThank you for subscribing to our newsletter!`, // Plain text body
 	};
 
@@ -35,8 +51,11 @@ export default defineEventHandler(async (event) => {
 	let hostMailOptions = {
 		from: '"Miteinander für Menschen in Afrika e.V." <info@miteinander-fuer-afrika.de>', // Sender address
 		to: process.env.EMAIL, // Host's email
-		subject: 'New Newsletter Subscription', // Subject line
-		text: `Hello,\n\nYou have received a new newsletter subscription with the following details:\n\nEmail: ${body.email}\nFirst Name: ${body.firstName}`, // Plain text body
+		subject:
+			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
+		text: `Name: ${body.firstName}\nEmail: ${
+			body.email
+		}\n${checkMemberAndGodfather()} `, // Plain text body
 	};
 
 	try {
