@@ -1,12 +1,12 @@
 <script setup>
 	const email = ref('');
-	const firstName = ref('');
+	const name = ref('');
 
 	const subscribe = async () => {
 		try {
 			const response = await $fetch('/api/subscribe', {
 				method: 'POST',
-				body: { email: email.value, firstName: firstName.value },
+				body: { email: email.value, name: name.value },
 			});
 
 			if (response && response.success) {
@@ -29,17 +29,22 @@
 		<SvgsHumansGroup class="max-w-[450px] w-[90%] h-auto" />
 		<form
 			@submit.prevent="subscribe"
-			class="w-full border rounded-[--border-radius] border-orange h-[600px] max-w-[500px] p-[2rem] sm:p-[5rem] flex flex-col justify-center gap-[1rem]">
-			<p class="font-bold">
-				Zum <span class="text-orange">Newsletter</span> anmelden unds
-				nichts mehr verpassen!
+			class="w-full border rounded-[--border-radius] border-orange min-h-[650px] max-w-[500px] p-[2rem] sm:p-[4rem] flex flex-col justify-center gap-[1rem]">
+			<h2 class="text-big text-orange font-bold">
+				Newsletter bestellen
+			</h2>
+			<p>
+				Um aktuelle Informationen (Jahresbrief, zu Aktionen,
+				Veranstaltungen und Neuigkeiten auf der Homepage) erhalten zu
+				können, haben Sie die Möglichkeit, unseren Newsletter zu
+				abonnieren.
 			</p>
 			<div>
 				<label
 					class="input px-[.5rem] flex items-center gap-2 text-base">
-					Vorname<span class="text-orange">*</span>
+					Name<span class="text-orange">*</span>
 					<input
-						v-model="firstName"
+						v-model="name"
 						type="text"
 						required
 						class="grow" />
@@ -55,6 +60,23 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
+				<div
+					class="py-[1rem] flex items-center flex-wrap px-[.5rem] gap-[1rem]">
+					<label>Ich bin</label>
+					<div class="flex items-center gap-[.5rem]">
+						<input
+							type="checkbox"
+							class="checkbox" />
+						<span>Mitglied bzw.</span>
+					</div>
+					<div class="flex items-center gap-[.5rem]">
+						<input
+							type="checkbox"
+							class="checkbox" />
+						<span>Patin/Pate</span>
+					</div>
+				</div>
+				<div class="h-[1px] border border-green"></div>
 			</div>
 			<div class="form-control">
 				<label
@@ -65,17 +87,15 @@
 						:checked="false"
 						class="checkbox" />
 					<span class="label-text text-sm"
-						>Ja, ich habe die Hinweise zum
-						<NuxtLink
-							class="text-orange"
-							to="/datenschutz"
-							target="_blank"
-							>Datenschutz</NuxtLink
-						>
-						gelesen und bin damit einverstanden, dass mit dem Absenden
-						des Formulars meine Daten zur Bearbeitung meines Anliegens
-						verwendet werden. <br /><br />Die mit * gekennzeichneten
-						Felder sind Pflichtfelder.</span
+						>Ich bin damit einverstanden, dass mich der Betreiber und
+						Herausgeber über ausgewählte Themen informieren darf.
+						Meine Daten werden ausschließlich zu diesem Zweck genutzt.
+						Insbesondere erfolgt keine Weitergabe an unberechtigte
+						Dritte. Mir ist bekannt, dass ich meine Einwilligung
+						jederzeit mit Wirkung für die Zukunft widerrufen kann. Es
+						gilt die Datenschutzerklärung , die auch weitere
+						Informationen über Möglichkeiten zur Berichtigung,
+						Löschung und Sperrung meiner Daten beinhaltet.</span
 					>
 				</label>
 			</div>
