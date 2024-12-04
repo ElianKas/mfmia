@@ -196,7 +196,7 @@
 						class="milestoneBox1 px-[1rem]"
 						v-for="milestone in sortedData">
 						<div
-							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[1rem]">
 							{{ milestone.content.title }}
 						</div>
 					</div>
@@ -206,7 +206,7 @@
 						class="milestoneBox2 px-[1rem]"
 						v-for="milestone in sortedData">
 						<div
-							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[2rem]">
+							class="border border-orange font-bold rounded-[--border-radius] hover:bg-orange hover:text-white w-[300px] h-[150px] shrink-0 p-[1rem]">
 							{{ milestone.content.title }}
 						</div>
 					</div>
