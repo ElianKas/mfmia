@@ -1,3 +1,20 @@
+<script setup>
+	onMounted(() => {
+		PayPal.Donation.Button({
+			env: 'sandbox',
+			hosted_button_id: 'YOUR_SANDBOX_HOSTED_BUTTON_ID',
+			// business: 'YOUR_EMAIL_OR_PAYERID',
+			image: {
+				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',
+				title: 'PayPal - The safer, easier way to pay online!',
+				alt: 'Donate with PayPal button',
+			},
+			onComplete: function (params) {
+				// Your onComplete handler
+			},
+		}).render('#paypal-donate-button-spenden');
+	});
+</script>
 <template>
 	<div>
 		<article class="px-[1rem] md:px-[3rem]">
@@ -22,9 +39,13 @@
 							die den Menschen in Kamerun ein unabhängiges und
 							selbstbestimmtes Leben ermöglichen.
 						</p>
-						<button class="btn bg-orange text-white mt-[.5rem]">
-							Jetzt Spenden
-						</button>
+						<div
+							class="btn bg-orange text-white mt-[.5rem] relative overflow-hidden">
+							<p>Jetzt Spenden</p>
+							<div
+								id="paypal-donate-button-spenden"
+								class="absolute w-full h-full inset-0"></div>
+						</div>
 					</div>
 				</div>
 			</section>
