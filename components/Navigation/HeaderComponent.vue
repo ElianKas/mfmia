@@ -152,35 +152,6 @@
 	function toggleMobile() {
 		activeMobile.value = !activeMobile.value;
 	}
-
-	onMounted(() => {
-		PayPal.Donation.Button({
-			env: 'sandbox',
-			hosted_button_id: 'YOUR_SANDBOX_HOSTED_BUTTON_ID',
-			// business: 'YOUR_EMAIL_OR_PAYERID',
-			image: {
-				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',
-				title: 'PayPal - The safer, easier way to pay online!',
-				alt: 'Donate with PayPal button',
-			},
-			onComplete: function (params) {
-				// Your onComplete handler
-			},
-		}).render('#paypal-donate-button-header1');
-		PayPal.Donation.Button({
-			env: 'sandbox',
-			hosted_button_id: 'YOUR_SANDBOX_HOSTED_BUTTON_ID',
-			// business: 'YOUR_EMAIL_OR_PAYERID',
-			image: {
-				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',
-				title: 'PayPal - The safer, easier way to pay online!',
-				alt: 'Donate with PayPal button',
-			},
-			onComplete: function (params) {
-				// Your onComplete handler
-			},
-		}).render('#paypal-donate-button-header2');
-	});
 </script>
 <template>
 	<div class="shadow-md">
@@ -229,12 +200,11 @@
 							</div>
 							<div
 								class="max-xl:hidden font-bold text-orange cursor-pointer w-[200px] text-right">
-								<div class="text-orange relative overflow-hidden">
-									<p>Jetzt Spenden</p>
-									<div
-										id="paypal-donate-button-header1"
-										class="absolute w-full h-full inset-0"></div>
-								</div>
+								<NuxtLink
+									to="/spenden"
+									class="text-orange overflow-hidden">
+									Jetzt Spenden
+								</NuxtLink>
 							</div>
 							<!-- burger icon -->
 							<div
@@ -618,12 +588,12 @@
 							>
 						</div>
 						<div class="py-[1rem]">
-							<div class="text-orange relative overflow-hidden">
-								<p>Jetzt Spenden</p>
-								<div
-									id="paypal-donate-button-header2"
-									class="absolute w-full h-full inset-0"></div>
-							</div>
+							<NuxtLink
+								@click="toggleMobile"
+								to="/spenden"
+								class="text-orange overflow-hidden">
+								Jetzt Spenden
+							</NuxtLink>
 						</div>
 					</ul>
 				</div>
