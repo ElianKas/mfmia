@@ -32,7 +32,7 @@
 						width="382"
 						height="550"
 						scrolling="no"></iframe>
-					<iframe
+					<!-- <iframe
 						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
 						title="PayPal donate campaign card"
 						frameborder="0"
@@ -45,7 +45,7 @@
 						frameborder="0"
 						width="382"
 						height="550"
-						scrolling="no"></iframe>
+						scrolling="no"></iframe> -->
 				</div>
 			</section>
 			<section
