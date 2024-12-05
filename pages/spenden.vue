@@ -1,8 +1,8 @@
 <script setup>
 	onMounted(() => {
 		PayPal.Donation.Button({
-			env: 'sandbox',
-			hosted_button_id: 'YOUR_SANDBOX_HOSTED_BUTTON_ID',
+			env: 'production',
+			hosted_button_id: 'EMH3AUSA8E5F8',
 			// business: 'YOUR_EMAIL_OR_PAYERID',
 			image: {
 				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',
