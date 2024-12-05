@@ -184,14 +184,14 @@
 </script>
 <template>
 	<div class="shadow-md">
-		<header class="z-[2147483647] relative">
+		<header class="z-[9999] relative">
 			<nav class="relative">
 				<div class="h-[80px]">
 					<!-- full menu desktop -->
 					<div
 						:style="{ height: activeDesktop ? '350px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
-						class="transition-all duration-300 bg-white z-[2147483647] relative">
+						class="transition-all duration-300 bg-white z-[9999] relative">
 						<div
 							class="h-[70px] max-w-[--max-width-big] items-center m-auto flex justify-between px-[1rem] md:px-[3rem]">
 							<NuxtLink
@@ -302,7 +302,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="h-[10px] bg-orange z-[2147483647] relative">
+					<div class="h-[10px] bg-orange z-[9999] relative">
 						<StoryblokImage
 							class="w-full h-full object-cover rounded-none"
 							src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
@@ -310,7 +310,7 @@
 				</div>
 				<!-- full menu mobile -->
 				<div
-					class="h-[100vh] fixed top-0 right-0 w-full bg-white pl-[3rem] pr-[1rem] md:pr-[3rem] flex flex-col gap-[1rem]"
+					class="h-[100vh] fixed z-[9999999] top-0 right-0 w-full bg-white pl-[3rem] pr-[1rem] md:pr-[3rem] flex flex-col gap-[1rem]"
 					:class="{ hidden: !activeMobile }">
 					<div class="self-end h-[70px] shrink-0 flex items-center">
 						<div
