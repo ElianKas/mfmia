@@ -17,16 +17,18 @@
 			});
 
 			if (response && response.success) {
-				alert('Subscription successful');
+				alert(
+					'Erfolgreich abonniert! Eine Bestätigungsmail wurde versendet.'
+				);
 			} else {
 				const errorMessage =
 					response && response.error
 						? response.error.message
 						: 'Unknown error';
-				alert(`Subscription failed: ${errorMessage}`);
+				alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
 			}
 		} catch (err) {
-			alert(`An error occurred: ${err.message}`);
+			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
 		}
 	};
 </script>
