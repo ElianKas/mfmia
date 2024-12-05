@@ -49,7 +49,7 @@ export default defineEventHandler(async (event) => {
 
 	// Set up email data for the host
 	let hostMailOptions = {
-		from: '"Miteinander für Menschen in Afrika e.V." <info@miteinander-fuer-afrika.de>', // Sender address
+		from: '"Miteinander für Menschen in Afrika e.V." <newsletter@miteinander-fuer-afrika.de>', // Sender address
 		to: process.env.NEWSLETTER_EMAIL, // Host's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
