@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
 	if (!body.email || !body.name) {
 		return {
 			success: false,
-			error: 'Email and name are required',
+			error: 'Name und Email werden benötigt',
 		};
 	}
 
@@ -33,8 +33,8 @@ export default defineEventHandler(async (event) => {
 		port: 465,
 		secure: true, // true for 465, false for other ports
 		auth: {
-			user: process.env.EMAIL, // Replace with your email
-			pass: process.env.EMAIL_PASSWORD, // Replace with your email password
+			user: process.env.NEWSLETTER_EMAIL, // Replace with your email
+			pass: process.env.NEWSLETTER_EMAIL_PASSWORD, // Replace with your email password
 		},
 	});
 
@@ -44,7 +44,7 @@ export default defineEventHandler(async (event) => {
 		to: body.email, // Client's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
-		text: `Hello ${body.firstName},\n\nThank you for subscribing to our newsletter!`, // Plain text body
+		text: `Hallo ${body.firstName},\n\nDanke für die Anmeldung zum Newsletter!`, // Plain text body
 	};
 
 	// Set up email data for the host
@@ -61,14 +61,14 @@ export default defineEventHandler(async (event) => {
 	try {
 		// Send confirmation email to the client
 		await transporter.sendMail(clientMailOptions);
-		console.log('Confirmation email sent to client: %s', body.email);
+		/* console.log('Confirmation email sent to client: %s', body.email); */
 
 		// Send notification email to the host
 		await transporter.sendMail(hostMailOptions);
-		console.log(
+		/* console.log(
 			'Notification email sent to host: %s',
 			process.env.RECEIVER_EMAIL
-		);
+		); */
 
 		return {
 			success: true,
