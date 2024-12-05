@@ -19,10 +19,33 @@
 	<div>
 		<article class="px-[1rem] md:px-[3rem]">
 			<section
-				class="h-[400px] flex items-center max-w-[--max-width-big] m-auto">
-				<div class="font-bold">
+				class="min-h-[550px] flex flex-col gap-[2rem] items-center max-w-[--max-width-big] m-auto py-[2rem]">
+				<div class="font-bold text-center">
 					<h1 class="text-green">Dringende Projekte</h1>
 					<p class="text-orange text-big">Spendenziele</p>
+				</div>
+				<div class="flex flex-wrap w-full justify-center">
+					<iframe
+						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
+						title="PayPal donate campaign card"
+						frameborder="0"
+						width="382"
+						height="550"
+						scrolling="no"></iframe>
+					<iframe
+						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
+						title="PayPal donate campaign card"
+						frameborder="0"
+						width="382"
+						height="550"
+						scrolling="no"></iframe>
+					<iframe
+						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
+						title="PayPal donate campaign card"
+						frameborder="0"
+						width="382"
+						height="550"
+						scrolling="no"></iframe>
 				</div>
 			</section>
 			<section
