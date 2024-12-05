@@ -4,14 +4,19 @@
 		<form
 			action="#"
 			class="max-w-[500px] flex flex-col gap-[1rem] lg:w-[50%]">
-			<h1 class="text-orange">Kontakt</h1>
+			<h1 class="text-orange font-bold text-big">Kontakt</h1>
 			<div>
-				<label class="input px-[.5rem] flex items-center gap-2">
-					Anrede<span class="text-orange">*</span>
-					<input
-						type="text"
-						class="grow" />
-				</label>
+				<select
+					class="select select-ghost px-[.5rem] w-full text-[16px]">
+					<option
+						disabled
+						selected>
+						Anrede
+					</option>
+					<option>Divers</option>
+					<option>Herr</option>
+					<option>Frau</option>
+				</select>
 				<div class="h-[1px] border border-green"></div>
 				<label
 					class="input px-[.5rem] flex items-center gap-2 border-b">
