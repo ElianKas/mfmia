@@ -53,12 +53,12 @@
 				<div
 					class="flex gap-[2rem] md:gap-[5rem] max-lg:flex-col w-full">
 					<li
-						class="h-[150px] w-full flex gap-[1rem]"
+						class="w-full flex gap-[1rem]"
 						v-for="report in sortedData">
 						<NuxtLink
 							target="_blank"
 							:to="report.content.report.filename"
-							class="h-full aspect-square rounded-[--border-radius] bg-[#BFBFBF] grid place-items-center">
+							class="h-[150px] aspect-square rounded-[--border-radius] bg-[#BFBFBF] grid place-items-center">
 							.PDF
 						</NuxtLink>
 						<div class="w-full text-left flex flex-col gap-[.5rem]">
