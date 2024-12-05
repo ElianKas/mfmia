@@ -52,6 +52,7 @@
 					v-model="title"
 					class="select select-ghost px-[.5rem] w-full text-[16px]">
 					<option
+						value=""
 						disabled
 						selected>
 						Anrede
