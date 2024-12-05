@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
 		return {
 			success: false,
 			error:
-				'Vorname, Name, Email und Ihre Nachricht werden benötigt',
+				'Vorname, Name, Email und Ihre Nachricht werden benötigt.',
 		};
 	}
 
