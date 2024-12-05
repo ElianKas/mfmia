@@ -51,9 +51,9 @@
 					</li>
 				</template>
 				<div
-					class="flex gap-[2rem] md:gap-[5rem] max-lg:flex-col w-full">
+					class="flex gap-[3rem] md:gap-[5rem] max-lg:flex-col w-full">
 					<li
-						class="w-full flex gap-[1rem]"
+						class="w-full flex gap-[1rem] max-sm:flex-col"
 						v-for="report in sortedData">
 						<NuxtLink
 							target="_blank"
