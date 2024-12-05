@@ -44,16 +44,16 @@ export default defineEventHandler(async (event) => {
 		to: body.email, // Client's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
-		text: `Hallo ${body.firstName},\n\nDanke für die Anmeldung zum Newsletter!`, // Plain text body
+		text: `Hallo ${body.name},\n\nDanke für die Anmeldung zum Newsletter!`, // Plain text body
 	};
 
 	// Set up email data for the host
 	let hostMailOptions = {
 		from: '"Miteinander für Menschen in Afrika e.V." <info@miteinander-fuer-afrika.de>', // Sender address
-		to: process.env.EMAIL, // Host's email
+		to: process.env.NEWSLETTER_EMAIL, // Host's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
-		text: `Name: ${body.firstName}\nEmail: ${
+		text: `Name: ${body.name}\nEmail: ${
 			body.email
 		}\n${checkMemberAndGodfather()} `, // Plain text body
 	};
