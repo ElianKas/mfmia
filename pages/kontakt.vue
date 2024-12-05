@@ -1,3 +1,14 @@
+<script setup>
+	const title = ref('');
+	const prename = ref('');
+	const name = ref('');
+	const street = ref('');
+	const city = ref('');
+	const phone = ref('');
+	const email = ref('');
+	const message = ref('');
+	const privacy = ref('');
+</script>
 <template>
 	<section
 		class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-[4rem] sm:gap-[8rem] px-[1rem] my-[6rem] lg:px-[3rem] max-w-[--max-width] m-auto min-h-[calc(100vh-80px)]">
@@ -7,22 +18,24 @@
 			<h1 class="text-orange font-bold text-big">Kontakt</h1>
 			<div>
 				<select
-					required
+					v-model="title"
 					class="select select-ghost px-[.5rem] w-full text-[16px]">
 					<option
 						disabled
 						selected>
-						Anrede <span class="anrede">*</span>
+						Anrede
 					</option>
-					<option>Divers</option>
-					<option>Herr</option>
-					<option>Frau</option>
+					<option value="Divers">Divers</option>
+					<option value="Herr">Herr</option>
+					<option value="Frau">Frau</option>
 				</select>
 				<div class="h-[1px] border border-green"></div>
 				<label
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					Vorname<span class="text-orange">*</span>
 					<input
+						required
+						v-model="prename"
 						type="text"
 						class="grow" />
 				</label>
@@ -31,6 +44,8 @@
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					Name<span class="text-orange">*</span>
 					<input
+						required
+						v-model="name"
 						type="text"
 						class="grow" />
 				</label>
@@ -39,6 +54,7 @@
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					Straße / Nr.
 					<input
+						v-model="street"
 						type="text"
 						class="grow" />
 				</label>
@@ -47,6 +63,7 @@
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					PLZ / Ort
 					<input
+						v-model="city"
 						type="text"
 						class="grow" />
 				</label>
@@ -55,6 +72,7 @@
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					Telefon / Mobil
 					<input
+						v-model="phone"
 						type="text"
 						class="grow" />
 				</label>
@@ -63,12 +81,16 @@
 					class="input px-[.5rem] flex items-center gap-2 border-b">
 					E-Mail<span class="text-orange">*</span>
 					<input
+						required
+						v-model="email"
 						type="text"
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
 				<br />
 				<textarea
+					required
+					v-model="message"
 					class="textarea textarea-bordered border-green w-full"
 					placeholder="Ihre Mitteilung"></textarea>
 			</div>
@@ -76,8 +98,9 @@
 				<label
 					class="label cursor-pointer flex items-start gap-[1rem]">
 					<input
+						required
+						v-model="privacy"
 						type="checkbox"
-						:checked="false"
 						class="checkbox" />
 					<span class="label-text"
 						>Ja, ich habe die Hinweise zum
