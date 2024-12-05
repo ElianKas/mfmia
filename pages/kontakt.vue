@@ -7,13 +7,44 @@
 	const phone = ref('');
 	const email = ref('');
 	const message = ref('');
-	const privacy = ref('');
+
+	const contact = async () => {
+		try {
+			const response = await $fetch('/api/contact', {
+				method: 'POST',
+				body: {
+					title: title.value,
+					prename: prename.value,
+					name: name.value,
+					street: street.value,
+					city: city.value,
+					phone: phone.value,
+					email: email.value,
+					message: message.value,
+				},
+			});
+
+			if (response && response.success) {
+				alert(
+					'Erfolgreich abonniert! Eine Bestätigungsmail wurde versendet.'
+				);
+			} else {
+				const errorMessage =
+					response && response.error
+						? response.error.message
+						: 'Unknown error';
+				alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
+			}
+		} catch (err) {
+			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
+		}
+	};
 </script>
 <template>
 	<section
 		class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-[4rem] sm:gap-[8rem] px-[1rem] my-[6rem] lg:px-[3rem] max-w-[--max-width] m-auto min-h-[calc(100vh-80px)]">
 		<form
-			action="#"
+			@submit.prevent="contact"
 			class="max-w-[500px] flex flex-col gap-[1rem] lg:w-[50%]">
 			<h1 class="text-orange font-bold text-big">Kontakt</h1>
 			<div>
@@ -99,7 +130,6 @@
 					class="label cursor-pointer flex items-start gap-[1rem]">
 					<input
 						required
-						v-model="privacy"
 						type="checkbox"
 						class="checkbox" />
 					<span class="label-text"
