@@ -26,14 +26,14 @@
 
 			if (response && response.success) {
 				alert(
-					'Erfolgreich abonniert! Eine Bestätigungsmail wurde versendet.'
+					'Kontaktaufnahme erfolgreich! Eine Bestätigungsmail wurde versendet.'
 				);
 			} else {
 				const errorMessage =
 					response && response.error
 						? response.error.message
 						: 'Unknown error';
-				alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
+				alert(`Senden fehlgeschlagen: ${errorMessage}`);
 			}
 		} catch (err) {
 			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
