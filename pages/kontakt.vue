@@ -7,11 +7,13 @@
 			<h1 class="text-orange font-bold text-big">Kontakt</h1>
 			<div>
 				<select
+					required
 					class="select select-ghost px-[.5rem] w-full text-[16px]">
 					<option
+						class="disabled:text-orange"
 						disabled
 						selected>
-						Anrede
+						Anrede <span class="anrede">*</span>
 					</option>
 					<option>Divers</option>
 					<option>Herr</option>
