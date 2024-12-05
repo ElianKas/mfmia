@@ -16,10 +16,10 @@
 			:isDynamic="true"
 			:src="section.gallery[0].image"
 			:alt="section.gallery[0].alt"
-			class="w-full mb-[1rem] max-h-[500px] object-cover" />
+			class="w-full mb-[1.5rem] max-h-[500px] object-cover" />
 		<div
 			v-if="section.gallery.length > 1"
-			class="mb-[1rem]">
+			class="mb-[1.5rem]">
 			<StoryblokImage
 				v-for="(image, index) in section.gallery"
 				:src="image.image"
@@ -42,7 +42,7 @@
 		</div>
 		<div class="max-w-[800px] m-auto">
 			<h2
-				class="font-bold text-big text-green"
+				class="font-bold text-big text-green mb-[1rem]"
 				v-if="props.section.title">
 				{{ props.section.title }}
 			</h2>
