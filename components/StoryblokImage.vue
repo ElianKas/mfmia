@@ -12,9 +12,15 @@
 			type: String,
 			required: false,
 		},
+		isDynamic: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
 	});
 	const baseLink = 'https://a.storyblok.com/f/311834/';
 	const optimizedSrc = ref('');
+	const isUpright = ref(false);
 
 	function optimize() {
 		let resolution = 800;
@@ -28,6 +34,9 @@
 			optimizedSrc.value = props.src + '/m/' + `${resolution}x0`;
 		} else {
 			optimizedSrc.value = props.src + '/m/' + `0x${resolution}`;
+			if (props.isDynamic) {
+				isUpright.value = true;
+			}
 		}
 	}
 
@@ -38,6 +47,7 @@
 <template>
 	<NuxtImg
 		class="rounded-[--border-radius]"
+		:class="{ 'max-w-[350px]': isUpright, 'm-auto': isUpright }"
 		v-if="optimizedSrc !== ''"
 		:src="optimizedSrc" />
 </template>

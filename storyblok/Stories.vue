@@ -84,46 +84,36 @@
 <template>
 	<article
 		class="min-h-[100vh] max-w-[--max-width] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
-		<div class="text-center my-[5rem]">
-			<p class="font-bold text-green">
-				Geschichten, wie wir Kamerun erleben.
-			</p>
-			<h1 class="text-big text-orange font-bold">Storys</h1>
-		</div>
-		<section
-			class="flex flex-col md:flex-row-reverse gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]">
-			<div class="md:w-[50%]">
-				<h2
-					class="font-bold text-big text-green"
+		<section class="pb-[1.5rem]">
+			<div
+				class="text-center my-[1rem] md:my-[3rem] relative h-[500px] bg-[#000] rounded-[--border-radius]">
+				<div class="z-[9] relative pt-[2rem]">
+					<p class="font-bold text-white">
+						Geschichten, wie wir Kamerun erleben.
+					</p>
+					<p class="text-big text-white font-bold">Storys</p>
+				</div>
+				<StoryblokImage
+					:src="blok.cover.filename"
+					class="absolute inset-0 w-full h-full object-cover opacity-80" />
+			</div>
+			<div class="max-w-[800px] m-auto">
+				<h1
+					class="font-bold text-big text-green mb-[1rem]"
 					v-if="blok.title">
 					{{ blok.title }}
-				</h2>
+				</h1>
 				<div
 					v-if="blok.description"
 					v-html="descriptionContent"></div>
 			</div>
-			<div class="md:w-[50%] m-auto">
-				<StoryblokImage
-					class="rounded-[--border-radius] md:w-[80%] md:m-auto h-auto"
-					:src="blok.cover.filename"
-					v-if="blok.cover" />
-			</div>
 		</section>
 		<!-- storyblok moreSections render -->
-		<!-- storyblok moreSections render -->
-		<section
-			class="py-[2rem] flex flex-col gap-[2rem] lg:gap-[4rem] xl:gap-[6rem]"
-			:class="{
-				'md:flex-row': i % 2 === 0,
-				'md:flex-row-reverse': i % 2 !== 0,
-			}"
-			v-for="(section, i) in moreSectionContent"
+		<TemplatesDynamicSection
+			v-for="section in moreSectionContent"
 			:key="section"
-			v-if="moreSectionContent.length > 0">
-			<TemplatesDynamicSection
-				v-if="section"
-				:section="section" />
-		</section>
+			v-if="moreSectionContent.length > 0"
+			:section="section" />
 		<!-- story navigation last/next -->
 		<nav class="flex flex-col md:flex-row gap-[1rem] py-[5rem]">
 			<NuxtLink
