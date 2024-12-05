@@ -115,7 +115,7 @@
 					<input
 						required
 						v-model="email"
-						type="text"
+						type="email"
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
