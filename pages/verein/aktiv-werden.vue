@@ -1,3 +1,20 @@
+<script setup>
+	onMounted(() => {
+		PayPal.Donation.Button({
+			env: 'production',
+			hosted_button_id: 'EMH3AUSA8E5F8',
+			// business: 'YOUR_EMAIL_OR_PAYERID',
+			image: {
+				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',
+				title: 'PayPal - The safer, easier way to pay online!',
+				alt: 'Donate with PayPal button',
+			},
+			onComplete: function (params) {
+				// Your onComplete handler
+			},
+		}).render('#paypal-donate-button-aktiv-werden');
+	});
+</script>
 <template>
 	<div>
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">
@@ -92,9 +109,13 @@
 							Dann bist du hier richtig.
 							<br />
 							<br />
-							<button class="btn bg-orange text-white">
-								Jetzt spenden
-							</button>
+							<span
+								class="btn bg-orange text-white mt-[.5rem] relative overflow-hidden">
+								Jetzt Spenden
+								<span
+									id="paypal-donate-button-aktiv-werden"
+									class="absolute w-full h-full inset-0"></span>
+							</span>
 							<br /><br />
 							Wir freuen uns genauso über jeden, der Anderen von
 							unserer Arbeit erzählt oder bei einer Familienfeier um
