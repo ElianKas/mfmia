@@ -10,7 +10,6 @@
 					required
 					class="select select-ghost px-[.5rem] w-full text-[16px]">
 					<option
-						class="disabled:text-orange"
 						disabled
 						selected>
 						Anrede <span class="anrede">*</span>
