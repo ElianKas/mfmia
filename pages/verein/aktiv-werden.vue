@@ -42,7 +42,7 @@
 				<!-- item -->
 				<div class="collapse collapse-arrow">
 					<input
-						type="radio"
+						type="checkbox"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
 						<b>Mitglied werden</b>
@@ -71,7 +71,7 @@
 				<!-- item -->
 				<div class="collapse collapse-arrow">
 					<input
-						type="radio"
+						type="checkbox"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
 						<b>Pate werden </b>
@@ -97,7 +97,7 @@
 				<!-- item -->
 				<div class="collapse collapse-arrow">
 					<input
-						type="radio"
+						type="checkbox"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
 						<b>Geld sammeln </b>
@@ -130,7 +130,7 @@
 				<!-- item -->
 				<div class="collapse collapse-arrow">
 					<input
-						type="radio"
+						type="checkbox"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
 						<b>An Projekten mitarbeiten </b>
