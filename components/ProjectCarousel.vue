@@ -2,11 +2,6 @@
 	const currentValue = ref(0);
 	const projects = [
 		{
-			title: 'Kamerun',
-			link: '/projekte/kamerun',
-			src: 'https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg',
-		},
-		{
 			title: 'Bildung',
 			link: '/projekte/bildung',
 			src: 'https://a.storyblok.com/f/311834/6000x4000/7976ff7f8d/img_3554_kvdd4f.jpg',
@@ -17,14 +12,19 @@
 			src: 'https://a.storyblok.com/f/311834/6000x4000/013c3d6298/img_8154_wasser_usks9x.jpg',
 		},
 		{
+			title: 'Hygiene & Gesundheit',
+			link: '/projekte/hygiene-gesundheit',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
+		},
+		{
 			title: 'Hilfe zur Selbsthilfe',
 			link: '/projekte/hilfe-zur-selbsthilfe',
 			src: 'https://a.storyblok.com/f/311834/5200x2490/1169d78ee3/auto-sebastien.png',
 		},
 		{
-			title: 'Hygiene & Gesundheit',
-			link: '/projekte/hygiene-gesundheit',
-			src: 'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
+			title: 'Kamerun',
+			link: '/projekte/kamerun',
+			src: 'https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg',
 		},
 	];
 </script>
@@ -48,13 +48,13 @@
 				</h2>
 				<br />
 				<Carousel
-					:items-to-show="1"
+					:items-to-show="1.2"
 					:breakpoints="{
-						768: { itemsToShow: 2 },
-						1280: { itemsToShow: 3 },
+						768: { itemsToShow: 2.2 },
+						1280: { itemsToShow: 3.2 },
 					}"
 					v-model="currentValue"
-					:wrap-around="true">
+					:wrap-around="false">
 					<Slide
 						class="px-[1rem] md:px-[2rem]"
 						v-for="(slide, index) in projects">
@@ -81,9 +81,6 @@
 								</div>
 							</NuxtLink>
 						</div>
-					</Slide>
-					<Slide class="md:px-[2rem] hidden md:block">
-						<div class="w-[500px] aspect-square"></div>
 					</Slide>
 				</Carousel>
 			</nav>
