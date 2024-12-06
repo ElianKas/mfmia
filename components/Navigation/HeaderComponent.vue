@@ -203,7 +203,7 @@
 								<NuxtLink
 									to="/spenden"
 									class="text-orange overflow-hidden">
-									Jetzt Spenden
+									spenden
 								</NuxtLink>
 							</div>
 							<!-- burger icon -->
@@ -592,7 +592,7 @@
 								@click="toggleMobile"
 								to="/spenden"
 								class="text-orange overflow-hidden">
-								Jetzt Spenden
+								spenden
 							</NuxtLink>
 						</div>
 					</ul>
