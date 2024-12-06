@@ -1,7 +1,10 @@
 <script setup>
 	const props = defineProps({ section: Object });
 	const descriptionContent = computed(() => {
-		if (props.section.description.type === 'doc') {
+		if (
+			props.section.description &&
+			props.section.description.type === 'doc'
+		) {
 			return renderRichText(props.section.description);
 		} else {
 			return props.section.description;
