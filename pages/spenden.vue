@@ -152,6 +152,40 @@
 					</NuxtLink>
 				</nav>
 			</section>
+			<section class="max-w-[--max-width] m-auto py-[2rem]">
+				<h2 class="font-bold">
+					Bestätigung der Gemeinnützigkeit durch das Finanzamt
+				</h2>
+				<br />
+				<p class="max-w-[600px]">
+					Wir sind wegen Förderung der Entwicklungszusammenarbeit nach
+					dem Freistellungsbescheid bzw. nach der Anlage zum
+					Körperschaftsteuerbescheid des Finanzamtes Kassel, <br />br
+					St.-Nr. 26 250 88301, vom 12.07.2023 für den letzten
+					Veranlagungszeitraum für 2020 bis 2022 nach § 5 Abs. 1 Nr. 9
+					des Körperschaftsteuergesetzes von der Körperschaftsteuer
+					und nach § 3 Nr. 6 des Gewerbesteuergesetzes von der
+					Gewerbesteuer befreit. <br /><br />
+					Es wird bestätigt, dass sowohl Spenden als auch
+					Mitgliedsbeiträge steuerbegünstigt sind.
+					<br /><br />
+					Es wird bestätigt, dass die Zuwendung nur zur Förderung der
+					Entwicklungszusammenarbeit (§ 52 Abs. 2 Satz 1 Nr. 15 AO)
+					verwendet wird.
+
+					<br /><br />
+
+					Für Spenden bis 300,00 Euro können Sie für Ihre
+					Steuererklärung auch das folgende PDF in Verbindung mit dem
+					(Online-)Kontoauszug nutzen.
+					<br />
+					<NuxtLink
+						to=""
+						target="_blank"
+						><u>Zuwendungsbestätigung Kleinspenden </u></NuxtLink
+					>
+				</p>
+			</section>
 		</article>
 	</div>
 </template>
