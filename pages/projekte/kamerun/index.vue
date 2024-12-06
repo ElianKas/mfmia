@@ -153,6 +153,11 @@
 						</p>
 					</template>
 				</TemplatesParagraphsLeftRight>
+				<div class="m-auto max-w-[500px]">
+					<StoryblokImage
+						class="w-full h-auto"
+						src="https://a.storyblok.com/f/311834/4804x3122/f254258480/adobestock_104479200.jpeg" />
+				</div>
 			</div>
 		</article>
 		<LazyDonate />
