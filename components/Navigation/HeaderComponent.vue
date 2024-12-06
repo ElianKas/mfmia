@@ -88,6 +88,10 @@
 								link: '/projekte/hygiene-gesundheit/toilettenhaeuser',
 							},
 							{
+								name: 'PeriodenPower',
+								link: '/projekte/hygiene-gesundheit/perioden-power',
+							},
+							{
 								name: 'Vorgehen',
 								link: '/projekte/hygiene-gesundheit/vorgehen',
 							},
