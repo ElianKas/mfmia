@@ -34,6 +34,7 @@
 </script>
 <template>
 	<aside
+		id="newsletter"
 		class="px-[1rem] lg:px-[3rem] flex flex-col items-center lg:flex-row gap-[1rem] lg:gap-[3rem] m-auto max-w-[1600px] py-[2rem]">
 		<SvgsHumansGroup class="max-w-[450px] w-[90%] h-auto" />
 		<form

@@ -136,16 +136,16 @@
 					</p>
 				</div>
 				<nav class="w-full text-orange">
-					<p>Kontakt aufnehmen</p>
 					<NuxtLink to="/kontakt">
+						<p>Kontakt aufnehmen</p>
 						<SvgsNavigationLongArrowOrange /> </NuxtLink
 					><br />
-					<p>Zum Newsletter eintragen</p>
-					<NuxtLink to="/kontakt">
+					<NuxtLink to="/#newsletter">
+						<p>Zum Newsletter eintragen</p>
 						<SvgsNavigationLongArrowOrange /> </NuxtLink
 					><br />
-					<p>Zuwendungsbestätigung Kleinspenden</p>
 					<NuxtLink to="/kontakt">
+						<p>Zuwendungsbestätigung Kleinspenden</p>
 						<SvgsNavigationLongArrowOrange />
 					</NuxtLink>
 				</nav>
