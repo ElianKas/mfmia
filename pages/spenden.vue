@@ -144,7 +144,9 @@
 						<p>Zum Newsletter eintragen</p>
 						<SvgsNavigationLongArrowOrange /> </NuxtLink
 					><br />
-					<NuxtLink to="/kontakt">
+					<NuxtLink
+						to="https://a.storyblok.com/f/311834/x/92821bac58/zuwendungsbestatigung-kleinspenden-2023-07.pdf"
+						target="_blank">
 						<p>Zuwendungsbestätigung Kleinspenden</p>
 						<SvgsNavigationLongArrowOrange />
 					</NuxtLink>
