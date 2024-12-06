@@ -15,7 +15,7 @@
 					Partnerschaften zwischen Schulen in der Region Kassel und in
 					Kamerun zu fördern. Bislang konnten bereits zwei
 					Partnerschaften realisiert werden: Zwischen der Reformschule
-					Kassel und der öffentlichen Schule Nkometou III nördlich von
+					Kassel und der öffentlichen Schule Nkomotou III nördlich von
 					Yaoundé sowie zwischen der Grundschule Ahnatal/Heckershausen
 					und der katholischen Grundschule Saint-Jean-Baptiste in
 					Leng-Tombo.
