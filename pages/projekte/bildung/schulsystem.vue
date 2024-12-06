@@ -33,8 +33,8 @@
 								<br /><br />
 								Im Alter von ca. 6 Jahren beginnen die Kinder mit der
 								Grundschule (école primaire). Dort lernen sie etwa bis
-								zum 11ten Lebensjahr und machen ihren ersten
-								Abschluss, das CEPE (Certificat de fin d‘étu-des
+								zum elften Lebensjahr und machen ihren ersten
+								Abschluss, das CEPE (Certificat de fin d‘études
 								primaires élémentaires). Danach beginnt die
 								Sekundarschule.
 								<br /><br />
