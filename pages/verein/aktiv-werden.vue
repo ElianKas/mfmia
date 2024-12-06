@@ -124,6 +124,8 @@
 							Auf Wunsch stellen wir auch Spendendosen zur Verfügung.
 							Wende dich dazu bitte an unseren Kassenwart Thomas
 							Langhein.
+							<br /><br />
+							<NuxtLink to="/verein/team"><u>Zum Team</u></NuxtLink>
 						</p>
 					</div>
 				</div>
