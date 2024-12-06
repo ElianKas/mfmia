@@ -56,6 +56,27 @@
 							ohne die Schulgemeinschaften in Kassel nicht zustande
 							gekommen wären!
 						</p>
+						<div class="text-orange my-[1rem]">
+							<NuxtLink
+								to="https://reformschule.de/spendenaktion-sehr-erfolgreich/"
+								target="_blank">
+								<p>
+									Hier der Link zu einem Artikel auf der Homepage der
+									Reformschule von Juni 2024:
+								</p>
+								<SvgsNavigationLongArrowOrange />
+							</NuxtLink>
+							<br />
+							<NuxtLink
+								to="https://reformschule.de/spendenaktion-sehr-erfolgreich/"
+								target="_blank">
+								<p>
+									Und hier der Link zu einem Artikel auf unserer
+									Homepage vom Oktober 2024:
+								</p>
+								<SvgsNavigationLongArrowOrange />
+							</NuxtLink>
+						</div>
 					</template>
 					<template #right>
 						<div
