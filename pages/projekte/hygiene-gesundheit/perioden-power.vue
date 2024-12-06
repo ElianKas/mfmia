@@ -21,7 +21,7 @@
 					Teilhabe ausgeschlossen, still und versteckt.
 				</template>
 				<template #logo>
-					<SvgsIconsHygieneToilettenhäuser class="shrink-0" />
+					<SvgsIconsHygienePeriodenPower class="shrink-0" />
 				</template>
 				<template #image>
 					<StoryblokImage

@@ -402,6 +402,54 @@
 										</li>
 									</div>
 								</div>
+
+								<!-- akkordeon item -->
+								<div class="collapse collapse-arrow">
+									<input
+										type="checkbox"
+										name="my-accordion-2" />
+									<li class="collapse-title px-0">
+										Hygiene & Gesundheit
+									</li>
+									<!--  content -->
+									<div class="collapse-content pl-[1rem]">
+										<li>
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit"
+												@click="toggleMobile">
+												Übersicht
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/toilettenhaeuser"
+												@click="toggleMobile">
+												Toilettenhäuser
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/perioden-power"
+												@click="toggleMobile">
+												PeriodenPower
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/vorgehen"
+												@click="toggleMobile">
+												Vorgehen
+											</NuxtLink>
+										</li>
+										<li class="mt-[1rem]">
+											<NuxtLink
+												to="/projekte/hygiene-gesundheit/standorte"
+												@click="toggleMobile">
+												Standorte
+											</NuxtLink>
+										</li>
+									</div>
+								</div>
 								<!-- akkordeon item -->
 								<div class="collapse collapse-arrow">
 									<input
@@ -438,46 +486,6 @@
 												to="/projekte/hilfe-zur-selbsthilfe/plantagen"
 												@click="toggleMobile">
 												Plantagen
-											</NuxtLink>
-										</li>
-									</div>
-								</div>
-								<!-- akkordeon item -->
-								<div class="collapse collapse-arrow">
-									<input
-										type="checkbox"
-										name="my-accordion-2" />
-									<li class="collapse-title px-0">
-										Hygiene & Gesundheit
-									</li>
-									<!--  content -->
-									<div class="collapse-content pl-[1rem]">
-										<li>
-											<NuxtLink
-												to="/projekte/hygiene-gesundheit"
-												@click="toggleMobile">
-												Übersicht
-											</NuxtLink>
-										</li>
-										<li class="mt-[1rem]">
-											<NuxtLink
-												to="/projekte/hygiene-gesundheit/toilettenhaeuser"
-												@click="toggleMobile">
-												Toilettenhäuser
-											</NuxtLink>
-										</li>
-										<li class="mt-[1rem]">
-											<NuxtLink
-												to="/projekte/hygiene-gesundheit/vorgehen"
-												@click="toggleMobile">
-												Vorgehen
-											</NuxtLink>
-										</li>
-										<li class="mt-[1rem]">
-											<NuxtLink
-												to="/projekte/hygiene-gesundheit/standorte"
-												@click="toggleMobile">
-												Standorte
 											</NuxtLink>
 										</li>
 									</div>
