@@ -103,14 +103,14 @@
 					</template>
 				</TemplatesLineUp>
 			</div>
-			<LazyDonate />
-			<LazyTemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
-				<LinkCardsBildungHerausforderungen />
-				<LinkCardsBildungSchulsystem />
-				<LinkCardsBildungPatenschaften />
-				<LinkCardsBildungSchulpartnerschaften />
-				<LinkCardsBildungSchulenbau />
-			</LazyTemplatesExploreMoreTemplate>
 		</article>
+		<LazyDonate />
+		<LazyTemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
+			<LinkCardsBildungHerausforderungen />
+			<LinkCardsBildungSchulsystem />
+			<LinkCardsBildungPatenschaften />
+			<LinkCardsBildungSchulpartnerschaften />
+			<LinkCardsBildungSchulenbau />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>

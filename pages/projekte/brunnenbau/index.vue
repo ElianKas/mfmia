@@ -104,14 +104,12 @@
 					</template>
 				</TemplatesLineUp>
 			</div>
-			<LazyDonate />
-			<LazyTemplatesExploreMoreTemplate
-				:page="{ title: 'Toilettenhäuser' }">
-				<LinkCardsHygieneToilettenhäuser />
-				<LinkCardsHygieneVorgehen />
-				<LinkCardsHygieneStandorte />
-			</LazyTemplatesExploreMoreTemplate>
 		</article>
 		<LazyDonate />
+		<LazyTemplatesExploreMoreTemplate :page="{ title: 'Brunnenbau' }">
+			<LinkCardsBrunnenbauMotivation />
+			<LinkCardsBrunnenbauVorgehen />
+			<LinkCardsBrunnenbauStandorte />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>

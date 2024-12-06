@@ -26,7 +26,7 @@
 				<template #image>
 					<StoryblokImage
 						class="object-cover w-full h-full"
-						src="https://a.storyblok.com/f/311834/4032x3024/df1de6334a/img_3636_versammlung_wzz1mv.jpg" />
+						src="https://a.storyblok.com/f/311834/4032x3024/668abf5ff0/img_4690.jpeg" />
 				</template>
 			</TemplatesFirstParagraphProjects>
 			<div class="px-[1rem] md:px-[3rem]">
@@ -70,7 +70,7 @@
 							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="object-cover w-full h-full"
-								src="https://a.storyblok.com/f/311834/6000x4000/f4dd245cb9/klo_alt_hochkant_img_3559_eqydc9.jpg" />
+								src="https://a.storyblok.com/f/311834/6000x4000/5caa763cf7/img_5254.JPG" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -80,7 +80,7 @@
 							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%] justify-self-end">
 							<StoryblokImage
 								class="w-full h-full object-cover"
-								src="https://a.storyblok.com/f/311834/3325x4326/13507f7527/wasserloch_00001.png" /></div
+								src="https://a.storyblok.com/f/311834/3024x4032/2bd157deb5/img_4693.jpeg" /></div
 					></template>
 					<template #right
 						><div
@@ -119,10 +119,12 @@
 				</TemplatesLineUp>
 			</div>
 		</article>
+		<LazyDonate />
 		<LazyTemplatesExploreMoreTemplate
 			:page="{
 				title: 'Toilettenhäuser',
 			}">
+			<LinkCardsHygieneToilettenhäuser />
 			<LinkCardsHygieneVorgehen />
 			<LinkCardsHygieneStandorte />
 		</LazyTemplatesExploreMoreTemplate>
