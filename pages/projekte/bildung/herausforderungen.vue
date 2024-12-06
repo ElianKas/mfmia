@@ -8,13 +8,16 @@
 				<template #title>Herausforderungen</template>
 				<template #subtitle>Was den Schulbesuch erschwert </template>
 				<template #description
-					>Wir engagieren uns gezielt für einzelne Schulen, indem wir
-					Schulgebäude und -toiletten renovieren und für fehlende
-					Lehrmaterialien Spenden sammeln. Wir vermitteln
-					Partnerschaften zwischen deutschen und kamerunischen
-					Schulen. Und wir unterstützen mittellose Kinder und
-					Jugendliche, indem wir mithilfe von Paten in Deutschland
-					einen kontinuierlichen Schulbesuch ermöglichen.
+					>Zur Schule zu gehen ist in Kamerun nicht
+					selbstverständlich. Es gibt keine funktionierende
+					Schulpflicht und die Familien stehen vor einer Vielzahl von
+					Hürden. Manche Eltern haben kein Geld für das erforderliche
+					Schulgeld oder sehen im schlimmsten Fall keine
+					Notwendigkeit, die Kinder zur Schule zu schicken. Denn
+					zuhause haben die Kinder viele Aufgaben, die zum Überleben
+					der Familie wichtig sind. Da scheint es oft einfacher, die
+					Kinder zu Hause arbeiten zu lassen, statt sie zur Schule zu
+					schicken.
 				</template>
 				<template #image
 					><StoryblokImage
