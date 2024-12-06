@@ -8,7 +8,7 @@
 	const sortedData = ref(null);
 	const clientData = ref([]);
 	const currentLength = computed(() => clientData.value.length);
-	let increment = 6;
+	let increment = 10;
 
 	function loadMore() {
 		const nextData = sortedData.value.slice(
@@ -16,14 +16,20 @@
 			currentLength.value + increment
 		);
 		clientData.value = [...clientData.value, ...nextData];
+		console.log(clientData.value.length);
+		console.log(sortedData.value.length);
 	}
 
-	onMounted(() => {
+	function sort() {
 		sortedData.value = data.stories.sort((a, b) => {
 			const dateA = new Date(a.content.date);
 			const dateB = new Date(b.content.date);
 			return dateB - dateA;
 		});
+	}
+
+	onMounted(() => {
+		sort();
 		loadMore();
 	});
 </script>
@@ -44,26 +50,36 @@
 							class="skeleton h-[47px] mb-[1rem] w-full"
 							v-for="entry in data.stories.length"></div>
 					</template>
-					<li v-for="article in clientData">
-						<NuxtLink
-							:to="`aktuelles/${article.slug}`"
-							class="p-[1rem] border-b flex justify-between items-center gap-[1rem]">
-							<div>
-								{{
-									new Date(article.content.date).toLocaleDateString(
-										'de-DE',
-										{
-											day: '2-digit',
-											month: '2-digit',
-											year: 'numeric',
-										}
-									)
-								}}
-								<b>{{ article.content.title }}</b>
-							</div>
-							<SvgsNavigationDoubleArrow class="shrink-0"
-						/></NuxtLink>
-					</li>
+					<div v-if="clientData.length > 0">
+						<li v-for="article in clientData">
+							<NuxtLink
+								:to="`aktuelles/${article.slug}`"
+								class="p-[1rem] border-b flex justify-between items-center gap-[1rem]">
+								<div>
+									{{
+										new Date(article.content.date).toLocaleDateString(
+											'de-DE',
+											{
+												day: '2-digit',
+												month: '2-digit',
+												year: 'numeric',
+											}
+										)
+									}}
+									<b>{{ article.content.title }}</b>
+								</div>
+								<SvgsNavigationDoubleArrow class="shrink-0"
+							/></NuxtLink>
+						</li>
+						<div class="text-center">
+							<button
+								class="btn bg-orange text-white"
+								v-if="clientData.length !== sortedData.length"
+								@click="loadMore()">
+								Ältere Story laden
+							</button>
+						</div>
+					</div>
 				</ClientOnly>
 			</ul>
 		</article>
