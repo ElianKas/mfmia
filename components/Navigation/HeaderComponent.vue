@@ -160,7 +160,7 @@
 				<div class="h-[80px]">
 					<!-- full menu desktop -->
 					<div
-						:style="{ height: activeDesktop ? '350px' : '70px' }"
+						:style="{ height: activeDesktop ? '325px' : '70px' }"
 						:class="{ 'items-center': !activeDesktop }"
 						class="transition-all duration-300 bg-white z-[9999] relative">
 						<div
