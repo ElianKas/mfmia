@@ -16,8 +16,6 @@
 			currentLength.value + increment
 		);
 		clientData.value = [...clientData.value, ...nextData];
-		console.log(clientData.value.length);
-		console.log(sortedData.value.length);
 	}
 
 	function sort() {
@@ -73,8 +71,8 @@
 						</li>
 						<div class="text-center">
 							<button
-								class="btn bg-orange text-white"
 								v-if="clientData.length !== sortedData.length"
+								class="btn bg-orange text-white mt-[2rem]"
 								@click="loadMore()">
 								Ältere Story laden
 							</button>
