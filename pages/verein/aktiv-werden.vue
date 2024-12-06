@@ -133,7 +133,7 @@
 						type="radio"
 						name="my-accordion-2" />
 					<div class="collapse-title text-xl font-medium px-0">
-						<b>An einem Projekt mitarbeiten</b>
+						<b>An Projekten mitarbeiten </b>
 					</div>
 					<div class="collapse-content">
 						<p>
