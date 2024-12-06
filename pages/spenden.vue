@@ -152,7 +152,8 @@
 					</NuxtLink>
 				</nav>
 			</section>
-			<section class="max-w-[--max-width] m-auto py-[2rem]">
+			<section
+				class="max-w-[--max-width] m-auto py-[2rem] border-t border-green">
 				<h2 class="font-bold">
 					Bestätigung der Gemeinnützigkeit durch das Finanzamt
 				</h2>
