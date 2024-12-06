@@ -25,7 +25,11 @@
 					km östlich von Yaoundé, bauen, wo wir auch Toilettenhäuser
 					errichten und eine Schule unterstützen.</template
 				>
-				<template #image><MapsMap :data="data" /></template>
+				<template #image
+					><MapsMap
+						:data="data"
+						:start-coords="[3.848, 11.5021]"
+				/></template>
 			</TemplatesFirstParagraphProjects>
 			<TemplatesLocationList :data="data">
 				<template #name> Brunnenbau </template>

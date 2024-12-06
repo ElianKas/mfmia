@@ -1,6 +1,7 @@
 <script setup>
 	const props = defineProps({
 		data: Object,
+		startCoords: Array,
 	});
 	const coordinates = ref([]);
 	let isReady = ref(false);
@@ -51,7 +52,7 @@
 					isReady = true;
 				}
 			"
-			:center="[3.848, 11.5021]"
+			:center="props.startCoords"
 			:use-global-leaflet="false">
 			<LTileLayer
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
