@@ -56,27 +56,6 @@
 						],
 					},
 					{
-						name: 'Hilfe zur Selbsthilfe',
-						items: [
-							{
-								name: 'Übersicht',
-								link: '/projekte/hilfe-zur-selbsthilfe',
-							},
-							{
-								name: 'Solar Light',
-								link: '/projekte/hilfe-zur-selbsthilfe/solar-light',
-							},
-							{
-								name: 'Plastik Recycling',
-								link: '/projekte/hilfe-zur-selbsthilfe/plastik-recycling',
-							},
-							{
-								name: 'Plantagen',
-								link: '/projekte/hilfe-zur-selbsthilfe/plantagen',
-							},
-						],
-					},
-					{
 						name: 'Hygiene & Gesundheit',
 						items: [
 							{
@@ -98,6 +77,27 @@
 							{
 								name: 'Standorte',
 								link: '/projekte/hygiene-gesundheit/standorte',
+							},
+						],
+					},
+					{
+						name: 'Hilfe zur Selbsthilfe',
+						items: [
+							{
+								name: 'Übersicht',
+								link: '/projekte/hilfe-zur-selbsthilfe',
+							},
+							{
+								name: 'Solar Light',
+								link: '/projekte/hilfe-zur-selbsthilfe/solar-light',
+							},
+							{
+								name: 'Plastik Recycling',
+								link: '/projekte/hilfe-zur-selbsthilfe/plastik-recycling',
+							},
+							{
+								name: 'Plantagen',
+								link: '/projekte/hilfe-zur-selbsthilfe/plantagen',
 							},
 						],
 					},
