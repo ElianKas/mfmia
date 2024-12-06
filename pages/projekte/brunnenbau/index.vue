@@ -89,6 +89,7 @@
 					></template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesLineUp>
+					<template #title>Wie Sie helfen können:</template>
 					<template #1
 						>Mit 12.000 Euro ermöglichen Sie den Bau eines kompletten
 						Brunnens inklusive der Vorbereitungen und Schulungen.

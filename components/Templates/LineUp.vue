@@ -1,6 +1,6 @@
 <template>
 	<section class="max-w-[500px] m-auto text-green py-[2rem]">
-		<h2 class="font-bold">Wie Sie helfen können:</h2>
+		<h2 class="font-bold"><slot name="title"></slot></h2>
 		<br />
 		<ul class="pl-[5px]">
 			<li class="grid grid-cols-[40px_1fr]">

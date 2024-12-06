@@ -89,6 +89,7 @@
 					</template>
 				</TemplatesParagraphsLeftRight>
 				<TemplatesLineUp>
+					<template #title>Wie Sie helfen können:</template>
 					<template #1
 						>Mit ca. 6.000 € kann ein Toilettenhaus an einer Schule
 						gebaut werden.
