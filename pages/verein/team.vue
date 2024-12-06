@@ -1,3 +1,39 @@
+<script setup>
+	const people = [
+		{
+			image:
+				'https://a.storyblok.com/f/311834/3024x3024/67f419cfa5/lukas-langhein_img_0049.png',
+			name: 'Max Mustermann',
+			title: 'admin',
+			email: 'Max@Mustermann',
+			description: 'Max Mustermann',
+		},
+		{
+			image:
+				'https://a.storyblok.com/f/311834/3024x3024/67f419cfa5/lukas-langhein_img_0049.png',
+			name: 'Max Mustermann',
+			title: 'admin',
+			email: 'Max@Mustermann',
+			description: 'Max Mustermann',
+		},
+		{
+			image:
+				'https://a.storyblok.com/f/311834/3024x3024/67f419cfa5/lukas-langhein_img_0049.png',
+			name: 'Max Mustermann',
+			title: 'admin',
+			email: 'Max@Mustermann',
+			description: 'Max Mustermann',
+		},
+		{
+			image:
+				'https://a.storyblok.com/f/311834/3024x3024/67f419cfa5/lukas-langhein_img_0049.png',
+			name: 'Max Mustermann',
+			title: 'admin',
+			email: 'Max@Mustermann',
+			description: 'Max Mustermann',
+		},
+	];
+</script>
 <template>
 	<div>
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">
@@ -20,6 +56,18 @@
 				natürlich, um die Menschen in Kamerun bestmöglich zu
 				unterstützen.
 			</TemplatesParagraphsHighlighted>
+			<section
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[3rem] md:gap-[5rem] max-w-[--max-width] m-auto">
+				<div v-for="person in people">
+					<StoryblokImage
+						:src="person.image"
+						class="w-full aspect-square object-cover" />
+					<p>{{ person.name }}</p>
+					<p v-if="person.title">{{ person.title }}</p>
+					<p>{{ person.email }}</p>
+					<p>{{ person.description }}</p>
+				</div>
+			</section>
 		</article>
 	</div>
 </template>
