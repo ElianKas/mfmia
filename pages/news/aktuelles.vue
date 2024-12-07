@@ -46,7 +46,7 @@
 					<template #fallback>
 						<div
 							class="skeleton h-[47px] mb-[1rem] w-full"
-							v-for="entry in data.stories.length"></div>
+							v-for="entry in 10"></div>
 					</template>
 					<div v-if="clientData.length > 0">
 						<li v-for="article in clientData">

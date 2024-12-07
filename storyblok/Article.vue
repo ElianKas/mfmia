@@ -65,6 +65,8 @@
 		if (indexNext.value >= sortedData.value.length) {
 			indexNext.value = -1;
 		}
+		console.log(indexLast.value, indexNext.value);
+		console.log(sortedData.value);
 	}
 
 	function sortData() {
