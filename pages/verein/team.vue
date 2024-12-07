@@ -2,7 +2,7 @@
 	const members = [
 		{
 			image:
-				'https://a.storyblok.com/f/311834/600x600/0da6b74f8e/andreas_1.jpg',
+				'https://a.storyblok.com/f/311834/1570x1656/eea30f20c5/andreas-neu.jpeg',
 			name: 'Andreas Wirtz',
 			title: 'Vorsitzender',
 			email: 'lachmitz-wirtz@onlinehome.de',
@@ -24,7 +24,8 @@
 			name: 'Karin Nöbel',
 			title: 'Schriftführerin',
 			email: 'noeba@t-online.de',
-			description: 'Ich dokumentiere alle Aktivitäten des Vereins.',
+			description:
+				'Ich engagiere mich für die Schulpartnerschaften und organisiere gerne im Team die Veranstaltungen des Vereins. Als Schriftführerin dokumentiere ich unsere Sitzungen und Beschlüsse.',
 		},
 		{
 			image:
@@ -143,6 +144,15 @@
 			description:
 				'Wir leben seit vielen, vielen Jahren in Yaoundé und in Kassel. Wir freuen uns über Besuche und unterstützen und beraten den Verein gerne als ortskundige Landsleute. In Kamerun vor Ort, aber auch in Kassel. Je nachdem wo wir gerade sind.',
 		},
+		{
+			image:
+				'https://a.storyblok.com/f/311834/1737x3088/2289ed3b05/ilona.jpg',
+			name: 'Ilona Staeck-Hahne',
+			title: null,
+			email: null,
+			description:
+				'Ich bin erst seit 2024 im Verein und orientiere mich noch. Aktuell engagiere ich mich im PeriodenPower-Projekt und helfe bei Aktionen und Veranstaltungen.',
+		},
 	];
 </script>
 <template>
@@ -173,16 +183,21 @@
 				</h2>
 				<div
 					class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[3rem] md:gap-[5rem] py-[2rem]">
-					<div v-for="person in members">
+					<div
+						v-for="person in members"
+						class="flex flex-col gap-[1rem]">
 						<StoryblokImage
 							:src="person.image"
 							class="w-full aspect-square object-cover" />
-						<br />
-						<p class="font-bold">{{ person.name }}</p>
-						<p v-if="person.title">{{ person.title }}</p>
-						<br />
-						<p>{{ person.email }}</p>
-						<br />
+						<div>
+							<p class="font-bold">{{ person.name }}</p>
+							<p v-if="person.title">
+								{{ person.title }}
+							</p>
+						</div>
+						<p v-if="person.email !== null">
+							{{ person.email }}
+						</p>
 						<p>{{ person.description }}</p>
 					</div>
 				</div>
