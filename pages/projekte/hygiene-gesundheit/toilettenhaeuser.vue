@@ -96,5 +96,9 @@
 			<LinkCardsHygieneVorgehen />
 			<LinkCardsHygieneStandorte />
 		</LazyTemplatesExploreMoreTemplate>
+		<LazyTemplatesExploreMoreTemplate
+			:page="{ title: 'Perioden.Power' }">
+			<LinkCardsHygienePeriodenPower />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>
