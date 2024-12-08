@@ -9,11 +9,11 @@ export default defineNuxtConfig({
     },
   ], '@nuxt/image', '@nuxtjs/leaflet', '@hypernym/nuxt-gsap', 'vue3-carousel-nuxt'],
   css: ['~/assets/css/main.css'],
-  gsap: {
+/*   gsap: {
     extraPlugins: {
       scrollTrigger: true,
     },
-  },  
+  },  */ 
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -24,9 +24,6 @@ export default defineNuxtConfig({
     storyblok: {
       baseURL: 'https://a.storyblok.com'
     },
-    cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dxizsaymj/image/upload/'
-    }
   },
   app: {
     head: {
