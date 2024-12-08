@@ -25,11 +25,13 @@
 			class="mb-[1.5rem]">
 			<StoryblokImage
 				v-for="(image, index) in section.gallery"
+				:isDynamic="true"
 				:src="image.image"
 				:alt="image.alt"
 				:class="{ hidden: index !== currentIndex }"
 				class="w-full mb-[1rem] max-h-[500px] object-cover" />
-			<div class="w-full flex flex-wrap gap-[.5rem]">
+			<div
+				class="w-full flex sm:justify-center flex-wrap gap-[.5rem]">
 				<StoryblokImage
 					v-for="(image, index) in section.gallery"
 					:key="image"
