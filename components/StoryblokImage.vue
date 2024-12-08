@@ -30,10 +30,13 @@
 		const image = props.src.replace(baseLink, '');
 		const part = image.slice(0, image.indexOf('/'));
 		const [x, y] = part.split('x');
-		if (x > y) {
+		console.log(x, y);
+		if (x.parseInt() > y.parseInt()) {
 			optimizedSrc.value = props.src + '/m/' + `${resolution}x0`;
+			console.log('horizontal');
 		} else {
 			optimizedSrc.value = props.src + '/m/' + `0x${resolution}`;
+			console.log('upright');
 			if (props.isDynamic) {
 				isUpright.value = true;
 			}
