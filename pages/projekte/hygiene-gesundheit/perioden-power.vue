@@ -120,13 +120,13 @@
 			</div>
 		</article>
 		<LazyDonate />
-		<LazyTemplatesExploreMoreTemplate
+		<!-- <LazyTemplatesExploreMoreTemplate
 			:page="{
 				title: 'Toilettenhäuser',
 			}">
 			<LinkCardsHygieneToilettenhäuser />
 			<LinkCardsHygieneVorgehen />
 			<LinkCardsHygieneStandorte />
-		</LazyTemplatesExploreMoreTemplate>
+		</LazyTemplatesExploreMoreTemplate> -->
 	</div>
 </template>
