@@ -62,6 +62,13 @@
 							einbringen und den Verein dauerhaft unterstützen.
 							<br /><br />
 							Hier kannst du den Mitgliedsantrag ausfüllen:
+							<br />
+							<NuxtLink
+								class="text-orange"
+								target="_blank"
+								to="https://a.storyblok.com/f/311834/x/2580f6dfec/miteinander_mitgliedsantrag_v202412hp.pdf"
+								>Miteinander_Mitgliedsantrag_v202412hp.pdf</NuxtLink
+							>
 							<br /><br />
 							Der aktuelle Jahresbeitrag einer Mitgliedschaft beträgt
 							60 €.
@@ -125,7 +132,11 @@
 							Wende dich dazu bitte an unseren Kassenwart Thomas
 							Langhein.
 							<br /><br />
-							<NuxtLink to="/verein/team"><u>Zum Team</u></NuxtLink>
+							<NuxtLink
+								to="/verein/team"
+								class="text-orange"
+								>Zum Team</NuxtLink
+							>
 						</p>
 					</div>
 				</div>
