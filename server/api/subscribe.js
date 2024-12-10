@@ -44,7 +44,7 @@ export default defineEventHandler(async (event) => {
 		to: body.email, // Client's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
-		text: `Hallo ${body.name},\n\nDanke für die Anmeldung zum Newsletter!`, // Plain text body
+		text: `Hallo ${body.name},\n\nDanke für die Anmeldung zum Newsletter!\n\nSie möchten den Newsletter wieder abbestellen?\nSchreiben Sie dazu bitte eine Mail an newsletter@miteinander-fuer-afrika.de\n\nLiebe Grüße\n\nIhr Vorstand\n\nvon\n\nMiteinander – für Menschen in Afrika e.V.\nKölnische Str. 55\n34117 Kassel`, // Plain text body
 	};
 
 	// Set up email data for the host
