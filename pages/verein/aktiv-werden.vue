@@ -111,7 +111,7 @@
 							<br />
 							<span
 								class="btn bg-orange text-white mt-[.5rem] relative overflow-hidden">
-								Jetzt Spenden
+								Jetzt spenden
 								<span
 									id="paypal-donate-button-aktiv-werden"
 									class="absolute w-full h-full inset-0"></span>

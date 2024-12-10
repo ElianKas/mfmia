@@ -20,7 +20,7 @@
 		class="flex flex-col items-center w-[320px] m-auto text-center py-[2rem]">
 		<SvgsHumansTwo class="w-[80px] h-auto" />
 		<div class="btn bg-orange text-white relative overflow-hidden">
-			<p>Jetzt Spenden</p>
+			<p>Jetzt spenden</p>
 			<div
 				id="paypal-donate-button"
 				class="absolute w-full h-full inset-0"></div>

@@ -31,7 +31,7 @@
 				<br />
 				<div
 					class="btn bg-orange text-white relative overflow-hidden">
-					<p>Jetzt Spenden</p>
+					<p>Jetzt spenden</p>
 					<div
 						id="paypal-donate-button-footer"
 						class="absolute w-full h-full inset-0"></div>
