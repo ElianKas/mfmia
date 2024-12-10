@@ -5,7 +5,7 @@
 				<div
 					class="h-[500px] bg-[#000] grid place-items-center rounded-[--border-radius] relative">
 					<h1 class="text-white text-big font-bold z-[9]">
-						Der Verein
+						Unser Verein
 					</h1>
 					<StoryblokImage
 						class="object-cover h-full w-full absolute inset-0 opacity-50"
