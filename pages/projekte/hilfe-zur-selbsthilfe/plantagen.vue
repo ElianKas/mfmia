@@ -125,7 +125,7 @@
 						</p>
 					</template>
 					<template #right>
-						<h2 class="font-bold text-big">Weiter Vorteile</h2>
+						<h2 class="font-bold text-big">Weitere Vorteile</h2>
 						<br />
 						<ul>
 							<li class="flex gap-[1rem]">
