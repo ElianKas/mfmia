@@ -297,6 +297,13 @@
 						</div>
 					</div>
 					<ul class="mobileNavList overflow-scroll pb-[5rem]">
+						<div class="py-[1rem]">
+							<NuxtLink
+								to="/"
+								@click="toggleMobile"
+								>Startseite</NuxtLink
+							>
+						</div>
 						<!-- Projekte -->
 						<div class="collapse collapse-arrow">
 							<input
