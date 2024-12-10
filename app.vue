@@ -1,7 +1,8 @@
 <template>
-	<div>
+	<div class="relative">
 		<NavigationHeaderComponent />
 		<main><NuxtPage /></main>
 		<LazyNavigationFooterComponent />
+		<ScrollTop />
 	</div>
 </template>
