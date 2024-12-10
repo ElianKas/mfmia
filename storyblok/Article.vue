@@ -104,8 +104,17 @@
 					class="absolute inset-0 w-full h-full object-cover opacity-80" />
 			</div>
 			<div class="max-w-[800px] m-auto">
+				<p class="text-orange font-bold">
+					{{
+						new Date(blok.date).toLocaleDateString('de-DE', {
+							day: '2-digit',
+							month: '2-digit',
+							year: 'numeric',
+						})
+					}}
+				</p>
 				<h1
-					class="font-bold text-big text-green mb-[1rem]"
+					class="font-bold text-big text-green my-[1rem]"
 					v-if="blok.title">
 					{{ blok.title }}
 				</h1>
