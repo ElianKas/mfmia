@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
 		};
 	}
 
-	const checkMemberAndGodfather = () => {
+	/* const checkMemberAndGodfather = () => {
 		let text = '';
 		if (body.isMember) {
 			text += 'Mitglied: Ja\n';
@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
 			text += 'Patin/Pate: Nein\n';
 		}
 		return text;
-	};
+	}; */
 
 	// Create a transporter object using SMTP transport
 	let transporter = nodemailer.createTransport({
@@ -53,9 +53,7 @@ export default defineEventHandler(async (event) => {
 		to: process.env.NEWSLETTER_EMAIL, // Host's email
 		subject:
 			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
-		text: `Name: ${body.name}\nEmail: ${
-			body.email
-		}\n${checkMemberAndGodfather()} `, // Plain text body
+		text: `Name: ${body.name}\nEmail: ${body.email}`, // Plain text body
 	};
 
 	try {

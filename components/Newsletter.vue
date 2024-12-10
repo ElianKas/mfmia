@@ -1,8 +1,6 @@
 <script setup>
 	const email = ref('');
 	const name = ref('');
-	const isMember = ref(false);
-	const isGodfather = ref(false);
 
 	const subscribe = async () => {
 		try {
@@ -11,8 +9,6 @@
 				body: {
 					email: email.value,
 					name: name.value,
-					isMember: isMember.value,
-					isGodfather: isGodfather.value,
 				},
 			});
 
@@ -69,25 +65,6 @@
 						required
 						class="grow" />
 				</label>
-				<div class="h-[1px] border border-green"></div>
-				<div
-					class="py-[1rem] flex items-center flex-wrap px-[.5rem] gap-[1rem]">
-					<label>Ich bin</label>
-					<div class="flex items-center gap-[.5rem]">
-						<input
-							v-model="isMember"
-							type="checkbox"
-							class="checkbox" />
-						<span>Mitglied bzw.</span>
-					</div>
-					<div class="flex items-center gap-[.5rem]">
-						<input
-							v-model="isGodfather"
-							type="checkbox"
-							class="checkbox" />
-						<span>Patin/Pate</span>
-					</div>
-				</div>
 				<div class="h-[1px] border border-green"></div>
 			</div>
 			<div class="form-control">
