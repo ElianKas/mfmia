@@ -113,8 +113,6 @@
 					<p class="md:text-center">Über PayPal spenden</p>
 				</div>
 			</section>
-			<br />
-			<br />
 			<section
 				class="max-w-[--max-width] m-auto flex max-md:flex-col gap-[2rem] md:gap-[5rem] py-[2rem]">
 				<div class="w-full">
@@ -150,12 +148,6 @@
 					><br />
 					<NuxtLink to="/#newsletter">
 						<p>Zum Newsletter eintragen</p>
-						<SvgsNavigationLongArrowOrange /> </NuxtLink
-					><br />
-					<NuxtLink
-						to="https://a.storyblok.com/f/311834/x/92821bac58/zuwendungsbestatigung-kleinspenden-2023-07.pdf"
-						target="_blank">
-						<p>Zuwendungsbestätigung Kleinspenden</p>
 						<SvgsNavigationLongArrowOrange />
 					</NuxtLink>
 				</nav>
@@ -169,8 +161,8 @@
 				<p class="max-w-[600px]">
 					Wir sind wegen Förderung der Entwicklungszusammenarbeit nach
 					dem Freistellungsbescheid bzw. nach der Anlage zum
-					Körperschaftsteuerbescheid des Finanzamtes Kassel, <br />br
-					St.-Nr. 26 250 88301, vom 12.07.2023 für den letzten
+					Körperschaftsteuerbescheid des Finanzamtes Kassel, St.-Nr.
+					26 250 88301, vom 12.07.2023 für den letzten
 					Veranlagungszeitraum für 2020 bis 2022 nach § 5 Abs. 1 Nr. 9
 					des Körperschaftsteuergesetzes von der Körperschaftsteuer
 					und nach § 3 Nr. 6 des Gewerbesteuergesetzes von der
@@ -187,12 +179,14 @@
 					Für Spenden bis 300,00 Euro können Sie für Ihre
 					Steuererklärung auch das folgende PDF in Verbindung mit dem
 					(Online-)Kontoauszug nutzen.
-					<br />
+					<br /><br />
 					<NuxtLink
-						to=""
-						target="_blank"
-						><u>Zuwendungsbestätigung Kleinspenden </u></NuxtLink
-					>
+						class="text-orange"
+						to="https://a.storyblok.com/f/311834/x/92821bac58/zuwendungsbestatigung-kleinspenden-2023-07.pdf"
+						target="_blank">
+						<p>Zuwendungsbestätigung Kleinspenden</p>
+						<SvgsNavigationLongArrowOrange />
+					</NuxtLink>
 				</p>
 			</section>
 		</article>
