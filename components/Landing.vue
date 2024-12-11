@@ -34,7 +34,7 @@
 				class="landing2 absolute inset-0 w-full h-full object-cover rounded-[--border-radius]" />
 		</div>
 		<h1>
-			<SvgsLogoNormal class="w-full h-auto mb-[5rem]" />
+			<SvgsLogoNormal class="w-full h-auto max-md:mb-[5rem]" />
 		</h1>
 	</section>
 </template>
