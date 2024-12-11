@@ -21,8 +21,10 @@
 			<section
 				class="min-h-[550px] flex flex-col gap-[2rem] items-center max-w-[--max-width-big] m-auto py-[2rem]">
 				<div class="font-bold text-center">
-					<h1 class="text-green">Dringende Projekte</h1>
-					<p class="text-orange text-big">Spendenziele</p>
+					<h1 class="text-green">
+						Unser Spendenkonto ist weiter unten zu finden.
+					</h1>
+					<p class="text-orange text-big">Unsere Spendenaufrufe</p>
 				</div>
 				<div class="flex flex-wrap w-full justify-center">
 					<iframe
@@ -63,12 +65,16 @@
 							selbstbestimmtes Leben ermöglichen.
 						</p>
 						<div
-							class="btn bg-orange text-white mt-[.5rem] relative overflow-hidden">
+							class="btn bg-orange text-white my-[.5rem] relative overflow-hidden">
 							<p>Jetzt Spenden</p>
 							<div
 								id="paypal-donate-button-spenden"
 								class="absolute w-full h-full inset-0"></div>
 						</div>
+						<p>
+							oder selbst überweisen auf das Spendenkonto oder über
+							PayPal
+						</p>
 					</div>
 				</div>
 			</section>
