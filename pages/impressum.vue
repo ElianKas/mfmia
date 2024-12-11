@@ -71,7 +71,6 @@
 						<p>
 							Sibylle Lachmitz <br />
 							Andreas Wirtz <br />
-							Elian Kasteleiner <br />
 							Thomas Langhein <br />
 							Lukas Langhein
 						</p>
