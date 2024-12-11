@@ -113,9 +113,8 @@
 					<p class="md:text-center">Über PayPal spenden</p>
 				</div>
 			</section>
-			<section
-				class="max-w-[--max-width] m-auto flex max-md:flex-col gap-[2rem] md:gap-[5rem] py-[2rem]">
-				<div class="w-full">
+			<section class="max-w-[--max-width] m-auto py-[2rem]">
+				<div class="max-w-[600px]">
 					<p>Aktuell sammeln wir Spenden für folgende Projekte:</p>
 					<ul>
 						<li>• Brunnenbau</li>
@@ -137,20 +136,24 @@
 						wir Ihnen die Spendenbescheinigung als PDF zusenden
 						können. Nutzen Sie dazu gerne unser Kontaktformular.
 						<br /><br />
+						<NuxtLink
+							class="text-orange"
+							to="/kontakt">
+							<p>Kontakt aufnehmen</p>
+							<SvgsNavigationLongArrowOrange />
+						</NuxtLink>
+						<br />
 						Sie wollen wissen, was aus ihrer Spende geworden ist? Dann
 						nutzen Sie doch einfach unseren Newsletter.
+						<br /><br />
+						<NuxtLink
+							class="text-orange"
+							to="/#newsletter">
+							<p>Zum Newsletter eintragen</p>
+							<SvgsNavigationLongArrowOrange />
+						</NuxtLink>
 					</p>
 				</div>
-				<nav class="w-full text-orange">
-					<NuxtLink to="/kontakt">
-						<p>Kontakt aufnehmen</p>
-						<SvgsNavigationLongArrowOrange /> </NuxtLink
-					><br />
-					<NuxtLink to="/#newsletter">
-						<p>Zum Newsletter eintragen</p>
-						<SvgsNavigationLongArrowOrange />
-					</NuxtLink>
-				</nav>
 			</section>
 			<section
 				class="max-w-[--max-width] m-auto py-[2rem] border-t border-green">
