@@ -122,14 +122,14 @@
 					<div
 						class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-[1rem] gap-y-[4rem]">
 						<li v-for="project in projects">
-							<div
+							<NuxtLink
+								:to="project.link"
 								class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
 								<StoryblokImage
 									class="absolute inset-0 w-full h-full object-cover opacity-50"
 									v-if="project.image"
 									:src="project.image" />
-								<NuxtLink
-									:to="project.link"
+								<div
 									class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
 									<div class="text-white font-bold">
 										{{ project.title }}
@@ -138,8 +138,8 @@
 										<SvgsNavigationDoubleArrowWhite
 											class="w-[20px] h-auto" />
 									</div>
-								</NuxtLink>
-							</div>
+								</div>
+							</NuxtLink>
 							<br />
 							<div class="pr-[1.5rem]">
 								<NuxtLink
@@ -163,21 +163,21 @@
 					</h2>
 					<div class="hidden md:block"></div>
 					<div>
-						<div
+						<NuxtLink
+							to="/projekte/kamerun"
 							class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
 							<StoryblokImage
 								class="absolute inset-0 w-full h-full object-cover opacity-50"
 								src="https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg" />
-							<NuxtLink
-								to="/projekte/kamerun"
+							<div
 								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
 								<div class="text-white font-bold">Kamerun</div>
 								<div>
 									<SvgsNavigationDoubleArrowWhite
 										class="w-[20px] h-auto" />
 								</div>
-							</NuxtLink>
-						</div>
+							</div>
+						</NuxtLink>
 						<br />
 						<div class="pr-[1.5rem]">
 							<NuxtLink
