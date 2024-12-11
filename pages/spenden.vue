@@ -79,7 +79,7 @@
 				</div>
 			</section>
 			<section
-				class="max-w-[--max-width] border-b border-green m-auto py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem] md:gap-[5rem]">
+				class="max-w-[--max-width] border-b border-t border-green m-auto py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem] md:gap-[5rem]">
 				<div>
 					<StoryblokImage
 						class="max-md:w-[200px] h-auto"
