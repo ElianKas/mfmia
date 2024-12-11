@@ -57,6 +57,34 @@
 			],
 		},
 		{
+			title: 'Hygiene & Gesundheit',
+			link: '/projekte/hygiene-gesundheit',
+			image:
+				'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
+			subpages: [
+				{
+					title: 'Übersicht',
+					link: '/projekte/hygiene-gesundheit',
+				},
+				{
+					title: 'Toilettenhäuser',
+					link: '/projekte/hygiene-gesundheit/toilettenhaeuser',
+				},
+				{
+					title: 'PeriodenPower',
+					link: '/projekte/hygiene-gesundheit/perioden-power',
+				},
+				{
+					title: 'Vorgehen',
+					link: '/projekte/hygiene-gesundheit/vorgehen',
+				},
+				{
+					title: 'Standorte',
+					link: '/projekte/hygiene-gesundheit/standorte',
+				},
+			],
+		},
+		{
 			title: 'Hilfe zur Selbsthilfe',
 			link: '/projekte/hilfe-zur-selbsthilfe',
 			image:
@@ -77,30 +105,6 @@
 				{
 					title: 'Plantagen',
 					link: '/projekte/hilfe-zur-selbsthilfe/plantagen',
-				},
-			],
-		},
-		{
-			title: 'Hygiene & Gesundheit',
-			link: '/projekte/hygiene-gesundheit',
-			image:
-				'https://a.storyblok.com/f/311834/6000x4000/6d9047773b/img_5523_pzsznc.jpg',
-			subpages: [
-				{
-					title: 'Übersicht',
-					link: '/projekte/hygiene-gesundheit',
-				},
-				{
-					title: 'Toilettenhäuser',
-					link: '/projekte/hygiene-gesundheit/toilettenhaeuser',
-				},
-				{
-					title: 'Vorgehen',
-					link: '/projekte/hygiene-gesundheit/vorgehen',
-				},
-				{
-					title: 'Standorte',
-					link: '/projekte/hygiene-gesundheit/standorte',
 				},
 			],
 		},
