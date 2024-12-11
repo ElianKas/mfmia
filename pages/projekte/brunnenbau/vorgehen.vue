@@ -32,7 +32,7 @@
 							<br />
 							<p>
 								Weitere Brunnen wollen wir im Gebiet um das Dorf
-								LengTombo bauen. Das liegt rund 150 km östlich von
+								Leng-Tombo bauen. Das liegt rund 150 km östlich von
 								Yaoundé. Die Menschen dort sind in der Regel
 								wirtschaftlich noch schlechter gestellt als im Raum
 								Obala, da Leng-Tombo durch schlechte Straßen nur
