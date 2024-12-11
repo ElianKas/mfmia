@@ -123,6 +123,7 @@
 						<li>• Brunnenbau</li>
 						<li>• Schulbildung</li>
 						<li>• Toilettenbau</li>
+						<li>• Perioden.Power</li>
 					</ul>
 					<br />
 					<p>
@@ -137,7 +138,7 @@
 						Teilen Sie uns bitte auch ihre E-Mail-Adresse mit, damit
 						wir Ihnen die Spendenbescheinigung als PDF zusenden
 						können. Nutzen Sie dazu gerne unser Kontaktformular.
-						<br />
+						<br /><br />
 						Sie wollen wissen, was aus ihrer Spende geworden ist? Dann
 						nutzen Sie doch einfach unseren Newsletter.
 					</p>
