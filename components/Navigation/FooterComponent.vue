@@ -75,7 +75,7 @@
 						Kölnische Straße 55 <br />
 						D-34117 Kassel <br />
 						Telefon: +49 561-15470 <br />
-						E-Mail: miteinander-fuer-afrika[at]t-online.de <br />
+						E-Mail: info[at]miteinander-fuer-afrika.de <br />
 					</p>
 				</div>
 			</div>
