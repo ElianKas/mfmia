@@ -175,5 +175,13 @@
 			</section>
 		</article>
 		<LazyNewsletter />
+		<LazyTemplatesExploreMoreTemplate
+			:page="{
+				title: 'Unser Verein',
+				link: '/verein',
+			}">
+			<LinkCardsVereinGeschichte />
+			<LinkCardsVereinTeam />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>

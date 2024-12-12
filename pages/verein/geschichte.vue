@@ -63,5 +63,13 @@
 				</TemplatesParagraphsLeftRight>
 			</div>
 		</article>
+		<LazyTemplatesExploreMoreTemplate
+			:page="{
+				title: 'Unser Verein',
+				link: '/verein',
+			}">
+			<LinkCardsVereinAktivWerden />
+			<LinkCardsVereinTeam />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>

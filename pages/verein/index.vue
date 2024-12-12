@@ -84,5 +84,13 @@
 				</div>
 			</section>
 		</article>
+		<LazyTemplatesExploreMoreTemplate
+			:page="{
+				title: 'Unser Verein',
+			}">
+			<LinkCardsVereinGeschichte />
+			<LinkCardsVereinAktivWerden />
+			<LinkCardsVereinTeam />
+		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>
