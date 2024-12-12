@@ -22,7 +22,7 @@
 				class="min-h-[550px] flex flex-col gap-[2rem] items-center max-w-[--max-width-big] m-auto py-[2rem]">
 				<div class="font-bold text-center">
 					<h1 class="text-green">
-						Unser Spendenkonto ist weiter unten zu finden.
+						Unser Spendenkonto ist weiter unten zu finden
 					</h1>
 					<p class="text-orange text-big">Unsere Spendenaufrufe</p>
 				</div>
