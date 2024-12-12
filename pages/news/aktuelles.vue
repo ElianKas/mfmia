@@ -74,7 +74,7 @@
 								v-if="clientData.length !== sortedData.length"
 								class="btn bg-orange text-white mt-[2rem]"
 								@click="loadMore()">
-								Ältere Story laden
+								Ältere Artikel laden
 							</button>
 						</div>
 					</div>
