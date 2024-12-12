@@ -87,8 +87,9 @@
 				src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
 			<SvgsLogoEmblem class="z-[9]" />
 			<nav
-				class="flex gap-[1rem] md:gap-[5rem] text-white max-md:w-full justify-between z-[9]">
+				class="flex flex-wrap gap-[1rem] md:gap-[5rem] text-white max-md:w-full justify-between z-[9]">
 				<NuxtLink to="/impressum">Impressum</NuxtLink>
+				<NuxtLink to="/disclaimer">Disclaimer</NuxtLink>
 				<NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
 				<NuxtLink to="/sitemap">Sitemap</NuxtLink>
 			</nav>
