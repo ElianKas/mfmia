@@ -57,17 +57,12 @@
 						<li
 							class="w-full flex gap-[1rem] max-sm:flex-col"
 							v-for="report in sortedData">
-							<div class="relative">
-								<NuxtLink
-									class="w-full h-full z-[9] absolute inset-0"
-									target="_blank"
-									:to="report.content.report.filename">
-								</NuxtLink>
-								<iframe
-									class="w-[150px] object-cover overflow-hidden"
-									:src="report.content.report.filename"
-									frameborder="0"></iframe>
-							</div>
+							<NuxtLink
+								target="_blank"
+								:to="report.content.report.filename"
+								class="h-[150px] aspect-square rounded-[--border-radius] bg-[#BFBFBF] grid place-items-center">
+								.PDF
+							</NuxtLink>
 							<div class="w-full text-left flex flex-col gap-[.5rem]">
 								<p>
 									{{
