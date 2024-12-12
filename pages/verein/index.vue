@@ -22,7 +22,7 @@
 				persönlichen Kontakte und durch regelmäßige Reisen vor Ort
 				sehr eng.
 			</TemplatesParagraphsHighlighted>
-			<div class="max-w-[--max-width-small] m-auto">
+			<div class="max-w-[--max-width-small] m-auto md:py-[2rem]">
 				<TemplatesParagraphsLeftRight>
 					<template #left>
 						<p>
