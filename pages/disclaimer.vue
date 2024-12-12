@@ -62,6 +62,15 @@
 						Inhalte umgehend entfernen.
 					</p>
 				</div>
+				<p>
+					Quelle:
+					<NuxtLink
+						class="text-orange"
+						to="https://www.e-recht24.de/muster-disclaimer.html"
+						target="_blank"
+						>eRecht24</NuxtLink
+					>
+				</p>
 			</div>
 		</article>
 	</div>
