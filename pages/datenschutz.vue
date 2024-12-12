@@ -3,7 +3,7 @@
 		<article
 			class="min-h-[100vh] px-[1rem] md:px-[3rem] max-w-[--max-width] m-auto py-[5rem]">
 			<h1 class="text-big font-bold text-green pb-[2rem]">
-				Impressum
+				Datenschutz
 			</h1>
 			<div class="flex flex-col gap-[1rem]">
 				<h2>
@@ -19,7 +19,7 @@
 				<p>
 					Miteinander - für Menschen in Afrika e.V., Kölnische Straße
 					55, D-34117 Kassel, Telefon: +49 561-15470, Telefax: +49
-					561-779477, E-Mail: pfarrei@st-familia-kassel.de
+					561-779477, E-Mail: info[at]miteinander-fuer-afrika.de
 				</p>
 
 				<h2>
@@ -322,7 +322,7 @@
 				</h2>
 				<p>
 					Diese Datenschutzerklärung ist aktuell gültig und hat den
-					Stand Mai 2024.
+					Stand Dezember 2024.
 					<br /><br />
 					Durch die Weiterentwicklung unserer Website und Angebote
 					darüber oder aufgrund geänderter gesetzlicher
