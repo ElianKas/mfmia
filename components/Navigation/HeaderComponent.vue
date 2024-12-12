@@ -138,6 +138,7 @@
 					{ name: 'Übersicht', link: '/news' },
 					{ name: 'Aktuelles', link: '/news/aktuelles' },
 					{ name: 'Presse', link: '/news/presse' },
+					{ name: 'Newsletter', link: '/news/newsletter' },
 				],
 			};
 		}
@@ -595,6 +596,13 @@
 										to="/news/presse"
 										@click="toggleMobile"
 										>Presse</NuxtLink
+									>
+								</li>
+								<li class="mt-[1rem]">
+									<NuxtLink
+										to="/news/newsletter"
+										@click="toggleMobile"
+										>Newsletter</NuxtLink
 									>
 								</li>
 							</div>
