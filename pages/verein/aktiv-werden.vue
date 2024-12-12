@@ -158,9 +158,16 @@
 							Du hast Lust mitzumachen?
 							<br /><br />
 							Nimm dann bitte mit unserem
-							<NuxtLink to="/verein/team"><u>Team</u></NuxtLink>
+							<NuxtLink
+								to="/verein/team"
+								class="text-orange font-bold"
+								>Team</NuxtLink
+							>
 							Kontakt auf oder
-							<NuxtLink to="/kontakt"><u>schreib uns</u></NuxtLink
+							<NuxtLink
+								to="/kontakt"
+								class="text-orange font-bold"
+								>schreib uns</NuxtLink
 							>. Wir melden uns bei dir.
 						</p>
 					</div>
