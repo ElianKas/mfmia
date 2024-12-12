@@ -44,6 +44,10 @@
 								Erschwert wird der Zugang zu Wasser durch die meist
 								großen Entfernungen der Quellen zu den Dörfern.
 							</p>
+							<br />
+							<div class="flex justify-center">
+								<SvgsHumansFeet class="w-[80px] h-auto" />
+							</div>
 						</div>
 					</template>
 					<template #right>
@@ -76,8 +80,11 @@
 						</div>
 					</template>
 					<template #right>
-						<div class="grid place-items-center h-full">
-							<SvgsHumansFeet />
+						<div
+							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%]">
+							<StoryblokImage
+								class="w-full h-full object-cover"
+								src="https://a.storyblok.com/f/311834/3325x4326/13507f7527/wasserloch_00001.png" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
@@ -94,7 +101,7 @@
 							class="rounded-[--border-radius] aspect-[3/4] w-full md:w-[80%] justify-self-end">
 							<StoryblokImage
 								class="w-full h-full object-cover"
-								src="https://a.storyblok.com/f/311834/3325x4326/13507f7527/wasserloch_00001.png" /></div
+								src="https://a.storyblok.com/f/311834/6000x4000/0b3d487f75/img_2300.JPG" /></div
 					></template>
 					<template #right
 						><div
