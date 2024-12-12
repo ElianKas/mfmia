@@ -40,10 +40,9 @@
 				Newsletter bestellen
 			</h2>
 			<p>
-				Um aktuelle Informationen (Jahresbrief, zu Aktionen,
-				Veranstaltungen und Neuigkeiten auf der Homepage) erhalten zu
-				können, haben Sie die Möglichkeit, unseren Newsletter zu
-				abonnieren.
+				Um aktuelle Informationen (zu Aktionen, Veranstaltungen und
+				Neuigkeiten auf der Homepage) erhalten zu können, haben Sie
+				die Möglichkeit, unseren Newsletter zu abonnieren.
 			</p>
 			<div>
 				<label
