@@ -31,13 +31,19 @@
 						<h3 class="font-bold pb-[.5rem]">
 							Vertretungsberechtigter Vorstand
 						</h3>
-						<p>Andreas Wirtz, Harald Fischer</p>
+						<p>
+							Andreas Wirtz, Harald Fischer, Karin Nöbel, Thomas
+							Langhein
+						</p>
 					</div>
 					<div>
 						<h3 class="font-bold pb-[.5rem]">
 							Verantwortlich für den Inhalt
 						</h3>
-						<p>Andreas Wirtz, Harald Fischer</p>
+						<p>
+							Andreas Wirtz, Harald Fischer, Karin Nöbel, Thomas
+							Langhein
+						</p>
 					</div>
 					<div>
 						<h3 class="font-bold pb-[.5rem]">
@@ -78,15 +84,28 @@
 					<div>
 						<h3 class="font-bold pb-[.5rem]">Fotografien</h3>
 						<p>
-							Dina Falten <br />
-							Martin Schwegmann <br />
+							Die Fotos wurden auf unseren Reisen nach Kamerun
+							aufgenommen. Es sind keine gekauften Fotos. Ergänzend
+							sind uns Fotos von Spendern/Spenderinnen bzw.
+							Partnerschaften zur Veröffentlichung auf unserer
+							Homepage zur Verfügung gestellt worden.
+							<br /><br />
 							Andreas Wirtz <br />
+							Karin Nöbel <br />
+							Lukas Langhein <br />
+							Martin Schwegmann <br />
+							Susanne Fley <br />
+							Thomas Langhein <br />
+							<br />
 							Verein “Miteinander - für Menschen in Afrika e.V.”
 						</p>
 					</div>
 					<div>
 						<h3 class="font-bold pb-[.5rem]">Texte</h3>
-						<p>Dina Falten, Sibylle Lachmitz, Andreas Wirtz</p>
+						<p>
+							Andreas Wirtz, Karin Nöbel, Lukas Langhein, Thomas
+							Langhein
+						</p>
 					</div>
 				</div>
 			</div>
