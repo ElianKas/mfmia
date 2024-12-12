@@ -67,7 +67,7 @@
 								class="text-orange"
 								target="_blank"
 								to="https://a.storyblok.com/f/311834/x/2580f6dfec/miteinander_mitgliedsantrag_v202412hp.pdf"
-								>Miteinander_Mitgliedsantrag_v202412hp.pdf</NuxtLink
+								>Mitgliedsantrag</NuxtLink
 							>
 							<br /><br />
 							Der aktuelle Jahresbeitrag einer Mitgliedschaft beträgt
