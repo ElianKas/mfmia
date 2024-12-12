@@ -66,7 +66,7 @@
 						</p>
 						<div
 							class="btn bg-orange text-white my-[.5rem] relative overflow-hidden">
-							<p>Jetzt Spenden</p>
+							<p>Jetzt spenden</p>
 							<div
 								id="paypal-donate-button-spenden"
 								class="absolute w-full h-full inset-0"></div>
