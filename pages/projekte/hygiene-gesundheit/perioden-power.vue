@@ -70,7 +70,7 @@
 							class="rounded-[--border-radius] aspect-[4/3] w-full">
 							<StoryblokImage
 								class="object-cover w-full h-full"
-								src="https://a.storyblok.com/f/311834/6000x4000/5caa763cf7/img_5254.JPG" />
+								src="https://a.storyblok.com/f/311834/6000x4000/7676c2aa48/img_8205.JPG" />
 						</div>
 					</template>
 				</TemplatesParagraphsLeftRight>
