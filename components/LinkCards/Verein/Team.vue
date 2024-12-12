@@ -1,6 +1,6 @@
 <template>
 	<li>
-		<NuxtLink to="/projekte/kamerun/infrastruktur">
+		<NuxtLink to="/verein/team">
 			<div class="w-[250px]">
 				<h3 class="text-green font-bold">Das Team</h3>
 				<p class="font-normal">
