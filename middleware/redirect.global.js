@@ -68,9 +68,9 @@ export default defineNuxtRouteMiddleware((to, from) => {
 	if (to.path === '/impressum.html') {
 		return navigateTo('/impressum');
 	}
-	/* if (to.path === '/disclaimer.html') {
-		return navigateTo('/impressum');
-		} */
+	if (to.path === '/disclaimer.html') {
+		return navigateTo('/disclaimer');
+	}
 	if (to.path === '/datenschutz.html') {
 		return navigateTo('/datenschutz');
 	}
