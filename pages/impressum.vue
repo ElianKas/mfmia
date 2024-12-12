@@ -20,7 +20,7 @@
 						<p>
 							Telefon: +49 561-15470 <br />
 							Telefax: +49 561-779477 <br />
-							E-Mail: info@miteinander-fuer-afrika.de
+							E-Mail: info[at]miteinander-fuer-afrika.de
 						</p>
 					</div>
 					<div>
