@@ -80,14 +80,13 @@
 		</article>
 		<LazyDonate />
 		<LazyTemplatesExploreMoreTemplate
-			:page="{ title: 'Toilettenhäuser' }">
+			:page="{
+				title: 'Hygiene & Gesundheit',
+			}">
 			<LinkCardsHygieneToilettenhäuser />
+			<LinkCardsHygienePeriodenPower />
 			<LinkCardsHygieneVorgehen />
 			<LinkCardsHygieneStandorte />
-		</LazyTemplatesExploreMoreTemplate>
-		<LazyTemplatesExploreMoreTemplate
-			:page="{ title: 'Perioden.Power' }">
-			<LinkCardsHygienePeriodenPower />
 		</LazyTemplatesExploreMoreTemplate>
 	</div>
 </template>
