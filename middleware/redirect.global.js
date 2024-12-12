@@ -59,12 +59,12 @@ export default defineNuxtRouteMiddleware((to, from) => {
 	if (to.path === '/kontakt.html') {
 		return navigateTo('/kontakt');
 	}
-	/* if (to.path === '/vereinschronik.html') {
-		return navigateTo('/verein');
-		} */
-	/* if (to.path === '/kinder-und-frauenzentrum.html') {
-		return navigateTo('/projekte/hilfe-zur-selbsthilfe/plantagen');
-		} */
+	if (to.path === '/vereinschronik.html') {
+		return navigateTo('/verein/geschichte');
+	}
+	if (to.path === '/kinder-und-frauenzentrum.html') {
+		return navigateTo('/projekte/hilfe-zur-selbsthilfe');
+	}
 	if (to.path === '/impressum.html') {
 		return navigateTo('/impressum');
 	}
