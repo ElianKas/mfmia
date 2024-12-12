@@ -38,12 +38,16 @@
 		<LazyTemplatesExploreMoreTemplate
 			:page="{
 				title: 'Toilettenhäuser',
+				link: '/projekte/hygiene-gesundheit',
 			}">
 			<LinkCardsHygieneToilettenhäuser />
 			<LinkCardsHygieneVorgehen />
 		</LazyTemplatesExploreMoreTemplate>
 		<LazyTemplatesExploreMoreTemplate
-			:page="{ title: 'Perioden.Power' }">
+			:page="{
+				title: 'Perioden.Power',
+				link: '/projekte/hygiene-gesundheit',
+			}">
 			<LinkCardsHygienePeriodenPower />
 		</LazyTemplatesExploreMoreTemplate>
 	</div>
