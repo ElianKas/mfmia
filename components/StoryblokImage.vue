@@ -48,7 +48,7 @@
 </script>
 <template>
 	<NuxtImg
-		class="rounded-[--border-radius]"
+		class="rounded-[--border-radius] pointer-events-none"
 		:class="{ 'max-w-[350px]': isUpright, 'm-auto': isUpright }"
 		v-if="optimizedSrc !== ''"
 		:src="optimizedSrc" />
