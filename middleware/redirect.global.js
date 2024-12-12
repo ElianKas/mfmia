@@ -1,12 +1,31 @@
 // middleware/redirect.js
 export default defineNuxtRouteMiddleware((to, from) => {
-	// Beispiel für eine Weiterleitung von einer alten Route zu einer neuen Route
-	if (to.path === '/alte-route') {
-		return navigateTo('/');
+	if (to.path === '/aktuelles') {
+		return navigateTo('/news/aktuelles');
 	}
-
-	// Weitere Weiterleitungen können hier hinzugefügt werden
-	if (to.path === '/alte-route-2') {
-		return navigateTo('/neue-route-2');
+	if (to.path === '/kamerun') {
+		return navigateTo('/projekte/kamerun');
+	}
+	if (to.path === '/toilettenhaeuser') {
+		return navigateTo(
+			'/projekte/hygiene-gesundheit/toilettenhaeuser'
+		);
+	}
+	if (to.path === '/toilettenhaeuser') {
+		return navigateTo(
+			'/projekte/hygiene-gesundheit/toilettenhaeuser'
+		);
+	}
+	if (to.path === '/brunnenbau') {
+		return navigateTo('/projekte/brunnenbau');
+	}
+	if (to.path === '/patenschaften') {
+		return navigateTo('/projekte/bildung/patenschaften');
+	}
+	if (to.path === '/bildungssystem') {
+		return navigateTo('/projekte/bildung/schulsystem');
+	}
+	if (to.path === '/schulen') {
+		return navigateTo('/projekte/bildung/schulenbau');
 	}
 });
