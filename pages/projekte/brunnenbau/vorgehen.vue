@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'So gehen wir beim Brunnenbau vor',
+		description:
+			'Unser Ansatz beim Bau von Brunnen in Kamerun: Von der Planung bis zur Umsetzung.',
+	});
+</script>
 <template>
 	<div>
 		<article>

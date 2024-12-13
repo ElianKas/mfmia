@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Deshalb bauen wir Brunnen',
+		description:
+			'Die Beweggründe hinter unseren Brunnenbauprojekten und deren Bedeutung für die Gemeinden.',
+	});
+</script>
 <template>
 	<div>
 		<article>

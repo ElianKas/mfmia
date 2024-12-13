@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Wo wir Brunnen bauen',
+		description:
+			'Entdecken Sie die Regionen in Kamerun, in denen wir erfolgreich Brunnenprojekte realisiert haben.',
+	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
