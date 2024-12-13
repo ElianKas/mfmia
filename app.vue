@@ -7,7 +7,8 @@
 			'Gemeinsam für Bildung, Gesundheit und Selbsthilfe in Kamerun. Erfahren Sie mehr über unsere aktuellen Projekte und wie Sie helfen können.',
 		ogDescription:
 			'Gemeinsam für Bildung, Gesundheit und Selbsthilfe in Kamerun. Erfahren Sie mehr über unsere aktuellen Projekte und wie Sie helfen können.',
-		ogImage: 'https://example.com/image.png',
+		ogImage:
+			'https://a.storyblok.com/f/311834/1130x280/057bd7b72b/kamerunverein_wortmarke_1200x300px.jpg',
 		twitterCard: 'summary_large_image',
 	});
 </script>
