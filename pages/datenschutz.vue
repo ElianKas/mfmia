@@ -19,7 +19,10 @@
 				<p>
 					Miteinander - für Menschen in Afrika e.V., Kölnische Straße
 					55, D-34117 Kassel, Telefon: +49 561-15470, Telefax: +49
-					561-779477, E-Mail: info[at]miteinander-fuer-afrika.de
+					561-779477, E-Mail:
+					<span class="text-orange"
+						>info[at]miteinander-fuer-afrika.de</span
+					>
 				</p>
 
 				<h2>
