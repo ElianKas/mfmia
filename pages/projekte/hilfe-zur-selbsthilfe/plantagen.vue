@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Nachhaltigkeit und Ausbildung in der Landwirtschaft',
+		description:
+			'Anbauprojekte zur Sicherung der Ernährung und Schaffung von Einkommensquellen.',
+	});
+</script>
 <template>
 	<div>
 		<article>

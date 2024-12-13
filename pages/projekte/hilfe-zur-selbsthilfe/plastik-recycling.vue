@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Nachhaltigkeit und Wirtschaftswachstum',
+		description:
+			'Umweltschutz durch Plastikrecycling: Schaffung von Arbeitsplätzen und Sauberkeit.',
+	});
+</script>
 <template>
 	<div>
 		<article>

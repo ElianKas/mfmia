@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Licht und Zukunftsperspektiven',
+		description:
+			'Licht für alle: Solarenergieprojekte zur Verbesserung der Lebensqualität.',
+	});
+</script>
 <template>
 	<div>
 		<article>
