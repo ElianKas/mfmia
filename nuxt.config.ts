@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }, {name:'google-site-verification', content:'n86WMj23tEvbQQ_4grNCrmfyDSoYmKz9NEsSaODpBUM'}
       ],
       script: [
         { src: 'https://www.paypalobjects.com/donate/sdk/donate-sdk.js' }
