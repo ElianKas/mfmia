@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Aktiv werden',
+		description:
+			'Möglichkeiten, wie Sie sich bei uns engagieren und unterstützen können.',
+	});
 	onMounted(() => {
 		PayPal.Donation.Button({
 			env: 'production',

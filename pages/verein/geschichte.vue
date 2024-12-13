@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Die Geschichte',
+		description:
+			'Wer wir sind und was uns antreibt: Ein Porträt unseres Vereins.',
+	});
+</script>
 <template>
 	<div>
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">

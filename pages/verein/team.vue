@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Das Team',
+		description:
+			'Lernen Sie die Menschen hinter dem Verein kennen: Unser engagiertes Team.',
+	});
 	const members = [
 		{
 			image:
