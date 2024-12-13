@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     {
       accessToken: process.env.STORYBLOK_ACCESSTOKEN,
     },
-  ], '@nuxt/image', '@nuxtjs/leaflet', '@hypernym/nuxt-gsap', 'vue3-carousel-nuxt'],
+  ], '@nuxt/image', '@nuxtjs/leaflet', '@hypernym/nuxt-gsap', 'vue3-carousel-nuxt', "@nuxtjs/sitemap", "@nuxtjs/robots"],
   css: ['~/assets/css/main.css'],
 /*   gsap: {
     extraPlugins: {

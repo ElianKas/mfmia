@@ -12,6 +12,8 @@
   "dependencies": {
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/leaflet": "^1.2.4",
+    "@nuxtjs/robots": "^5.0.1",
+    "@nuxtjs/sitemap": "^7.0.0",
     "@storyblok/nuxt": "^6.0.10",
     "nodemailer": "^6.9.16",
     "nuxt": "^3.12.4",
