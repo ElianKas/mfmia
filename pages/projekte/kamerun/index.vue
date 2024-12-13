@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Lernen Sie Kamerun kennen',
+		description:
+			'Informationen zur Infrastruktur und unseren Einsatzgebieten. Entdecken Sie die Herausforderungen und Potenziale des Landes.',
+	});
+</script>
 <template>
 	<div>
 		<article>

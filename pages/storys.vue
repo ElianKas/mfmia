@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Geschichten, wie wir Kamerun erleben.',
+		description:
+			'Inspirierende Geschichten aus unseren Projekten in Kamerun. Erfahren Sie mehr über die Menschen, denen wir helfen, und ihre Erfolgsgeschichten.',
+	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',

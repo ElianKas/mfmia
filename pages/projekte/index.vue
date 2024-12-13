@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Lerne unsere Projekte kennen',
+		description:
+			'Entdecken Sie unsere vielfältigen Projekte in den Bereichen Bildung, Brunnenbau, Hygiene & Gesundheit sowie Hilfe zur Selbsthilfe in Kamerun. Gemeinsam schaffen wir nachhaltige Veränderungen.',
+	});
 	const projects = [
 		{
 			title: 'Bildung',

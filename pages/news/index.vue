@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'News',
+		description:
+			'Aktuelle Neuigkeiten, Pressemitteilungen und Newsletter von ‘Miteinander - für Menschen in Afrika e.V.’. Bleiben Sie informiert über unsere Aktivitäten.',
+	});
+</script>
 <template>
 	<div>
 		<article class="px-[1rem]">

@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Gesundheitsförderung in	Kamerun',
+		description:
+			'Bau von Toilettenhäusern, Menstruationshygiene und mehr. Erfahren Sie, wie wir die Hygiene- und Gesundheitsbedingungen verbessern.',
+	});
+</script>
 <template>
 	<div>
 		<article>

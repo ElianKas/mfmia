@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Über uns',
+		description:
+			'Die Geschichte, das Team und wie Sie aktiv werden können. Lernen Sie den Verein ‘Miteinander - für Menschen in Afrika e.V.’ kennen.',
+	});
+</script>
 <template>
 	<div>
 		<article class="px-[1rem] md:px-[3rem] pt-[1rem]">

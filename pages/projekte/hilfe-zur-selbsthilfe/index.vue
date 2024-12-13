@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Nachhaltige Entwicklung durch Selbsthilfe',
+		description:
+			'Solarlicht, Plastikrecycling und Plantagenprojekte stärken die Eigenständigkeit der Menschen in Kamerun.',
+	});
+</script>
 <template>
 	<div>
 		<article>

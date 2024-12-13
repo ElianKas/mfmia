@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Förderung von Bildung in Kamerun',
+		description:
+			'Patenschaften, Schulpartnerschaften und Schulbauprojekte für bessere Zukunftschancen. Unterstützen Sie unsere Bildungsinitiativen.',
+	});
+</script>
 <template>
 	<div>
 		<article>

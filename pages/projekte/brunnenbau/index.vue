@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Sauberes Wasser	für	Kamerun',
+		description:
+			'Unsere Brunnenbauprojekte verbessern die Lebensqualität und Gesundheit der Menschen. Informieren Sie sich über unsere Motivation und Vorgehensweise.',
+	});
+</script>
 <template>
 	<div>
 		<article>

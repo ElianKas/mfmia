@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Kontaktieren Sie uns',
+		description:
+			'Adresse, Telefonnummer und E-Mail von ‘Miteinander - für Menschen in Afrika e.V.’. Wir freuen uns auf Ihre Nachricht.',
+	});
 	const title = ref('');
 	const prename = ref('');
 	const name = ref('');
