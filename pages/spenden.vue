@@ -190,7 +190,7 @@
 					<br /><br />
 					<NuxtLink
 						class="text-orange"
-						to="https://a.storyblok.com/f/311834/x/a08fad4d03/zuwendungsbestatigung-kleinspenden-2024-11-1.pdf"
+						to="https://a.storyblok.com/f/311834/x/eccf7364f6/zuwendungsbestatigung-kleinspenden-2024-11.pdf"
 						target="_blank">
 						<p>Zuwendungsbestätigung Kleinspenden</p>
 						<SvgsNavigationLongArrowOrange />
