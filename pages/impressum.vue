@@ -1,3 +1,8 @@
+<script setup>
+	useSeoMeta({
+		title: 'Impressum',
+	});
+</script>
 <template>
 	<div>
 		<article

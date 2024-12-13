@@ -1,3 +1,8 @@
+<script setup>
+	useSeoMeta({
+		title: 'Disclaimer',
+	});
+</script>
 <template>
 	<div>
 		<article

@@ -1,3 +1,8 @@
+<script setup>
+	useSeoMeta({
+		title: 'Datenschutz',
+	});
+</script>
 <template>
 	<div>
 		<article
