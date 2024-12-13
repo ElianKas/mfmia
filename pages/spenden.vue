@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Jetzt spenden',
+		description:
+			'Unterstützen Sie unsere Arbeit in Kamerun mit Ihrer Spende. Jeder Beitrag zählt und hilft, Projekte zu realisieren, die den Menschen vor Ort zugutekommen.',
+	});
 	onMounted(() => {
 		PayPal.Donation.Button({
 			env: 'production',

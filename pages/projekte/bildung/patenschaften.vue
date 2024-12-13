@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Durch Bildung Zukunft schenken',
+		description:
+			'Werden Sie Pate und ermöglichen Sie einem Kind in Kamerun den Zugang zu Bildung und eine bessere Zukunftsperspektive.',
+	});
+</script>
 <template>
 	<div>
 		<article>

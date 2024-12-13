@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Austausch zwischen Schulen fördern',
+		description:
+			'Fördern Sie den interkulturellen Austausch durch Schulpartnerschaften zwischen Deutschland und Kamerun.',
+	});
+</script>
 <template>
 	<div>
 		<article>

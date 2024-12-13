@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Unsere Schulprojekte',
+		description:
+			'Unterstützen Sie den Bau neuer Schulen in Kamerun und schaffen Sie sichere Lernumgebungen für Kinder.',
+	});
 	const currentSlide = ref(0);
 	const currentSlide2 = ref(0);
 	const currentSlide3 = ref(0);

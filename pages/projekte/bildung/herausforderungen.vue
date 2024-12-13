@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Was den Schulbesuch erschwert',
+		description:
+			'Die aktuellen Herausforderungen im Bildungssektor Kameruns und wie unsere Projekte dazu beitragen, diese zu überwinden.',
+	});
+</script>
 <template>
 	<div>
 		<article>

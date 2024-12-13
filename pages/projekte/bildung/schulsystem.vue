@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Bildungssystem in Kamerun',
+		description:
+			'Verständnis des kamerunischen Schulsystems und unserer Ansätze zur Unterstützung und Verbesserung der Bildungsqualität.',
+	});
+</script>
 <template>
 	<div>
 		<article>
