@@ -42,7 +42,7 @@
 							currentIndex = index;
 						}
 					"
-					class="w-[100px] aspect-[3/2] object-cover cursor-pointer" />
+					class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
 			</div>
 		</div>
 		<div class="max-w-[800px] m-auto">
