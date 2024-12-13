@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Newsletter',
+		description:
+			'Abonnieren Sie unseren Newsletter und bleiben Sie informiert.',
+	});
 	const email = ref('');
 	const name = ref('');
 

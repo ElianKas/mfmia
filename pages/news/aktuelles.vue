@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Aktuelles',
+		description:
+			'Neueste Entwicklungen und Ereignisse rund um unsere Projekte.',
+	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',

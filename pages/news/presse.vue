@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Presse',
+		description:
+			'Pressemitteilungen und Medienberichte über unsere Arbeit.',
+	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
