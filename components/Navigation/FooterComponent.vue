@@ -91,7 +91,7 @@
 				<NuxtLink to="/impressum">Impressum</NuxtLink>
 				<NuxtLink to="/disclaimer">Disclaimer</NuxtLink>
 				<NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
-				<NuxtLink to="/sitemap">Sitemap</NuxtLink>
+				<NuxtLink to="/sitemap.xml">Sitemap</NuxtLink>
 			</nav>
 		</section>
 	</footer>
