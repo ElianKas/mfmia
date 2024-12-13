@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'So funktioniert es auf dem Land',
+		description:
+			'Analyse der infrastrukturellen Gegebenheiten und Herausforderungen in Kamerun.',
+	});
+</script>
 <template>
 	<div>
 		<article>
