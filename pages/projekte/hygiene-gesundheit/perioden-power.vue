@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Ein wichtiger Schritt für Frauen',
+		description:
+			'Förderung der Menstruationshygiene und Aufklärung für Mädchen und Frauen in Kamerun.',
+	});
+</script>
 <template>
 	<div>
 		<article>

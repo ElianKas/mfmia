@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Viele Menschen ohne Toilette',
+		description:
+			'Bau von sanitären Einrichtungen zur Verbesserung der Hygiene und Gesundheit in Gemeinden.',
+	});
+</script>
 <template>
 	<div>
 		<article>

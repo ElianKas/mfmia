@@ -1,4 +1,9 @@
 <script setup>
+	useSeoMeta({
+		title: 'Wo der Verein Toilettenhäuser baut',
+		description:
+			'Regionen in Kamerun, in denen unsere Hygiene- und Gesundheitsinitiativen aktiv sind.',
+	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',

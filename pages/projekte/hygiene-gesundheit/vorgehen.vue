@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'So gehen wir beim Toilettenbau vor',
+		description:
+			'Unsere Methodik zur Umsetzung von Hygiene- und Gesundheitsprojekten vor Ort.',
+	});
+</script>
 <template>
 	<div>
 		<article>
