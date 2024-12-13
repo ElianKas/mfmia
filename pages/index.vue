@@ -1,3 +1,10 @@
+<script setup>
+	useSeoMeta({
+		title: 'Miteinander - für Menschen in Afrika e.V.',
+		description:
+			'Gemeinsam für Bildung, Gesundheit und Selbsthilfe in Kamerun. Erfahren Sie mehr über unsere aktuellen Projekte und wie Sie helfen können.',
+	});
+</script>
 <template>
 	<div>
 		<Landing />
