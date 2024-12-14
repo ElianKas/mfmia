@@ -69,7 +69,7 @@
 							Hier kannst du den Mitgliedsantrag ausfüllen:
 							<br />
 							<NuxtLink
-								class="text-orange"
+								class="text-orange font-bold"
 								target="_blank"
 								to="https://a.storyblok.com/f/311834/x/2580f6dfec/miteinander_mitgliedsantrag_v202412hp.pdf"
 								>Mitgliedsantrag</NuxtLink
@@ -139,7 +139,7 @@
 							<br /><br />
 							<NuxtLink
 								to="/verein/team"
-								class="text-orange"
+								class="text-orange font-bold"
 								>Zum Team</NuxtLink
 							>
 						</p>
