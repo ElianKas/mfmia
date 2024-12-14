@@ -74,7 +74,7 @@
 							</NuxtLink>
 							<br />
 							<NuxtLink
-								to="https://miteinander-fuer-afrika/news/aktuelles/2024-10-11-buch-fuer-schulkinder"
+								to="https://miteinander-fuer-afrika.de/news/aktuelles/2024-10-11-buch-fuer-schulkinder"
 								target="_blank">
 								<p>Artikel auf unserer Homepage vom Oktober 2024</p>
 							</NuxtLink>
