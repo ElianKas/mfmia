@@ -6,6 +6,8 @@
 	});
 	const email = ref('');
 	const name = ref('');
+	const checkbox = ref(false);
+	const pending = ref(false);
 
 	const subscribe = async () => {
 		try {
@@ -19,14 +21,19 @@
 
 			if (response && response.success) {
 				alert(
-					'Erfolgreich abonniert! Eine Bestätigungsmail wurde versendet.'
+					'Vielen Dank für das Abbonieren unseres Newsletters. Eine Bestätigungsmail wird versendet.'
 				);
+				email.value = '';
+				name.value = '';
+				checkbox.value = false;
+				pending.value = false;
 			} else {
 				const errorMessage =
 					response && response.error
 						? response.error.message
 						: 'Unknown error';
 				alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
+				pending.value = false;
 			}
 		} catch (err) {
 			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
@@ -77,6 +84,7 @@
 						class="label cursor-pointer flex items-start gap-[1rem]">
 						<input
 							required
+							v-model="checkbox"
 							type="checkbox"
 							class="checkbox" />
 						<span class="label-text text-sm"
@@ -99,6 +107,10 @@
 				</div>
 				<button
 					type="submit"
+					:class="{
+						'btn-disabled':
+							email === '' || name === '' || !checkbox || pending,
+					}"
 					class="btn bg-green text-[#fff] font-bold text-base">
 					Jetzt anmelden
 				</button>
