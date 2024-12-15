@@ -1,6 +1,7 @@
 <script setup>
 	const email = ref('');
 	const name = ref('');
+	const checkbox = ref(false);
 
 	const subscribe = async () => {
 		try {
@@ -71,6 +72,7 @@
 					class="label cursor-pointer flex items-start gap-[1rem]">
 					<input
 						required
+						v-model="checkbox"
 						type="checkbox"
 						class="checkbox" />
 					<span class="label-text text-sm"
@@ -94,7 +96,7 @@
 			<button
 				type="submit"
 				:class="{
-					'btn-disabled': email === '' || name === '',
+					'btn-disabled': email === '' || name === '' || !checkbox,
 				}"
 				class="btn bg-green text-[#fff] font-bold text-base">
 				Jetzt anmelden
