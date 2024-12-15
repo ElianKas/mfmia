@@ -153,7 +153,7 @@
 						<br /><br />
 						<NuxtLink
 							class="text-orange"
-							to="/#newsletter">
+							to="/news/newsletter">
 							<p>Zum Newsletter eintragen</p>
 							<SvgsNavigationLongArrowOrange />
 						</NuxtLink>
