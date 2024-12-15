@@ -14,7 +14,7 @@
 
 			if (response && response.success) {
 				alert(
-					'Erfolgreich abonniert! Eine Bestätigungsmail wurde versendet.'
+					'Vielen Dank für das Abbonieren unseres Newsletters. Eine Bestätigungsmail wird versendet.'
 				);
 			} else {
 				const errorMessage =
@@ -93,6 +93,9 @@
 			</div>
 			<button
 				type="submit"
+				:class="{
+					'btn-disabled': email === '' || name === '',
+				}"
 				class="btn bg-green text-[#fff] font-bold text-base">
 				Jetzt anmelden
 			</button>
