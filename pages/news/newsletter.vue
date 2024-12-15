@@ -11,6 +11,7 @@
 
 	const subscribe = async () => {
 		try {
+			pending.value = true;
 			const response = await $fetch('/api/subscribe', {
 				method: 'POST',
 				body: {
