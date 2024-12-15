@@ -12,6 +12,7 @@
 			type: String,
 			required: false,
 		},
+		//if the image should stick to its original aspect ratio
 		isDynamic: {
 			type: Boolean,
 			required: false,
