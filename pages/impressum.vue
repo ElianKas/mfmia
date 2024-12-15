@@ -80,8 +80,8 @@
 					<div>
 						<h3 class="font-bold pb-[.5rem]">Redaktionsteam</h3>
 						<p>
-							Sibylle Lachmitz <br />
 							Andreas Wirtz <br />
+							Karin Nöbel<br />
 							Thomas Langhein <br />
 							Lukas Langhein
 						</p>
@@ -89,11 +89,12 @@
 					<div>
 						<h3 class="font-bold pb-[.5rem]">Fotografien</h3>
 						<p>
-							Die Fotos wurden auf unseren Reisen nach Kamerun
-							aufgenommen. Es sind keine gekauften Fotos. Ergänzend
-							sind uns Fotos von Spendern/Spenderinnen bzw.
-							Partnerschaften zur Veröffentlichung auf unserer
-							Homepage zur Verfügung gestellt worden.
+							Die Fotos wurden im Wesentlichen von Lukas Langhein auf
+							unseren Reisen nach Kamerun aufgenommen. Es sind keine
+							gekauften Fotos. Ergänzend sind uns Fotos von
+							Spendern/Spenderinnen bzw. Partnerschaften zur
+							Veröffentlichung auf unserer Homepage zur Verfügung
+							gestellt worden.
 							<br /><br />
 							Andreas Wirtz <br />
 							Karin Nöbel <br />
