@@ -1,8 +1,15 @@
 <script setup>
+	const props = defineProps({
+		paypalID: {
+			type: String,
+			default: 'EMH3AUSA8E5F8',
+		},
+	});
+
 	onMounted(() => {
 		PayPal.Donation.Button({
 			env: 'production', // Or 'sandbox',
-			hosted_button_id: 'EMH3AUSA8E5F8',
+			hosted_button_id: props.paypalID,
 			// business: 'YOUR_EMAIL_OR_PAYERID',
 			image: {
 				src: 'https://a.storyblok.com/f/311834/704x396/c8a722356d/empty.png',

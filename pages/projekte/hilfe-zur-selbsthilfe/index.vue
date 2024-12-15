@@ -177,7 +177,7 @@
 				</TemplatesParagraphsLeftRight>
 			</div>
 		</article>
-		<LazyDonate />
+		<LazyDonate paypalID="ND4DP6HN9X7C2" />
 		<LazyTemplatesExploreMoreTemplate
 			:page="{ title: 'Eigenständigkeit und Selbsthilfe stärken' }">
 			<LinkCardsHilfeZurSelbsthilfeSolarlight />

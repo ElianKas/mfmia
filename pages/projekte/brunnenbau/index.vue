@@ -112,7 +112,7 @@
 				</TemplatesLineUp>
 			</div>
 		</article>
-		<LazyDonate />
+		<LazyDonate paypalID="KR8FBHY2FLFNC" />
 		<LazyTemplatesExploreMoreTemplate :page="{ title: 'Brunnenbau' }">
 			<LinkCardsBrunnenbauMotivation />
 			<LinkCardsBrunnenbauVorgehen />

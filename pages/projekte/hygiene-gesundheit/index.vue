@@ -85,7 +85,7 @@
 				</TemplatesParagraphsLeftRight>
 			</div>
 		</article>
-		<LazyDonate />
+		<LazyDonate paypalID="VMSUEGABWYZY6" />
 		<LazyTemplatesExploreMoreTemplate
 			:page="{
 				title: 'Hygiene & Gesundheit',

@@ -111,7 +111,7 @@
 				</TemplatesLineUp>
 			</div>
 		</article>
-		<LazyDonate />
+		<LazyDonate paypalID="WLZZLP9QKGBVW" />
 		<LazyTemplatesExploreMoreTemplate :page="{ title: 'Bildung' }">
 			<LinkCardsBildungHerausforderungen />
 			<LinkCardsBildungSchulsystem />
