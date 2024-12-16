@@ -37,19 +37,12 @@
 							id="paypal-donate-button-footer"
 							class="absolute w-full h-full inset-0"></div>
 					</div>
-					<div class="btn bg-green text-white">
-						<p>Zur Spendenseite</p>
-					</div>
-				</div>
-				<br />
-				<br />
-				<p>
 					<NuxtLink
 						to="/spenden"
-						class="font-bold"
-						><u>Zur Spendenseite</u></NuxtLink
-					>
-				</p>
+						class="btn bg-green text-white">
+						<p>Zur Spendenseite</p>
+					</NuxtLink>
+				</div>
 			</div>
 		</section>
 		<section
