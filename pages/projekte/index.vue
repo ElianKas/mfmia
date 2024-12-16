@@ -159,53 +159,53 @@
 								</NuxtLink>
 							</div>
 						</li>
-					</div>
-				</ul>
-				<div
-					class="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-x-[1rem] gap-y-[4rem] mt-[5rem]">
-					<h2 class="text-big font-bold text-orange">
-						Willst du mehr über Kamerun erfahren?
-					</h2>
-					<div class="hidden md:block"></div>
-					<div>
-						<NuxtLink
-							to="/projekte/kamerun"
-							class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
-							<StoryblokImage
-								class="absolute inset-0 w-full h-full object-cover opacity-50"
-								src="https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg" />
-							<div
-								class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
-								<div class="text-white font-bold">Kamerun</div>
-								<div>
-									<SvgsNavigationDoubleArrowWhite
-										class="w-[20px] h-auto" />
-								</div>
-							</div>
-						</NuxtLink>
-						<br />
-						<div class="pr-[1.5rem]">
+						<!-- kamerun with title -->
+						<div
+							class="md:aspect-square grid place-items-center md:p-[1rem]">
+							<h2 class="text-big font-bold text-orange text-center">
+								Willst du mehr über Kamerun erfahren?
+							</h2>
+						</div>
+						<div>
 							<NuxtLink
 								to="/projekte/kamerun"
-								class="flex items-center justify-between cursor-pointer">
-								<div>Übersicht</div>
-								<div>
-									<SvgsNavigationDoubleArrow
-										class="w-[20px] h-auto" />
+								class="bg-[#000] aspect-square flex items-end rounded-[--border-radius] relative">
+								<StoryblokImage
+									class="absolute inset-0 w-full h-full object-cover opacity-50"
+									src="https://a.storyblok.com/f/311834/6000x4000/3b83684f13/schuler_1_rwnd0o.jpg" />
+								<div
+									class="flex items-center justify-between cursor-pointer w-full p-[1.5rem] z-[9]">
+									<div class="text-white font-bold">Kamerun</div>
+									<div>
+										<SvgsNavigationDoubleArrowWhite
+											class="w-[20px] h-auto" />
+									</div>
 								</div>
 							</NuxtLink>
-							<NuxtLink
-								to="/projekte/kamerun/infrastruktur"
-								class="flex items-center justify-between cursor-pointer mt-[1rem]">
-								<div>Infrastruktur</div>
-								<div>
-									<SvgsNavigationDoubleArrow
-										class="w-[20px] h-auto" />
-								</div>
-							</NuxtLink>
+							<br />
+							<div class="pr-[1.5rem]">
+								<NuxtLink
+									to="/projekte/kamerun"
+									class="flex items-center justify-between cursor-pointer">
+									<div>Übersicht</div>
+									<div>
+										<SvgsNavigationDoubleArrow
+											class="w-[20px] h-auto" />
+									</div>
+								</NuxtLink>
+								<NuxtLink
+									to="/projekte/kamerun/infrastruktur"
+									class="flex items-center justify-between cursor-pointer mt-[1rem]">
+									<div>Infrastruktur</div>
+									<div>
+										<SvgsNavigationDoubleArrow
+											class="w-[20px] h-auto" />
+									</div>
+								</NuxtLink>
+							</div>
 						</div>
 					</div>
-				</div>
+				</ul>
 			</nav>
 		</section>
 		<LazyMilestones />
