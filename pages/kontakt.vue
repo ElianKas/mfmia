@@ -169,7 +169,7 @@
 				</label>
 			</div>
 			<button
-				class="btn bg-green text-[#fff]"
+				class="btn bg-green text-[#fff] hover:bg-green"
 				:class="{
 					'btn-disabled':
 						pending ||

@@ -112,7 +112,7 @@
 						'btn-disabled':
 							email === '' || name === '' || !checkbox || pending,
 					}"
-					class="btn bg-green text-[#fff] font-bold text-base">
+					class="btn bg-green hover:bg-green text-[#fff] font-bold text-base">
 					Jetzt anmelden
 				</button>
 			</form>
