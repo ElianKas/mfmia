@@ -12,9 +12,12 @@
 	const phone = ref('');
 	const email = ref('');
 	const message = ref('');
+	const checkbox = ref(false);
+	const pending = ref(false);
 
 	const contact = async () => {
 		try {
+			pending.value = true;
 			const response = await $fetch('/api/contact', {
 				method: 'POST',
 				body: {
@@ -33,12 +36,23 @@
 				alert(
 					'Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.'
 				);
+				title.value = '';
+				prename.value = '';
+				name.value = '';
+				street.value = '';
+				city.value = '';
+				phone.value = '';
+				email.value = '';
+				message.value = '';
+				checkbox.value = false;
+				pending.value = false;
 			} else {
 				const errorMessage =
 					response && response.error
 						? response.error.message
 						: 'Unknown error';
 				alert(`Senden fehlgeschlagen: ${errorMessage}`);
+				pending.value = false;
 			}
 		} catch (err) {
 			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
@@ -135,6 +149,7 @@
 				<label
 					class="label cursor-pointer flex items-start gap-[1rem]">
 					<input
+						v-model="checkbox"
 						required
 						type="checkbox"
 						class="checkbox" />
@@ -153,7 +168,17 @@
 					>
 				</label>
 			</div>
-			<button class="btn bg-green text-[#fff]">
+			<button
+				class="btn bg-green text-[#fff]"
+				:class="{
+					'btn-disabled':
+						pending ||
+						!checkbox ||
+						email === '' ||
+						name === '' ||
+						prename === '' ||
+						message === '',
+				}">
 				Nachricht senden
 			</button>
 		</form>
