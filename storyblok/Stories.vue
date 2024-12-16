@@ -83,7 +83,7 @@
 </script>
 <template>
 	<article
-		class="min-h-[100vh] max-w-[--max-width] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
+		class="min-h-[100vh] max-w-[950px] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
 		<section class="pb-[1.5rem]">
 			<div
 				class="text-center my-[1rem] md:my-[3rem] relative h-[500px] bg-[#000] rounded-[--border-radius]">
