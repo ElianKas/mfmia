@@ -48,9 +48,9 @@
 				Newsletter bestellen
 			</h2>
 			<p>
-				Abonniere unseren Newsletter, um aktuelle Informationen (zu
-				Aktionen, Veranstaltungen und Neuigkeiten auf der Homepage) zu
-				erhalten.
+				Abonniere unseren Newsletter, um aktuelle Informationen zu
+				Aktionen, Veranstaltungen und Neuigkeiten auf unserer Homepage
+				zu erhalten.
 			</p>
 			<div>
 				<label
