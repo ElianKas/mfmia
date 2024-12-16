@@ -31,7 +31,7 @@
 
 			if (response && response.success) {
 				alert(
-					'Kontaktaufnahme erfolgreich! Eine Bestätigungsmail wurde versendet.'
+					'Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.'
 				);
 			} else {
 				const errorMessage =
