@@ -29,17 +29,26 @@
 					selbstbestimmtes Leben ermöglichen.
 				</p>
 				<br />
-				<div
-					class="btn bg-orange text-white relative overflow-hidden">
-					<p>Jetzt spenden</p>
+				<div class="flex gap-[1rem] justify-center">
 					<div
-						id="paypal-donate-button-footer"
-						class="absolute w-full h-full inset-0"></div>
+						class="btn bg-orange text-white relative overflow-hidden">
+						<p>Jetzt spenden</p>
+						<div
+							id="paypal-donate-button-footer"
+							class="absolute w-full h-full inset-0"></div>
+					</div>
+					<div class="btn bg-green text-white">
+						<p>Zur Spendenseite</p>
+					</div>
 				</div>
 				<br />
 				<br />
 				<p>
-					<NuxtLink to="/spenden"><u>Zur Spendenseite</u></NuxtLink>
+					<NuxtLink
+						to="/spenden"
+						class="font-bold"
+						><u>Zur Spendenseite</u></NuxtLink
+					>
 				</p>
 			</div>
 		</section>
