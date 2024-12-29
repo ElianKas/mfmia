@@ -13,7 +13,7 @@
 	const currentIndex = ref(0);
 
 	function checkFormat(src) {
-		const isVideo = src.includes('.mp4');
+		const isVideo = src.includes('.mp4') || src.includes('.mov');
 		return isVideo;
 	}
 
