@@ -11,6 +11,15 @@
 		}
 	});
 	const currentIndex = ref(0);
+
+	function checkFormat(src) {
+		const isVideo = src.includes('.mp4');
+		return isVideo;
+	}
+
+	onMounted(() => {
+		console.log('section', props.section.gallery);
+	});
 </script>
 <template>
 	<section class="py-[1.5rem]">
@@ -23,26 +32,49 @@
 		<div
 			v-if="section.gallery.length > 1"
 			class="mb-[1.5rem]">
-			<StoryblokImage
-				v-for="(image, index) in section.gallery"
-				:isDynamic="true"
-				:src="image.image"
-				:alt="image.alt"
-				:class="{ hidden: index !== currentIndex }"
-				class="w-full mb-[1rem] max-h-[500px] object-cover" />
 			<div
-				class="w-full flex sm:justify-center flex-wrap gap-[.5rem]">
+				v-for="(image, index) in section.gallery"
+				:key="image"
+				class="mb-[1rem] max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
 				<StoryblokImage
-					v-for="(image, index) in section.gallery"
-					:key="image"
+					v-if="!checkFormat(image.image)"
+					:isDynamic="true"
 					:src="image.image"
 					:alt="image.alt"
-					@click="
-						() => {
-							currentIndex = index;
-						}
-					"
-					class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
+					:class="{ hidden: index !== currentIndex }"
+					class="w-full h-full object-cover" />
+				<video
+					controls
+					v-if="checkFormat(image.image)"
+					:src="image.image"
+					:class="{ hidden: index !== currentIndex }"
+					class="w-full h-full object-cover"></video>
+			</div>
+			<div
+				class="w-full flex sm:justify-center flex-wrap gap-[.5rem]">
+				<div
+					v-for="(image, index) in section.gallery"
+					:key="image">
+					<StoryblokImage
+						v-if="!checkFormat(image.image)"
+						:src="image.image"
+						:alt="image.alt"
+						@click="
+							() => {
+								currentIndex = index;
+							}
+						"
+						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
+					<video
+						v-if="checkFormat(image.image)"
+						@click="
+							() => {
+								currentIndex = index;
+							}
+						"
+						:src="image.image"
+						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto rounded-[--border-radius]"></video>
+				</div>
 			</div>
 		</div>
 		<div class="max-w-[800px] m-auto">
