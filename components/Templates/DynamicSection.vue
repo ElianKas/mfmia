@@ -59,7 +59,6 @@
 				<video
 					controls
 					playsinline
-					:poster="thumbnail"
 					v-if="checkFormat(image.image)"
 					:src="image.image"
 					:class="{ hidden: index !== currentIndex }"
