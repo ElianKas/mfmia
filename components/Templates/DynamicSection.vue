@@ -45,6 +45,7 @@
 					class="w-full h-full object-cover" />
 				<video
 					controls
+					playsinline
 					v-if="checkFormat(image.image)"
 					:src="image.image"
 					:class="{ hidden: index !== currentIndex }"
