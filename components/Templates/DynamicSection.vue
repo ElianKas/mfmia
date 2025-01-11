@@ -26,6 +26,13 @@
 		}
 	}
 
+	function pauseVideos() {
+		const videos = document.querySelectorAll('.video');
+		videos.forEach((video) => {
+			video.pause();
+		});
+	}
+
 	onMounted(() => {
 		checkIsMobile();
 		window.addEventListener('resize', checkIsMobile);
@@ -62,7 +69,7 @@
 					v-if="checkFormat(image.image)"
 					:src="image.image"
 					:class="{ hidden: index !== currentIndex }"
-					class="w-full h-full object-cover"></video>
+					class="video w-full h-full object-cover"></video>
 			</div>
 			<div
 				class="w-full flex sm:justify-center flex-wrap gap-[.5rem]">
@@ -75,6 +82,7 @@
 						:alt="image.alt"
 						@click="
 							() => {
+								pauseVideos();
 								currentIndex = index;
 							}
 						"
