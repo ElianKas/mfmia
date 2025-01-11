@@ -67,6 +67,7 @@
 						"
 						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
 					<video
+						playsinline
 						v-if="checkFormat(image.image)"
 						@click="
 							() => {
