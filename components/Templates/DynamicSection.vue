@@ -11,14 +11,27 @@
 		}
 	});
 	const currentIndex = ref(0);
+	const thumbnail = ref(null);
 
 	function checkFormat(src) {
 		const isVideo = src.includes('.mp4') || src.includes('.mov');
 		return isVideo;
 	}
 
+	function checkIsMobile() {
+		if (window.innerWidth < 768) {
+			thumbnail.value = '/MaterialSymbolsPlayArrowRounded.svg';
+		} else {
+			thumbnail.value = null;
+		}
+	}
+
 	onMounted(() => {
-		console.log('section', props.section.gallery);
+		checkIsMobile();
+		window.addEventListener('resize', checkIsMobile);
+	});
+	onBeforeUnmount(() => {
+		window.removeEventListener('resize', checkIsMobile);
 	});
 </script>
 <template>
@@ -68,6 +81,7 @@
 						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
 					<video
 						playsinline
+						:poster="thumbnail"
 						v-if="checkFormat(image.image)"
 						@click="
 							() => {
