@@ -56,13 +56,13 @@
 				v-for="(image, index) in section.gallery"
 				:key="image"
 				:class="{ hidden: index !== currentIndex }"
-				class="max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
+				class="flex items-center justify-center max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
 				<StoryblokImage
 					v-if="!checkFormat(image.image)"
 					:isDynamic="true"
 					:src="image.image"
 					:alt="image.alt"
-					class="w-full h-full object-cover object-center" />
+					class="w-full h-full object-cover" />
 				<video
 					controls
 					playsinline
