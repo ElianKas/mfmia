@@ -55,7 +55,7 @@
 			<div
 				v-for="(image, index) in section.gallery"
 				:key="image"
-				class="mb-[1rem] max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
+				class="max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
 				<StoryblokImage
 					v-if="!checkFormat(image.image)"
 					:isDynamic="true"
@@ -71,6 +71,7 @@
 					:class="{ hidden: index !== currentIndex }"
 					class="video w-full h-full object-cover"></video>
 			</div>
+			<div class="py-[.25rem]"></div>
 			<div
 				class="w-full flex sm:justify-center flex-wrap gap-[.5rem]">
 				<div
