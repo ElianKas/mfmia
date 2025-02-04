@@ -55,20 +55,19 @@
 			<div
 				v-for="(image, index) in section.gallery"
 				:key="image"
+				:class="{ hidden: index !== currentIndex }"
 				class="max-h-[500px] w-full overflow-hidden rounded-[--border-radius]">
 				<StoryblokImage
 					v-if="!checkFormat(image.image)"
 					:isDynamic="true"
 					:src="image.image"
 					:alt="image.alt"
-					:class="{ hidden: index !== currentIndex }"
-					class="w-full h-full object-cover" />
+					class="w-full h-full object-cover object-center" />
 				<video
 					controls
 					playsinline
 					v-if="checkFormat(image.image)"
 					:src="image.image"
-					:class="{ hidden: index !== currentIndex }"
 					class="video w-full h-full object-cover"></video>
 			</div>
 			<div class="py-[.25rem]"></div>
