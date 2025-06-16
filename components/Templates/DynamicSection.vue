@@ -1,15 +1,5 @@
 <script setup>
 	const props = defineProps({ section: Object });
-	const descriptionContent = computed(() => {
-		if (
-			props.section.description &&
-			props.section.description.type === 'doc'
-		) {
-			return renderRichText(props.section.description);
-		} else {
-			return props.section.description;
-		}
-	});
 	const currentIndex = ref(0);
 	const thumbnail = ref(null);
 
@@ -107,7 +97,11 @@
 				v-if="props.section.title">
 				{{ props.section.title }}
 			</h2>
-			<div v-html="descriptionContent"></div>
+			<div class="sb-richtext">
+				<StoryblokRichText
+					v-if="props.section.description"
+					:doc="props.section.description"></StoryblokRichText>
+			</div>
 		</div>
 	</section>
 </template>

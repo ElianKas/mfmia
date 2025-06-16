@@ -6,13 +6,6 @@
 		is_startpage: false,
 	});
 	const props = defineProps({ blok: Object });
-	const descriptionContent = computed(() => {
-		if (props.blok.description.type === 'doc') {
-			return renderRichText(props.blok.description);
-		} else {
-			return props.blok.description;
-		}
-	});
 	const sortedData = ref(null);
 	const moreSectionContent = ref([]);
 	const indexLast = ref(-1);
@@ -103,9 +96,11 @@
 					v-if="blok.title">
 					{{ blok.title }}
 				</h1>
-				<div
-					v-if="blok.description"
-					v-html="descriptionContent"></div>
+				<div class="sb-richtext">
+					<StoryblokRichText
+						v-if="props.blok.description"
+						:doc="props.blok.description"></StoryblokRichText>
+				</div>
 			</div>
 		</section>
 		<!-- storyblok moreSections render -->
