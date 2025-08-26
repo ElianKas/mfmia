@@ -9,6 +9,7 @@
 		version: useRoute().query._storyblok ? 'draft' : 'published',
 		starts_with: 'storys',
 		is_startpage: false,
+		per_page: 100,
 	});
 	const sortedData = ref(null);
 	const clientData = ref([]);
@@ -16,10 +17,7 @@
 	let increment;
 
 	function loadMore() {
-		const nextData = sortedData.value.slice(
-			currentLength.value,
-			currentLength.value + increment
-		);
+		const nextData = sortedData.value.slice(currentLength.value, currentLength.value + increment);
 		clientData.value = [...clientData.value, ...nextData];
 	}
 
@@ -46,26 +44,20 @@
 	});
 </script>
 <template>
-	<article
-		class="min-h-[100vh] max-w-[--max-width] m-auto px-[2rem] mb-[10rem]">
+	<article class="min-h-[100vh] max-w-[--max-width] m-auto px-[2rem] mb-[10rem]">
 		<div class="text-center my-[5rem]">
-			<p class="font-bold text-green">
-				Geschichten, wie wir Kamerun erleben.
-			</p>
+			<p class="font-bold text-green">Geschichten, wie wir Kamerun erleben.</p>
 			<h1 class="text-big text-orange font-bold">Storys</h1>
 		</div>
 		<ClientOnly>
 			<template #fallback>
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] gap-[2rem]">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[5rem] gap-[2rem]">
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
 					<div class="skeleton h-[500px] w-full"></div>
-					<div
-						class="skeleton h-[500px] w-full hidden lg:block"></div>
-					<div
-						class="skeleton h-[500px] w-full hidden lg:block"></div>
+					<div class="skeleton h-[500px] w-full hidden lg:block"></div>
+					<div class="skeleton h-[500px] w-full hidden lg:block"></div>
 				</div>
 			</template>
 			<div v-if="clientData.length > 0">

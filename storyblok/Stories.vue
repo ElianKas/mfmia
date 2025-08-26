@@ -4,6 +4,7 @@
 		version: useRoute().query._storyblok ? 'draft' : 'published',
 		starts_with: 'storys',
 		is_startpage: false,
+		per_page: 100,
 	});
 	const props = defineProps({ blok: Object });
 	const sortedData = ref(null);
@@ -33,11 +34,7 @@
 				});
 			}
 			//if section has content
-			if (
-				newSection.title ||
-				newSection.description ||
-				newSection.gallery.length > 0
-			) {
+			if (newSection.title || newSection.description || newSection.gallery.length > 0) {
 				moreSectionContent.value.push(newSection);
 			}
 		});
@@ -45,13 +42,9 @@
 
 	function findIndexLastNext() {
 		indexLast.value =
-			sortedData.value.findIndex(
-				(story) => story.content._uid === props.blok._uid
-			) - 1;
+			sortedData.value.findIndex((story) => story.content._uid === props.blok._uid) - 1;
 		indexNext.value =
-			sortedData.value.findIndex(
-				(story) => story.content._uid === props.blok._uid
-			) + 1;
+			sortedData.value.findIndex((story) => story.content._uid === props.blok._uid) + 1;
 		if (indexLast.value < 0) {
 			indexLast.value = -1;
 		}
@@ -75,15 +68,12 @@
 	});
 </script>
 <template>
-	<article
-		class="min-h-[100vh] max-w-[950px] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
+	<article class="min-h-[100vh] max-w-[950px] m-auto px-[1rem] md:px-[3rem] mb-[10rem]">
 		<section class="pb-[1.5rem]">
 			<div
 				class="text-center my-[1rem] md:my-[3rem] relative h-[500px] bg-[#000] rounded-[--border-radius]">
 				<div class="z-[9] relative pt-[2rem]">
-					<p class="font-bold text-white">
-						Geschichten, wie wir Kamerun erleben.
-					</p>
+					<p class="font-bold text-white">Geschichten, wie wir Kamerun erleben.</p>
 					<p class="text-big text-white font-bold">Storys</p>
 				</div>
 				<StoryblokImage
@@ -140,15 +130,11 @@
 			</NuxtLink>
 		</nav>
 		<div class="text-center my-[5rem]">
-			<p class="font-bold text-green">
-				Geschichten, wie wir Kamerun erleben.
-			</p>
+			<p class="font-bold text-green">Geschichten, wie wir Kamerun erleben.</p>
 			<h1 class="text-big text-orange font-bold">Storys</h1>
 			<br />
 			<NuxtLink to="/storys">
-				<button class="btn bg-orange text-white">
-					Zurück zur Übersicht
-				</button>
+				<button class="btn bg-orange text-white">Zurück zur Übersicht</button>
 			</NuxtLink>
 		</div>
 	</article>

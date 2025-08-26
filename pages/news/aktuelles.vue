@@ -1,14 +1,14 @@
 <script setup>
 	useSeoMeta({
 		title: 'Aktuelles',
-		description:
-			'Neueste Entwicklungen und Ereignisse rund um unsere Projekte.',
+		description: 'Neueste Entwicklungen und Ereignisse rund um unsere Projekte.',
 	});
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
 		starts_with: 'news/aktuelles',
 		is_startpage: false,
+		per_page: 100,
 	});
 	const sortedData = ref(null);
 	const clientData = ref([]);
@@ -16,10 +16,7 @@
 	let increment = 10;
 
 	function loadMore() {
-		const nextData = sortedData.value.slice(
-			currentLength.value,
-			currentLength.value + increment
-		);
+		const nextData = sortedData.value.slice(currentLength.value, currentLength.value + increment);
 		clientData.value = [...clientData.value, ...nextData];
 	}
 
@@ -60,14 +57,11 @@
 								class="p-[1rem] border-b flex justify-between items-center gap-[1rem]">
 								<div>
 									{{
-										new Date(article.content.date).toLocaleDateString(
-											'de-DE',
-											{
-												day: '2-digit',
-												month: '2-digit',
-												year: 'numeric',
-											}
-										)
+										new Date(article.content.date).toLocaleDateString('de-DE', {
+											day: '2-digit',
+											month: '2-digit',
+											year: 'numeric',
+										})
 									}}
 									<b>{{ article.content.title }}</b>
 								</div>
