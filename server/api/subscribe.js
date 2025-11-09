@@ -18,12 +18,17 @@ export default defineEventHandler(async (event) => {
 		};
 	}
 
-	console.log('Recaptcha Token:', body.recaptchaToken);
+	const formData = new URLSearchParams();
+	formData.append('secret', secretKey);
+	formData.append('response', body.recaptchaToken);
 
-	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptchaToken}`;
-
-	const recaptchaData = await $fetch(verifyUrl, { method: 'POST' });
+	const recaptchaData = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
+		method: 'POST',
+		body: formData,
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded',
+		},
+	});
 
 	if (!recaptchaData.success) {
 		return {
