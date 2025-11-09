@@ -21,8 +21,7 @@ export default defineEventHandler(async (event) => {
 	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptchaToken}`;
 
-	const recaptchaResponse = await $fetch(verifyUrl);
-	const recaptchaData = await recaptchaResponse.json();
+	const recaptchaData = await $fetch(verifyUrl, { method: 'POST' });
 
 	if (!recaptchaData.success) {
 		return {
