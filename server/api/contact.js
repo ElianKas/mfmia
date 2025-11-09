@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
 	}
 
 	const formData = new URLSearchParams();
-	formData.append('secret', secretKey);
+	formData.append('secret', process.env.RECAPTCHA_SECRET_KEY);
 	formData.append('response', body.recaptchaToken);
 
 	const recaptchaData = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
