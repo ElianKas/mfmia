@@ -1,4 +1,3 @@
-// server/api/subscribe.js
 import nodemailer from 'nodemailer';
 
 export default defineEventHandler(async (event) => {
@@ -9,6 +8,34 @@ export default defineEventHandler(async (event) => {
 		return {
 			success: false,
 			error: 'Name und Email werden benötigt',
+		};
+	}
+
+	if (!body.recaptchaToken) {
+		return {
+			success: false,
+			error: 'reCAPTCHA-Token wird benötigt',
+		};
+	}
+
+	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptchaToken}`;
+
+	const recaptchaResponse = await fetch(verifyUrl, { method: 'POST' });
+	const recaptchaData = await recaptchaResponse.json();
+
+	if (!recaptchaData.success) {
+		return {
+			success: false,
+			error: 'reCAPTCHA Verifizierung fehlgeschlagen',
+		};
+	}
+
+	// Verify action matches
+	if (recaptchaData.action !== 'submit') {
+		return {
+			success: false,
+			error: 'Invalid reCAPTCHA action',
 		};
 	}
 
@@ -42,8 +69,7 @@ export default defineEventHandler(async (event) => {
 	let clientMailOptions = {
 		from: '"Miteinander für Menschen in Afrika e.V." <newsletter@miteinander-fuer-afrika.de>', // Sender address
 		to: body.email, // Client's email
-		subject:
-			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
+		subject: 'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
 		text: `Hallo ${body.name},\n\nDanke für die Anmeldung zum Newsletter!\n\nSie möchten den Newsletter wieder abbestellen?\nSchreiben Sie dazu bitte eine Mail an newsletter@miteinander-fuer-afrika.de\n\nLiebe Grüße\n\nIhr Vorstand\n\nvon\n\nMiteinander – für Menschen in Afrika e.V.\nKölnische Str. 55\n34117 Kassel`, // Plain text body
 	};
 
@@ -51,8 +77,7 @@ export default defineEventHandler(async (event) => {
 	let hostMailOptions = {
 		from: '"Miteinander für Menschen in Afrika e.V." <newsletter@miteinander-fuer-afrika.de>', // Sender address
 		to: process.env.NEWSLETTER_EMAIL, // Host's email
-		subject:
-			'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
+		subject: 'Newsletter-Anmeldung von Miteinander - für Menschen in Afrika e. V.', // Subject line
 		text: `Name: ${body.name}\nEmail: ${body.email}`, // Plain text body
 	};
 

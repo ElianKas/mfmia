@@ -1,4 +1,3 @@
-// server/api/subscribe.js
 import nodemailer from 'nodemailer';
 
 export default defineEventHandler(async (event) => {
@@ -8,8 +7,35 @@ export default defineEventHandler(async (event) => {
 	if (!body.prename || !body.name || !body.email || !body.message) {
 		return {
 			success: false,
-			error:
-				'Vorname, Name, Email und Ihre Nachricht werden benötigt.',
+			error: 'Vorname, Name, Email und Ihre Nachricht werden benötigt.',
+		};
+	}
+
+	if (!body.recaptchaToken) {
+		return {
+			success: false,
+			error: 'reCAPTCHA-Token wird benötigt',
+		};
+	}
+
+	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptchaToken}`;
+
+	const recaptchaResponse = await fetch(verifyUrl, { method: 'POST' });
+	const recaptchaData = await recaptchaResponse.json();
+
+	if (!recaptchaData.success) {
+		return {
+			success: false,
+			error: 'reCAPTCHA Verifizierung fehlgeschlagen',
+		};
+	}
+
+	// Verify action matches
+	if (recaptchaData.action !== 'submit') {
+		return {
+			success: false,
+			error: 'Invalid reCAPTCHA action',
 		};
 	}
 
@@ -53,8 +79,7 @@ export default defineEventHandler(async (event) => {
 		from: '"Miteinander für Menschen in Afrika e.V." <info@miteinander-fuer-afrika.de>', // Sender address
 		to: process.env.EMAIL, // Host's email
 		cc: body.email, // Client's email
-		subject:
-			'Anfrage über Homepage an Miteinander - für Menschen in Afrika e. V.', // Subject line
+		subject: 'Anfrage über Homepage an Miteinander - für Menschen in Afrika e. V.', // Subject line
 		text: `Anrede: ${body.title}\nVorname: ${body.prename}\nName: ${body.name}\nStraße / Nr.: ${body.street}\nPLZ / Ort: ${body.city}\nTelefon / Mobil: ${body.phone}\nE-Mail: ${body.email}\n\nIhre Mitteilung:\n${body.message}\n\nDatenschutzbestimmung: ja`, // Plain text body
 	};
 
@@ -72,13 +97,13 @@ export default defineEventHandler(async (event) => {
 
 		return {
 			success: true,
-			message: 'Subscription request sent successfully',
+			message: 'Contact request sent successfully',
 		};
 	} catch (error) {
 		console.error('Error sending email: %s', error);
 		return {
 			success: false,
-			error: 'Failed to send subscription request',
+			error: 'Failed to send contact request',
 		};
 	}
 });

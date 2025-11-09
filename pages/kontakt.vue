@@ -17,43 +17,46 @@
 
 	const contact = async () => {
 		try {
-			pending.value = true;
-			const response = await $fetch('/api/contact', {
-				method: 'POST',
-				body: {
-					title: title.value,
-					prename: prename.value,
-					name: name.value,
-					street: street.value,
-					city: city.value,
-					phone: phone.value,
-					email: email.value,
-					message: message.value,
-				},
-			});
+			grecaptcha.ready(function () {
+				grecaptcha
+					.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
+					.then(async function (token) {
+						// Add your logic to submit to your backend server here.
+						pending.value = true;
+						const response = await $fetch('/api/contact', {
+							method: 'POST',
+							body: {
+								title: title.value,
+								prename: prename.value,
+								name: name.value,
+								street: street.value,
+								city: city.value,
+								phone: phone.value,
+								email: email.value,
+								message: message.value,
+								recaptchaToken: token,
+							},
+						});
 
-			if (response && response.success) {
-				alert(
-					'Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.'
-				);
-				title.value = '';
-				prename.value = '';
-				name.value = '';
-				street.value = '';
-				city.value = '';
-				phone.value = '';
-				email.value = '';
-				message.value = '';
-				checkbox.value = false;
-				pending.value = false;
-			} else {
-				const errorMessage =
-					response && response.error
-						? response.error.message
-						: 'Unknown error';
-				alert(`Senden fehlgeschlagen: ${errorMessage}`);
-				pending.value = false;
-			}
+						if (response && response.success) {
+							alert('Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.');
+							title.value = '';
+							prename.value = '';
+							name.value = '';
+							street.value = '';
+							city.value = '';
+							phone.value = '';
+							email.value = '';
+							message.value = '';
+							checkbox.value = false;
+							pending.value = false;
+						} else {
+							const errorMessage = response && response.error ? response.error : 'Unknown error';
+							alert(`Senden fehlgeschlagen: ${errorMessage}`);
+							pending.value = false;
+						}
+					});
+			});
 		} catch (err) {
 			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
 		}
@@ -81,8 +84,7 @@
 					<option value="Frau">Frau</option>
 				</select>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					Vorname<span class="text-orange">*</span>
 					<input
 						required
@@ -91,8 +93,7 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					Name<span class="text-orange">*</span>
 					<input
 						required
@@ -101,8 +102,7 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					Straße / Nr.
 					<input
 						v-model="street"
@@ -110,8 +110,7 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					PLZ / Ort
 					<input
 						v-model="city"
@@ -119,8 +118,7 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					Telefon / Mobil
 					<input
 						v-model="phone"
@@ -128,8 +126,7 @@
 						class="grow" />
 				</label>
 				<div class="h-[1px] border border-green"></div>
-				<label
-					class="input px-[.5rem] flex items-center gap-2 border-b">
+				<label class="input px-[.5rem] flex items-center gap-2 border-b">
 					E-Mail<span class="text-orange">*</span>
 					<input
 						required
@@ -146,8 +143,7 @@
 					placeholder="Ihre Mitteilung"></textarea>
 			</div>
 			<div class="form-control">
-				<label
-					class="label cursor-pointer flex items-start gap-[1rem]">
+				<label class="label cursor-pointer flex items-start gap-[1rem]">
 					<input
 						v-model="checkbox"
 						required
@@ -161,9 +157,8 @@
 							target="_blank"
 							>Datenschutz</NuxtLink
 						>
-						gelesen und bin damit einverstanden, dass mit dem Absenden
-						des Formulars meine Daten zur Bearbeitung meines Anliegens
-						verwendet werden. <br /><br />Die mit * gekennzeichneten
+						gelesen und bin damit einverstanden, dass mit dem Absenden des Formulars meine Daten zur
+						Bearbeitung meines Anliegens verwendet werden. <br /><br />Die mit * gekennzeichneten
 						Felder sind Pflichtfelder.</span
 					>
 				</label>
@@ -172,12 +167,7 @@
 				class="btn bg-green text-[#fff] hover:bg-green"
 				:class="{
 					'btn-disabled':
-						pending ||
-						!checkbox ||
-						email === '' ||
-						name === '' ||
-						prename === '' ||
-						message === '',
+						pending || !checkbox || email === '' || name === '' || prename === '' || message === '',
 				}">
 				Nachricht senden
 			</button>
