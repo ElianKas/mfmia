@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
 	if (!recaptchaData.success) {
 		return {
 			success: false,
-			error: 'reCAPTCHA Verifizierung fehlgeschlagen',
+			error: recaptchaData['error-codes'],
 		};
 	}
 
