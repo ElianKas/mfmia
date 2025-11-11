@@ -15,6 +15,7 @@
 					.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
 					.then(async function (token) {
 						// Add your logic to submit to your backend server here.
+						console.log('reCAPTCHA token:', token);
 						pending.value = true;
 						const response = await $fetch('/api/subscribe', {
 							method: 'POST',

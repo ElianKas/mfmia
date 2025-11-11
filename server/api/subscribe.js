@@ -18,6 +18,8 @@ export default defineEventHandler(async (event) => {
 		};
 	}
 
+	console.log('Recaptcha Token:', body.recaptchaToken);
+
 	const formData = new URLSearchParams();
 	formData.append('secret', process.env.RECAPTCHA_SECRET_KEY);
 	formData.append('response', body.recaptchaToken);
