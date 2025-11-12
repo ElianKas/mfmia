@@ -45,6 +45,7 @@ export default defineNuxtConfig({
 			script: [
 				{ src: 'https://www.paypalobjects.com/donate/sdk/donate-sdk.js' },
 				{
+					async: true,
 					src: 'https://www.google.com/recaptcha/api.js?render=6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC',
 				},
 			],
