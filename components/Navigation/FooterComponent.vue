@@ -24,14 +24,12 @@
 				src="https://a.storyblok.com/f/311834/1927x1067/bb90be64ba/rechteck-139.png" />
 			<div class="text-center z-[9]">
 				<p class="md:max-w-[400px] m-auto">
-					Helfen Sie mit Ihrer Spende, Projekte zu realisieren, die
-					den Menschen in Kamerun ein unabhängiges und
-					selbstbestimmtes Leben ermöglichen.
+					Helfen Sie mit Ihrer Spende, Projekte zu realisieren, die den Menschen in Kamerun ein
+					unabhängiges und selbstbestimmtes Leben ermöglichen.
 				</p>
 				<br />
 				<div class="flex gap-[1rem] justify-center">
-					<div
-						class="btn bg-orange text-white relative overflow-hidden">
+					<div class="btn bg-orange text-white relative overflow-hidden">
 						<p>Jetzt spenden</p>
 						<div
 							id="paypal-donate-button-footer"
@@ -50,20 +48,15 @@
 			<div
 				class="max-w-[--max-width] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] md:gap-[5rem] md:gap-y-[2rem]">
 				<div class="md:min-h-[200px]">
-					<h3 class="text-orange font-bold pb[.5rem]">
-						Miteinander - für Menschen in Afrika e.V.
-					</h3>
+					<h3 class="text-orange font-bold pb[.5rem]">Miteinander - für Menschen in Afrika e.V.</h3>
 					<p>
-						Wir sind ein gemeinnütziger Verein, der sich seit 2013 in
-						Kamerun für Bildung, Gesundheit und Hilfe zur Selbsthilfe
-						einsetzt, um die Lebensbedingungen und Zukunftschancen der
-						lokalen Gemeinschaften nachhaltig zu stärken.
+						Wir sind ein gemeinnütziger Verein in Kassel, der sich seit 2013 in Kamerun für Bildung,
+						Gesundheit und Hilfe zur Selbsthilfe einsetzt, um die Lebensbedingungen und
+						Zukunftschancen der lokalen Gemeinschaften nachhaltig zu stärken.
 					</p>
 				</div>
 				<div class="md:min-h-[200px]">
-					<h3 class="text-orange font-bold pb[.5rem]">
-						Spendenkonto
-					</h3>
+					<h3 class="text-orange font-bold pb[.5rem]">Spendenkonto</h3>
 					<p>
 						Miteinander - für Menschen in Afrika e.V. <br />
 						Evangelische Bank <br />
