@@ -18,16 +18,19 @@ export default defineEventHandler(async (event) => {
 		};
 	}
 
-	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-	const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptchaToken}`;
+	const formData = new URLSearchParams();
+	formData.append('secret', process.env.RECAPTCHA_SECRET_KEY);
+	formData.append('response', body.recaptchaToken);
 
-	const recaptchaResponse = await fetch(verifyUrl, { method: 'POST' });
-	const recaptchaData = await recaptchaResponse.json();
+	const recaptchaData = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
+		method: 'POST',
+		body: formData,
+	});
 
 	if (!recaptchaData.success) {
 		return {
 			success: false,
-			error: 'reCAPTCHA Verifizierung fehlgeschlagen',
+			error: recaptchaData['error-codes'],
 		};
 	}
 

@@ -15,51 +15,46 @@
 	const checkbox = ref(false);
 	const pending = ref(false);
 
-	const contact = async () => {
-		try {
-			grecaptcha.ready(function () {
-				grecaptcha
-					.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
-					.then(async function (token) {
-						// Add your logic to submit to your backend server here.
-						pending.value = true;
-						const response = await $fetch('/api/contact', {
-							method: 'POST',
-							body: {
-								title: title.value,
-								prename: prename.value,
-								name: name.value,
-								street: street.value,
-								city: city.value,
-								phone: phone.value,
-								email: email.value,
-								message: message.value,
-								recaptchaToken: token,
-							},
-						});
-
-						if (response && response.success) {
-							alert('Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.');
-							title.value = '';
-							prename.value = '';
-							name.value = '';
-							street.value = '';
-							city.value = '';
-							phone.value = '';
-							email.value = '';
-							message.value = '';
-							checkbox.value = false;
-							pending.value = false;
-						} else {
-							const errorMessage = response && response.error ? response.error : 'Unknown error';
-							alert(`Senden fehlgeschlagen: ${errorMessage}`);
-							pending.value = false;
-						}
+	const contact = () => {
+		grecaptcha.ready(function () {
+			grecaptcha
+				.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
+				.then(async function (token) {
+					pending.value = true;
+					const response = await $fetch('/api/contact', {
+						method: 'POST',
+						body: {
+							title: title.value,
+							prename: prename.value,
+							name: name.value,
+							street: street.value,
+							city: city.value,
+							phone: phone.value,
+							email: email.value,
+							message: message.value,
+							recaptchaToken: token,
+						},
 					});
-			});
-		} catch (err) {
-			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
-		}
+
+					if (response && response.success) {
+						alert('Vielen Dank für die Anfrage! Eine Bestätigungsmail wird versendet.');
+						title.value = '';
+						prename.value = '';
+						name.value = '';
+						street.value = '';
+						city.value = '';
+						phone.value = '';
+						email.value = '';
+						message.value = '';
+						checkbox.value = false;
+						pending.value = false;
+					} else {
+						const errorMessage = response && response.error ? response.error : 'Unknown error';
+						alert(`Senden fehlgeschlagen: ${errorMessage}`);
+						pending.value = false;
+					}
+				});
+		});
 	};
 </script>
 <template>
