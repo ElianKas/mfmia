@@ -8,9 +8,9 @@
 	const checkbox = ref(false);
 	const pending = ref(false);
 
-	const subscribe = () => {
+	const subscribe = async () => {
 		try {
-			grecaptcha.ready(function () {
+			await grecaptcha.ready(function () {
 				grecaptcha
 					.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
 					.then(async function (token) {
