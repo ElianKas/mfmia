@@ -27,10 +27,9 @@ export default defineEventHandler(async (event) => {
 	const recaptchaData = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
 		method: 'POST',
 		body: formData,
-		headers: {
-			'Content-Type': 'application/x-www-form-urlencoded',
-		},
 	});
+
+	console.log('Recaptcha Data:', recaptchaData);
 
 	if (!recaptchaData.success) {
 		return {
