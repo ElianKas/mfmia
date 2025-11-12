@@ -8,42 +8,37 @@
 	const checkbox = ref(false);
 	const pending = ref(false);
 
-	const subscribe = async () => {
-		try {
-			await grecaptcha.ready(function () {
-				grecaptcha
-					.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
-					.then(async function (token) {
-						// Add your logic to submit to your backend server here.
-						console.log('reCAPTCHA token:', token);
-						pending.value = true;
-						const response = await $fetch('/api/subscribe', {
-							method: 'POST',
-							body: {
-								email: email.value,
-								name: name.value,
-								recaptchaToken: token,
-							},
-						});
-
-						if (response && response.success) {
-							alert(
-								'Vielen Dank für das Abbonieren unseres Newsletters. Eine Bestätigungsmail wird versendet.'
-							);
-							email.value = '';
-							name.value = '';
-							checkbox.value = false;
-							pending.value = false;
-						} else {
-							const errorMessage = response && response.error ? response.error : 'Unknown error';
-							alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
-							pending.value = false;
-						}
+	const subscribe = () => {
+		grecaptcha.ready(function () {
+			grecaptcha
+				.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
+				.then(async function (token) {
+					console.log('reCAPTCHA token:', token);
+					pending.value = true;
+					const response = await $fetch('/api/subscribe', {
+						method: 'POST',
+						body: {
+							email: email.value,
+							name: name.value,
+							recaptchaToken: token,
+						},
 					});
-			});
-		} catch (err) {
-			alert(`Ein Fehler ist aufgetreten: ${err.message}`);
-		}
+
+					if (response && response.success) {
+						alert(
+							'Vielen Dank für das Abbonieren unseres Newsletters. Eine Bestätigungsmail wird versendet.'
+						);
+						email.value = '';
+						name.value = '';
+						checkbox.value = false;
+						pending.value = false;
+					} else {
+						const errorMessage = response && response.error ? response.error : 'Unknown error';
+						alert(`Anmeldung fehlgeschlagen: ${errorMessage}`);
+						pending.value = false;
+					}
+				});
+		});
 	};
 </script>
 <template>
