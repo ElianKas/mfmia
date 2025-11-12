@@ -35,7 +35,7 @@ export default defineEventHandler(async (event) => {
 	if (!recaptchaData.success) {
 		return {
 			success: false,
-			error: recaptchaData['error-codes'] + ' hostname: ' + recaptchaData['hostname'],
+			error: recaptchaData['error-codes'] + ' hostname: ' + recaptchaData.hostname,
 		};
 	}
 
