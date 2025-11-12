@@ -13,7 +13,6 @@
 			grecaptcha
 				.execute('6LfMDgcsAAAAAAVVwmsCzIDA7wzLnWUlTiWqZSiC', { action: 'submit' })
 				.then(async function (token) {
-					console.log('reCAPTCHA token:', token);
 					pending.value = true;
 					const response = await $fetch('/api/subscribe', {
 						method: 'POST',

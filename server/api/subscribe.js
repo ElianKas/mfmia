@@ -18,8 +18,6 @@ export default defineEventHandler(async (event) => {
 		};
 	}
 
-	console.log('Recaptcha Token:', body.recaptchaToken);
-
 	const formData = new URLSearchParams();
 	formData.append('secret', process.env.RECAPTCHA_SECRET_KEY);
 	formData.append('response', body.recaptchaToken);
@@ -29,12 +27,10 @@ export default defineEventHandler(async (event) => {
 		body: formData,
 	});
 
-	console.log('Recaptcha Data:', recaptchaData);
-
 	if (!recaptchaData.success) {
 		return {
 			success: false,
-			error: recaptchaData['error-codes'] + ' hostname: ' + recaptchaData.hostname,
+			error: recaptchaData['error-codes'],
 		};
 	}
 
