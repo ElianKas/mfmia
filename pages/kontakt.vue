@@ -153,8 +153,24 @@
 							>Datenschutz</NuxtLink
 						>
 						gelesen und bin damit einverstanden, dass mit dem Absenden des Formulars meine Daten zur
-						Bearbeitung meines Anliegens verwendet werden. <br /><br />Die mit * gekennzeichneten
-						Felder sind Pflichtfelder.</span
+						Bearbeitung meines Anliegens verwendet werden. Die Webseite ist außerdem durch reCAPTCHA
+						geschützt und es gelten die
+						<NuxtLink
+							to="https://policies.google.com/privacy"
+							target="_blank"
+							class="text-orange"
+							>Datenschutzerklärung</NuxtLink
+						>
+						und
+						<NuxtLink
+							to="https://policies.google.com/terms"
+							target="_blank"
+							class="text-orange"
+							>Nutzungsbedingungen</NuxtLink
+						>
+						von Google.
+						<br /><br />
+						Die mit * gekennzeichneten Felder sind Pflichtfelder.</span
 					>
 				</label>
 			</div>

@@ -86,8 +86,23 @@
 							class="text-orange"
 							>Datenschutzerklärung</NuxtLink
 						>, die auch weitere Informationen über Möglichkeiten zur Berichtigung, Löschung und
-						Sperrung meiner Daten beinhaltet.</span
-					>
+						Sperrung meiner Daten beinhaltet. Die Webseite ist außerdem durch reCAPTCHA geschützt
+						und es gelten die
+						<NuxtLink
+							to="https://policies.google.com/privacy"
+							target="_blank"
+							class="text-orange"
+							>Datenschutzerklärung</NuxtLink
+						>
+						und
+						<NuxtLink
+							to="https://policies.google.com/terms"
+							target="_blank"
+							class="text-orange"
+							>Nutzungsbedingungen</NuxtLink
+						>
+						von Google.
+					</span>
 				</label>
 			</div>
 			<button
