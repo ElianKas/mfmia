@@ -14,9 +14,9 @@
 		},
 		{
 			image: 'https://a.storyblok.com/f/311834/600x600/488bff46c4/harald-fischer.jpg',
-			name: 'Dechant Harald Fischer',
+			name: 'Harald Fischer',
 			title: 'Stellvertretender Vorsitzender',
-			email: 'harald.fischer@st-familia-kassel.de',
+			email: 'haraldfischer19@gmx.de',
 			description:
 				'Durch meine persönliche Bekanntschaft mit Pfarrer Sebastien ist mir die Unterstützung seiner Arbeit vor Ort ein wichtiges Anliegen. Solidarisches Teilen über Ländergrenzen hinweg ist mir eine Herzensangelegenheit.',
 		},
