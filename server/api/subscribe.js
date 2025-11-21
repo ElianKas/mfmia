@@ -28,6 +28,7 @@ export default defineEventHandler(async (event) => {
 	});
 
 	if (!recaptchaData.success || recaptchaData.score < 0.8) {
+		console.log('RECAPTCHA-Anfrage blockiert. recaptchaData:', recaptchaData);
 		return {
 			success: false,
 			error: recaptchaData['error-codes'],
@@ -41,6 +42,8 @@ export default defineEventHandler(async (event) => {
 			error: 'Invalid reCAPTCHA action',
 		};
 	}
+
+	console.log('RECAPTCHA-Anfrage validiert. recaptchaData:', recaptchaData);
 
 	/* const checkMemberAndGodfather = () => {
 		let text = '';
