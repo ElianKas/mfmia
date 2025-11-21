@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
 		body: formData,
 	});
 
-	if (!recaptchaData.success) {
+	if (!recaptchaData.success || recaptchaData.score < 0.8) {
 		return {
 			success: false,
 			error: recaptchaData['error-codes'],
