@@ -44,7 +44,7 @@
 			title: null,
 			email: 'lachmitz-wirtz@onlinehome.de',
 			description:
-				'Veranstaltungsplanung, Pressearbeit, Spendenaktionen und Netzwerkarbeit sind mein Ding.',
+				'Veranstaltungsplanung, Pressearbeit, Spendenaktionen und Netzwerkarbeit sind mein Ding. Ich engagiere mich ausserdem mit Power im Perioden.Power-Projekt.',
 		},
 		{
 			image: 'https://a.storyblok.com/f/311834/3024x3024/67f419cfa5/lukas-langhein_img_0049.png',
