@@ -97,13 +97,13 @@
 			</div>
 		</article>
 		<LazyDonate />
-		<div class="px-[1rem]">
+		<div class="px-[1rem] py-[2rem]">
 			<NuxtLink
 				to="https://a.storyblok.com/f/311834/x/aa83538e97/periodenpower.pdf"
 				target="_blank"
-				class="flex gap-[1rem] items-center bg-orange text-white p-[.3rem] pr-[1rem] mx-auto max-w-[400px] h-[100px] rounded-[--border-radius]">
+				class="flex gap-[1rem] items-center bg-green text-white p-[.3rem] pr-[1rem] mx-auto max-w-[400px] h-[100px] rounded-[--border-radius]">
 				<div
-					class="h-full aspect-[20/19] bg-dark-orange rounded-[--border-radius] grid place-items-center">
+					class="h-full aspect-[20/19] bg-dark-green rounded-[--border-radius] grid place-items-center">
 					öffnen
 				</div>
 				<div class="flex flex-col gap-xs">

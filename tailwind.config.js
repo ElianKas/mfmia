@@ -12,8 +12,8 @@ export default {
 	theme: {
 		colors: {
 			orange: '#EB6A0A',
-			'dark-orange': '#b0530bff',
 			green: '#019875',
+			'dark-green': '#057d61ff',
 			white: '#fff',
 		},
 		fontSize: {
