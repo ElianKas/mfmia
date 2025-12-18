@@ -26,7 +26,7 @@
 			title: 'Schriftführerin',
 			email: 'noeba@t-online.de',
 			description:
-				'Ich engagiere mich für die Schulpartnerschaften und organisiere gerne im Team die Veranstaltungen des Vereins. Als Schriftführerin dokumentiere ich unsere Sitzungen und Beschlüsse.',
+				'Ich engagiere mich besonders für die Schulpartnerschaften und das Perioden.Power - Projekt und organisiere gerne im Team die Veranstaltungen des Vereins. Als Schriftführerin dokumentiere ich unsere Sitzungen und Beschlüsse.',
 		},
 		{
 			image:
@@ -144,6 +144,15 @@
 			email: null,
 			description:
 				'Ich bin erst seit 2024 im Verein und orientiere mich noch. Aktuell engagiere ich mich im PeriodenPower-Projekt und helfe bei Aktionen und Veranstaltungen.',
+		},
+		{
+			image:
+				'https://a.storyblok.com/f/311834/1001x1001/4180340410/whatsapp-image-2025-12-15-at-16-50-22.jpeg',
+			name: 'Ekeme Annick',
+			title: null,
+			email: null,
+			description:
+				'Ich bin Mitarbeiterin von ANDES ("Association Nationale pour le Developpement Economique et Sociale") in Kamerun und bin insbesondere engagiert in Konzept und Umsetzung des Perioden.Power - Projekts und in der Weiterentwicklung der Schulpartnerschaften.',
 		},
 	];
 </script>
