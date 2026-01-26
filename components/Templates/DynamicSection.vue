@@ -58,7 +58,7 @@
 					playsinline
 					v-if="checkFormat(image.image)"
 					:src="image.image"
-					class="video w-full h-full object-cover"></video>
+					class="video max-h-[500px]"></video>
 			</div>
 			<div class="py-[.25rem]"></div>
 			<div
@@ -83,6 +83,7 @@
 						v-if="checkFormat(image.image)"
 						@click="
 							() => {
+								pauseVideos();
 								currentIndex = index;
 							}
 						"
