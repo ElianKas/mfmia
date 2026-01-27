@@ -56,6 +56,9 @@
 				<video
 					controls
 					playsinline
+					controlsList="nodownload"
+					disablePictureInPicture
+					@contextmenu.prevent="()=>{return false}"
 					v-if="checkFormat(image.image)"
 					:src="image.image"
 					class="video max-h-[500px]"></video>
@@ -76,7 +79,7 @@
 								currentIndex = index;
 							}
 						"
-						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" />
+						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto" @contextmenu.prevent="()=>{return false}" />
 					<video
 						playsinline
 						:poster="thumbnail"
@@ -88,7 +91,7 @@
 							}
 						"
 						:src="image.image"
-						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto rounded-[--border-radius]"></video>
+						class="w-[100px] aspect-[3/2] object-cover cursor-pointer pointer-events-auto rounded-[--border-radius]" @contextmenu.prevent="()=>{return false}"></video>
 				</div>
 			</div>
 		</div>
