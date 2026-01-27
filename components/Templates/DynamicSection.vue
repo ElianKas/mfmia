@@ -61,7 +61,7 @@
 					@contextmenu.prevent="()=>{return false}"
 					v-if="checkFormat(image.image)"
 					:src="image.image"
-					class="video max-h-[500px]"></video>
+					class="video max-h-[500px] rounded-[--border-radius]"></video>
 			</div>
 			<div class="py-[.25rem]"></div>
 			<div
