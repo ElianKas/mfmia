@@ -24,14 +24,14 @@
 	<div>
 		<article class="px-[1rem] md:px-[3rem]">
 			<section
-				class="min-h-[550px] flex flex-col gap-[2rem] items-center max-w-[--max-width-big] m-auto py-[2rem]">
+				class=" flex flex-col gap-[2rem] items-center max-w-[--max-width-big] m-auto pb-[2rem] pt-[4rem]">
 				<div class="font-bold text-center">
 					<h1 class="text-green">
 						Unser Spendenkonto ist weiter unten zu finden
 					</h1>
 					<p class="text-orange text-big">Unsere Spendenaufrufe</p>
 				</div>
-				<div class="flex flex-wrap w-full justify-center">
+				<!-- <div class="flex flex-wrap w-full justify-center">
 					<iframe
 						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
 						title="PayPal donate campaign card"
@@ -39,21 +39,7 @@
 						width="382"
 						height="550"
 						scrolling="no"></iframe>
-					<!-- <iframe
-						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
-						title="PayPal donate campaign card"
-						frameborder="0"
-						width="382"
-						height="550"
-						scrolling="no"></iframe>
-					<iframe
-						src="https://www.paypal.com/giving/campaigns?campaign_id=6P5W9HLYZCWDU"
-						title="PayPal donate campaign card"
-						frameborder="0"
-						width="382"
-						height="550"
-						scrolling="no"></iframe> -->
-				</div>
+				</div> -->
 			</section>
 			<section
 				class="max-w-[--max-width-big] m-auto flex flex-col lg:flex-row lg:items-center gap-[2rem] lg:gap-[5rem] py-[2rem]">
