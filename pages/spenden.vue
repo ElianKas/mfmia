@@ -156,8 +156,8 @@
 					Wir sind wegen Förderung der Entwicklungszusammenarbeit nach
 					dem Freistellungsbescheid bzw. nach der Anlage zum
 					Körperschaftsteuerbescheid des Finanzamtes Kassel, St.-Nr.
-					26 250 88301, vom 12.07.2023 für den letzten
-					Veranlagungszeitraum für 2020 bis 2022 nach § 5 Abs. 1 Nr. 9
+					26 250 88301, vom 04.08.2026 für den letzten
+					Veranlagungszeitraum für 2023 bis 2025 nach § 5 Abs. 1 Nr. 9
 					des Körperschaftsteuergesetzes von der Körperschaftsteuer
 					und nach § 3 Nr. 6 des Gewerbesteuergesetzes von der
 					Gewerbesteuer befreit. <br /><br />
@@ -176,7 +176,7 @@
 					<br /><br />
 					<NuxtLink
 						class="text-orange"
-						to="https://a.storyblok.com/f/311834/x/eccf7364f6/zuwendungsbestatigung-kleinspenden-2024-11.pdf"
+						to="https://a.storyblok.com/f/311834/x/079863fe52/zuwendungsbestatigung-kleinspenden-2026-08.pdf"
 						target="_blank">
 						<p>Zuwendungsbestätigung Kleinspenden</p>
 						<SvgsNavigationLongArrowOrange />
