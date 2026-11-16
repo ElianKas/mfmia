@@ -1,75 +1,58 @@
-# Nuxt 3 Minimal Starter
+# Miteinander für Afrika · mfmia
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**Kundenprojekt für Miteinander – für Menschen in Afrika e.V.**
 
-## Setup
+Website zur Darstellung der Vereinsarbeit und der Projekte in Kamerun. Die Anwendung kombiniert Nuxt-Seiten und wiederverwendbare Vue-Komponenten mit Storyblok als Headless CMS für redaktionelle Inhalte.
 
-Make sure to install the dependencies:
+## Funktionsumfang
+
+- Vereins- und Projektseiten zu Bildung, Brunnenbau, Hygiene/Gesundheit und Hilfe zur Selbsthilfe.
+- Storyblok-Anbindung für Artikel, Storys und Projektinhalte; Darstellung von Rich Text und Mediengalerien.
+- Nachrichtenübersicht mit Datumssortierung und schrittweisem Nachladen der angezeigten Artikel.
+- Interaktive Standortkarten mit Leaflet und OpenStreetMap.
+- Kontaktformular und Newsletter-Anmeldeformular mit serverseitiger reCAPTCHA-Prüfung und E-Mail-Versand über Nodemailer.
+- PayPal-Spendenbutton sowie seitenbezogene SEO-Metadaten.
+
+Die Newsletter-Anmeldung versendet E-Mails an Interessierte und den Verein; eine vollständige Newsletter-Verwaltung ist nicht Bestandteil des Repositories.
+
+## Technik und Struktur
+
+**Nuxt 3 · Vue 3 · Storyblok · Tailwind CSS / daisyUI · Leaflet · Nodemailer**
+
+| Pfad | Inhalt |
+| --- | --- |
+| `pages/` | Dateibasierte Routen für Vereins-, Projekt- und Inhaltsseiten |
+| `components/` | Navigation, Inhaltsvorlagen, Karten, Formulare und SVG-Komponenten |
+| `storyblok/` | Komponenten zur Darstellung von CMS-Inhalten |
+| `server/api/` | Server-Endpunkte für Kontakt und Newsletter-Anmeldung |
+| `assets/css/` | Globale Styles |
+| `nuxt.config.ts` | Module und Integrationskonfiguration |
+
+Das Repository basiert auf dem eigenen [Nuxt-/Storyblok-Starter](https://github.com/ElianKas/storyblok-starter) und enthält die projektspezifischen Seiten, Komponenten und Integrationen.
+
+## Lokal einrichten
+
+Voraussetzungen sind Node.js, npm und Zugriff auf einen Storyblok-Space mit den passenden Inhaltsmodellen und Inhalten. Diese CMS-Daten sind nicht im Repository enthalten.
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+npm ci
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Der Entwicklungsserver läuft standardmäßig unter `http://localhost:3000`. Die benötigten Umgebungsvariablen können lokal in einer `.env`-Datei gesetzt werden:
 
-Build the application for production:
+| Variable | Verwendung |
+| --- | --- |
+| `STORYBLOK_ACCESSTOKEN` | Storyblok-API-Zugriff |
+| `RECAPTCHA_SECRET_KEY` | Serverseitige reCAPTCHA-Prüfung |
+| `EMAIL`, `EMAIL_PASSWORD` | SMTP-Zugang für das Kontaktformular |
+| `NEWSLETTER_EMAIL`, `NEWSLETTER_EMAIL_PASSWORD` | SMTP-Zugang für Newsletter-Anmeldungen |
+
+SMTP-Host, reCAPTCHA-Site-Key und PayPal-Button-ID sind im Code projektspezifisch hinterlegt. Für eine eigene Installation müssen diese Integrationen passend konfiguriert werden.
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Kontakt- und Newsletter-Endpunkte benötigen eine Server-Laufzeit und gültige Dienstkonfigurationen.
